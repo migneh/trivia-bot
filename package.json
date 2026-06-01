@@ -1,0 +1,21 @@
+{
+  "name": "arabic-trivia-bot",
+  "version": "1.0.0",
+  "description": "Arabic Trivia Night Discord Bot — multi-guild, production-ready",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "discord.js": "^14.14.1",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
