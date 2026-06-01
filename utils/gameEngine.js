@@ -33,6 +33,10 @@ const { enqueueDashboardEdit, clearQueue } = require('./dashboardQueue');
 const queries = require('../database/queries');
 const { runTransaction } = require('../database/schema');
 
+// ═══════════════════════════════════════════════════════════════════════════
+// CONSTANTS
+// ═══════════════════════════════════════════════════════════════════════════
+
 // Pre-build category name lookup from config
 const CAT_NAMES = Object.fromEntries(
   config.categories.map(c => [c.id, c.nameAr])
@@ -50,9 +54,91 @@ const REASON_FOOTER = {
   scheduled_override:   '📅 أُوقفت الجلسة بسبب جلسة مجدولة',
 };
 
-// ═══════════════════════════════════════════════════════════════════[...]
+// Discord and UI limits
+const BUTTON_LABEL_MAX_CHARS = 80;
+const EMBED_FIELD_MAX_CHARS = 1024;
+const EMBED_FIELD_SAFE_LIMIT = 1000;
+const TOP_RANK_DISPLAY = 5;
+const RANK_EMOJIS = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'];
+const PODIUM_MEDALS = ['🥇', '🥈', '🥉'];
+const MAX_REST_DISPLAY = 50;
+
+// Achievement cache to avoid repeated lookups
+let achievementCache = null;
+
+/**
+ * Get cached achievement definitions from config
+ * @returns {Array} Achievement definitions
+ */
+function getAchievementDefinitions() {
+  if (!achievementCache) {
+    achievementCache = config.achievements || [];
+  }
+  return achievementCache;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// VALIDATION & HELPER FUNCTIONS
+// ═══════════════════════════════════════════════════════════════════════════
+
+/**
+ * Check if a session is valid and not ending
+ * @param {object} session
+ * @returns {boolean}
+ */
+function isValidSession(session) {
+  return session && !session.isEnding;
+}
+
+/**
+ * Determine if session should show special end message
+ * @param {string} reason
+ * @returns {boolean}
+ */
+function hasSpecialEndMessage(reason) {
+  return ['insufficient_players', 'idle'].includes(reason);
+}
+
+/**
+ * Format score for display (handle decimals)
+ * @param {number} score
+ * @returns {string}
+ */
+function formatScore(score) {
+  return Number.isInteger(score) ? score.toString() : score.toFixed(1);
+}
+
+/**
+ * Build top leaderboard entries with tie-aware ranking
+ * @param {Array} sorted - Sorted scores array
+ * @returns {Array} Top entries with rank info
+ */
+function buildTopLeaderboard(sorted) {
+  const topEntries = [];
+  let rank = 1;
+  let prevScore = null;
+
+  for (let i = 0; i < sorted.length; i++) {
+    const [userId, score] = sorted[i];
+
+    // Assign rank: same score = same rank
+    if (prevScore !== null && score !== prevScore) {
+      rank = topEntries.length + 1;
+    }
+
+    // Stop if rank > 5 AND this score is different from the last shown
+    if (rank > TOP_RANK_DISPLAY && (prevScore === null || score !== prevScore)) break;
+
+    topEntries.push({ userId, score, rank });
+    prevScore = score;
+  }
+
+  return topEntries;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
 // OWNER LOG HELPER
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 
 /**
  * Send a message to the configured owner log channel.
@@ -69,14 +155,14 @@ async function logToOwner(client, message) {
       const payload = typeof message === 'string' ? { content: message } : message;
       await ch.send(payload);
     }
-  } catch {
-    // Swallow all errors — log channel issues must not crash the bot
+  } catch (err) {
+    console.error('[GameEngine] Failed to log to owner:', err.message);
   }
 }
 
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 // EMBED BUILDERS
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 
 /**
  * Build the live dashboard embed shown alongside each question.
@@ -87,33 +173,12 @@ async function logToOwner(client, message) {
  */
 function buildDashboardEmbed(session) {
   const voteCount = Object.keys(session.currentVotes).length;
-  const sorted    = sm.getSortedScores(session.guildId);
-
-  // Build top entries with tie-aware rank extension
-  const topEntries = [];
-  let rank      = 1;
-  let prevScore = null;
-
-  for (let i = 0; i < sorted.length; i++) {
-    const [userId, score] = sorted[i];
-
-    // Assign rank: same score = same rank
-    if (prevScore !== null && score !== prevScore) {
-      rank = topEntries.length + 1;
-    }
-
-    // Stop if rank > 5 AND this score is different from the last shown
-    if (rank > 5 && (prevScore === null || score !== prevScore)) break;
-
-    topEntries.push({ userId, score, rank });
-    prevScore = score;
-  }
-
-  const rankEmojis = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'];
+  const sorted = sm.getSortedScores(session.guildId);
+  const topEntries = buildTopLeaderboard(sorted);
 
   const rankLines = topEntries.map(e => {
-    const medal = rankEmojis[e.rank - 1] ?? `**${e.rank}.**`;
-    const pts   = Number.isInteger(e.score) ? e.score : e.score.toFixed(1);
+    const medal = RANK_EMOJIS[e.rank - 1] ?? `**${e.rank}.**`;
+    const pts = formatScore(e.score);
     return `${medal} <@${e.userId}> — **${pts}** نقطة`;
   });
 
@@ -122,13 +187,13 @@ function buildDashboardEmbed(session) {
     .setColor(config.colors.info)
     .addFields(
       {
-        name:   '🗳️ الأصوات',
-        value:  voteCount === 0 ? 'لم يصوّت أحد بعد' : `${voteCount} لاعب صوّت`,
+        name: '🗳️ الأصوات',
+        value: voteCount === 0 ? 'لم يصوّت أحد بعد' : `${voteCount} لاعب صوّت`,
         inline: true,
       },
       {
-        name:   '🏆 المتصدرون',
-        value:  rankLines.length ? rankLines.join('\n') : 'لا يوجد نقاط بعد',
+        name: '🏆 المتصدرون',
+        value: rankLines.length ? rankLines.join('\n') : 'لا يوجد نقاط بعد',
         inline: false,
       }
     )
@@ -144,15 +209,15 @@ function buildDashboardEmbed(session) {
  */
 function buildQuestionEmbed(session, question) {
   const catName = CAT_NAMES[question.category] ?? question.category;
-  const diff    = DIFF_NAMES[question.difficulty] ?? question.difficulty;
+  const diff = DIFF_NAMES[question.difficulty] ?? question.difficulty;
 
   const embed = new EmbedBuilder()
     .setTitle(`❓ السؤال ${session.currentIndex + 1} من ${session.questionCount}`)
     .setDescription(question.text)
     .setColor(config.colors.info)
     .addFields(
-      { name: '📂 الفئة',    value: catName, inline: true },
-      { name: '⚡ الصعوبة', value: diff,    inline: true },
+      { name: '📂 الفئة', value: catName, inline: true },
+      { name: '⚡ الصعوبة', value: diff, inline: true },
     )
     .setFooter({ text: `⏱️ لديك ${session.timeLimitSec} ثانية للإجابة` });
 
@@ -175,22 +240,21 @@ function buildQuestionEmbed(session, question) {
 function buildResultsEmbed(session, scoresData, reason) {
   const sorted = Object.entries(scoresData).sort((a, b) => b[1] - a[1]);
 
-  const medals  = ['🥇', '🥈', '🥉'];
-  const podium  = [];
-  const rest    = [];
+  const podium = [];
+  const rest = [];
   let lastScore = null;
-  let lastRank  = 0;
-  let position  = 0;
+  let lastRank = 0;
+  let position = 0;
 
   for (const [userId, score] of sorted) {
     position++;
     if (lastScore !== score) lastRank = position;
 
-    const pts   = Number.isInteger(score) ? score : score.toFixed(1);
+    const pts = formatScore(score);
     const entry = `**${lastRank}.** <@${userId}> — **${pts}** نقطة`;
 
     if (lastRank <= 3) {
-      podium.push(`${medals[lastRank - 1]} ${entry}`);
+      podium.push(`${PODIUM_MEDALS[lastRank - 1]} ${entry}`);
     } else {
       rest.push(entry);
     }
@@ -211,24 +275,10 @@ function buildResultsEmbed(session, scoresData, reason) {
     .setTimestamp();
 
   if (rest.length > 0) {
-    // Discord field value limit: 1024 chars — split if needed
-    const chunks = [];
-    let chunk    = [];
-    let len      = 0;
-    for (const line of rest.slice(0, 50)) {
-      if (len + line.length + 1 > 1000) {
-        chunks.push(chunk.join('\n'));
-        chunk = [];
-        len   = 0;
-      }
-      chunk.push(line);
-      len += line.length + 1;
-    }
-    if (chunk.length) chunks.push(chunk.join('\n'));
-
+    const chunks = chunkText(rest.slice(0, MAX_REST_DISPLAY), EMBED_FIELD_SAFE_LIMIT);
     for (let i = 0; i < chunks.length; i++) {
       embed.addFields({
-        name:  i === 0 ? '📋 بقية الترتيب' : '​', // zero-width space for continuation
+        name: i === 0 ? '📋 بقية الترتيب' : '​',
         value: chunks[i],
       });
     }
@@ -237,9 +287,39 @@ function buildResultsEmbed(session, scoresData, reason) {
   return embed;
 }
 
-// ═══════════════════════════════════════════════════════════════════[...]
+/**
+ * Split text array into chunks respecting character limit
+ * @param {string[]} lines - Lines to chunk
+ * @param {number} limit - Character limit per chunk
+ * @returns {string[]} Chunked text
+ */
+function chunkText(lines, limit) {
+  const chunks = [];
+  let chunk = [];
+  let len = 0;
+
+  for (const line of lines) {
+    if (len + line.length + 1 > limit) {
+      if (chunk.length > 0) {
+        chunks.push(chunk.join('\n'));
+      }
+      chunk = [];
+      len = 0;
+    }
+    chunk.push(line);
+    len += line.length + 1;
+  }
+
+  if (chunk.length > 0) {
+    chunks.push(chunk.join('\n'));
+  }
+
+  return chunks;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
 // BUTTON BUILDERS
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 
 /**
  * Build the 4-option answer button row.
@@ -261,7 +341,7 @@ function buildAnswerButtons(question, disabled = false, correctIdx = null) {
 
     return new ButtonBuilder()
       .setCustomId(`trivia_answer:${i}`)
-      .setLabel(opt.substring(0, 80)) // Discord button label max = 80 chars
+      .setLabel(opt.substring(0, BUTTON_LABEL_MAX_CHARS))
       .setStyle(style)
       .setDisabled(disabled);
   });
@@ -269,9 +349,9 @@ function buildAnswerButtons(question, disabled = false, correctIdx = null) {
   return new ActionRowBuilder().addComponents(buttons);
 }
 
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 // DASHBOARD UPDATE
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 
 /**
  * Enqueue a dashboard edit for the guild.
@@ -283,13 +363,17 @@ function scheduleDashboardUpdate(guildId) {
   enqueueDashboardEdit(guildId, async () => {
     const s = sm.getSession(guildId);
     if (!s?.dashboardMessage) return;
-    await s.dashboardMessage.edit({ embeds: [buildDashboardEmbed(s)] });
+    try {
+      await s.dashboardMessage.edit({ embeds: [buildDashboardEmbed(s)] });
+    } catch (err) {
+      console.error('[GameEngine] Failed to update dashboard:', err.message);
+    }
   });
 }
 
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 // CORE GAME LOOP
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 
 /**
  * Start a session: post the initial dashboard, then post question 1.
@@ -299,18 +383,15 @@ function scheduleDashboardUpdate(guildId) {
  * @param {import('discord.js').TextChannel} channel
  */
 async function startSession(client, session, channel) {
-  // Post dashboard first so it appears above the question
   try {
     const dashMsg = await channel.send({ embeds: [buildDashboardEmbed(session)] });
     sm.updateSession(session.guildId, { dashboardMessage: dashMsg });
   } catch (err) {
     console.error('[GameEngine] Failed to post dashboard:', err.message);
-    // Non-fatal — proceed without dashboard
   }
 
-  // Fetch the latest session state (may have changed during await)
   const latestSession = sm.getSession(session.guildId);
-  if (!latestSession) return; // was killed in the meantime
+  if (!isValidSession(latestSession)) return;
 
   await postQuestion(client, latestSession, channel);
 }
@@ -324,31 +405,27 @@ async function startSession(client, session, channel) {
  * @param {import('discord.js').TextChannel} channel
  */
 async function postQuestion(client, session, channel) {
-  const guildId  = session.guildId;
+  const guildId = session.guildId;
   const question = session.questions[session.currentIndex];
 
-  // Clear votes for the new question
   sm.updateSession(guildId, { currentVotes: {}, stopPhase: 'voting' });
 
   const embed = buildQuestionEmbed(session, question);
-  const row   = buildAnswerButtons(question);
+  const row = buildAnswerButtons(question);
 
   let qMsg;
   try {
     qMsg = await channel.send({ embeds: [embed], components: [row] });
   } catch (err) {
     console.error('[GameEngine] Failed to post question:', err.message);
-    // Attempt channel loss recovery
     const currentSession = sm.getSession(guildId);
-    if (currentSession && !currentSession.isEnding) {
+    if (isValidSession(currentSession)) {
       await handleChannelLoss(client, currentSession);
     }
     return;
   }
 
   sm.updateSession(guildId, { questionMessage: qMsg });
-
-  // Begin vote collection
   await collectVotes(client, guildId, qMsg, question);
 }
 
@@ -362,26 +439,24 @@ async function postQuestion(client, session, channel) {
  * @param {object} question
  */
 async function collectVotes(client, guildId, qMsg, question) {
-  const session     = sm.getSession(guildId);
-  if (!session) return;
+  const session = sm.getSession(guildId);
+  if (!isValidSession(session)) return;
 
   const timeLimitMs = session.timeLimitSec * 1000;
 
   const collector = qMsg.createMessageComponentCollector({
     componentType: ComponentType.Button,
-    time:          timeLimitMs,
+    time: timeLimitMs,
   });
 
   collector.on('collect', async (interaction) => {
-    // Always defer immediately — Discord gives 3 seconds before timeout
     await interaction.deferReply({ ephemeral: true });
 
     const currentSession = sm.getSession(guildId);
-    if (!currentSession || currentSession.isEnding) return;
+    if (!isValidSession(currentSession)) return;
 
     const userId = interaction.user.id;
 
-    // Reject double votes
     if (currentSession.currentVotes[userId]) {
       await interaction.editReply({
         content: '⚠️ لقد أجبت بالفعل على هذا السؤال — لا يمكن تغيير الإجابة.',
@@ -390,27 +465,20 @@ async function collectVotes(client, guildId, qMsg, question) {
     }
 
     const answerIndex = parseInt(interaction.customId.split(':')[1], 10);
-    const now         = Date.now();
+    const now = Date.now();
 
-    // Initialise player if first action in session
     sm.ensurePlayer(guildId, userId);
-
-    // Record the vote
     currentSession.currentVotes[userId] = { answerIndex, timestampMs: now };
-
-    // Track for completion bonus
     sm.markAnswered(guildId, userId, currentSession.currentIndex);
 
     await interaction.editReply({ content: '✅ تم تسجيل إجابتك!' });
   });
 
-  collector.on('end', async (_, reason) => {
-    // 'time' = timer expired naturally — process results
-    // 'messageDelete' / other = question message gone, skip gracefully
+  collector.on('end', async () => {
     const currentSession = sm.getSession(guildId);
-    if (!currentSession || currentSession.isEnding) return;
-
-    await revealAndAdvance(client, currentSession, qMsg, question);
+    if (isValidSession(currentSession)) {
+      await revealAndAdvance(client, currentSession, qMsg, question);
+    }
   });
 }
 
@@ -431,65 +499,58 @@ async function collectVotes(client, guildId, qMsg, question) {
  * @param {object} question
  */
 async function revealAndAdvance(client, session, qMsg, question) {
-  const guildId   = session.guildId;
-  const votes     = session.currentVotes;
+  const guildId = session.guildId;
+  const votes = session.currentVotes;
   const voteCount = Object.keys(votes).length;
 
-  // ── Minimum player check (question 1 only) ──────────────────────────────
-  if (session.currentIndex === 0) {
-    const uniqueVoters = Object.keys(votes).length;
-    if (uniqueVoters < 2) {
-      await endSession(client, session, 'insufficient_players');
-      return;
-    }
+  // ── Minimum player check (question 1 only) ───────────────────────────
+  if (session.currentIndex === 0 && voteCount < 2) {
+    await endSession(client, session, 'insufficient_players');
+    return;
   }
 
-  // ── Idle detection ────────────────────────────────────────────────────────
-  const newZeroCount = voteCount === 0
-    ? session.consecutiveZeroVotes + 1
-    : 0;
+  // ── Idle detection ───────────────────────────────────────────────────
+  const newZeroCount = voteCount === 0 ? session.consecutiveZeroVotes + 1 : 0;
 
   sm.updateSession(guildId, {
     consecutiveZeroVotes: newZeroCount,
-    stopPhase:            'revealing',
+    stopPhase: 'revealing',
   });
 
   if (newZeroCount >= config.idleQuestionsThreshold) {
-    // Reveal first, then end — so players see the answer
     await revealButtons(qMsg, question);
     await endSession(client, session, 'idle');
     return;
   }
 
-  // ── Reveal answer buttons ─────────────────────────────────────────────────
+  // ── Reveal answer buttons ────────────────────────────────────────────
   await revealButtons(qMsg, question);
 
-  // ── Score calculation ─────────────────────────────────────────────────────
+  // ── Score calculation ────────────────────────────────────────────────
   const correctVotes = Object.entries(votes)
     .filter(([, v]) => v.answerIndex === question.correctAnswer)
     .map(([userId, v]) => ({ userId, timestampMs: v.timestampMs }));
 
   const speedRanks = assignSpeedRanks(correctVotes);
-  const isLastQ    = session.currentIndex === session.questionCount - 1;
-
-  // Track which players ranked 1st in speed this question
+  const isLastQ = session.currentIndex === session.questionCount - 1;
   const speedFirstThisQuestion = new Set();
 
+  // Process scores for correct answers only
   for (const [userId, vote] of Object.entries(votes)) {
     const isCorrect = vote.answerIndex === question.correctAnswer;
-    const streak    = sm.updateStreak(guildId, userId, isCorrect);
+    const streak = sm.updateStreak(guildId, userId, isCorrect);
 
     if (!isCorrect) continue;
 
-    const rankInfo       = speedRanks.get(userId) ?? { rank: 0, tieCount: 1 };
+    const rankInfo = speedRanks.get(userId) ?? { rank: 0, tieCount: 1 };
     const completionEarned = isLastQ && sm.hasCompletionBonus(guildId, userId);
 
     const { finalScore } = calculateScore({
-      difficulty:       question.difficulty,
-      streakCount:      streak,
-      speedRank:        rankInfo.rank,
-      speedTieCount:    rankInfo.tieCount,
-      isLastQuestion:   isLastQ,
+      difficulty: question.difficulty,
+      streakCount: streak,
+      speedRank: rankInfo.rank,
+      speedTieCount: rankInfo.tieCount,
+      isLastQuestion: isLastQ,
       completionEarned,
     });
 
@@ -500,15 +561,14 @@ async function revealAndAdvance(client, session, qMsg, question) {
     }
   }
 
-  // Reset streaks for wrong answerers (already done in updateStreak)
-  // Ensure players who didn't vote also get streak reset
+  // Reset streaks for non-voters
   for (const userId of [...session.scores.keys()]) {
     if (!votes[userId]) {
       sm.updateStreak(guildId, userId, false);
     }
   }
 
-  // ── Update question_stats (async, non-blocking) ───────────────────────────
+  // ── Update question_stats (async, non-blocking) ──────────────────────
   const firstCorrectTs = correctVotes.length > 0
     ? Math.min(...correctVotes.map(v => v.timestampMs))
     : 0;
@@ -527,36 +587,34 @@ async function revealAndAdvance(client, session, qMsg, question) {
     }
   });
 
-  // ── Dashboard update (once, after reveal) ─────────────────────────────────
+  // ── Dashboard update ─────────────────────────────────────────────────
   scheduleDashboardUpdate(guildId);
 
-  // ── Stop-during-reveal check ──────────────────────────────────────────────
+  // ── Stop-during-reveal check ─────────────────────────────────────────
   const afterReveal = sm.getSession(guildId);
-  if (!afterReveal || afterReveal.isEnding) return;
+  if (!isValidSession(afterReveal)) return;
 
   if (afterReveal.stopRequested && afterReveal.stopPhase === 'revealing') {
-    // Let the reveal finish (already shown), then stop
     await sleep(config.autoAdvanceDelayMs);
     const afterWait = sm.getSession(guildId);
-    if (afterWait && !afterWait.isEnding) {
+    if (isValidSession(afterWait)) {
       await endSession(client, afterWait, 'stopped');
     }
     return;
   }
 
-  // ── Auto-advance delay ────────────────────────────────────────────────────
+  // ── Auto-advance delay ───────────────────────────────────────────────
   await sleep(config.autoAdvanceDelayMs);
 
   const afterDelay = sm.getSession(guildId);
-  if (!afterDelay || afterDelay.isEnding) return;
+  if (!isValidSession(afterDelay)) return;
 
-  // Stop requested during delay
   if (afterDelay.stopRequested) {
     await endSession(client, afterDelay, 'stopped');
     return;
   }
 
-  // ── Advance to next question or end ───────────────────────────────────────
+  // ── Advance to next question or end ──────────────────────────────────
   const nextIndex = afterDelay.currentIndex + 1;
   if (nextIndex >= afterDelay.questionCount) {
     await endSession(client, afterDelay, 'completed');
@@ -568,7 +626,7 @@ async function revealAndAdvance(client, session, qMsg, question) {
   const channel = await fetchChannel(client, afterDelay.channelId);
   if (!channel) {
     const latest = sm.getSession(guildId);
-    if (latest && !latest.isEnding) await handleChannelLoss(client, latest);
+    if (isValidSession(latest)) await handleChannelLoss(client, latest);
     return;
   }
 
@@ -606,30 +664,28 @@ async function revealButtons(qMsg, question) {
 async function skipQuestion(client, session, channel) {
   const guildId = session.guildId;
 
-  // Disable the current question's buttons (no colour reveal)
   try {
     if (session.questionMessage) {
-      const question    = session.questions[session.currentIndex];
-      const disabledRow = buildAnswerButtons(question, true, null);
-      // Override all to Secondary (grey) to indicate skip
+      const question = session.questions[session.currentIndex];
       const greyRow = new ActionRowBuilder().addComponents(
         question.options.map((opt, i) =>
           new ButtonBuilder()
             .setCustomId(`trivia_answer:${i}`)
-            .setLabel(opt.substring(0, 80))
+            .setLabel(opt.substring(0, BUTTON_LABEL_MAX_CHARS))
             .setStyle(ButtonStyle.Secondary)
             .setDisabled(true)
         )
       );
       await session.questionMessage.edit({ components: [greyRow] });
     }
-  } catch {}
+  } catch {
+    // Silently ignore edit failures
+  }
 
-  // Mark as skipped
   session.skippedIndexes.add(session.currentIndex);
   sm.updateSession(guildId, {
-    currentVotes:         {},
-    consecutiveZeroVotes: 0, // skips don't count toward idle threshold
+    currentVotes: {},
+    consecutiveZeroVotes: 0,
   });
 
   const nextIndex = session.currentIndex + 1;
@@ -645,16 +701,16 @@ async function skipQuestion(client, session, channel) {
   }
   if (!channel) {
     const latest = sm.getSession(guildId);
-    if (latest && !latest.isEnding) await handleChannelLoss(client, latest);
+    if (isValidSession(latest)) await handleChannelLoss(client, latest);
     return;
   }
 
   await postQuestion(client, sm.getSession(guildId), channel);
 }
 
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 // SESSION END
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 
 /**
  * End a session for any reason.
@@ -676,54 +732,49 @@ async function skipQuestion(client, session, channel) {
 async function endSession(client, session, reason) {
   const guildId = session.guildId;
 
-  // Re-read from Map in case it was updated since the caller's reference
   const current = sm.getSession(guildId);
   if (!current || current.isEnding) return;
 
-  // Set guard immediately — prevents any concurrent endSession call
   sm.updateSession(guildId, { isEnding: true });
   clearQueue(guildId);
 
-  // ── Disable current question buttons ────────────────────────────────────
+  // ── Disable current question buttons ──────────────────────────────────
   try {
     if (current.questionMessage) {
-      const q   = current.questions[current.currentIndex];
+      const q = current.questions[current.currentIndex];
       const row = buildAnswerButtons(q, true, q.correctAnswer);
       await current.questionMessage.edit({ components: [row] });
     }
-  } catch {}
+  } catch {
+    // Silently ignore
+  }
 
-  // ── Build data snapshots ─────────────────────────────────────────────────
+  // ── Build data snapshots ─────────────────────────────────────────────
   const scoresData = Object.fromEntries(current.scores);
-  const hasScores  = Object.values(scoresData).some(v => v > 0);
+  const hasScores = Object.values(scoresData).some(v => v > 0);
 
-  // Snapshot each question with per-player vote data and speed winners
   const questionsData = current.questions.map((q, idx) => ({
-    id:            q.id,
-    category:      q.category,
-    difficulty:    q.difficulty,
+    id: q.id,
+    category: q.category,
+    difficulty: q.difficulty,
     correctAnswer: q.correctAnswer,
-    skipped:       current.skippedIndexes.has(idx),
-    // Store all votes for this question as recorded at session end
-    playerAnswers: idx === current.currentIndex
-      ? { ...current.currentVotes }
-      : {},
-    // Store players who won speed for this question (only for current question at end)
-    speedWinners:  idx === current.currentIndex ? [...current.speedFirstThisQuestion ?? []] : [],
+    skipped: current.skippedIndexes.has(idx),
+    playerAnswers: idx === current.currentIndex ? { ...current.currentVotes } : {},
+    speedWinners: idx === current.currentIndex ? [...current.speedFirstThisQuestion ?? []] : [],
   }));
 
-  // ── Atomic SQLite archive ────────────────────────────────────────────────
+  // ── Atomic SQLite archive ────────────────────────────────────────────
   try {
     runTransaction(() => {
       queries.insertSessionHistory({
         guildId,
-        hostId:        current.hostId,
-        channelId:     current.channelId,
-        startedAt:     current.startedAt,
-        endedAt:       Date.now(),
-        endReason:     reason,
+        hostId: current.hostId,
+        channelId: current.channelId,
+        startedAt: current.startedAt,
+        endedAt: Date.now(),
+        endReason: reason,
         questionCount: current.questionCount,
-        categories:    current.categories,
+        categories: current.categories,
         questionsData,
         scoresData,
       });
@@ -734,13 +785,11 @@ async function endSession(client, session, reason) {
       `💥 **فشل أرشفة الجلسة** للسيرفر \`${guildId}\`\n` +
       `السبب: \`${reason}\`\nالخطأ: ${err.message}`
     );
-    // Continue — we still need to clear memory and notify the channel
   }
 
-  // ── Clear from memory (before posting results to avoid state leaks) ──────
   sm.deleteSession(guildId);
 
-  // ── Post result messages to channel ─────────────────────────────────────
+  // ── Post result messages to channel ──────────────────────────────────
   const channel = await fetchChannel(client, current.channelId);
 
   if (reason === 'insufficient_players') {
@@ -769,34 +818,28 @@ async function endSession(client, session, reason) {
       ],
     }).catch(() => {});
 
-    // Show results only if at least one player scored
     if (hasScores) {
       await channel?.send({
         embeds: [buildResultsEmbed(current, scoresData, reason)],
       }).catch(() => {});
     }
 
-  } else if (reason === 'channel_lost') {
-    // Results already attempted via backup/DM in handleChannelLoss
-    // Don't try the main channel again
-
-  } else {
-    // completed | stopped | crash | scheduled_override
+  } else if (reason !== 'channel_lost') {
     await channel?.send({
       embeds: [buildResultsEmbed(current, scoresData, reason)],
     }).catch(() => {});
   }
 
-  // ── Async post-processing (non-blocking) ─────────────────────────────────
+  // ── Async post-processing (non-blocking) ─────────────────────────────
   setImmediate(() =>
     asyncPostProcess(client, guildId, current, scoresData, questionsData, reason)
       .catch(err => console.error('[GameEngine] asyncPostProcess error:', err.message))
   );
 }
 
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 // ASYNC POST-PROCESSING
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 
 /**
  * Update player_stats and evaluate achievements after a session ends.
@@ -810,16 +853,15 @@ async function endSession(client, session, reason) {
  * @param {string} reason
  */
 async function asyncPostProcess(client, guildId, session, scoresData, questionsData, reason) {
-  const sorted   = Object.entries(scoresData).sort((a, b) => b[1] - a[1]);
+  const sorted = Object.entries(scoresData).sort((a, b) => b[1] - a[1]);
   const winnerId = sorted[0]?.[1] > 0 ? sorted[0]?.[0] : null;
 
   for (const [userId, points] of Object.entries(scoresData)) {
-    if (points < 0) continue; // sanity guard
+    if (points < 0) continue;
 
     const isWin = userId === winnerId;
 
-    // Count correct answers this session for this player
-    let correctCount   = 0;
+    let correctCount = 0;
     let speedFirstCount = 0;
 
     for (const q of questionsData) {
@@ -828,7 +870,6 @@ async function asyncPostProcess(client, guildId, session, scoresData, questionsD
       if (vote && vote.answerIndex === q.correctAnswer) {
         correctCount++;
       }
-      // Count how many questions this player won speed for
       if (q.speedWinners?.includes(userId)) {
         speedFirstCount++;
       }
@@ -839,19 +880,35 @@ async function asyncPostProcess(client, guildId, session, scoresData, questionsD
     try {
       queries.upsertPlayerStats(guildId, userId, {
         points,
-        sessions:        1,
-        wins:            isWin ? 1 : 0,
-        answers:         correctCount,
-        streak:          longestStreak,
-        speedFirstCount: speedFirstCount,  // Now correctly populated from stored speedWinners
+        sessions: 1,
+        wins: isWin ? 1 : 0,
+        answers: correctCount,
+        streak: longestStreak,
+        speedFirstCount,
       });
     } catch (err) {
       console.error(`[GameEngine] upsertPlayerStats failed for ${userId}:`, err.message);
     }
   }
 
-  // Evaluate achievements for all participants
   await evaluateAchievements(client, guildId, session, scoresData, questionsData, sorted);
+}
+
+/**
+ * Check and unlock a single achievement
+ * @param {object} achievements - Current achievements object
+ * @param {string} achId - Achievement ID
+ * @param {boolean} condition - Unlock condition
+ * @param {Array} newUnlocks - Array to track new unlocks
+ * @returns {boolean} True if unlocked
+ */
+function checkAchievement(achievements, achId, condition, newUnlocks) {
+  if (!achievements[achId] && condition) {
+    achievements[achId] = true;
+    newUnlocks.push(achId);
+    return true;
+  }
+  return false;
 }
 
 /**
@@ -867,92 +924,87 @@ async function asyncPostProcess(client, guildId, session, scoresData, questionsD
  * @param {[string, number][]} sortedScores - sorted [userId, score] pairs
  */
 async function evaluateAchievements(client, guildId, session, scoresData, questionsData, sortedScores) {
+  const achievements_defs = getAchievementDefinitions();
+  const achievementMap = new Map(achievements_defs.map(a => [a.id, a]));
+
   for (const [userId] of Object.entries(scoresData)) {
     try {
       const stats = queries.getPlayerStats(guildId, userId);
       if (!stats) continue;
 
       let achievements = {};
-      try { achievements = JSON.parse(stats.achievements ?? '{}'); } catch {}
+      try {
+        achievements = JSON.parse(stats.achievements ?? '{}');
+      } catch {
+        achievements = {};
+      }
 
       const newUnlocks = [];
-      const winCount   = stats.win_count;
-      const sessions   = stats.session_count;
-      const answers    = stats.total_answers;
-      const maxStreak  = session.streaks?.get(userId) ?? 0;
-
-      // ── Win achievements ───────────────────────────────────────────────
-      if (!achievements.first_win  && winCount >= 1)  { achievements.first_win  = true; newUnlocks.push('first_win'); }
-      if (!achievements.win_5      && winCount >= 5)  { achievements.win_5      = true; newUnlocks.push('win_5'); }
-      if (!achievements.win_10     && winCount >= 10) { achievements.win_10     = true; newUnlocks.push('win_10'); }
-      if (!achievements.win_25     && winCount >= 25) { achievements.win_25     = true; newUnlocks.push('win_25'); }
-      if (!achievements.win_50     && winCount >= 50) { achievements.win_50     = true; newUnlocks.push('win_50'); }
-
-      // ── Session count achievements ─────────────────────────────────────
-      if (!achievements.sessions_5   && sessions >= 5)   { achievements.sessions_5   = true; newUnlocks.push('sessions_5'); }
-      if (!achievements.sessions_20  && sessions >= 20)  { achievements.sessions_20  = true; newUnlocks.push('sessions_20'); }
-      if (!achievements.sessions_50  && sessions >= 50)  { achievements.sessions_50  = true; newUnlocks.push('sessions_50'); }
-      if (!achievements.sessions_100 && sessions >= 100) { achievements.sessions_100 = true; newUnlocks.push('sessions_100'); }
-
-      // ── Answer count achievements ──────────────────────────────────────
-      if (!achievements.answers_10   && answers >= 10)   { achievements.answers_10   = true; newUnlocks.push('answers_10'); }
-      if (!achievements.answers_50   && answers >= 50)   { achievements.answers_50   = true; newUnlocks.push('answers_50'); }
-      if (!achievements.answers_100  && answers >= 100)  { achievements.answers_100  = true; newUnlocks.push('answers_100'); }
-      if (!achievements.answers_250  && answers >= 250)  { achievements.answers_250  = true; newUnlocks.push('answers_250'); }
-      if (!achievements.answers_500  && answers >= 500)  { achievements.answers_500  = true; newUnlocks.push('answers_500'); }
-      if (!achievements.answers_1000 && answers >= 1000) { achievements.answers_1000 = true; newUnlocks.push('answers_1000'); }
-
-      // ── Points achievements ────────────────────────────────────────────
+      const winCount = stats.win_count;
+      const sessions = stats.session_count;
+      const answers = stats.total_answers;
+      const maxStreak = session.streaks?.get(userId) ?? 0;
       const totalPts = stats.total_points;
-      if (!achievements.points_500   && totalPts >= 500)   { achievements.points_500   = true; newUnlocks.push('points_500'); }
-      if (!achievements.points_2000  && totalPts >= 2000)  { achievements.points_2000  = true; newUnlocks.push('points_2000'); }
-      if (!achievements.points_5000  && totalPts >= 5000)  { achievements.points_5000  = true; newUnlocks.push('points_5000'); }
-      if (!achievements.points_10000 && totalPts >= 10000) { achievements.points_10000 = true; newUnlocks.push('points_10000'); }
 
-      // ── Streak achievements (in-session streak) ────────────────────────
-      if (!achievements.streak_3  && maxStreak >= 3)  { achievements.streak_3  = true; newUnlocks.push('streak_3'); }
-      if (!achievements.streak_5  && maxStreak >= 5)  { achievements.streak_5  = true; newUnlocks.push('streak_5'); }
-      if (!achievements.streak_10 && maxStreak >= 10) { achievements.streak_10 = true; newUnlocks.push('streak_10'); }
-      if (!achievements.streak_15 && maxStreak >= 15) { achievements.streak_15 = true; newUnlocks.push('streak_15'); }
-      if (!achievements.streak_20 && maxStreak >= 20) { achievements.streak_20 = true; newUnlocks.push('streak_20'); }
+      // ── Win achievements ─────────────────────────────────────────────
+      checkAchievement(achievements, 'first_win', winCount >= 1, newUnlocks);
+      checkAchievement(achievements, 'win_5', winCount >= 5, newUnlocks);
+      checkAchievement(achievements, 'win_10', winCount >= 10, newUnlocks);
+      checkAchievement(achievements, 'win_25', winCount >= 25, newUnlocks);
+      checkAchievement(achievements, 'win_50', winCount >= 50, newUnlocks);
 
-      // ── Perfect session ────────────────────────────────────────────────
+      // ── Session count achievements ───────────────────────────────────
+      checkAchievement(achievements, 'sessions_5', sessions >= 5, newUnlocks);
+      checkAchievement(achievements, 'sessions_20', sessions >= 20, newUnlocks);
+      checkAchievement(achievements, 'sessions_50', sessions >= 50, newUnlocks);
+      checkAchievement(achievements, 'sessions_100', sessions >= 100, newUnlocks);
+
+      // ── Answer count achievements ────────────────────────────────────
+      checkAchievement(achievements, 'answers_10', answers >= 10, newUnlocks);
+      checkAchievement(achievements, 'answers_50', answers >= 50, newUnlocks);
+      checkAchievement(achievements, 'answers_100', answers >= 100, newUnlocks);
+      checkAchievement(achievements, 'answers_250', answers >= 250, newUnlocks);
+      checkAchievement(achievements, 'answers_500', answers >= 500, newUnlocks);
+      checkAchievement(achievements, 'answers_1000', answers >= 1000, newUnlocks);
+
+      // ── Points achievements ──────────────────────────────────────────
+      checkAchievement(achievements, 'points_500', totalPts >= 500, newUnlocks);
+      checkAchievement(achievements, 'points_2000', totalPts >= 2000, newUnlocks);
+      checkAchievement(achievements, 'points_5000', totalPts >= 5000, newUnlocks);
+      checkAchievement(achievements, 'points_10000', totalPts >= 10000, newUnlocks);
+
+      // ── Streak achievements ──────────────────────────────────────────
+      checkAchievement(achievements, 'streak_3', maxStreak >= 3, newUnlocks);
+      checkAchievement(achievements, 'streak_5', maxStreak >= 5, newUnlocks);
+      checkAchievement(achievements, 'streak_10', maxStreak >= 10, newUnlocks);
+      checkAchievement(achievements, 'streak_15', maxStreak >= 15, newUnlocks);
+      checkAchievement(achievements, 'streak_20', maxStreak >= 20, newUnlocks);
+
+      // ── Perfect session ──────────────────────────────────────────────
       if (!achievements.perfect_session) {
         const nonSkipped = questionsData.filter(q => !q.skipped);
         const allCorrect = nonSkipped.length > 0 && nonSkipped.every(q =>
           q.playerAnswers?.[userId]?.answerIndex === q.correctAnswer
         );
-        if (allCorrect) {
-          achievements.perfect_session = true;
-          newUnlocks.push('perfect_session');
-        }
+        checkAchievement(achievements, 'perfect_session', allCorrect, newUnlocks);
       }
 
-      // ── First answer (ever) ────────────────────────────────────────────
-      if (!achievements.first_answer && answers >= 1) {
-        achievements.first_answer = true;
-        newUnlocks.push('first_answer');
-      }
+      // ── First answer (ever) ──────────────────────────────────────────
+      checkAchievement(achievements, 'first_answer', answers >= 1, newUnlocks);
 
-      // ── Time-based: night owl / early bird ────────────────────────────
+      // ── Time-based: night owl / early bird ───────────────────────────
       const sessionHour = new Date(session.startedAt).getUTCHours();
-      if (!achievements.night_owl && sessionHour >= 0 && sessionHour < 4) {
-        achievements.night_owl = true;
-        newUnlocks.push('night_owl');
-      }
-      if (!achievements.early_bird && sessionHour >= 4 && sessionHour < 6) {
-        achievements.early_bird = true;
-        newUnlocks.push('early_bird');
-      }
+      checkAchievement(achievements, 'night_owl', sessionHour >= 0 && sessionHour < 4, newUnlocks);
+      checkAchievement(achievements, 'early_bird', sessionHour >= 4 && sessionHour < 6, newUnlocks);
 
-      // ── Persist new achievements ───────────────────────────────────────
+      // ── Persist new achievements ─────────────────────────────────────
       if (newUnlocks.length > 0) {
         queries.setPlayerAchievements(guildId, userId, JSON.stringify(achievements));
 
-        // DM each new achievement — skip silently if DMs closed
         for (const achId of newUnlocks) {
-          const achDef = config.achievements.find(a => a.id === achId);
+          const achDef = achievementMap.get(achId);
           if (!achDef) continue;
+
           try {
             const user = await client.users.fetch(userId);
             await user.send({
@@ -965,7 +1017,7 @@ async function evaluateAchievements(client, guildId, session, scoresData, questi
               ],
             });
           } catch {
-            // DMs disabled — silently skip (no fallback to channel)
+            // DMs disabled — silently skip
           }
         }
       }
@@ -976,9 +1028,9 @@ async function evaluateAchievements(client, guildId, session, scoresData, questi
   }
 }
 
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 // CHANNEL LOSS HANDLER
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 
 /**
  * Handle loss of access to the session channel mid-session.
@@ -993,12 +1045,11 @@ async function evaluateAchievements(client, guildId, session, scoresData, questi
  * @param {import('./sessionManager').SessionState} session
  */
 async function handleChannelLoss(client, session) {
-  const guildId      = session.guildId;
-  const settings     = queries.getGuildSettings(guildId);
-  const backupId     = settings?.backup_channel;
-  const hostId       = session.hostId;
+  const guildId = session.guildId;
+  const settings = queries.getGuildSettings(guildId);
+  const backupId = settings?.backup_channel;
+  const hostId = session.hostId;
 
-  // Archive and end the session first
   if (!session.isEnding) {
     await endSession(client, session, 'channel_lost');
   }
@@ -1024,7 +1075,9 @@ async function handleChannelLoss(client, session) {
         await logToOwner(client, `⚠️ [${guildId}] Channel loss — notified backup channel <#${backupId}>.`);
         return;
       }
-    } catch {}
+    } catch {
+      // Backup channel fetch failed
+    }
   }
 
   // Try DM to host
@@ -1033,18 +1086,20 @@ async function handleChannelLoss(client, session) {
     await host.send(errorMsg);
     await logToOwner(client, `⚠️ [${guildId}] Channel loss — DMed host <@${hostId}>.`);
     return;
-  } catch {}
+  } catch {
+    // DM failed
+  }
 
-  // All fallbacks failed — log only
+  // All fallbacks failed
   await logToOwner(client,
     `⚠️ **[${guildId}] Channel loss — all fallbacks failed.** ` +
     `No backup channel, host DMs closed.`
   );
 }
 
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 // UTILITIES
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 
 /**
  * Fetch a text channel by ID. Returns null on any error.
@@ -1069,9 +1124,9 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 // EXPORTS
-// ═══════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════
 
 module.exports = {
   // Session lifecycle
