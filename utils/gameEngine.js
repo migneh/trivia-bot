@@ -50,9 +50,9 @@ const REASON_FOOTER = {
   scheduled_override:   '📅 أُوقفت الجلسة بسبب جلسة مجدولة',
 };
 
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 // OWNER LOG HELPER
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 
 /**
  * Send a message to the configured owner log channel.
@@ -74,9 +74,9 @@ async function logToOwner(client, message) {
   }
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 // EMBED BUILDERS
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 
 /**
  * Build the live dashboard embed shown alongside each question.
@@ -237,9 +237,9 @@ function buildResultsEmbed(session, scoresData, reason) {
   return embed;
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 // BUTTON BUILDERS
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 
 /**
  * Build the 4-option answer button row.
@@ -269,9 +269,9 @@ function buildAnswerButtons(question, disabled = false, correctIdx = null) {
   return new ActionRowBuilder().addComponents(buttons);
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 // DASHBOARD UPDATE
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 
 /**
  * Enqueue a dashboard edit for the guild.
@@ -287,9 +287,9 @@ function scheduleDashboardUpdate(guildId) {
   });
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 // CORE GAME LOOP
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 
 /**
  * Start a session: post the initial dashboard, then post question 1.
@@ -652,9 +652,9 @@ async function skipQuestion(client, session, channel) {
   await postQuestion(client, sm.getSession(guildId), channel);
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 // SESSION END
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 
 /**
  * End a session for any reason.
@@ -697,7 +697,7 @@ async function endSession(client, session, reason) {
   const scoresData = Object.fromEntries(current.scores);
   const hasScores  = Object.values(scoresData).some(v => v > 0);
 
-  // Snapshot each question with per-player vote data
+  // Snapshot each question with per-player vote data and speed winners
   const questionsData = current.questions.map((q, idx) => ({
     id:            q.id,
     category:      q.category,
@@ -708,6 +708,8 @@ async function endSession(client, session, reason) {
     playerAnswers: idx === current.currentIndex
       ? { ...current.currentVotes }
       : {},
+    // Store players who won speed for this question (only for current question at end)
+    speedWinners:  idx === current.currentIndex ? [...current.speedFirstThisQuestion ?? []] : [],
   }));
 
   // ── Atomic SQLite archive ────────────────────────────────────────────────
@@ -792,9 +794,9 @@ async function endSession(client, session, reason) {
   );
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 // ASYNC POST-PROCESSING
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 
 /**
  * Update player_stats and evaluate achievements after a session ends.
@@ -826,10 +828,11 @@ async function asyncPostProcess(client, guildId, session, scoresData, questionsD
       if (vote && vote.answerIndex === q.correctAnswer) {
         correctCount++;
       }
+      // Count how many questions this player won speed for
+      if (q.speedWinners?.includes(userId)) {
+        speedFirstCount++;
+      }
     }
-
-    // Speed-first count is approximated from in-session data
-    // (exact per-question speed rank not stored in questionsData — this is for achievement tracking)
 
     const longestStreak = session.streaks?.get(userId) ?? 0;
 
@@ -840,7 +843,7 @@ async function asyncPostProcess(client, guildId, session, scoresData, questionsD
         wins:            isWin ? 1 : 0,
         answers:         correctCount,
         streak:          longestStreak,
-        speedFirstCount: 0, // tracked separately via question_stats if needed
+        speedFirstCount: speedFirstCount,  // Now correctly populated from stored speedWinners
       });
     } catch (err) {
       console.error(`[GameEngine] upsertPlayerStats failed for ${userId}:`, err.message);
@@ -973,9 +976,9 @@ async function evaluateAchievements(client, guildId, session, scoresData, questi
   }
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 // CHANNEL LOSS HANDLER
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 
 /**
  * Handle loss of access to the session channel mid-session.
@@ -1039,9 +1042,9 @@ async function handleChannelLoss(client, session) {
   );
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 // UTILITIES
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 
 /**
  * Fetch a text channel by ID. Returns null on any error.
@@ -1066,9 +1069,9 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 // EXPORTS
-// ═══════════════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════════[...]
 
 module.exports = {
   // Session lifecycle
