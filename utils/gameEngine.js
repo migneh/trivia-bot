@@ -228,7 +228,7 @@ function buildResultsEmbed(session, scoresData, reason) {
 
     for (let i = 0; i < chunks.length; i++) {
       embed.addFields({
-        name:  i === 0 ? '📋 بقية الترتيب' : '', // zero-width space for continuation
+        name:  i === 0 ? '📋 بقية الترتيب' : '​', // zero-width space for continuation
         value: chunks[i],
       });
     }
