@@ -1,0 +1,267 @@
+{
+  "prefix": "!trivia",
+  "discordToken": "YOUR_TOKEN_HERE",
+  "clientId": "YOUR_CLIENT_ID_HERE",
+  "databasePath": "./data/trivia.db",
+  "schedulesPath": "./schedules",
+  "ownerLogChannelId": "YOUR_LOG_CHANNEL_ID_HERE",
+
+  "categories": [
+    { "id": "gaming",       "nameAr": "🎮 الألعاب" },
+    { "id": "sports",       "nameAr": "⚽ الرياضة" },
+    { "id": "movies",       "nameAr": "🎬 الأفلام" },
+    { "id": "geography",    "nameAr": "🗺️ الجغرافيا" },
+    { "id": "history",      "nameAr": "📜 التاريخ" },
+    { "id": "science_tech", "nameAr": "🔬 العلوم والتكنولوجيا" },
+    { "id": "islam",        "nameAr": "☪️ الثقافة الإسلامية" },
+    { "id": "general",      "nameAr": "🌍 الثقافة العامة" },
+    { "id": "guess",        "nameAr": "🤔 خمّن..." },
+    { "id": "competitive",  "nameAr": "⚡ التنافسي" }
+  ],
+
+  "colors": {
+    "success":       "#00C851",
+    "error":         "#FF4444",
+    "warning":       "#FFBB33",
+    "info":          "#33B5E5",
+    "correctAnswer": "#00C851",
+    "wrongAnswer":   "#FF4444"
+  },
+
+  "titles": [
+    { "minPoints": 0,     "name": "🌱 المبتدئ" },
+    { "minPoints": 100,   "name": "📖 المتعلم" },
+    { "minPoints": 300,   "name": "🧠 المفكر" },
+    { "minPoints": 600,   "name": "⭐ الموهوب" },
+    { "minPoints": 1000,  "name": "🎯 المحترف" },
+    { "minPoints": 1500,  "name": "🔥 المتقدم" },
+    { "minPoints": 2000,  "name": "💎 الخبير" },
+    { "minPoints": 3000,  "name": "🏆 البطل" },
+    { "minPoints": 4500,  "name": "👑 الأسطورة" },
+    { "minPoints": 6000,  "name": "🌟 نجم المسابقات" },
+    { "minPoints": 8000,  "name": "🚀 الفضائي" },
+    { "minPoints": 10000, "name": "⚡ الصاعقة" },
+    { "minPoints": 15000, "name": "🦁 ملك الأسئلة" },
+    { "minPoints": 20000, "name": "🔮 العرّاف" },
+    { "minPoints": 30000, "name": "☀️ الشمس التي لا تغيب" }
+  ],
+
+  "achievements": [
+    {
+      "id": "first_answer",
+      "nameAr": "🎉 أول خطوة",
+      "descriptionAr": "أجب على سؤالك الأول في المسابقة"
+    },
+    {
+      "id": "first_win",
+      "nameAr": "🥇 الانتصار الأول",
+      "descriptionAr": "افز بجلستك الأولى"
+    },
+    {
+      "id": "win_5",
+      "nameAr": "🏅 بطل متكرر",
+      "descriptionAr": "افز بـ 5 جلسات"
+    },
+    {
+      "id": "win_10",
+      "nameAr": "🏆 عشرة انتصارات",
+      "descriptionAr": "افز بـ 10 جلسات"
+    },
+    {
+      "id": "win_25",
+      "nameAr": "👑 ملك المسابقات",
+      "descriptionAr": "افز بـ 25 جلسة"
+    },
+    {
+      "id": "win_50",
+      "nameAr": "🌟 أسطورة الفوز",
+      "descriptionAr": "افز بـ 50 جلسة"
+    },
+    {
+      "id": "streak_3",
+      "nameAr": "🔥 ثلاثة متتالية",
+      "descriptionAr": "3 إجابات صحيحة متتالية في جلسة واحدة"
+    },
+    {
+      "id": "streak_5",
+      "nameAr": "⚡ خمسة متتالية",
+      "descriptionAr": "5 إجابات صحيحة متتالية في جلسة واحدة"
+    },
+    {
+      "id": "streak_10",
+      "nameAr": "💥 عاشر متتالي",
+      "descriptionAr": "10 إجابات صحيحة متتالية في جلسة واحدة"
+    },
+    {
+      "id": "streak_15",
+      "nameAr": "🌪️ لا يُوقف",
+      "descriptionAr": "15 إجابة صحيحة متتالية في جلسة واحدة"
+    },
+    {
+      "id": "streak_20",
+      "nameAr": "🚀 آلة الإجابات",
+      "descriptionAr": "20 إجابة صحيحة متتالية في جلسة واحدة"
+    },
+    {
+      "id": "answers_10",
+      "nameAr": "✅ العشرة الأوائل",
+      "descriptionAr": "أجب على 10 أسئلة صحيحة إجمالاً"
+    },
+    {
+      "id": "answers_50",
+      "nameAr": "📚 نصف المئة",
+      "descriptionAr": "أجب على 50 سؤالاً صحيحاً إجمالاً"
+    },
+    {
+      "id": "answers_100",
+      "nameAr": "💯 مئوي",
+      "descriptionAr": "أجب على 100 سؤال صحيح إجمالاً"
+    },
+    {
+      "id": "answers_250",
+      "nameAr": "📖 القارئ الجاد",
+      "descriptionAr": "أجب على 250 سؤالاً صحيحاً إجمالاً"
+    },
+    {
+      "id": "answers_500",
+      "nameAr": "🧠 موسوعة حية",
+      "descriptionAr": "أجب على 500 سؤال صحيح إجمالاً"
+    },
+    {
+      "id": "answers_1000",
+      "nameAr": "🌌 الألف",
+      "descriptionAr": "أجب على 1000 سؤال صحيح إجمالاً"
+    },
+    {
+      "id": "perfect_session",
+      "nameAr": "💎 مثالي",
+      "descriptionAr": "أجب على كل الأسئلة في جلسة واحدة بشكل صحيح"
+    },
+    {
+      "id": "perfect_session_hard",
+      "nameAr": "🔥 مثالي على الصعب",
+      "descriptionAr": "أجب على كل الأسئلة الصعبة في جلسة واحدة بشكل صحيح"
+    },
+    {
+      "id": "speed_demon",
+      "nameAr": "⚡ شيطان السرعة",
+      "descriptionAr": "احتل المركز الأول في السرعة 5 مرات في جلسة واحدة"
+    },
+    {
+      "id": "speed_king",
+      "nameAr": "🚀 ملك السرعة",
+      "descriptionAr": "احتل المركز الأول في السرعة 20 مرة إجمالاً"
+    },
+    {
+      "id": "sessions_5",
+      "nameAr": "🎮 لاعب منتظم",
+      "descriptionAr": "شارك في 5 جلسات"
+    },
+    {
+      "id": "sessions_20",
+      "nameAr": "🎯 مدمن المسابقات",
+      "descriptionAr": "شارك في 20 جلسة"
+    },
+    {
+      "id": "sessions_50",
+      "nameAr": "🏟️ ابن الملعب",
+      "descriptionAr": "شارك في 50 جلسة"
+    },
+    {
+      "id": "sessions_100",
+      "nameAr": "🌟 مئة جلسة",
+      "descriptionAr": "شارك في 100 جلسة"
+    },
+    {
+      "id": "points_500",
+      "nameAr": "💰 نصف الألف",
+      "descriptionAr": "اجمع 500 نقطة إجمالية"
+    },
+    {
+      "id": "points_2000",
+      "nameAr": "💎 الألفان",
+      "descriptionAr": "اجمع 2000 نقطة إجمالية"
+    },
+    {
+      "id": "points_5000",
+      "nameAr": "🏆 خمسة آلاف",
+      "descriptionAr": "اجمع 5000 نقطة إجمالية"
+    },
+    {
+      "id": "points_10000",
+      "nameAr": "👑 عشرة آلاف",
+      "descriptionAr": "اجمع 10000 نقطة إجمالية"
+    },
+    {
+      "id": "geography_master",
+      "nameAr": "🗺️ جغرافي الأمة",
+      "descriptionAr": "أجب على 30 سؤال جغرافيا صحيح"
+    },
+    {
+      "id": "history_master",
+      "nameAr": "📜 مؤرخ العصر",
+      "descriptionAr": "أجب على 30 سؤال تاريخ صحيح"
+    },
+    {
+      "id": "science_master",
+      "nameAr": "🔬 عالم الزمن",
+      "descriptionAr": "أجب على 30 سؤال علوم وتكنولوجيا صحيح"
+    },
+    {
+      "id": "islam_master",
+      "nameAr": "☪️ العالم الراسخ",
+      "descriptionAr": "أجب على 30 سؤال ثقافة إسلامية صحيح"
+    },
+    {
+      "id": "gaming_master",
+      "nameAr": "🎮 برو غيمر",
+      "descriptionAr": "أجب على 30 سؤال ألعاب صحيح"
+    },
+    {
+      "id": "comeback_king",
+      "nameAr": "🔄 ملك العودة",
+      "descriptionAr": "افز بجلسة بعد أن كنت في المركز الأخير في منتصفها"
+    },
+    {
+      "id": "night_owl",
+      "nameAr": "🦉 بومة الليل",
+      "descriptionAr": "شارك في جلسة بعد منتصف الليل (UTC)"
+    },
+    {
+      "id": "early_bird",
+      "nameAr": "🐦 طير الفجر",
+      "descriptionAr": "شارك في جلسة قبل السادسة صباحاً (UTC)"
+    }
+  ],
+
+  "schedulingWarningSeconds":  30,
+  "preSessionReminderMinutes":  5,
+  "autoAdvanceDelayMs":       3000,
+  "imageValidationTimeoutMs": 2000,
+  "imageValidationTotalCapMs":5000,
+  "idleQuestionsThreshold":      3,
+  "stopConfirmationTimeoutMs":30000,
+  "wizardTimeoutMs":         120000,
+  "pointsPerCorrect":            10,
+
+  "speedBonuses": {
+    "first":  5,
+    "second": 3,
+    "third":  1
+  },
+
+  "streakBonus": {
+    "maxBonus":           5,
+    "startsAtConsecutive": 2
+  },
+
+  "completionBonus": 20,
+
+  "difficultyPoints": {
+    "easy":   5,
+    "medium": 10,
+    "hard":   20
+  },
+
+  "schemaVersion": 1
+    }
