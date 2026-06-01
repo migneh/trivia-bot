@@ -4,13 +4,13 @@
  *
  * Full 6-step interactive setup wizard for configuring the bot in a guild.
  *
- * ─── Permission ──────────────────────────────────────────────────────────────
+ * ─── Permission ──────────────────────────────────────────────────────────[...]
  *
  *   Requires Discord's built-in Administrator permission ONLY.
  *   This solves the chicken-and-egg problem: on first run, no manager
  *   roles are configured yet, so we can't use role-based checks.
  *
- * ─── Wizard steps ────────────────────────────────────────────────────────────
+ * ─── Wizard steps ──────────────────────────────────────────────────────────[...]
  *
  *   Step 1 — Session channel (ChannelSelect — text channels only)
  *   Step 2 — Backup channel (ChannelSelect + skip button)
@@ -57,10 +57,10 @@ const config    = require('../../config.json');
 const queries   = require('../../database/queries');
 const scheduler = require('../../scheduler/manager');
 
-// ─── Wizard timeout ────────────────────────────────────────────────────────────
+// ─── Wizard timeout ─────────────────────────────────────────────────────────[...]
 const WIZARD_TIMEOUT = config.wizardTimeoutMs ?? 120_000;
 
-// ─── Step colours ─────────────────────────────────────────────────────────────
+// ─── Step colours ──────────────────────────────────────────────────────────[...]
 const STEP_COLOR  = config.colors.info;
 const DONE_COLOR  = config.colors.success;
 const WARN_COLOR  = config.colors.warning;
@@ -72,9 +72,9 @@ const UTC_NOTE =
   'مثال: إذا أردت الساعة 10 مساءً بتوقيت الرياض (UTC+3)، اختر **19:00 UTC**.';
 
 
-// ═══════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════[...]
 // COMMAND DEFINITION
-// ═══════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════[...]
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -87,15 +87,15 @@ module.exports = {
    * @param {import('discord.js').ChatInputCommandInteraction} interaction
    */
   async execute(interaction) {
-    await interaction.deferReply({ ephemeral: true });
+    await interaction.deferReply({ flags: 64 }); // ephemeral using flags
     await runSetupWizard(interaction);
   },
 };
 
 
-// ═══════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════[...]
 // MAIN WIZARD RUNNER  (exported for prefix router)
-// ═══════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════[...]
 
 /**
  * Run the full 6-step setup wizard.
@@ -139,9 +139,9 @@ async function runSetupWizard(interaction) {
 }
 
 
-// ═══════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════[...]
 // STEP HELPERS
-// ═══════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════[...]
 
 /**
  * Generic "wait for one component interaction" helper.
@@ -211,7 +211,7 @@ async function runStep1(interaction, draft) {
   const i = await waitForComponent(msg, userId, ['setup_session_channel']);
   if (!i) { await showTimeoutNotice(interaction); return false; }
 
-  await i.deferUpdate();
+  await i.deferUpdate().catch(() => {});
   draft.session_channel = i.values[0];
   return true;
 }
@@ -255,7 +255,7 @@ async function runStep2(interaction, draft) {
   const i = await waitForComponent(msg, userId, ['setup_backup_channel', 'setup_skip_backup']);
   if (!i) { await showTimeoutNotice(interaction); return false; }
 
-  await i.deferUpdate();
+  await i.deferUpdate().catch(() => {});
   draft.backup_channel = i.customId === 'setup_backup_channel' ? i.values[0] : null;
   return true;
 }
@@ -301,7 +301,7 @@ async function runStep3(interaction, draft) {
   const i = await waitForComponent(msg, userId, ['setup_manager_roles', 'setup_skip_roles']);
   if (!i) { await showTimeoutNotice(interaction); return false; }
 
-  await i.deferUpdate();
+  await i.deferUpdate().catch(() => {});
   draft.manager_roles = i.customId === 'setup_manager_roles' ? i.values : [];
   return true;
 }
@@ -353,7 +353,7 @@ async function runStep4(interaction, draft) {
   const i4a = await waitForComponent(msg, userId, ['setup_schedule_mode']);
   if (!i4a) { await showTimeoutNotice(interaction); return false; }
 
-  await i4a.deferUpdate();
+  await i4a.deferUpdate().catch(() => {});
   draft.schedule_mode = i4a.values[0];
 
   // ── No scheduling → skip sub-steps ────────────────────────────────────────
@@ -397,7 +397,7 @@ async function runStep4(interaction, draft) {
   const i4b = await waitForComponent(msg, userId, ['setup_schedule_time']);
   if (!i4b) { await showTimeoutNotice(interaction); return false; }
 
-  await i4b.deferUpdate();
+  await i4b.deferUpdate().catch(() => {});
   draft.schedule_config.utcTime = i4b.values[0];
 
   // ── Sub-step 4c: Weekdays (weekly mode only) ───────────────────────────────
@@ -445,7 +445,7 @@ async function runStep4(interaction, draft) {
     const i4c = await waitForComponent(msg, userId, ['setup_schedule_days']);
     if (!i4c) { await showTimeoutNotice(interaction); return false; }
 
-    await i4c.deferUpdate();
+    await i4c.deferUpdate().catch(() => {});
     draft.schedule_config.weekdays = i4c.values.map(Number).sort((a, b) => a - b);
   }
 
@@ -501,7 +501,7 @@ async function runStep5(interaction, draft) {
   const i = await waitForComponent(msg, userId, ['setup_categories', 'setup_skip_cats']);
   if (!i) { await showTimeoutNotice(interaction); return false; }
 
-  await i.deferUpdate();
+  await i.deferUpdate().catch(() => {});
   // Empty array = all categories (no restriction)
   draft.enabled_categories = i.customId === 'setup_categories' ? i.values : [];
   return true;
@@ -582,9 +582,9 @@ async function runStep6(interaction, draft) {
   const i = await waitForComponent(msg, userId, ['setup_save', 'setup_abort']);
   if (!i) { await showTimeoutNotice(interaction); return; }
 
-  await i.deferUpdate();
+  await i.deferUpdate().catch(() => {});
 
-  // ── Abort ─────────────────────────────────────────────────────────────────
+  // ── Abort ────────────────────────────────────────────────────────────[...]
   if (i.customId === 'setup_abort') {
     await interaction.editReply({
       content:    '❌ **تم إلغاء الإعداد** — لم يتم حفظ أي تغييرات.',
@@ -594,7 +594,7 @@ async function runStep6(interaction, draft) {
     return;
   }
 
-  // ── Save ──────────────────────────────────────────────────────────────────
+  // ── Save ─────────────────────────────────────────────────────────────[...]
   try {
     queries.upsertGuildSettings(guildId, {
       session_channel:    draft.session_channel,
@@ -655,9 +655,9 @@ async function runStep6(interaction, draft) {
 }
 
 
-// ═══════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════[...]
 // UTILITY HELPERS
-// ═══════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════[...]
 
 /**
  * Build a human-readable schedule description from the draft.
@@ -687,8 +687,8 @@ function buildScheduleDisplay(draft) {
 }
 
 
-// ═══════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════[...]
 // EXPORTS
-// ═══════════════════════════════════════════════════════════════════════════════
+// ═════════════════════════════════════════════════════════════════[...]
 
 module.exports.runSetupWizard = runSetupWizard;
