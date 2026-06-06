@@ -2,69 +2,33 @@
 /**
  * commands/slash/trivia-start.js
  *
- * Starts a new trivia session via an interactive setup wizard.
- *
- * ─── Flow ────────────────────────────────────────────────────────────────────
- *
- *  1. Permission check (manager roles OR Administrator).
- *  2. Guard checks (session channel configured, no active session).
- *  3. Build setup wizard UI:
- *       Row 1 — Question count select (5 / 10 / 15 / 20 / 25 / 30)
- *       Row 2 — Time per question select (10 / 15 / 20 / 30 / 45 / 60 sec)
- *       Row 3 — Category multi-select (guild-enabled categories only)
- *       Row 4 — Start button (disabled until all 3 selections made) + Cancel
- *  4. Collect selections via inline MessageComponentCollector.
- *     Start button enables only when count + time + categories are all chosen.
- *  5. On confirm:
- *       a. Check question pool — warn if fewer available than requested.
- *       b. Validate images (parallel HEAD requests with cap).
- *       c. Create session in sessionManager.
- *       d. Fetch session channel and call startSession().
- *
- * ─── Pool exhaustion ─────────────────────────────────────────────────────────
- *
- *  If the available pool is smaller than the requested count, show a
- *  confirmation embed with "متابعة بالعدد المتاح" and "إلغاء" buttons.
- *  If pool is 0, abort immediately.
- *
- * ─── Wizard timeout ──────────────────────────────────────────────────────────
- *
- *  wizardTimeoutMs (config.json) — 2 minutes by default.
- *  On timeout: edit reply to Arabic timeout message, disable all components.
- *
- * ─── Race condition guard ────────────────────────────────────────────────────
- *
- *  Between wizard confirm and session creation, another user may have started
- *  a session. sm.createSession() returns false in that case — handled gracefully.
+ * تحسينات مطبقة:
+ * 1. فحص صلاحيات البوت في قناة الجلسة مبكراً (Pre-flight check).
+ * 2. التحديد التلقائي للفئة إذا كانت هناك فئة واحدة فقط مفعلة.
+ * 3. عرض أسماء الفئات المختارة في الـ Embed بدلاً من العدد فقط.
+ * 4. منع النقر المزدوج (Race Condition) عبر تعطيل الأزرار فور الضغط عليها.
+ * 5. التعامل مع خطأ 10008 (حذف الرسالة) لمنع انهيار البوت.
+ * 6. تحسين فلتر الـ Collector لتقليل العبء.
  */
 
 const {
-  SlashCommandBuilder,
-  EmbedBuilder,
-  ActionRowBuilder,
-  StringSelectMenuBuilder,
-  StringSelectMenuOptionBuilder,
-  ButtonBuilder,
-  ButtonStyle,
-  PermissionFlagsBits,
+  SlashCommandBuilder, EmbedBuilder,
+  ActionRowBuilder, StringSelectMenuBuilder, StringSelectMenuOptionBuilder,
+  ButtonBuilder, ButtonStyle, PermissionFlagsBits,
 } = require('discord.js');
 
-const config  = require('../../config.json');
-const sm      = require('../../utils/sessionManager');
-const qb      = require('../../utils/questionBank');
+const config   = require('../../config.json');
+const sm       = require('../../utils/sessionManager');
+const qb       = require('../../utils/questionBank');
 const { validateQuestionImages, applyImageValidation } = require('../../utils/imageValidator');
 const { startSession } = require('../../utils/gameEngine');
-const queries = require('../../database/queries');
+const queries  = require('../../database/queries');
 
-// ─── Constants ────────────────────────────────────────────────────────────────
 const QUESTION_COUNT_OPTIONS = [5, 10, 15, 20, 25, 30];
 const TIME_LIMIT_OPTIONS     = [10, 15, 20, 30, 45, 60];
-const POOL_CONFIRM_TIMEOUT   = 30_000; // 30 seconds
+const POOL_CONFIRM_TIMEOUT   = 30_000;
+const COUNTDOWN_SECONDS      = 5;
 
-
-// ═══════════════════════════════════════════════════════════════════════════════
-// COMMAND DEFINITION
-// ═══════════════════════════════════════════════════════════════════════════════
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -72,17 +36,13 @@ module.exports = {
     .setDescription('ابدأ جلسة مسابقة ثقافية عربية')
     .setDMPermission(false),
 
-  /**
-   * @param {import('discord.js').ChatInputCommandInteraction} interaction
-   */
   async execute(interaction) {
-    // Always defer immediately — setup wizard takes time to build
     await interaction.deferReply({ ephemeral: true });
 
     const guildId = interaction.guildId;
     const client  = interaction.client;
 
-    // ── Permission check ───────────────────────────────────────────────────────
+    // ── Permission check ────────────────────────────────────────────────────
     const settings = queries.getGuildSettings(guildId);
 
     if (!canManageSession(interaction, settings)) {
@@ -91,303 +51,260 @@ module.exports = {
       });
     }
 
-    // ── Guard: session channel must be configured ──────────────────────────────
     if (!settings?.session_channel) {
       return interaction.editReply({
-        content:
-          '⚠️ لم يتم إعداد قناة الجلسة بعد.\n' +
-          'استخدم `/trivia-setup` أولاً لتهيئة البوت.',
+        content: '⚠️ لم يتم إعداد قناة الجلسة بعد.\nاستخدم `/trivia-setup` أولاً.',
       });
     }
 
-    // ── Guard: no active session ───────────────────────────────────────────────
     if (sm.hasSession(guildId)) {
       return interaction.editReply({
-        content: '⚠️ هناك جلسة مسابقة نشطة بالفعل في هذا السيرفر.\nاستخدم `/trivia-stop` لإنهائها أولاً.',
+        content: '⚠️ هناك جلسة نشطة بالفعل في هذا السيرفر.\nاستخدم `/trivia-stop` لإنهائها أولاً.',
       });
     }
 
-    // ── Resolve available categories ───────────────────────────────────────────
+    // ── Pre-flight Channel & Permission Check ────────────────────────────────
+    let targetChannel;
+    try {
+      targetChannel = await client.channels.fetch(settings.session_channel);
+    } catch {}
+
+    if (!targetChannel || !targetChannel.isTextBased()) {
+      return interaction.editReply({
+        content: '⛔ قناة الجلسة المحفوظة في الإعدادات لم تعد موجودة أو ليست قناة نصية.\nاستخدم `/trivia-setup` لإعادة تعيينها.',
+      });
+    }
+
+    const botPerms = targetChannel.permissionsFor(client.user);
+    if (!botPerms?.has(['SendMessages', 'EmbedLinks', 'ReadMessageHistory'])) {
+      return interaction.editReply({
+        content: `⛔ البوت يفتقد لصلاحيات أساسية في القناة <#${settings.session_channel}>.\nيرجى منحه صلاحيات: إرسال الرسائل، تضمين الروابط، وقراءة سجل الرسائل.`,
+      });
+    }
+
+    // ── Resolve categories ──────────────────────────────────────────────────
     const enabledCats   = parseJson(settings.enabled_categories, []);
     const availableCats = config.categories.filter(c =>
       enabledCats.length === 0 || enabledCats.includes(c.id)
     );
 
-    if (availableCats.length === 0) {
+    if (!availableCats.length) {
       return interaction.editReply({
         content: '⚠️ لا توجد فئات مفعّلة في هذا السيرفر.\nراجع إعدادات البوت عبر `/trivia-setup`.',
       });
     }
 
-    // ── Build wizard UI ────────────────────────────────────────────────────────
-    const { embed, rows, menus, buttons } = buildWizardUI(availableCats);
+    // ── State ───────────────────────────────────────────────────────────────
+    let selectedCount = null;
+    let selectedTime  = null;
+    // التحديد التلقائي إذا كانت هناك فئة واحدة فقط
+    let selectedCats  = availableCats.length === 1 ? [availableCats[0].id] : null;
+    let wizardDone    = false;
 
+    // ── UI Builders ──────────────────────────────────────────────────────────
+    const buildStartBtn = (disabled) => new ButtonBuilder()
+      .setCustomId('start_confirm')
+      .setLabel('ابدأ الجلسة 🚀')
+      .setStyle(ButtonStyle.Success)
+      .setDisabled(disabled);
+
+    const buildCancelBtn = () => new ButtonBuilder()
+      .setCustomId('start_cancel')
+      .setLabel('إلغاء')
+      .setStyle(ButtonStyle.Secondary);
+
+    const buildEmbed = () => {
+      const allSelected = selectedCount !== null && selectedTime !== null && selectedCats !== null;
+      
+      // عرض أسماء الفئات المختارة
+      const catDisplay = selectedCats 
+        ? selectedCats.map(id => availableCats.find(c => c.id === id)?.nameAr || id).join('، ') 
+        : '─── اختر من القائمة أعلاه';
+
+      return new EmbedBuilder()
+        .setTitle('🎮 إعداد جلسة المسابقة')
+        .setDescription(
+          `① **الأسئلة:** ${selectedCount !== null ? `**${selectedCount}** سؤالاً ✅` : '─── اختر من القائمة أعلاه'}\n` +
+          `② **الوقت:** ${selectedTime  !== null ? `**${selectedTime}** ثانية ✅` : '─── اختر من القائمة أعلاه'}\n` +
+          `③ **الفئات:** ${selectedCats  !== null ? `${catDisplay} ✅` : '─── اختر من القائمة أعلاه'}\n\n` +
+          (allSelected
+            ? '✅ **جاهز!** اضغط **ابدأ الجلسة** للمتابعة.'
+            : '⬆️ اختر جميع الخيارات أعلاه لتفعيل زر البدء.')
+        )
+        .setColor(allSelected ? config.colors.success : config.colors.info)
+        .setFooter({ text: `لديك ${Math.floor(config.wizardTimeoutMs / 60000)} دقائق للإعداد` });
+    };
+
+    const buildRows = () => {
+      const allSelected = selectedCount !== null && selectedTime !== null && selectedCats !== null;
+
+      const countMenu = new StringSelectMenuBuilder()
+        .setCustomId('start_count')
+        .setPlaceholder('① عدد الأسئلة')
+        .addOptions(QUESTION_COUNT_OPTIONS.map(n => {
+          const opt = new StringSelectMenuOptionBuilder()
+            .setLabel(`${n} سؤالاً`)
+            .setDescription(n <= 10 ? 'جلسة قصيرة' : n <= 20 ? 'جلسة متوسطة' : 'جلسة طويلة')
+            .setValue(String(n));
+          if (selectedCount === n) opt.setDefault(true);
+          return opt;
+        }));
+
+      const timeMenu = new StringSelectMenuBuilder()
+        .setCustomId('start_time')
+        .setPlaceholder('② وقت كل سؤال (ثواني)')
+        .addOptions(TIME_LIMIT_OPTIONS.map(n => {
+          const opt = new StringSelectMenuOptionBuilder()
+            .setLabel(`${n} ثانية`)
+            .setDescription(n <= 15 ? 'سريع' : n <= 25 ? 'متوسط' : 'مريح')
+            .setValue(String(n));
+          if (selectedTime === n) opt.setDefault(true);
+          return opt;
+        }));
+
+      const catMenu = new StringSelectMenuBuilder()
+        .setCustomId('start_cats')
+        .setPlaceholder(availableCats.length === 1 ? '③ الفئة (محددة تلقائياً)' : '③ الفئات (اختر واحدة أو أكثر)')
+        .setMinValues(1)
+        .setMaxValues(availableCats.length)
+        .setDisabled(availableCats.length === 1) // تعطيل القائمة إذا كانت فئة واحدة
+        .addOptions(availableCats.map(c => {
+          const opt = new StringSelectMenuOptionBuilder()
+            .setLabel(c.nameAr)
+            .setValue(c.id);
+          if (selectedCats?.includes(c.id)) opt.setDefault(true);
+          return opt;
+        }));
+
+      return [
+        new ActionRowBuilder().addComponents(countMenu),
+        new ActionRowBuilder().addComponents(timeMenu),
+        new ActionRowBuilder().addComponents(catMenu),
+        new ActionRowBuilder().addComponents(buildStartBtn(!allSelected), buildCancelBtn()),
+      ];
+    };
+
+    // ── Initial render ────────────────────────────────────────────────────────
     const msg = await interaction.editReply({
-      embeds:     [embed],
-      components: rows,
-      fetchReply: true,
+      embeds:     [buildEmbed()],
+      components: buildRows(),
     });
 
-    // ── Run the wizard ─────────────────────────────────────────────────────────
-    await runSetupWizard({
-      interaction,
-      msg,
-      guildId,
-      client,
-      settings,
-      availableCats,
-      embed,
-      menus,
-      buttons,
+    // ── Collector ─────────────────────────────────────────────────────────────
+    const collector = msg.createMessageComponentCollector({
+      // فلتر محسّن لتقليل العبء
+      filter: i => i.user.id === interaction.user.id && 
+                   ['start_count', 'start_time', 'start_cats', 'start_confirm', 'start_cancel'].includes(i.customId),
+      time:   config.wizardTimeoutMs,
+    });
+
+    collector.on('collect', async i => {
+      try {
+        if (wizardDone) {
+          return await i.deferUpdate().catch(() => {});
+        }
+
+        if (i.customId === 'start_cancel') {
+          wizardDone = true;
+          // منع النقر المزدوج عبر تعطيل الأزرار
+          const disabledRows = buildRows().map(row => {
+            row.components.forEach(comp => comp.setDisabled(true));
+            return row;
+          });
+          await i.update({ content: '❌ تم إلغاء إعداد الجلسة.', embeds: [], components: disabledRows });
+          collector.stop('cancelled');
+          return;
+        }
+
+        if (i.customId === 'start_confirm') {
+          if (!selectedCount || !selectedTime || !selectedCats) {
+            return await i.deferUpdate().catch(() => {});
+          }
+          wizardDone = true;
+          // منع النقر المزدوج عبر تعطيل الأزرار
+          const disabledRows = buildRows().map(row => {
+            row.components.forEach(comp => comp.setDisabled(true));
+            return row;
+          });
+          await i.update({ content: '⏳ جاري التحضير...', embeds: [], components: disabledRows });
+          collector.stop('confirmed');
+          return;
+        }
+
+        // ── Select menus ────────────────────────────────────────────────────────
+        if (i.customId === 'start_count') selectedCount = parseInt(i.values[0], 10);
+        if (i.customId === 'start_time')  selectedTime  = parseInt(i.values[0], 10);
+        if (i.customId === 'start_cats')  selectedCats  = i.values;
+
+        await i.update({
+          embeds:     [buildEmbed()],
+          components: buildRows(),
+        });
+      } catch (err) {
+        // التعامل مع حذف الرسالة (10008 Unknown Message)
+        if (err.code === 10008) {
+          wizardDone = true;
+          collector.stop('message_deleted');
+          return;
+        }
+        if (err.code === 40060 || err.code === 10062) return;
+        console.error('[trivia-start collect error]', err);
+      }
+    });
+
+    collector.on('end', async (_, reason) => {
+      try {
+        if (reason === 'time') {
+          return await interaction.editReply({
+            content:    '⏰ انتهت مهلة الإعداد. يرجى إعادة تشغيل `/trivia-start`.',
+            embeds:     [],
+            components: [],
+          });
+        }
+
+        if (reason !== 'confirmed') return;
+
+        await handleConfirmed({
+          interaction, msg, guildId, client, settings,
+          selectedCount, selectedTime, selectedCats,
+        });
+      } catch (err) {
+        if (err.code === 10008 || err.code === 40060 || err.code === 10062) return;
+        console.error('[trivia-start end error]', err);
+      }
     });
   },
 };
 
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// WIZARD UI BUILDER
-// ═══════════════════════════════════════════════════════════════════════════════
-
-/**
- * Build all UI components for the session setup wizard.
- *
- * @param {{ id: string, nameAr: string }[]} availableCats
- * @returns {{ embed, rows, menus, buttons }}
- */
-function buildWizardUI(availableCats) {
-  const countMenu = new StringSelectMenuBuilder()
-    .setCustomId('start_count')
-    .setPlaceholder('① عدد الأسئلة')
-    .addOptions(
-      QUESTION_COUNT_OPTIONS.map(n =>
-        new StringSelectMenuOptionBuilder()
-          .setLabel(`${n} سؤالاً`)
-          .setDescription(n <= 10 ? 'جلسة قصيرة' : n <= 20 ? 'جلسة متوسطة' : 'جلسة طويلة')
-          .setValue(String(n))
-      )
-    );
-
-  const timeMenu = new StringSelectMenuBuilder()
-    .setCustomId('start_time')
-    .setPlaceholder('② وقت كل سؤال (ثواني)')
-    .addOptions(
-      TIME_LIMIT_OPTIONS.map(n =>
-        new StringSelectMenuOptionBuilder()
-          .setLabel(`${n} ثانية`)
-          .setDescription(n <= 15 ? 'سريع جداً' : n <= 25 ? 'متوسط' : 'مريح')
-          .setValue(String(n))
-      )
-    );
-
-  const catMenu = new StringSelectMenuBuilder()
-    .setCustomId('start_cats')
-    .setPlaceholder('③ الفئات (اختر واحدة أو أكثر)')
-    .setMinValues(1)
-    .setMaxValues(availableCats.length)
-    .addOptions(
-      availableCats.map(c =>
-        new StringSelectMenuOptionBuilder()
-          .setLabel(c.nameAr)
-          .setValue(c.id)
-      )
-    );
-
-  const startBtn = new ButtonBuilder()
-    .setCustomId('start_confirm')
-    .setLabel('ابدأ الجلسة 🚀')
-    .setStyle(ButtonStyle.Success)
-    .setDisabled(true);
-
-  const cancelBtn = new ButtonBuilder()
-    .setCustomId('start_cancel')
-    .setLabel('إلغاء')
-    .setStyle(ButtonStyle.Secondary);
-
-  const embed = new EmbedBuilder()
-    .setTitle('🎮 إعداد جلسة المسابقة')
-    .setDescription(
-      'اختر الإعدادات التالية ثم اضغط **ابدأ الجلسة**:\n\n' +
-      '① **عدد الأسئلة** — كم سؤالاً تريد في هذه الجلسة؟\n' +
-      '② **وقت كل سؤال** — كم ثانية لكل إجابة؟\n' +
-      '③ **الفئات** — من أي مجالات تريد الأسئلة؟'
-    )
-    .setColor(config.colors.info)
-    .setFooter({ text: `لديك ${Math.floor(config.wizardTimeoutMs / 60000)} دقائق لإتمام الإعداد` });
-
-  const rows = [
-    new ActionRowBuilder().addComponents(countMenu),
-    new ActionRowBuilder().addComponents(timeMenu),
-    new ActionRowBuilder().addComponents(catMenu),
-    new ActionRowBuilder().addComponents(startBtn, cancelBtn),
-  ];
-
-  return {
-    embed,
-    rows,
-    menus:   { countMenu, timeMenu, catMenu },
-    buttons: { startBtn, cancelBtn },
-  };
-}
-
-
-// ═══════════════════════════════════════════════════════════════════════════════
-// SETUP WIZARD LOGIC
-// ═══════════════════════════════════════════════════════════════════════════════
-
-/**
- * Run the interactive setup wizard.
- * Collects selections and routes to launchSession() on confirm.
- */
-async function runSetupWizard({ interaction, msg, guildId, client, settings, availableCats, embed, menus, buttons }) {
-  const { countMenu, timeMenu, catMenu } = menus;
-  const { startBtn, cancelBtn }          = buttons;
-
-  // Track selections
-  let selectedCount = null;
-  let selectedTime  = null;
-  let selectedCats  = null;
-
-  const collector = msg.createMessageComponentCollector({
-    filter: i => i.user.id === interaction.user.id,
-    time:   config.wizardTimeoutMs,
-  });
-
-  collector.on('collect', async i => {
-
-    // ── Cancel button ──────────────────────────────────────────────────────────
-    if (i.customId === 'start_cancel') {
-      await i.update({
-        content:    '❌ تم إلغاء إعداد الجلسة.',
-        embeds:     [],
-        components: [],
-      });
-      collector.stop('cancelled');
-      return;
-    }
-
-    // ── Confirm button ─────────────────────────────────────────────────────────
-    if (i.customId === 'start_confirm') {
-      await i.deferUpdate();
-      collector.stop('confirmed');
-      return;
-    }
-
-    // ── Selection menus ────────────────────────────────────────────────────────
-    await i.deferUpdate();
-
-    if (i.customId === 'start_count') selectedCount = parseInt(i.values[0], 10);
-    if (i.customId === 'start_time')  selectedTime  = parseInt(i.values[0], 10);
-    if (i.customId === 'start_cats')  selectedCats  = i.values;
-
-    // Update embed description and toggle start button
-    const allSelected = selectedCount !== null && selectedTime !== null && selectedCats !== null;
-    startBtn.setDisabled(!allSelected);
-
-    const descLines = [
-      `① **الأسئلة:** ${selectedCount !== null ? `**${selectedCount}** سؤالاً` : '—'}`,
-      `② **الوقت:** ${selectedTime  !== null ? `**${selectedTime}** ثانية` : '—'}`,
-      `③ **الفئات:** ${selectedCats  !== null ? `**${selectedCats.length}** فئة مختارة` : '—'}`,
-      '',
-      allSelected
-        ? '✅ جاهز! اضغط **ابدأ الجلسة** للمتابعة.'
-        : '⬆️ اختر جميع الخيارات أعلاه لتفعيل زر البدء.',
-    ];
-
-    await interaction.editReply({
-      embeds: [
-        EmbedBuilder.from(embed).setDescription(descLines.join('\n')),
-      ],
-      components: [
-        new ActionRowBuilder().addComponents(countMenu),
-        new ActionRowBuilder().addComponents(timeMenu),
-        new ActionRowBuilder().addComponents(catMenu),
-        new ActionRowBuilder().addComponents(startBtn, cancelBtn),
-      ],
-    }).catch(() => {});
-  });
-
-  collector.on('end', async (_, reason) => {
-
-    // ── Timeout ────────────────────────────────────────────────────────────────
-    if (reason === 'time') {
-      await interaction.editReply({
-        content:    '⏰ انتهت مهلة الإعداد. يرجى إعادة تشغيل الأمر.',
-        embeds:     [],
-        components: [],
-      }).catch(() => {});
-      return;
-    }
-
-    // ── Cancelled ──────────────────────────────────────────────────────────────
-    if (reason !== 'confirmed') return;
-
-    // ── Confirmed — validate and launch ───────────────────────────────────────
-    await handleConfirmed({
-      interaction,
-      msg,
-      guildId,
-      client,
-      settings,
-      selectedCount,
-      selectedTime,
-      selectedCats,
-    });
-  });
-}
-
-
-// ═══════════════════════════════════════════════════════════════════════════════
-// CONFIRM HANDLER
-// ═══════════════════════════════════════════════════════════════════════════════
-
-/**
- * Handle the wizard confirm action.
- * Checks pool size, shows confirmation if needed, then launches.
- */
+// ─── Confirm handler ─────────────────────────────────────────────────────────
 async function handleConfirmed({ interaction, msg, guildId, client, settings, selectedCount, selectedTime, selectedCats }) {
-
-  // Race condition guard — another user may have started a session
   if (sm.hasSession(guildId)) {
-    await interaction.editReply({
-      content:    '⚠️ بدأت جلسة أخرى في هذا السيرفر قبل تأكيدك.',
-      embeds:     [],
-      components: [],
-    });
-    return;
+    return interaction.editReply({
+      content: '⚠️ بدأت جلسة أخرى في هذا السيرفر قبل تأكيدك.',
+      embeds: [], components: [],
+    }).catch(() => {});
   }
 
-  // Select questions from bank
-  const pool = qb.selectQuestions(selectedCats, selectedCount);
+  let pool = qb.selectQuestions(selectedCats, selectedCount);
 
-  // ── Pool exhaustion warning ────────────────────────────────────────────────
   if (pool.length === 0) {
-    await interaction.editReply({
-      embeds: [
-        new EmbedBuilder()
-          .setTitle('⛔ لا توجد أسئلة متاحة')
-          .setDescription(
-            'لا توجد أسئلة في الفئات المختارة.\n' +
-            'جرّب اختيار فئات أخرى أو راجع قاعدة الأسئلة.'
-          )
-          .setColor(config.colors.error),
-      ],
+    return interaction.editReply({
+      embeds: [new EmbedBuilder()
+        .setTitle('⛔ لا توجد أسئلة متاحة')
+        .setDescription('لا توجد أسئلة في الفئات المختارة. جرّب فئات أخرى.')
+        .setColor(config.colors.error)],
       components: [],
-    });
-    return;
+    }).catch(() => {});
   }
 
   if (pool.length < selectedCount) {
-    // Fewer questions available than requested — ask for confirmation
     const confirmed = await askPoolConfirmation(interaction, msg, pool.length, selectedCount);
-    if (!confirmed) return; // user cancelled or timed out
+    if (!confirmed) return;
   }
 
-  // Launch with however many we have (up to selectedCount)
   await launchSession({
-    interaction,
-    guildId,
-    client,
-    settings,
+    interaction, guildId, client, settings,
     questions:    pool.slice(0, selectedCount),
     timeLimitSec: selectedTime,
     categories:   selectedCats,
@@ -395,74 +312,62 @@ async function handleConfirmed({ interaction, msg, guildId, client, settings, se
 }
 
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// POOL EXHAUSTION CONFIRMATION
-// ═══════════════════════════════════════════════════════════════════════════════
-
-/**
- * Show a confirmation prompt when fewer questions are available than requested.
- * Returns true if the user confirms, false if they cancel or time out.
- *
- * @param {import('discord.js').ChatInputCommandInteraction} interaction
- * @param {import('discord.js').Message} msg
- * @param {number} available
- * @param {number} requested
- * @returns {Promise<boolean>}
- */
+// ─── Pool exhaustion confirmation ─────────────────────────────────────────────
 async function askPoolConfirmation(interaction, msg, available, requested) {
   await interaction.editReply({
-    embeds: [
-      new EmbedBuilder()
-        .setTitle('⚠️ عدد الأسئلة المتاحة أقل من المطلوب')
-        .setDescription(
-          `طلبت **${requested}** سؤالاً، لكن المتاح في الفئات المختارة **${available}** سؤال فقط.\n\n` +
-          'هل تريد المتابعة بعدد الأسئلة المتاح؟'
-        )
-        .setColor(config.colors.warning),
-    ],
-    components: [
-      new ActionRowBuilder().addComponents(
-        new ButtonBuilder()
-          .setCustomId('pool_confirm')
-          .setLabel(`متابعة بـ ${available} سؤال`)
-          .setStyle(ButtonStyle.Primary),
-        new ButtonBuilder()
-          .setCustomId('pool_cancel')
-          .setLabel('إلغاء')
-          .setStyle(ButtonStyle.Secondary),
-      ),
-    ],
-  });
+    embeds: [new EmbedBuilder()
+      .setTitle('⚠️ عدد الأسئلة المتاحة أقل من المطلوب')
+      .setDescription(
+        `طلبت **${requested}** سؤالاً، لكن المتاح **${available}** سؤال فقط.\n\n` +
+        'هل تريد المتابعة بعدد الأسئلة المتاح؟'
+      )
+      .setColor(config.colors.warning)],
+    components: [new ActionRowBuilder().addComponents(
+      new ButtonBuilder().setCustomId('pool_confirm').setLabel(`متابعة بـ ${available} سؤال`).setStyle(ButtonStyle.Primary),
+      new ButtonBuilder().setCustomId('pool_cancel').setLabel('إلغاء').setStyle(ButtonStyle.Secondary),
+    )],
+  }).catch(() => {});
 
   return new Promise(resolve => {
-    const poolCollector = msg.createMessageComponentCollector({
-      filter: i => i.user.id === interaction.user.id &&
-                   (i.customId === 'pool_confirm' || i.customId === 'pool_cancel'),
+    const col = msg.createMessageComponentCollector({
+      filter: i =>
+        i.user.id === interaction.user.id &&
+        ['pool_confirm', 'pool_cancel'].includes(i.customId),
       time: POOL_CONFIRM_TIMEOUT,
       max:  1,
     });
 
-    poolCollector.on('collect', async i => {
-      await i.deferUpdate();
-      if (i.customId === 'pool_confirm') {
-        resolve(true);
-      } else {
-        await interaction.editReply({
-          content:    '❌ تم إلغاء الجلسة.',
-          embeds:     [],
+    col.on('collect', async i => {
+      try {
+        if (i.customId === 'pool_cancel') {
+          await i.update({
+            content: '❌ تم إلغاء الجلسة.',
+            embeds: [],
+            components: [],
+          });
+          return resolve(false);
+        }
+
+        await i.update({
+          content: '⏳ جاري التحضير...',
+          embeds: [],
           components: [],
         });
-        resolve(false);
+        return resolve(true);
+      } catch (err) {
+        if (err.code === 40060 || err.code === 10062 || err.code === 10008) {
+          return resolve(i.customId === 'pool_confirm');
+        }
+        console.error('[askPoolConfirmation collect]', err);
+        return resolve(false);
       }
     });
 
-    poolCollector.on('end', async (_, reason) => {
+    col.on('end', async (_, reason) => {
       if (reason === 'time') {
-        await interaction.editReply({
-          content:    '⏰ انتهت مهلة التأكيد. يرجى إعادة تشغيل الأمر.',
-          embeds:     [],
-          components: [],
-        }).catch(() => {});
+        try {
+          await interaction.editReply({ content: '⏰ انتهت المهلة.', embeds: [], components: [] });
+        } catch {}
         resolve(false);
       }
     });
@@ -470,121 +375,97 @@ async function askPoolConfirmation(interaction, msg, available, requested) {
 }
 
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// SESSION LAUNCHER
-// ═══════════════════════════════════════════════════════════════════════════════
-
-/**
- * Validate images, create the session, fetch the channel, and start the game.
- *
- * @param {object} opts
- */
+// ─── Session launcher ─────────────────────────────────────────────────────────
 async function launchSession({ interaction, guildId, client, settings, questions, timeLimitSec, categories }) {
+  const invalidIds     = await validateQuestionImages(questions);
+  const validQuestions = applyImageValidation(questions, invalidIds);
 
-  // ── Image validation ───────────────────────────────────────────────────────
-  const invalidImageIds  = await validateQuestionImages(questions);
-  const validatedQuestions = applyImageValidation(questions, invalidImageIds);
-
-  if (validatedQuestions.length === 0) {
-    await interaction.editReply({
-      content:    '⛔ جميع الأسئلة المختارة تعذّر التحقق من صورها. يرجى المحاولة بفئات أخرى.',
-      embeds:     [],
-      components: [],
-    });
-    return;
+  if (!validQuestions.length) {
+    return interaction.editReply({
+      content: '⛔ لا توجد أسئلة صالحة بعد التحقق من الصور.',
+      embeds: [], components: [],
+    }).catch(() => {});
   }
 
-  // ── Create session ─────────────────────────────────────────────────────────
   const created = sm.createSession(guildId, {
     hostId:        interaction.user.id,
     channelId:     settings.session_channel,
     categories,
-    questionCount: validatedQuestions.length,
+    questionCount: validQuestions.length,
     timeLimitSec,
-    questions:     validatedQuestions,
+    questions:     validQuestions,
   });
 
   if (!created) {
-    // Race condition — another session was created in the last few milliseconds
-    await interaction.editReply({
-      content:    '⚠️ لا يمكن بدء الجلسة — هناك جلسة نشطة بالفعل.',
-      embeds:     [],
-      components: [],
-    });
-    return;
+    return interaction.editReply({
+      content: '⚠️ لا يمكن بدء الجلسة — هناك جلسة نشطة بالفعل.',
+      embeds: [], components: [],
+    }).catch(() => {});
   }
 
-  // ── Fetch session channel ──────────────────────────────────────────────────
   let channel;
   try {
     channel = await client.channels.fetch(settings.session_channel);
-    if (!channel?.isTextBased()) throw new Error('Not a text channel');
+    if (!channel?.isTextBased()) throw new Error('ليست قناة نصية');
   } catch {
-    // Channel was deleted or bot lost access since setup
     sm.deleteSession(guildId);
-    await interaction.editReply({
-      content:
-        '⛔ تعذّر الوصول إلى قناة الجلسة المعيّنة.\n' +
-        'تأكد أن البوت يملك صلاحية القراءة والكتابة في القناة، ثم أعد المحاولة.',
-      embeds:     [],
-      components: [],
-    });
-    return;
+    return interaction.editReply({
+      content: '⛔ تعذّر الوصول إلى قناة الجلسة. تأكد من صلاحيات البوت.',
+      embeds: [], components: [],
+    }).catch(() => {});
   }
 
-  // ── Confirm to the host ────────────────────────────────────────────────────
   await interaction.editReply({
     content:
-      `✅ **بدأت الجلسة** في <#${settings.session_channel}>!\n` +
-      `📋 ${validatedQuestions.length} سؤال | ⏱️ ${timeLimitSec} ثانية لكل سؤال`,
+      `✅ **ستبدأ الجلسة في <#${settings.session_channel}> خلال ${COUNTDOWN_SECONDS} ثوانٍ!**\n` +
+      `📋 ${validQuestions.length} سؤال | ⏱️ ${timeLimitSec} ثانية لكل سؤال`,
     embeds:     [],
     components: [],
-  });
+  }).catch(() => {});
 
-  // ── Start the game ─────────────────────────────────────────────────────────
+  let countdownMsg = null;
+  try {
+    countdownMsg = await channel.send({
+      embeds: [new EmbedBuilder()
+        .setTitle('🎮 جلسة مسابقة على وشك البدء!')
+        .setDescription(
+          `**عدد الأسئلة:** ${validQuestions.length}\n` +
+          `**وقت الإجابة:** ${timeLimitSec} ثانية لكل سؤال\n\n` +
+          `⏳ **تبدأ خلال ${COUNTDOWN_SECONDS} ثوانٍ — استعدوا!**`
+        )
+        .setColor(config.colors.warning)
+        .setTimestamp()],
+    });
+  } catch {
+    // نكمل بدون countdown
+  }
+
+  await sleep(COUNTDOWN_SECONDS * 1000);
+
+  if (countdownMsg) {
+    await countdownMsg.delete().catch(() => {});
+  }
+
   const session = sm.getSession(guildId);
-  if (!session) return; // safety: deleted between create and fetch
+  if (!session) return;
 
   await startSession(client, session, channel);
 }
 
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// PERMISSION HELPER
-// ═══════════════════════════════════════════════════════════════════════════════
-
-/**
- * Check if the interaction user can manage trivia sessions.
- * Requires: wizard-configured manager roles OR Discord Administrator.
- *
- * @param {import('discord.js').ChatInputCommandInteraction} interaction
- * @param {object|null} settings - guild settings row from DB
- * @returns {boolean}
- */
+// ─── Helpers ──────────────────────────────────────────────────────────────────
 function canManageSession(interaction, settings) {
-  const isAdmin = interaction.member.permissions.has(PermissionFlagsBits.Administrator);
-  if (isAdmin) return true;
-
-  const managerRoles = parseJson(settings?.manager_roles, []);
-  if (managerRoles.length === 0) return false;
-
-  return interaction.member.roles.cache.some(r => managerRoles.includes(r.id));
+  if (interaction.member.permissions.has(PermissionFlagsBits.Administrator)) return true;
+  const roles = parseJson(settings?.manager_roles, []);
+  if (!roles.length) return false;
+  return interaction.member.roles.cache.some(r => roles.includes(r.id));
 }
 
-
-// ═══════════════════════════════════════════════════════════════════════════════
-// UTILITY
-// ═══════════════════════════════════════════════════════════════════════════════
-
-/**
- * Safely parse a JSON string with a fallback value.
- *
- * @template T
- * @param {string|null|undefined} str
- * @param {T} fallback
- * @returns {T}
- */
 function parseJson(str, fallback) {
   if (!str) return fallback;
   try { return JSON.parse(str); } catch { return fallback; }
+}
+
+function sleep(ms) {
+  return new Promise(r => setTimeout(r, ms));
 }
