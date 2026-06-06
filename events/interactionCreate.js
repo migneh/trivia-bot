@@ -8,48 +8,21 @@
  *
  *   ChatInputCommand  → slash commands (/trivia-start, /trivia-stop, etc.)
  *   Button            → game answer buttons (trivia_answer:N)
- *                       and wizard/confirmation buttons (handled by
- *                       inline collectors — NOT re-routed here)
+ *                       and wizard/confirmation buttons.
+ *   SelectMenu        → wizard dropdowns (start_count, start_time, etc.)
  *
- * ─── Slash command routing ────────────────────────────────────────────────────
+ * ─── Collector Handled Interactions ───────────────────────────────────────────
  *
- *   Commands are stored in client.commands (Collection) by name.
- *   Each command file exports { data, execute }.
- *   If the command is not found, the interaction is replied to with
- *   an Arabic error message (ephemeral).
- *
- * ─── Button interaction routing ───────────────────────────────────────────────
- *
- *   Game answer buttons (customId = "trivia_answer:N") are collected
- *   by inline MessageComponentCollectors in gameEngine.collectVotes().
- *   They arrive here ONLY if no collector is active (e.g. time expired
- *   but Discord hasn't acknowledged it yet, or collector was cleaned up).
- *
- *   In that case: defer + reply "وقت الإجابة انتهى" (ephemeral).
- *
- *   Wizard buttons (setup_*, sched_*, start_*, stop_*, pool_*, help_*)
- *   are also collector-handled. If they arrive here without an active
- *   collector, we defer and ignore silently — the wizard already timed out.
- *
- * ─── Error handling ───────────────────────────────────────────────────────────
- *
- *   Every handler is wrapped in try-catch.
- *   Errors attempt an ephemeral reply if the interaction hasn't been
- *   responded to yet. If even that fails, the error is only logged.
- *
- * ─── deferReply / deferUpdate ────────────────────────────────────────────────
- *
- *   Each slash command calls deferReply() as its FIRST async operation.
- *   This handler does NOT call defer — commands own their own timing.
- *   For stale button interactions caught here, we defer before replying.
+ *   IMPORTANT: Buttons and Select Menus used in wizards or games are handled 
+ *   by local `MessageComponentCollector`s inside their respective command files.
+ *   We DO NOT call `deferUpdate()` here for those components, otherwise the 
+ *   local collectors will throw a 40060 (Interaction already acknowledged) error.
+ *   We simply `return` and let the collectors do their job.
  */
 
-const { Events, InteractionType, ComponentType } = require('discord.js');
-const config = require('../config.json');
+const { Events } = require('discord.js');
 
 // ─── Button customId prefixes managed by inline collectors ────────────────────
-// Interactions with these prefixes are collector-handled.
-// If they arrive here, the collector is gone — handle gracefully.
 const GAME_BUTTON_PREFIX   = 'trivia_answer:';
 const WIZARD_BUTTON_PREFIXES = [
   'setup_', 'sched_', 'start_', 'stop_', 'pool_',
@@ -136,52 +109,33 @@ async function handleSlashCommand(interaction) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /**
- * Handle button interactions that reach this global handler.
- *
- * Game buttons (trivia_answer:N):
- *   If a collector is active for this message, the collector handles it
- *   and this handler never sees it. If we DO see it here, the time has
- *   expired — reply with "وقت الإجابة انتهى".
- *
- * Wizard / confirmation buttons:
- *   Handled by inline collectors in command files.
- *   If they arrive here, the collector already timed out or was stopped.
- *   Defer + acknowledge silently.
+ * Handle button interactions.
+ * 
+ * If the button belongs to a game or a wizard, we DO NOT acknowledge it here.
+ * We just return and let the inline MessageComponentCollector handle it.
  *
  * @param {import('discord.js').ButtonInteraction} interaction
  */
 async function handleButtonInteraction(interaction) {
   const customId = interaction.customId;
 
-  // ── Game answer button (time expired) ───────────────────────────────────────
+  // ── Game answer button ───────────────────────────────────────
   if (customId.startsWith(GAME_BUTTON_PREFIX)) {
-    try {
-      await interaction.deferReply({ ephemeral: true });
-      await interaction.editReply({
-        content: '⏰ **وقت الإجابة انتهى** — لم يتم تسجيل إجابتك.',
-      });
-    } catch {
-      // Interaction already acknowledged or expired — ignore
-    }
-    return;
+    // Handled by inline collectors in gameEngine.collectVotes()
+    return; 
   }
 
-  // ── Wizard / confirmation button (collector timed out) ───────────────────────
+  // ── Wizard / confirmation button ───────────────────────────────
   const isWizardButton = WIZARD_BUTTON_PREFIXES.some(prefix =>
     customId.startsWith(prefix)
   );
 
   if (isWizardButton) {
-    try {
-      // Acknowledge to dismiss the "interaction failed" state in Discord
-      await interaction.deferUpdate();
-    } catch {
-      // Already acknowledged or expired — ignore
-    }
-    return;
+    // Handled by inline collectors in command files (e.g., trivia-start.js)
+    return; 
   }
 
-  // ── Unknown button ────────────────────────────────────────────────────────────
+  // ── Unknown button ────────────────────────────────────────────
   // Could be from a third-party integration or a future feature.
   // Acknowledge silently to prevent "interaction failed" in Discord.
   console.warn(`[InteractionCreate] Unknown button customId: "${customId}"`);
@@ -196,19 +150,16 @@ async function handleButtonInteraction(interaction) {
 // ═══════════════════════════════════════════════════════════════════════════════
 
 /**
- * Handle select menu interactions that reach this global handler.
- * These are all handled by inline collectors — if they arrive here,
- * the collector has already ended (timed out or stopped).
- * Acknowledge silently.
+ * Handle select menu interactions.
+ * 
+ * All select menus in this bot are managed by inline collectors.
+ * We DO NOT deferUpdate here, otherwise the collector's i.update() will fail.
  *
  * @param {import('discord.js').AnySelectMenuInteraction} interaction
  */
 async function handleSelectMenuInteraction(interaction) {
-  try {
-    await interaction.deferUpdate();
-  } catch {
-    // Already acknowledged or expired — ignore
-  }
+  // Let the local collectors (like in trivia-start.js) handle the update
+  return;
 }
 
 
