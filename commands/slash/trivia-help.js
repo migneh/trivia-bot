@@ -2,37 +2,12 @@
 /**
  * commands/slash/trivia-help.js
  *
- * Paginated help embed organised by command category.
- * Navigation via Previous / Next buttons.
- *
- * ─── Pages ─────────────────────────────────────────────────────────────[...]
- *
- *   1. الإعداد             (Setup)
- *   2. إدارة الجلسات       (Session Management)
- *   3. لوحة المتصدرين      (Leaderboard)
- *   4. الجدولة             (Scheduling)
- *   5. الملف والإنجازات    (Profile & Achievements)
- *   6. الإحصائيات          (Statistics)
- *
- * ─── Each page shows ─────────────────────────────────────────────────────────
- *
- *   For every command in the category:
- *     • Slash syntax:   /trivia-xxx
- *     • Prefix syntax:  !trivia xxx
- *     • Arabic description
- *     • Required permission level
- *     • Usage example in Arabic
- *
- * ─── Navigation ───────────────────────────────────────────────────────────[...]
- *
- *   ◀ Previous — disabled on page 1
- *   ▶ Next     — disabled on last page
- *   Collector timeout: 3 minutes (no wizard timeout — just navigation)
- *   On timeout: remove buttons silently.
- *
- * ─── Available to all members ────────────────────────────────────────────────
- *
- *   No permission requirement.
+ * Premium paginated help embed with:
+ *   - Rich, engaging Arabic copywriting.
+ *   - Pro-tips (💡 نصيحة) on every page.
+ *   - Dropdown menu for quick category jumping.
+ *   - Specific command search via optional argument.
+ *   - Graceful timeout handling & Anti-hijack.
  */
 
 const {
@@ -41,378 +16,412 @@ const {
   ActionRowBuilder,
   ButtonBuilder,
   ButtonStyle,
+  StringSelectMenuBuilder,
+  StringSelectMenuOptionBuilder,
   ComponentType,
 } = require('discord.js');
 
 const config = require('../../config.json');
 
-// ─── Navigation collector timeout ─────────────────────────────────────────────
 const NAV_TIMEOUT = 3 * 60 * 1000; // 3 minutes
-
-// ─── Prefix extracted from config ─────────────────────────────────────────────
 const PREFIX = config.prefix ?? '!trivia';
 
-// ─── Permission level labels ──────────────────────────────────────────────────
 const PERM = {
   admin:   '🔐 Administrator',
   manager: '🛡️ أدوار الإدارة أو Administrator',
   all:     '🌍 جميع الأعضاء',
 };
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// HELP PAGES DEFINITION (Enhanced Copywriting)
+// ═══════════════════════════════════════════════════════════════════════════════
 
-// ═════════════════════════════════════════════════════════════════[...]
-// HELP PAGES DEFINITION
-// ═════════════════════════════════════════════════════════════════[...]
-
-/**
- * Each page object:
- *   title    — Arabic category title
- *   emoji    — icon for the title
- *   color    — embed colour
- *   commands — array of command entries
- *
- * Each command entry:
- *   slash    — slash command syntax (without /)
- *   prefix   — prefix subcommand (without !trivia)
- *   args     — optional args shown after the command
- *   desc     — Arabic description
- *   perm     — permission label from PERM
- *   example  — Arabic usage example
- */
 const PAGES = [
-  // ── Page 1: Setup ──────────────────────────────────────────────────────────[...]
+  // ── Page 1: Main Menu ──────────────────────────────────────────────────────
   {
-    title:   'الإعداد',
-    emoji:   '⚙️',
-    color:   config.colors.info,
-    intro:   'أوامر إعداد وتهيئة البوت في السيرفر. تتطلب صلاحية Administrator.',
+    title: 'القائمة الرئيسية',
+    emoji: '🏠',
+    color: config.colors.info,
+    intro: 
+      'مرحباً بك في دليل مساعدة **Prometheus**! 🎉\n' +
+      'بوت المسابقات الثقافية الأذكى والأكثر تفاعلية على Discord.\n\n' +
+      'استخدم **القائمة المنسدلة** أدناه للتنقل بين الأقسام، أو استخدم الأزرار للتصفح.\n' +
+      'يمكنك أيضاً البحث عن أمر معين مباشرة عبر كتابة:\n' +
+      '`/trivia-help command:اسم_الأمر`',
+    tip: '💡 **نصيحة:** ابدأ بإعداد البوت في سيرفرك عبر أمر `/trivia-setup` لتفعيل جميع الميزات.',
     commands: [
       {
-        slash:   'trivia-setup',
-        prefix:  'setup',
-        desc:
-          'يفتح معالج الإعداد الكامل من 6 خطوات لتهيئة البوت:\n' +
-          '• قناة الجلسة والقناة الاحتياطية\n' +
-          '• أدوار الإدارة المخوّلة\n' +
-          '• الجدولة التلقائية (UTC)\n' +
-          '• الفئات المفعّلة في هذا السيرفر',
-        perm:    PERM.admin,
-        example: `\`/trivia-setup\` أو \`${PREFIX} setup\``,
-      },
-      {
-        slash:   'trivia-schedule',
-        prefix:  'schedule',
-        desc:
-          'يفتح معالج الجدولة التلقائية مباشرةً (بدون الخطوات الأخرى).\n' +
-          '• يتطلب أن تكون قناة الجلسة معيّنة مسبقاً\n' +
-          '• يدعم الجدولة اليومية والأسبوعية\n' +
-          '• جميع الأوقات بتوقيت UTC',
-        perm:    PERM.admin,
-        example: `\`/trivia-schedule\` أو \`${PREFIX} schedule\``,
+        slash: 'trivia-help',
+        prefix: 'help',
+        args: '[command]',
+        desc: 'يعرض دليل المساعدة هذا. إذا أضفت اسم أمر، سيظهر لك شرح مفصل له مباشرة.',
+        perm: PERM.all,
+        example: '`/trivia-help command:start`',
       },
     ],
   },
 
-  // ── Page 2: Session Management ──────────────────────────────────────────────
+  // ── Page 2: Setup ──────────────────────────────────────────────────────────
   {
-    title:   'إدارة الجلسات',
-    emoji:   '🎮',
-    color:   config.colors.success,
-    intro:   'أوامر بدء وإدارة جلسات المسابقة. تتطلب أدوار الإدارة المعيّنة أو Administrator.',
+    title: 'إعداد البوت',
+    emoji: '⚙️',
+    color: 0x5865F2, // Discord Blurple
+    intro: 'خطوتك الأولى لإطلاق العنان للمسابقات! تتطلب صلاحية **Administrator**.',
+    tip: '💡 **نصيحة:** تأكد من منح البوت صلاحيات (إرسال الرسائل، تضمين الروابط، قراءة سجل الرسائل) في قناة الجلسة.',
     commands: [
       {
-        slash:   'trivia-start',
-        prefix:  'start',
-        desc:
-          'يفتح معالج بدء الجلسة التفاعلي:\n' +
-          '• اختيار عدد الأسئلة (5 / 10 / 15 / 20 / 25 / 30)\n' +
-          '• اختيار وقت الإجابة لكل سؤال (10–60 ثانية)\n' +
-          '• اختيار فئة أو أكثر من الفئات المفعّلة\n' +
-          '• تحقق تلقائي من الصور والأسئلة قبل البدء',
-        perm:    PERM.manager,
-        example: `\`/trivia-start\` أو \`${PREFIX} start\``,
-      },
-      {
-        slash:   'trivia-stop',
-        prefix:  'stop',
-        desc:
-          'يوقف الجلسة النشطة مع طلب تأكيد:\n' +
-          '• في مرحلة التصويت: يعرض رسالة تأكيد (30 ثانية)\n' +
-          '• في مرحلة الكشف: يُسجَّل الطلب وينتهي بعد انتهاء الكشف\n' +
-          '• تُعرض النتائج الجزئية — بدون مكافأة الإكمال',
-        perm:    PERM.manager,
-        example: `\`/trivia-stop\` أو \`${PREFIX} stop\``,
-      },
-      {
-        slash:   'trivia-skip',
-        prefix:  'skip',
-        desc:
-          'يتخطى السؤال الحالي فوراً:\n' +
-          '• بدون كشف الإجابة الصحيحة\n' +
-          '• بدون أي تغيير في النقاط أو السلاسل\n' +
-          '• السؤال المتخطى مستثنى من حساب مكافأة الإكمال\n' +
-          '• لا تأخير — ينتقل فوراً للسؤال التالي',
-        perm:    PERM.manager,
-        example: `\`/trivia-skip\` أو \`${PREFIX} skip\``,
+        slash: 'trivia-setup',
+        prefix: 'setup',
+        desc: 
+          'يفتح **معالج إعداد تفاعلي** من 6 خطوات لتهيئة بيئة اللعب:\n' +
+          '> • تحديد قناة المسابقات الرسمية.\n' +
+          '> • تعيين قناة احتياطية (في حال فقدان الصلاحيات).\n' +
+          '> • اختيار أدوار الإدارة المخوّلة بالتحكم في الجلسات.\n' +
+          '> • تفعيل أو تعطيل فئات الأسئلة (تاريخ، رياضة، علوم...).',
+        perm: PERM.admin,
+        example: '`/trivia-setup`',
       },
     ],
   },
 
-  // ── Page 3: Leaderboard ─────────────────────────────────────────────────────
+  // ── Page 3: Session Management ─────────────────────────────────────────────
   {
-    title:   'لوحة المتصدرين',
-    emoji:   '🏆',
-    color:   config.colors.success,
-    intro:   'عرض ترتيب اللاعبين حسب النقاط. متاح لجميع الأعضاء.',
+    title: 'إدارة الجلسات',
+    emoji: '🎮',
+    color: config.colors.success,
+    intro: 'تحكم كامل في مجريات اللعب. تتطلب **أدوار الإدارة** المعيّنة مسبقاً.',
+    tip: '💡 **نصيحة:** ابدأ بعدد قليل من الأسئلة (5 أو 10) لاختبار تفاعل الأعضاء قبل إطلاق جلسات طويلة.',
     commands: [
       {
-        slash:   'trivia-leaderboard',
-        prefix:  'leaderboard',
-        args:    '[day | week | month]',
-        desc:
-          'يعرض لوحة المتصدرين مع دعم الفترات الزمنية:\n' +
-          '• **day** — المتصدرون اليوم (منذ 00:00 UTC)\n' +
-          '• **week** — المتصدرون هذا الأسبوع (منذ الأحد 00:00 UTC)\n' +
-          '• **month** — المتصدرون هذا الشهر\n' +
-          '• **بدون وسيط** — يعرض الشهر الحالي (الافتراضي)\n\n' +
-          'الترتيب يعالج التعادل بشكل صحيح.\n' +
-          'يُظهر مركزك إذا لم تكن ضمن أعلى 10.',
-        perm:    PERM.all,
-        example:
-          `\`/trivia-leaderboard week\`\n` +
-          `\`${PREFIX} leaderboard day\``,
+        slash: 'trivia-start',
+        prefix: 'start',
+        desc: 
+          'أطلق العنان للتحدي! يفتح واجهة لاختيار:\n' +
+          '> • **عدد الأسئلة:** من 5 إلى 30 سؤالاً.\n' +
+          '> • **وقت الإجابة:** من 10 إلى 60 ثانية.\n' +
+          '> • **الفئات:** اختر فئة واحدة أو ادمج عدة فئات.\n' +
+          'يتحقق البوت تلقائياً من توفر الأسئلة وصلاحية الصور قبل البدء.',
+        perm: PERM.manager,
+        example: '`/trivia-start`',
+      },
+      {
+        slash: 'trivia-stop',
+        prefix: 'stop',
+        desc: 
+          'إيقاف طارئ وآمن للجلسة النشطة:\n' +
+          '> • يطلب تأكيداً لمنع الإيقاف العرضي.\n' +
+          '> • يحفظ النقاط المكتسبة حتى لحظة الإيقاف.\n' +
+          '> • يعرض لوحة النتائج النهائية فوراً (بدون مكافأة الإكمال).',
+        perm: PERM.manager,
+        example: '`/trivia-stop`',
+      },
+      {
+        slash: 'trivia-skip',
+        prefix: 'skip',
+        desc: 
+          'تخطي ذكي للسؤال الحالي:\n' +
+          '> • مفيد إذا كان السؤال غير واضح أو يحتوي على خطأ.\n' +
+          '> • **لا يكشف** الإجابة الصحيحة.\n' +
+          '> • **لا يعاقب** اللاعبين (السلاسل والنقاط تبقى كما هي).\n' +
+          '> • ينتقل للسؤال التالي فوراً بدون تأخير.',
+        perm: PERM.manager,
+        example: '`/trivia-skip`',
       },
     ],
   },
 
-  // ── Page 4: Scheduling ──────────────────────────────────────────────────────
+  // ── Page 4: Scheduling ─────────────────────────────────────────────────────
   {
-    title:   'الجدولة',
-    emoji:   '📅',
-    color:   config.colors.info,
-    intro:   'إعداد الجلسات التلقائية. جميع الأوقات بتوقيت UTC. يتطلب Administrator.',
+    title: 'الجدولة التلقائية',
+    emoji: '📅',
+    color: 0xFEE75C, // Yellow
+    intro: 'اجعل البوت يدير المسابقات نيابة عنك! يتطلب **Administrator**.',
+    tip: '💡 **نصيحة:** البوت يستخدم توقيت UTC العالمي. لتحويل وقتك، استخدم موقع مثل timeanddate.com.',
     commands: [
       {
-        slash:   'trivia-schedule',
-        prefix:  'schedule',
-        desc:
-          'يفتح معالج الجدولة التلقائية:\n' +
-          '• **يومي** — جلسة كل يوم على نفس الساعة (UTC)\n' +
-          '• **أسبوعي** — جلسة في أيام محددة من الأسبوع (UTC)\n' +
-          '• **إلغاء** — تعطيل الجدولة التلقائية\n\n' +
-          '⚠️ **جميع الأوقات بتوقيت UTC:**\n' +
-          '• السعودية/الخليج (UTC+3): اطرح 3 ساعات\n' +
-          '• مصر (UTC+2): اطرح 2 ساعة\n' +
-          '• المغرب (UTC+1): اطرح 1 ساعة\n\n' +
-          'الجلسات المجدولة تبدأ تلقائياً بدون حضور أدمن.\n' +
-          'إذا كانت هناك جلسة يدوية نشطة عند موعد الجلسة المجدولة، يُعطى تحذير قبل ' +
-          `${config.schedulingWarningSeconds ?? 30} ثانية ثم تُلغى الجلسة اليدوية.`,
-        perm:    PERM.admin,
-        example:
-          `\`/trivia-schedule\` أو \`${PREFIX} schedule\``,
+        slash: 'trivia-schedule',
+        prefix: 'schedule',
+        desc: 
+          'برمج جلسات تلقائية تتكرر يومياً أو أسبوعياً:\n' +
+          '> • **يومي:** جلسة كل يوم في نفس التوقيت.\n' +
+          '> • **أسبوعي:** اختر أياماً محددة (مثلاً: الجمعة والسبت).\n\n' +
+          '⏱️ **دليل تحويل التوقيت (UTC):**\n' +
+          '• 🇸🇦 السعودية/العراق (UTC+3): اطرح 3 ساعات (مساءً 8 = 17:00)\n' +
+          '• 🇪🇬 مصر (UTC+2): اطرح 2 ساعة (مساءً 8 = 18:00)\n' +
+          '• 🇲🇦 المغرب (UTC+1): اطرح 1 ساعة (مساءً 8 = 19:00)',
+        perm: PERM.admin,
+        example: '`/trivia-schedule`',
       },
     ],
   },
 
-  // ── Page 5: Profile & Achievements ─────────────────────────────────────────
+  // ── Page 5: Leaderboard ────────────────────────────────────────────────────
   {
-    title:   'الملف والإنجازات',
-    emoji:   '👤',
-    color:   config.colors.info,
-    intro:   'عرض الملفات الشخصية والإنجازات. متاح لجميع الأعضاء.',
+    title: 'لوحة المتصدرين',
+    emoji: '🏆',
+    color: 0xFFD700, // Gold
+    intro: 'تتبع أبطال السيرفر وتنافس على القمة! متاح لـ **جميع الأعضاء**.',
+    tip: '💡 **نصيحة:** استخدم لوحة الأسبوع (`week`) لمعرفة من هو اللاعب الأكثر نشاطاً حالياً.',
     commands: [
       {
-        slash:   'trivia-profile',
-        prefix:  'profile',
-        args:    '[@user]',
-        desc:
-          'يعرض الملف الشخصي للاعب:\n' +
-          '• اللقب الحالي (يتغير بزيادة النقاط)\n' +
-          '• إجمالي النقاط والمركز في السيرفر\n' +
-          '• عدد الجلسات، الانتصارات، نسبة الفوز\n' +
-          '• إجمالي الإجابات الصحيحة\n' +
-          '• أطول سلسلة إجابات صحيحة متتالية\n' +
-          '• قائمة الإنجازات المفتوحة\n\n' +
-          'بدون @user: يعرض ملفك الشخصي.\n' +
-          'مع @user: يعرض ملف اللاعب المذكور (بياناته العامة فقط).',
-        perm:    PERM.all,
-        example:
-          `\`/trivia-profile\` (ملفك)\n` +
-          `\`/trivia-profile @أحمد\` (ملف أحمد)\n` +
-          `\`${PREFIX} profile @أحمد\``,
+        slash: 'trivia-leaderboard',
+        prefix: 'leaderboard',
+        args: '[day | week | month]',
+        desc: 
+          'استعرض ترتيب اللاعبين بناءً على النقاط المكتسبة:\n' +
+          '> • **day** 🌅: أبطال اليوم (يتجدد عند منتصف الليل UTC).\n' +
+          '> • **week** 🗓️: أبطال الأسبوع (يتجدد يوم الأحد UTC).\n' +
+          '> • **month** 📆: أبطال الشهر.\n' +
+          '> • **all** 🌟: الترتيب العام منذ بدء استخدام البوت.\n\n' +
+          'النظام يعالج التعادل بذكاء، ويظهر مركزك الحالي حتى لو لم تكن في Top 10.',
+        perm: PERM.all,
+        example: '`/trivia-leaderboard week`',
       },
     ],
   },
 
-  // ── Page 6: Statistics ──────────────────────────────────────────────────────
+  // ── Page 6: Profile & Achievements ─────────────────────────────────────────
   {
-    title:   'إحصائيات السيرفر',
-    emoji:   '📊',
-    color:   config.colors.info,
-    intro:   'عرض إحصائيات المسابقة في هذا السيرفر. متاح لجميع الأعضاء.',
+    title: 'الملف الشخصي',
+    emoji: '👤',
+    color: 0xEB459E, // Pink
+    intro: 'اكتشف إحصائياتك واجمع شارات الإنجازات الحصرية! متاح لـ **جميع الأعضاء**.',
+    tip: '💡 **نصيحة:** بعض الإنجازات سرية! حاول اللعب في أوقات مختلفة أو تحقيق سلاسل إجابات طويلة لفتحها.',
     commands: [
       {
-        slash:   'trivia-stats',
-        prefix:  'stats',
-        desc:
-          'يعرض إحصائيات شاملة للسيرفر:\n' +
-          '• إجمالي عدد الجلسات المنتهية\n' +
-          '• أكثر فئة أسئلة شعبية\n' +
-          '• متوسط عدد اللاعبين لكل جلسة\n' +
-          '• أكثر لاعب نشاطاً (عدد الجلسات)\n' +
-          '• أصعب سؤال (أدنى نسبة إجابة صحيحة)\n' +
-          '• أكثر سؤال تجاهلاً (لم يصوّت عليه أحد)',
-        perm:    PERM.all,
-        example: `\`/trivia-stats\` أو \`${PREFIX} stats\``,
+        slash: 'trivia-profile',
+        prefix: 'profile',
+        args: '[@user]',
+        desc: 
+          'بطاقة تعريفية شاملة للاعب تحتوي على:\n' +
+          '> • 🎖️ **اللقب:** يتطور تلقائياً بزيادة نقاطك.\n' +
+          '> • 📊 **الأداء:** عدد الجلسات، الانتصارات، ونسبة الفوز.\n' +
+          '> • 🔥 **السلاسل:** أطول سلسلة إجابات صحيحة متتالية.\n' +
+          '> • 🏅 **الإنجازات:** الشارات التي فتحتها (مع عرض نسبتها).\n\n' +
+          'يمكنك عرض ملفك، أو استعراض ملف أي لاعب آخر في السيرفر.',
+        perm: PERM.all,
+        example: '`/trivia-profile @أحمد`',
+      },
+    ],
+  },
+
+  // ── Page 7: Statistics ─────────────────────────────────────────────────────
+  {
+    title: 'إحصائيات السيرفر',
+    emoji: '📊',
+    color: 0x57F287, // Green
+    intro: 'نظرة تحليلية عميقة على نشاط مجتمعك في المسابقات.',
+    tip: '💡 **نصيحة:** استخدم هذه الإحصائيات لمعرفة الفئات المفضلة لدى أعضائك وزيادة أسئلتها.',
+    commands: [
+      {
+        slash: 'trivia-stats',
+        prefix: 'stats',
+        desc: 
+          'تقرير شامل يوضح نبض السيرفر:\n' +
+          '> • 🎮 إجمالي عدد الجلسات والأسئلة المطروحة.\n' +
+          '> • 📂 أكثر فئات الأسئلة شعبية.\n' +
+          '> • 🧠 أصعب سؤال (أقل نسبة إجابات صحيحة).\n' +
+          '> • 🏃‍♂️ أسرع إجابة مسجلة في تاريخ السيرفر.\n' +
+          '> • 👑 أكثر لاعب نشاطاً من حيث عدد المشاركات.',
+        perm: PERM.all,
+        example: '`/trivia-stats`',
       },
     ],
   },
 ];
 
-
-// ═════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════════
 // COMMAND DEFINITION
-// ═════════════════════════════════════════════════════════════════[...]
+// ═══════════════════════════════════════════════════════════════════════════════
 
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('trivia-help')
-    .setDescription('عرض قائمة الأوامر المصنّفة مع وصف كامل لكل أمر')
+    .setDescription('عرض قائمة الأوامر والمساعدة')
+    .addStringOption(option =>
+      option.setName('command')
+        .setDescription('اسم الأمر لعرض تفاصيله مباشرة (مثال: start)')
+        .setRequired(false)
+    )
     .setDMPermission(false),
 
-  /**
-   * @param {import('discord.js').ChatInputCommandInteraction} interaction
-   */
   async execute(interaction) {
     await interaction.deferReply();
-    await sendHelp(interaction, 0);
+    const targetCommand = interaction.options.getString('command')?.toLowerCase();
+
+    if (targetCommand) {
+      await sendSpecificCommandHelp(interaction, targetCommand);
+    } else {
+      await sendHelp(interaction, 0);
+    }
   },
 };
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// SPECIFIC COMMAND SEARCH
+// ═══════════════════════════════════════════════════════════════════════════════
 
-// ═════════════════════════════════════════════════════════════════[...]
-// HELP SENDER  (exported for prefix router)
-// ═════════════════════════════════════════════════════════════════[...]
+async function sendSpecificCommandHelp(interaction, query) {
+  let foundCmd = null;
+  let foundPage = null;
 
-/**
- * Send the paginated help embed and set up navigation.
- *
- * @param {import('discord.js').ChatInputCommandInteraction | object} interaction
- * @param {number} startPage - 0-based initial page index
- */
+  for (const page of PAGES) {
+    for (const cmd of page.commands) {
+      if (cmd.slash.includes(query) || cmd.prefix.includes(query) || query.includes(cmd.prefix)) {
+        foundCmd = cmd;
+        foundPage = page;
+        break;
+      }
+    }
+    if (foundCmd) break;
+  }
+
+  if (!foundCmd) {
+    return interaction.editReply({
+      embeds: [
+        new EmbedBuilder()
+          .setTitle('🔍 لم يتم العثور على الأمر')
+          .setDescription(
+            `عذراً، لا يوجد أمر يطابق البحث عن \`${query}\`.\n\n` +
+            `**كيف تبحث بشكل صحيح؟**\n` +
+            `اكتب اسم الأمر بدون الشرطة المائلة، مثال:\n` +
+            `\`/trivia-help command:start\`\n\n` +
+            `أو استخدم \`/trivia-help\` لتصفح جميع الأوامر.`
+          )
+          .setColor(config.colors.error)
+      ]
+    });
+  }
+
+  const argsStr = foundCmd.args ? ` ${foundCmd.args}` : '';
+  const embed = new EmbedBuilder()
+    .setAuthor({ name: `دليل الأوامر | ${foundCmd.slash}`, iconURL: interaction.client.user.displayAvatarURL() })
+    .setColor(foundPage.color)
+    .setDescription(`> ${foundCmd.desc}`)
+    .addFields(
+      { name: '📝 طريقة الاستخدام', value: `\`/${foundCmd.slash}${argsStr}\`\n\`${PREFIX} ${foundCmd.prefix}${argsStr}\``, inline: false },
+      { name: '🔐 الصلاحية المطلوبة', value: foundCmd.perm, inline: true },
+      { name: '💡 مثال عملي', value: foundCmd.example, inline: true }
+    )
+    .setFooter({ text: `الفئة: ${foundPage.emoji} ${foundPage.title}` })
+    .setTimestamp();
+
+  await interaction.editReply({ embeds: [embed] });
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// PAGINATED HELP SYSTEM
+// ═══════════════════════════════════════════════════════════════════════════════
+
 async function sendHelp(interaction, startPage = 0) {
   let currentPage = Math.max(0, Math.min(startPage, PAGES.length - 1));
+  const botAvatar = interaction.client.user.displayAvatarURL();
 
   const msg = await interaction.editReply({
-    embeds:     [buildPageEmbed(currentPage)],
-    components: [buildNavRow(currentPage)],
+    embeds: [buildPageEmbed(currentPage, botAvatar)],
+    components: buildComponents(currentPage),
     fetchReply: true,
   });
 
-  // ── Navigation collector ───────────────────────────────────────────────────
+  const filter = i => i.user.id === interaction.user.id;
+  
   const collector = msg.createMessageComponentCollector({
-    componentType: ComponentType.Button,
-    filter:        i => i.user.id === interaction.user.id,
-    time:          NAV_TIMEOUT,
+    filter, time: NAV_TIMEOUT,
   });
+
+  const handleNavigation = async (i, newPage) => {
+    currentPage = newPage;
+    await i.update({
+      embeds: [buildPageEmbed(currentPage, botAvatar)],
+      components: buildComponents(currentPage),
+    }).catch(() => {});
+  };
 
   collector.on('collect', async i => {
-    if (i.customId === 'help_prev') currentPage = Math.max(0, currentPage - 1);
-    if (i.customId === 'help_next') currentPage = Math.min(PAGES.length - 1, currentPage + 1);
-
-    // ✅ استخدم deferUpdate() ثم editReply() بدلاً من update()
-    await i.deferUpdate().catch(() => {});
-    await interaction.editReply({
-      embeds:     [buildPageEmbed(currentPage)],
-      components: [buildNavRow(currentPage)],
-    }).catch(() => {});
+    if (i.isButton()) {
+      if (i.customId === 'help_prev') await handleNavigation(i, Math.max(0, currentPage - 1));
+      if (i.customId === 'help_next') await handleNavigation(i, Math.min(PAGES.length - 1, currentPage + 1));
+    } else if (i.isStringSelectMenu()) {
+      await handleNavigation(i, parseInt(i.values[0], 10));
+    }
   });
 
-  collector.on('end', () => {
-    // Remove navigation buttons on timeout — no error if message was deleted
-    interaction.editReply({ components: [] }).catch(() => {});
+  collector.on('end', async () => {
+    try {
+      const timeoutEmbed = buildPageEmbed(currentPage, botAvatar);
+      timeoutEmbed.setFooter({ text: '⏰ انتهت صلاحية القائمة • استخدم /trivia-help لبدء تصفح جديد' });
+      
+      await interaction.editReply({
+        embeds: [timeoutEmbed],
+        components: buildComponents(currentPage, true), // Disable all
+      });
+    } catch (err) {
+      if (err.code !== 10008) console.error('[Help Timeout Error]', err.message);
+    }
   });
 }
 
+// ═══════════════════════════════════════════════════════════════════════════════
+// UI BUILDERS
+// ═══════════════════════════════════════════════════════════════════════════════
 
-// ═════════════════════════════════════════════════════════════════[...]
-// EMBED BUILDER
-// ═════════════════════════════════════════════════════════════════[...]
-
-/**
- * Build the embed for a single help page.
- *
- * @param {number} pageIndex - 0-based
- * @returns {EmbedBuilder}
- */
-function buildPageEmbed(pageIndex) {
-  const page  = PAGES[pageIndex];
-  const total = PAGES.length;
-
+function buildPageEmbed(pageIndex, botAvatar) {
+  const page = PAGES[pageIndex];
   const embed = new EmbedBuilder()
-    .setTitle(`${page.emoji} المساعدة — ${page.title}`)
+    .setAuthor({ name: 'دليل مساعدة Trivia Bot', iconURL: botAvatar })
+    .setTitle(`${page.emoji} ${page.title}`)
     .setColor(page.color)
-    .setFooter({ text: `الصفحة ${pageIndex + 1} من ${total} • ${page.title}` })
+    .setDescription(page.intro)
+    .setFooter({ text: `الصفحة ${pageIndex + 1} من ${PAGES.length}` })
     .setTimestamp();
 
-  // Page intro
-  if (page.intro) {
-    embed.setDescription(page.intro);
+  if (page.tip) {
+    embed.addFields({ name: '\u200B', value: page.tip, inline: false });
   }
 
-  // One field per command
   for (const cmd of page.commands) {
-    const argsStr   = cmd.args ? ` ${cmd.args}` : '';
-    const fieldName =
-      `\`/${cmd.slash}${argsStr}\`  ·  \`${PREFIX} ${cmd.prefix}${argsStr}\``;
-
-    const fieldValue = [
-      cmd.desc,
-      '',
-      `**الصلاحية:** ${cmd.perm}`,
-      `**مثال:** ${cmd.example}`,
-    ].join('\n');
-
+    const argsStr = cmd.args ? ` ${cmd.args}` : '';
+    const fieldName = `/${cmd.slash}${argsStr}`;
+    const fieldValue = 
+      `${cmd.desc}\n\n` +
+      `**الصلاحية:** ${cmd.perm}\n` +
+      `**مثال:** ${cmd.example}`;
+    
     embed.addFields({ name: fieldName, value: fieldValue, inline: false });
   }
 
   return embed;
 }
 
-/**
- * Build the navigation button row for a given page.
- *
- * @param {number} pageIndex - 0-based
- * @returns {ActionRowBuilder}
- */
-function buildNavRow(pageIndex) {
+function buildComponents(pageIndex, disabled = false) {
   const isFirst = pageIndex === 0;
-  const isLast  = pageIndex === PAGES.length - 1;
+  const isLast = pageIndex === PAGES.length - 1;
+
+  const selectMenu = new StringSelectMenuBuilder()
+    .setCustomId('help_select')
+    .setPlaceholder('الانتقال السريع إلى قسم...')
+    .setDisabled(disabled)
+    .addOptions(PAGES.map((p, idx) => {
+      const opt = new StringSelectMenuOptionBuilder()
+        .setLabel(`${p.emoji} ${p.title}`)
+        .setValue(String(idx));
+      if (idx === pageIndex) opt.setDefault(true);
+      return opt;
+    }));
 
   const prevBtn = new ButtonBuilder()
-    .setCustomId('help_prev')
-    .setLabel('◀ السابق')
-    .setStyle(ButtonStyle.Secondary)
-    .setDisabled(isFirst);
+    .setCustomId('help_prev').setLabel('◀ السابق').setStyle(ButtonStyle.Secondary).setDisabled(isFirst || disabled);
 
   const pageBtn = new ButtonBuilder()
-    .setCustomId('help_page_indicator')
-    .setLabel(`${pageIndex + 1} / ${PAGES.length}`)
-    .setStyle(ButtonStyle.Primary)
-    .setDisabled(true); // display only
+    .setCustomId('help_page_indicator').setLabel(`${pageIndex + 1} / ${PAGES.length}`).setStyle(ButtonStyle.Primary).setDisabled(true);
 
   const nextBtn = new ButtonBuilder()
-    .setCustomId('help_next')
-    .setLabel('التالي ▶')
-    .setStyle(ButtonStyle.Secondary)
-    .setDisabled(isLast);
+    .setCustomId('help_next').setLabel('التالي ▶').setStyle(ButtonStyle.Secondary).setDisabled(isLast || disabled);
 
-  return new ActionRowBuilder().addComponents(prevBtn, pageBtn, nextBtn);
+  return [
+    new ActionRowBuilder().addComponents(selectMenu),
+    new ActionRowBuilder().addComponents(prevBtn, pageBtn, nextBtn),
+  ];
 }
-
-
-// ═════════════════════════════════════════════════════════════════[...]
-// EXPORTS
-// ═════════════════════════════════════════════════════════════════[...]
 
 module.exports.sendHelp = sendHelp;
