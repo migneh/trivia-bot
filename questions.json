@@ -36006,5 +36006,4005 @@
     "text": "🤔 **خمّن الفيلم**\n🎬👦🇮🇹\n> فيلم إيطالي كلاسيكي\n> عن حب السينما والذكريات",
     "options": ["Cinema Paradiso", "Life Is Beautiful", "The Artist", "Nuovo Mondo"],
     "correctAnswer": 0
+  },
+  {
+    "id": "competitive_001",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة كندا؟",
+    "options": ["أوتاوا", "تورونتو", "مونتريال", "فانكوفر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_002",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما الرمز الكيميائي للفضة؟",
+    "options": ["Ag", "Au", "Fe", "Si"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_003",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أكبر جزيرة في العالم؟",
+    "options": ["غرينلاند", "أستراليا", "مدغشقر", "بورنيو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_004",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما المضيق الذي يفصل آسيا عن أمريكا الشمالية؟",
+    "options": ["مضيق بيرينغ", "مضيق جبل طارق", "مضيق هرمز", "مضيق البوسفور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_005",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما اللغة الرسمية في البرازيل؟",
+    "options": ["البرتغالية", "الإسبانية", "الفرنسية", "الإنجليزية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_006",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أكبر كوكب في المجموعة الشمسية؟",
+    "options": ["المشتري", "زحل", "الأرض", "المريخ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_007",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما البحر الذي يفصل أوروبا عن أفريقيا؟",
+    "options": ["البحر المتوسط", "البحر الأحمر", "البحر الأسود", "بحر العرب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_008",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أول عنصر في الجدول الدوري؟",
+    "options": ["الهيدروجين", "الهيليوم", "الأكسجين", "النيتروجين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_009",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة أستراليا؟",
+    "options": ["كانبيرا", "سيدني", "ملبورن", "بيرث"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_010",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nأي ثديي يبيض؟",
+    "options": ["خلد الماء", "الدلفين", "الخفاش", "القندس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_011",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أعمق محيط في العالم؟",
+    "options": ["المحيط الهادئ", "المحيط الأطلسي", "المحيط الهندي", "المحيط المتجمد الشمالي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_012",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما الغاز الأكثر وجودًا في الغلاف الجوي للأرض؟",
+    "options": ["النيتروجين", "الأكسجين", "ثاني أكسيد الكربون", "الهيدروجين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_013",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أسرع حيوان بري؟",
+    "options": ["الفهد", "الأسد", "النعامة", "الحصان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_014",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة سويسرا؟",
+    "options": ["برن", "زيورخ", "جنيف", "لوزان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_015",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أقرب كوكب إلى الشمس؟",
+    "options": ["عطارد", "الزهرة", "الأرض", "المريخ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_016",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما العملة الرسمية في اليابان؟",
+    "options": ["الين", "اليوان", "الوون", "الروبل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_017",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nمن العالم الذي ارتبط اسمه بأسس علم الجبر؟",
+    "options": ["الخوارزمي", "ابن الهيثم", "ابن النفيس", "جابر بن حيان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_018",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nفي أي دولة تقع مدينة البتراء؟",
+    "options": ["الأردن", "لبنان", "سوريا", "فلسطين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_019",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nكم عدد عظام جسم الإنسان البالغ تقريبًا؟",
+    "options": ["206", "201", "212", "198"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_020",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nأي كوكب يشتهر بحلقاته أكثر من غيره؟",
+    "options": ["زحل", "المشتري", "أورانوس", "نبتون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_021",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة الأرجنتين؟",
+    "options": ["بوينس آيرس", "مونتيفيديو", "ليما", "سانتياغو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_022",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أطول نهر في أفريقيا؟",
+    "options": ["النيل", "النيجر", "الكونغو", "الزامبيزي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_023",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما العنصر الذي رمزه Na؟",
+    "options": ["الصوديوم", "النيكل", "النيتروجين", "النحاس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_024",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أسرع طائر في الانقضاض؟",
+    "options": ["الصقر الشاهين", "النسر الذهبي", "البومة", "الغراب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_025",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة النرويج؟",
+    "options": ["أوسلو", "ستوكهولم", "هلسنكي", "ريكيافيك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_026",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nله أسنان كثيرة لكنه لا يعض. ما هو؟",
+    "options": ["المشط", "المنشار", "الأسد", "القفل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_027",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nكلما أخذتَ منه كبر. ما هو؟",
+    "options": ["الحفرة", "البحر", "الجبل", "الصندوق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_028",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nيكتب ولا يقرأ. ما هو؟",
+    "options": ["القلم", "الكتاب", "المعلم", "الهاتف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_029",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nله وجه وعقربان، لكنه لا يلسع. ما هو؟",
+    "options": ["الساعة", "المرآة", "الخريطة", "القمر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_030",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nيتبعك أينما ذهبت ويختفي في الظلام. ما هو؟",
+    "options": ["الظل", "الصوت", "الهواء", "الحلم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_031",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nكلما شاركتَه زاد. ما هو؟",
+    "options": ["المعرفة", "المال", "الطعام", "الوقت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_032",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nبيت بلا أبواب ولا نوافذ، وداخله شيء أصفر. ما هو؟",
+    "options": ["البيضة", "الليمونة", "البرتقالة", "القمر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_033",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nيسمع بلا أذن ويتكلم بلا لسان. ما هو؟",
+    "options": ["الهاتف", "الصدى", "الميكروفون", "الراديو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_034",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nيدخل الماء ولا يبتل. ما هو؟",
+    "options": ["الضوء", "الورق", "القماش", "الرمل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_035",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nيساعدك على الصعود لكنه لا يتحرك من مكانه. ما هو؟",
+    "options": ["السلم", "المصعد", "الحصان", "الحبل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_036",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nله رقبة وليس له رأس. ما هو؟",
+    "options": ["الزجاجة", "القميص", "الكتاب", "المسمار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_037",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nكلما جفّف شيئًا ازداد بللًا. ما هو؟",
+    "options": ["المنشفة", "الإسفنج", "الماء", "الصابون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_038",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nإذا نطقتَ اسمه كسرتَه. ما هو؟",
+    "options": ["الصمت", "الوعد", "الزجاج", "القفل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_039",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nله مدن بلا ناس وأنهار بلا ماء. ما هو؟",
+    "options": ["الخريطة", "الصحراء", "الحلم", "الكتاب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_040",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nله عين واحدة ولا يرى. ما هو؟",
+    "options": ["الإبرة", "العاصفة", "المرآة", "العدسة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_041",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nإذا أكل شبع، وإذا شرب مات. ما هو؟",
+    "options": ["النار", "الإنسان", "النبات", "السمك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_042",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nمليء بالثقوب، ومع ذلك يحتفظ بالماء. ما هو؟",
+    "options": ["الإسفنج", "الغربال", "السحاب", "المنخل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_043",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nله أوراق لكنه ليس نباتًا. ما هو؟",
+    "options": ["الكتاب", "العنب", "الورد", "الخس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_044",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nله مفاتيح كثيرة لكنه لا يفتح بابًا. ما هو؟",
+    "options": ["البيانو", "القفل", "الخزانة", "الهاتف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_045",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nله فم ولا يتكلم، وله سرير ولا ينام. ما هو؟",
+    "options": ["النهر", "الطفل", "الكتاب", "الجرس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_046",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nكلما استعملته نقص. ما هو؟",
+    "options": ["قلم الرصاص", "الحبل", "الطاولة", "المفتاح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_047",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nيولد طويلًا ثم يقصر كلما عاش. ما هو؟",
+    "options": ["الشمعة", "الحبل", "العمر", "الطريق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_048",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nحولك في كل مكان لكنك لا تراه. ما هو؟",
+    "options": ["الهواء", "الماء", "الحجر", "الورق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_049",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nشيء يُسمع ولا يُرى. ما هو؟",
+    "options": ["الصوت", "الضوء", "الظل", "القلم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_050",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nتشتريه لتأكل فيه، لا لتأكله. ما هو؟",
+    "options": ["الطبق", "الخبز", "الملعقة", "الكأس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_051",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nيأتيك ليلًا بلا موعد ويغادرك إذا صحوت. ما هو؟",
+    "options": ["الحلم", "الظل", "الصدى", "السحاب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_052",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nتعطيه للناس ويبقى عندك. ما هو؟",
+    "options": ["الابتسامة", "المال", "الكتاب", "المفتاح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_053",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nله أربع أرجل لكنه لا يمشي. ما هو؟",
+    "options": ["الطاولة", "الحصان", "الكلب", "الفيل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_054",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nكلما زاد نقص. ما هو؟",
+    "options": ["العمر", "المال", "الطعام", "الوقت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_055",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nإذا قلبته لا ينسكب ما فيه. ما هو؟",
+    "options": ["الساعة الرملية", "الكوب", "الزجاجة", "الصحن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_056",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 18 + 27؟",
+    "options": ["45", "44", "46", "47"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_057",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 14 × 6؟",
+    "options": ["84", "78", "88", "96"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_058",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nما قيمة 25% من 80؟",
+    "options": ["20", "25", "15", "10"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_059",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nما قيمة 3/4 من 40؟",
+    "options": ["30", "20", "25", "35"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_060",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 120 ÷ 5؟",
+    "options": ["24", "20", "25", "30"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_061",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 19 + 17 + 4؟",
+    "options": ["40", "38", "41", "42"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_062",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 9 × 9؟",
+    "options": ["81", "72", "79", "91"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_063",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 150 - 68؟",
+    "options": ["82", "78", "88", "92"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_064",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 2.5 × 4؟",
+    "options": ["10", "8", "12", "9"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_065",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nما قيمة 15% من 200؟",
+    "options": ["30", "25", "20", "35"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_066",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 11 × 12؟",
+    "options": ["132", "122", "121", "142"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_067",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nما نصف العدد 86؟",
+    "options": ["43", "42", "44", "46"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_068",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج (8 × 5) - 7؟",
+    "options": ["33", "35", "37", "31"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_069",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 144 ÷ 12؟",
+    "options": ["12", "14", "11", "16"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_070",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 7²؟",
+    "options": ["49", "42", "56", "48"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_071",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nما نصف 90؟",
+    "options": ["45", "40", "50", "35"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_072",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 35 + 45 + 20؟",
+    "options": ["100", "95", "90", "105"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_073",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 240 ÷ 8؟",
+    "options": ["30", "24", "20", "28"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_074",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج (18 × 3) + 6؟",
+    "options": ["60", "54", "58", "66"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_075",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nما ثلث 81؟",
+    "options": ["27", "21", "24", "18"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_076",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان أحمد أطول من سالم، وسالم أطول من ناصر، فمن الأطول؟",
+    "options": ["أحمد", "سالم", "ناصر", "لا يمكن التحديد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_077",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان اليوم الثلاثاء، فبعد 3 أيام سيكون؟",
+    "options": ["الجمعة", "الخميس", "السبت", "الأحد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_078",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 2، 4، 8، 16، ؟",
+    "options": ["32", "24", "30", "34"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_079",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nفي سباق، إذا تجاوزت صاحب المركز الثاني، فأي مركز تصبح؟",
+    "options": ["الثاني", "الأول", "الثالث", "لا شيء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_080",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان الكتاب على الطاولة، والطاولة في الغرفة، فأين الكتاب؟",
+    "options": ["في الغرفة", "تحت الغرفة", "خارج الغرفة", "فوق السقف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_081",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كانت ليلى قبل مريم، ومريم قبل نور، فمن في الوسط؟",
+    "options": ["مريم", "ليلى", "نور", "لا أحد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_082",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nأي شهر يأتي قبل يونيو؟",
+    "options": ["مايو", "أبريل", "يوليو", "أغسطس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_083",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان الأمس الاثنين، فما اليوم؟",
+    "options": ["الثلاثاء", "الأحد", "الأربعاء", "الاثنين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_084",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nأي عنصر لا ينتمي للمجموعة: مربع، مثلث، دائرة، تفاحة؟",
+    "options": ["تفاحة", "مربع", "مثلث", "دائرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_085",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كانت 5 قطط تصطاد 5 فئران في 5 دقائق، فكم تحتاج قطة واحدة لتصطاد فأرًا واحدًا؟",
+    "options": ["5 دقائق", "1 دقيقة", "10 دقائق", "25 دقيقة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_086",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nما الحرف التالي: A، C، E، ؟",
+    "options": ["G", "F", "H", "I"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_087",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان سعر القلم 3 ريالات، فكم سعر 4 أقلام؟",
+    "options": ["12", "9", "10", "15"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_088",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nفي صف من 20 شخصًا، إذا كنت الخامس من الأمام، فما ترتيبك من الخلف؟",
+    "options": ["السادس عشر", "الخامس عشر", "الرابع عشر", "السابع عشر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_089",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان الصندوق أكبر من الكرة، والكرة أكبر من القطعة النقدية، فما الأكبر؟",
+    "options": ["الصندوق", "الكرة", "القطعة النقدية", "متساوية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_090",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 1، 1، 2، 3، 5، ؟",
+    "options": ["8", "7", "6", "9"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_091",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nبدأ المطر يوم الأربعاء واستمر يومين. ما اليوم الثالث؟",
+    "options": ["الجمعة", "الخميس", "السبت", "الأحد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_092",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كنت تنظر إلى الشمال ثم انعطفت يمينًا ثلاث مرات، فأنت تنظر إلى؟",
+    "options": ["الغرب", "الشرق", "الشمال", "الجنوب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_093",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nأي عدد لا ينتمي: 6، 14، 9، 18؟",
+    "options": ["9", "6", "14", "18"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_094",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كانت الساعة 4:30، فما الوقت بعد 45 دقيقة؟",
+    "options": ["5:15", "5:00", "5:30", "4:45"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_095",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كانت سارة يسار هدى، وهدى يسار منى، فمن الأبعد يمينًا؟",
+    "options": ["منى", "هدى", "سارة", "لا يمكن التحديد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_096",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان الأحمر فوق الأزرق، والأزرق فوق الأخضر، فمن في الأسفل؟",
+    "options": ["الأخضر", "الأحمر", "الأزرق", "لا أحد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_097",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا وُزعت 10 تفاحات بالتساوي على طفلين، فكم يأخذ كل طفل؟",
+    "options": ["5", "4", "6", "3"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_098",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 30، 27، 24، ؟",
+    "options": ["21", "22", "20", "18"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_099",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان لديك عود ثقاب واحد وغرفة فيها شمعة وموقد ومصباح، فما الذي تشعله أولًا؟",
+    "options": ["عود الثقاب", "الشمعة", "الموقد", "المصباح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_100",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nأخو أختك هو؟",
+    "options": ["أخوك", "خالك", "ابن عمك", "أبوك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_101",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة كازاخستان؟",
+    "options": ["أستانا", "ألماتي", "طشقند", "بشكيك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_102",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما الرمز الكيميائي للذهب؟",
+    "options": ["Au", "Ag", "Gd", "Go"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_103",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما أطول سلسلة جبال برية في العالم؟",
+    "options": ["الأنديز", "الهيمالايا", "الألب", "روكي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_104",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما أول دولة عُرفت باستخدام الورق النقدي تاريخيًا؟",
+    "options": ["الصين", "اليابان", "الهند", "إيطاليا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_105",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما اللغة الرسمية في النمسا؟",
+    "options": ["الألمانية", "الفرنسية", "الإيطالية", "الهولندية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_106",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما أكبر صحراء باردة في العالم؟",
+    "options": ["القارة القطبية الجنوبية", "غوبي", "باتاغونيا", "أتاكاما"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_107",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما الحيوان الوطني الأشهر في أستراليا؟",
+    "options": ["الكنغر", "الكوالا", "الإيمو", "خلد الماء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_108",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nمن مؤلف كتاب The Little Prince؟",
+    "options": ["Antoine de Saint-Exupéry", "Victor Hugo", "Jules Verne", "Albert Camus"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_109",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما أقرب نجم إلى الأرض بعد الشمس؟",
+    "options": ["Proxima Centauri", "Sirius", "Betelgeuse", "Polaris"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_110",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة إثيوبيا؟",
+    "options": ["أديس أبابا", "نيروبي", "الخرطوم", "كمبالا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_111",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما الغاز الأكثر وفرة في الشمس؟",
+    "options": ["الهيدروجين", "الهيليوم", "الأكسجين", "النيون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_112",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nأي بحر يفصل بين السعودية ومصر؟",
+    "options": ["البحر الأحمر", "البحر المتوسط", "بحر العرب", "البحر الأسود"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_113",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nأين أُقيمت أول دورة أولمبية حديثة سنة 1896؟",
+    "options": ["أثينا", "روما", "باريس", "لندن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_114",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما وحدة قياس شدة التيار الكهربائي؟",
+    "options": ["الأمبير", "الواط", "الفولت", "الأوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_115",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما أصغر عظمة في جسم الإنسان؟",
+    "options": ["عظمة الركاب", "عظمة العضد", "عظمة الفخذ", "عظمة القص"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_116",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما الدولة التي عاصمتها ويلينغتون؟",
+    "options": ["نيوزيلندا", "أستراليا", "أيرلندا", "آيسلندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_117",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nمن مؤسس علم الوراثة الكلاسيكي؟",
+    "options": ["Gregor Mendel", "Louis Pasteur", "Charles Darwin", "Isaac Newton"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_118",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما اللغة الرسمية في المكسيك؟",
+    "options": ["الإسبانية", "البرتغالية", "الإنجليزية", "الفرنسية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_119",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما أكبر عضو داخلي في جسم الإنسان؟",
+    "options": ["الكبد", "الرئة", "القلب", "الدماغ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_120",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nأي كوكب يدور حول الشمس في أقل زمن؟",
+    "options": ["عطارد", "الزهرة", "الأرض", "المريخ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_121",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة فنلندا؟",
+    "options": ["هلسنكي", "أوسلو", "ستوكهولم", "كوبنهاغن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_122",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nمن رسم لوحة Mona Lisa؟",
+    "options": ["Leonardo da Vinci", "Michelangelo", "Raphael", "Van Gogh"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_123",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما العنصر الأساسي الذي يتكون منه الألماس؟",
+    "options": ["الكربون", "السيليكون", "الحديد", "الكالسيوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_124",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما العاصمة التي يقسمها نهر الدانوب؟",
+    "options": ["بودابست", "براغ", "فيينا", "برلين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_125",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nمن مؤلف رواية 1984؟",
+    "options": ["George Orwell", "Aldous Huxley", "Charles Dickens", "Fyodor Dostoevsky"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_126",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما أكبر قمر في المجموعة الشمسية؟",
+    "options": ["غانيميد", "تيتان", "القمر", "أوروبا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_127",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة كولومبيا؟",
+    "options": ["بوغوتا", "كاراكاس", "كيتو", "ليما"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_128",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nمضيق جبل طارق يفصل بين أي قارتين؟",
+    "options": ["أوروبا وأفريقيا", "آسيا وأوروبا", "آسيا وأفريقيا", "أمريكا الشمالية وأمريكا الجنوبية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_129",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما أطول عظمة في جسم الإنسان؟",
+    "options": ["عظم الفخذ", "عظم القص", "عظم العضد", "عظم الساعد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_130",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة آيسلندا؟",
+    "options": ["ريكيافيك", "أوسلو", "دبلن", "هلسنكي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_131",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nكلما قربته من عينك ابتعد عنك أكثر. ما هو؟",
+    "options": ["الإصبع", "القلم", "المرآة", "الكتاب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_132",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nله قبعة بلا رأس، وله ساق بلا قدم. ما هو؟",
+    "options": ["الفطر", "المسمار", "القلم", "الجرس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_133",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nما الحيوان الذي ينام منتعلًا حذاءه؟",
+    "options": ["الحصان", "القطة", "الأرنب", "الكلب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_134",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nتحمله أنت ويحملك هو في الوقت نفسه. ما هو؟",
+    "options": ["الحذاء", "القميص", "الحقيبة", "الكتاب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_135",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nإذا التفتَّ إليه اختفى. ما هو؟",
+    "options": ["النوم", "الهواء", "الصوت", "الحبر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_136",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nيولد من الماء، وإذا عاد إليه ذاب. ما هو؟",
+    "options": ["الملح", "الجليد", "السكر", "الزجاج"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_137",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nيتبعك نهارًا ويختفي ليلًا. ما هو؟",
+    "options": ["الظل", "الصوت", "الهواء", "النجمة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_138",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nيدخل البيوت من النوافذ ولا يكسر الزجاج. ما هو؟",
+    "options": ["الضوء", "الهواء", "المطر", "الطائر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_139",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nله ورقة واحدة، لكنه يخبرك بتاريخ جديد كل يوم. ما هو؟",
+    "options": ["التقويم", "الكتاب", "الجريدة", "الخريطة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_140",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nهو أمامك دائمًا، لكنك لا تستطيع الوصول إليه. ما هو؟",
+    "options": ["المستقبل", "الجبل", "القمر", "الطريق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_141",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nكلما كان فارغًا كان صوته أعلى. ما هو؟",
+    "options": ["الطبل", "الكوب", "الصندوق", "الجرس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_142",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nإذا توقف عن الدوران فسد الجو. ما هو؟",
+    "options": ["المروحة", "الساعة", "المصباح", "المفتاح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_143",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nتراه في الماء لكن الماء لا يلمسه. ما هو؟",
+    "options": ["الانعكاس", "السمك", "الضوء", "الطين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_144",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nلا يدخل إلا إذا ضُرب على رأسه. ما هو؟",
+    "options": ["المسمار", "القفل", "الباب", "المفتاح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_145",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nيولد دقيقًا ثم يكتمل ثم يعود فيتناقص. ما هو؟",
+    "options": ["القمر", "الكتاب", "العمر", "الشمعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_146",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nتملكه أنت، لكن غيرك يستخدمه أكثر منك. ما هو؟",
+    "options": ["اسمك", "مالك", "قلمك", "بيتك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_147",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nإذا وضعته في الثلاجة لا يبرد. ما هو؟",
+    "options": ["الفلفل الحار", "الماء", "الزبدة", "الحليب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_148",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nيلبس مئات الطبقات ولا يخلع شيئًا منها. ما هو؟",
+    "options": ["الملفوف", "البصل", "الكتاب", "الخبز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_149",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nإذا اتسخ لم تعد ترى من خلاله بوضوح. ما هو؟",
+    "options": ["النظارة", "الحائط", "الوسادة", "الصندوق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_150",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nتعطيه للناس ويظل عندك، لكنه يغيّر يومهم. ما هو؟",
+    "options": ["الابتسامة", "المال", "الكتاب", "المفتاح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_151",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nيأخذ الصور كلها لكنه لا يراها أبدًا. ما هو؟",
+    "options": ["الكاميرا", "العين", "الهاتف", "الإطار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_152",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nخرج رجل تحت المطر ولم يبتل شعره. لماذا؟",
+    "options": ["لأنه أصلع", "لأنه ركض بسرعة", "لأن المطر خفيف", "لأنه كان تحت شجرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_153",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nمعك عود ثقاب واحد، وفي الغرفة شمعة ومصباح ومدفأة. ما الذي تشعله أولًا؟",
+    "options": ["عود الثقاب", "الشمعة", "المصباح", "المدفأة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_154",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nله سرير ولا ينام، وله فم ولا يأكل. ما هو؟",
+    "options": ["النهر", "الإنسان", "الحصان", "الكتاب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_155",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nإذا ضغطت عليه تكلم، وإذا تركته سكت. ما هو؟",
+    "options": ["الجرس", "القلم", "الكتاب", "المفتاح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_156",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nيسقط من أعلى ولا ينكسر، لكن إذا سقط على الزجاج كسره. ما هو؟",
+    "options": ["الماء", "الريشة", "الهواء", "الورق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_157",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nتشتريه وتستخدمه ثم ترميه. ما هو؟",
+    "options": ["علبة المناديل", "السيارة", "الهاتف", "الكتاب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_158",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nشيء تراه في الصور القديمة كثيرًا، وكلما تقدمت فيه رجعت بالزمن. ما هو؟",
+    "options": ["الألبوم", "المرآة", "القلم", "المفتاح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_159",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nإذا حملته بيمينك لا تستطيع أن تحمله بيسارك. ما هو؟",
+    "options": ["كوع يدك اليسرى", "حقيبتك", "هاتفك", "كتابك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_160",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nإذا أعطيته لغيرك لم يعد بإمكانك الاحتفاظ به. ما هو؟",
+    "options": ["السر", "المال", "الهدية", "الكتاب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_161",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 18 × 7؟",
+    "options": ["126", "124", "128", "132"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_162",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 360 ÷ 15؟",
+    "options": ["24", "18", "20", "30"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_163",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nما قيمة 12.5% من 64؟",
+    "options": ["8", "6", "10", "12"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_164",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج (45 + 55) ÷ 5؟",
+    "options": ["20", "25", "15", "18"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_165",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nما قيمة 3/5 من 150؟",
+    "options": ["90", "60", "75", "120"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_166",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 27²؟",
+    "options": ["729", "719", "739", "7290"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_167",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 480 - 195؟",
+    "options": ["285", "275", "295", "265"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_168",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 2.4 × 25؟",
+    "options": ["60", "50", "55", "65"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_169",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 84 ÷ 7 + 16؟",
+    "options": ["28", "24", "26", "30"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_170",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 14 × 14؟",
+    "options": ["196", "184", "204", "192"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_171",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nما قيمة 35% من 200؟",
+    "options": ["70", "75", "60", "80"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_172",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج (9 × 8) - 19؟",
+    "options": ["53", "51", "55", "49"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_173",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nما قيمة 1/8 من 96؟",
+    "options": ["12", "10", "14", "16"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_174",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 125 × 4؟",
+    "options": ["500", "450", "520", "550"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_175",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 7.5 + 2.5 + 10؟",
+    "options": ["20", "18", "19", "21"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_176",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 250 ÷ 0.5؟",
+    "options": ["500", "250", "125", "1000"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_177",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 18 + 24 + 36 + 22؟",
+    "options": ["100", "90", "110", "96"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_178",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 15² - 25؟",
+    "options": ["200", "210", "180", "190"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_179",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nما قيمة 4/3 من 36؟",
+    "options": ["48", "42", "44", "36"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_180",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 900 ÷ 30 + 7؟",
+    "options": ["37", "30", "27", "40"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_181",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كانت هدى أقصر من سارة، وأطول من ريم، فمن في الوسط؟",
+    "options": ["هدى", "سارة", "ريم", "لا يمكن التحديد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_182",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان اليوم الأحد، فبعد 17 يومًا سيكون؟",
+    "options": ["الأربعاء", "الثلاثاء", "الخميس", "الجمعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_183",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 3، 6، 11، 18، 27، ؟",
+    "options": ["38", "36", "40", "42"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_184",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان الصندوق الأحمر يسار الأزرق، والأزرق يسار الأخضر، فمن الأبعد يمينًا؟",
+    "options": ["الأخضر", "الأحمر", "الأزرق", "لا يمكن التحديد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_185",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان علي قبل ماجد، وماجد قبل فهد، فمن الأخير؟",
+    "options": ["فهد", "علي", "ماجد", "لا أحد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_186",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nخمسة كتب مرتبة هكذا: A فوق B، وB فوق C، وC فوق D، وD فوق E. ما الكتاب في الوسط؟",
+    "options": ["C", "B", "D", "A"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_187",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا انطلقت رحلة الساعة 9:20 واستغرقت ساعتين و45 دقيقة، فمتى تصل؟",
+    "options": ["12:05", "11:55", "12:15", "12:25"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_188",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nفي سباق من 30 متسابقًا، إذا كنت الثامن والعشرين من الأمام، فما ترتيبك من الخلف؟",
+    "options": ["الثالث", "الثاني", "الرابع", "الخامس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_189",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 2، 5، 10، 17، 26، ؟",
+    "options": ["37", "35", "39", "36"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_190",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان الكوب يمين الطبق، والملعقة يسار الطبق، فمن الأبعد يسارًا؟",
+    "options": ["الملعقة", "الطبق", "الكوب", "لا يمكن التحديد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_191",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كانت كل المثلثات مضلعات، وبعض المضلعات حمراء، فأي عبارة صحيحة دائمًا؟",
+    "options": ["كل المثلثات مضلعات", "كل المضلعات مثلثات", "كل المثلثات حمراء", "لا توجد مضلعات حمراء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_192",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان أول أمس الاثنين، فبعد غدٍ سيكون؟",
+    "options": ["الجمعة", "الخميس", "السبت", "الأربعاء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_193",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nأي عدد لا ينتمي: 9، 16، 25، 27؟",
+    "options": ["27", "9", "16", "25"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_194",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كانت نور خلف لينا، وأمام رنا، فمن في الوسط؟",
+    "options": ["نور", "لينا", "رنا", "لا يمكن التحديد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_195",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كنت تنظر إلى الشرق ثم انعطفت يسارًا مرتين، فأنت تنظر إلى؟",
+    "options": ["الغرب", "الجنوب", "الشمال", "الشرق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_196",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nقمصان مرتبة من اليسار لليمين. الأزرق قبل الأخضر، والأحمر بعد الأخضر. ما الترتيب الصحيح؟",
+    "options": ["الأزرق، الأخضر، الأحمر", "الأخضر، الأزرق، الأحمر", "الأحمر، الأخضر، الأزرق", "الأزرق، الأحمر، الأخضر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_197",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كانت قطتان تصطادان فأرين في دقيقتين، فكم تحتاج 6 قطط لصيد 6 فئران بنفس المعدل؟",
+    "options": ["دقيقتان", "4 دقائق", "6 دقائق", "12 دقيقة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_198",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 1، 2، 6، 24، ؟",
+    "options": ["120", "96", "100", "144"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_199",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان عمر شمال زيد، وزيد شرق خالد، فأين خالد بالنسبة لعمر؟",
+    "options": ["جنوب غرب", "شمال شرق", "جنوب شرق", "شمال غرب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_200",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nثلاثة صناديق: الذهبي ليس أولًا، والفضي بعد البرونزي مباشرة. من الأول؟",
+    "options": ["البرونزي", "الذهبي", "الفضي", "لا يمكن التحديد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_201",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة بوتان؟",
+    "options": ["تيمفو", "كاتماندو", "كولومبو", "دكا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_202",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما العنصر الذي عدده الذري 26؟",
+    "options": ["الحديد", "النحاس", "المنغنيز", "الزنك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_203",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما أكبر أقمار المشتري؟",
+    "options": ["غانيميد", "أيو", "أوروبا", "كاليستو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_204",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما اللغة الرسمية في إيران؟",
+    "options": ["الفارسية", "العربية", "الكردية", "التركية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_205",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما العاصمة الإدارية لبوليفيا؟",
+    "options": ["لاباز", "سوكري", "ليما", "كيتو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_206",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nمن صاغ نموذج مركزية الشمس في أوروبا الحديثة؟",
+    "options": ["نيكولاس كوبرنيكوس", "غاليليو غاليلي", "يوهانس كبلر", "تايكو براهي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_207",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما البحر الوحيد الذي لا يملك سواحل برية واضحة لأنه محاط بالتيارات؟",
+    "options": ["بحر سارجاسو", "البحر الميت", "بحر قزوين", "البحر الأسود"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_208",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما أعمق بحيرة في العالم؟",
+    "options": ["بايكال", "سوبيريور", "فيكتوريا", "تانجانيقا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_209",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما العملة الرسمية في المجر؟",
+    "options": ["الفورنت", "الكرونة", "اليورو", "الليف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_210",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة منغوليا؟",
+    "options": ["أولان باتور", "أستانا", "بشكيك", "طشقند"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_211",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nمن اكتشف الدورة الدموية الكبرى بدقة علمية؟",
+    "options": ["William Harvey", "ابن النفيس", "جالينوس", "لويس باستور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_212",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nأي غاز نبيل يُستخدم في الإعلانات المضيئة التقليدية؟",
+    "options": ["النيون", "الأرجون", "الزينون", "الهيليوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_213",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما أطول نهر في أوروبا؟",
+    "options": ["الفولغا", "الدانوب", "الراين", "السين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_214",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما الدولة الوحيدة الواقعة بالكامل داخل جنوب أفريقيا؟",
+    "options": ["ليسوتو", "إسواتيني", "بوتسوانا", "ناميبيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_215",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nمن مؤلف Crime and Punishment؟",
+    "options": ["Fyodor Dostoevsky", "Leo Tolstoy", "Anton Chekhov", "Franz Kafka"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_216",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما أكبر صحراء حارة في العالم؟",
+    "options": ["الصحراء الكبرى", "الربع الخالي", "أتاكاما", "كالاهاري"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_217",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة سلوفينيا؟",
+    "options": ["ليوبليانا", "زغرب", "بلغراد", "براتيسلافا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_218",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nمن أول امرأة فازت بجائزة نوبل؟",
+    "options": ["ماري كوري", "روزا لوكسمبورغ", "جين أوستن", "فلورنس نايتنغيل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_219",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما العنصر السائل في درجة حرارة الغرفة الذي استُخدم في بعض موازين الحرارة القديمة؟",
+    "options": ["الزئبق", "البروم", "الرصاص", "القصدير"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_220",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما العاصمة الرسمية الإدارية لسريلانكا؟",
+    "options": ["سري جاياواردنابورا كوتي", "كولومبو", "غالي", "كاندي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_221",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nفي غرفة 4 زوايا، وفي كل زاوية قطة، وكل قطة ترى 3 قطط. كم عدد القطط في الغرفة؟",
+    "options": ["4", "8", "12", "16"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_222",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nلديك 3 تفاحات، أخذتَ منها 2. كم تفاحة أصبحت معك؟",
+    "options": ["2", "1", "3", "0"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_223",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nشخصان وُلدا في اليوم نفسه من السنة نفسها ومن الأب والأم نفسيهما، لكنهما ليسا توأمًا. كيف؟",
+    "options": ["هما اثنان من ثلاثة توائم", "لأن أحدهما متبنّى", "لأنهما من مدينتين مختلفتين", "لأنهما وُلدا ليلًا ونهارًا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_224",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nتحطمت طائرة على الحدود بين بلدين. أين يُدفن الناجون؟",
+    "options": ["لا يُدفنون", "في البلد الأول", "في البلد الثاني", "في المنطقة الحدودية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_225",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nما الذي يوجد في وسط كلمة \"باريس\"؟",
+    "options": ["حرف الراء", "حرف الألف", "حرف الياء", "حرف الباء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_226",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nإذا كان في القفص 6 عصافير وطارت منه 4، فكم بقي في القفص؟",
+    "options": ["2", "4", "6", "0"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_227",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nكيف يمكنك أن تقف خلف والدك وهو يقف خلفك في الوقت نفسه؟",
+    "options": ["تقفان ظهرًا لظهر", "تقف فوق كرسي", "تغلق عينيك", "تدور حوله"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_228",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nرجل نظر إلى صورة وقال: ليس لي إخوة ولا أخوات، لكن والد هذا الرجل هو ابن أبي. من في الصورة؟",
+    "options": ["ابنه", "أبوه", "هو نفسه", "عمه"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_229",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nإذا استعملته رميتَه، وإذا لم تستعمله حملتَه. ما هو؟",
+    "options": ["شبكة الصيد", "الحبل", "الكتاب", "المفتاح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_230",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nما العدد الذي إذا قلبته نقص؟",
+    "options": ["9", "8", "7", "5"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_231",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nثلاث شموع مضاءة، أطفأتَ واحدة. كم شمعة بقيت؟",
+    "options": ["3", "2", "1", "0"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_232",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nفي سباق، إذا تجاوزتَ المتسابق الأخير، فأي مركز تصبح؟",
+    "options": ["مستحيل", "الأخير", "قبل الأخير", "الأول"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_233",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nكان لديك 6 بيضات، كسرت 2 وطبخت 2 وأكلت 2. كم بقي؟",
+    "options": ["4", "2", "0", "6"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_234",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nرجل عمره 25 سنة، لكنه احتفل بعيد ميلاده الخامس فقط. كيف؟",
+    "options": ["وُلد في 29 فبراير", "لا يعرف عمره الحقيقي", "كان مسافرًا دائمًا", "لديه تقويم خاص"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_235",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nما الشيء الذي لا يمكنك الاحتفاظ به بعد أن تعطيه لغيرك؟",
+    "options": ["السر", "المال", "الكتاب", "الهدية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_236",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 37 × 27؟",
+    "options": ["999", "989", "1009", "979"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_237",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما قيمة 125% من 64؟",
+    "options": ["80", "72", "84", "96"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_238",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 999 ÷ 27؟",
+    "options": ["37", "39", "33", "41"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_239",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 15² - 5²؟",
+    "options": ["200", "220", "180", "210"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_240",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما قيمة 0.75 من 240؟",
+    "options": ["180", "160", "175", "190"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_241",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 48 × 25؟",
+    "options": ["1200", "1150", "1250", "1100"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_242",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما قيمة 7/12 من 84؟",
+    "options": ["49", "42", "56", "45"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_243",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 1.2 × 1.5؟",
+    "options": ["1.8", "1.7", "1.6", "1.9"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_244",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 144 ÷ 0.12؟",
+    "options": ["1200", "1400", "1000", "1100"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_245",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nعدد قيمته 200 زاد 15% ثم نقص 15%. كم تصبح قيمته؟",
+    "options": ["195.5", "200", "190", "197.5"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_246",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nفي طابور من أربعة: خالد ليس الأول ولا الأخير، ومازن قبل فهد، وفهد قبل خالد. من الأول؟",
+    "options": ["مازن", "فهد", "خالد", "لا يمكن التحديد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_247",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nأربعة كتب مرتبة من اليسار لليمين: A قبل B، وC بعد B، وD قبل A. ما الترتيب الصحيح؟",
+    "options": ["D، A، B، C", "A، D، B، C", "D، B، A، C", "A، B، D، C"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_248",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان اليوم الثلاثاء، فبعد 45 يومًا سيكون؟",
+    "options": ["الجمعة", "الخميس", "السبت", "الأحد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_249",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nريم أمام ليان مباشرة، وليان أمام هبة مباشرة، ومنى خلف هبة مباشرة. من الثانية من الخلف؟",
+    "options": ["هبة", "ليان", "ريم", "منى"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_250",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nفي سباق من 8 متسابقين: عمر قبل زيد بمركزين، وزيد قبل علي بمركز واحد، وعلي ليس الأخير. إذا كان عمر في المركز الرابع، ففي أي مركز علي؟",
+    "options": ["السابع", "السادس", "الخامس", "الثامن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_251",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما الدولة الوحيدة التي علمها ليس مستطيلًا؟",
+    "options": ["نيبال", "سويسرا", "بوتان", "اليابان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_252",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما العنصر الكيميائي الذي يُرمز له بـ Pb؟",
+    "options": ["الرصاص", "البلاتين", "البلاديوم", "الفوسفور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_253",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أعمق نقطة معروفة في المحيطات؟",
+    "options": ["خندق ماريانا", "خندق تونغا", "خندق الفلبين", "خندق بورتوريكو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_254",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما الدولة العربية التي عاصمتها الرباط؟",
+    "options": ["المغرب", "تونس", "الجزائر", "موريتانيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_255",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما وحدة قياس المقاومة الكهربائية؟",
+    "options": ["الأوم", "الفولت", "الأمبير", "الواط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_256",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أكثر معدن موجود في القشرة الأرضية؟",
+    "options": ["الألمنيوم", "الحديد", "النحاس", "الذهب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_257",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nمن مخترع الهاتف؟",
+    "options": ["ألكسندر غراهام بيل", "توماس إديسون", "نيكولا تسلا", "جيمس واط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_258",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nأي كوكب يُعرف بأنه أكثر الكواكب حرارةً رغم أنه ليس الأقرب للشمس؟",
+    "options": ["الزهرة", "عطارد", "المريخ", "المشتري"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_259",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة بولندا؟",
+    "options": ["وارسو", "كراكوف", "براغ", "بودابست"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_260",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما الصيغة الكيميائية لملح الطعام؟",
+    "options": ["NaCl", "KCl", "CaCO₃", "NaOH"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_261",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما الغاز الذي ينتجه الإنسان عند الزفير أكثر من الشهيق؟",
+    "options": ["ثاني أكسيد الكربون", "الأكسجين", "النيتروجين", "الهيليوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_262",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة البيرو؟",
+    "options": ["ليما", "كيتو", "بوغوتا", "سانتياغو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_263",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nمن رسم السقف الشهير لكنيسة سيستين؟",
+    "options": ["مايكل أنجلو", "ليوناردو دافنشي", "رافاييل", "بوتيتشيلي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_264",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أكبر دولة عربية من حيث المساحة؟",
+    "options": ["الجزائر", "السعودية", "السودان", "ليبيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_265",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nمن هو أب علم البصريات في الحضارة الإسلامية؟",
+    "options": ["ابن الهيثم", "الخوارزمي", "ابن سينا", "البيروني"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_266",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما البحر الذي يُعد أملح بحر طبيعي في العالم؟",
+    "options": ["البحر الميت", "البحر الأحمر", "البحر الأسود", "بحر البلطيق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_267",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة جنوب أفريقيا التنفيذية؟",
+    "options": ["بريتوريا", "كيب تاون", "جوهانسبرغ", "دوربان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_268",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أطول عمر مسجل رسميًا لإنسان تقريبًا؟",
+    "options": ["122 سنة", "117 سنة", "130 سنة", "115 سنة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_269",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما الدولة التي تمتلك أكبر عدد من الجزر؟",
+    "options": ["السويد", "إندونيسيا", "الفلبين", "كندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_270",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما الجهاز المسؤول عن تنقية الدم في جسم الإنسان؟",
+    "options": ["الكلية", "الكبد", "الرئة", "القلب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_271",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة تايلاند؟",
+    "options": ["بانكوك", "هانوي", "جاكرتا", "مانيلا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_272",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما اسم خط الطول الرئيسي الذي يمر بلندن؟",
+    "options": ["خط غرينتش", "خط الاستواء", "مدار السرطان", "مدار الجدي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_273",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما أسرع مخلوق بحري؟",
+    "options": ["سمكة الشراع", "القرش الأبيض", "الدلفين", "الحبار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_274",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة كوبا؟",
+    "options": ["هافانا", "سان خوان", "سانتو دومينغو", "كينغستون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_275",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **معلومة سريعة**\nمن هو صاحب لوحة The Starry Night؟",
+    "options": ["فان غوخ", "بيكاسو", "مونيه", "دالي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_276",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nشيء يمر أمام الشمس ولا يصنع ظلًا. ما هو؟",
+    "options": ["الريح", "الظل", "الماء", "الصوت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_277",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي يُكسر قبل أن يُستخدم؟",
+    "options": ["البيضة", "الزجاج", "المفتاح", "الورق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_278",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الشيء الذي يسافر حول العالم وهو ثابت في مكانه؟",
+    "options": ["الطابع البريدي", "الخريطة", "الكتاب", "الصورة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_279",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nتذبحه وتبكي عليه. ما هو؟",
+    "options": ["البصل", "الدجاج", "التفاح", "الخبز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_280",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي يقع ولا ينكسر، ويكسر ولا يقع؟",
+    "options": ["الليل والنهار", "الماء والحجر", "الزجاج والمعدن", "الصوت والضوء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_281",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي تراه في الليل ثلاث مرات وفي النهار مرة واحدة؟",
+    "options": ["حرف اللام", "القمر", "النجوم", "الظلام"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_282",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي له رأس وذيل ولا جسم له؟",
+    "options": ["العملة المعدنية", "الحصان", "السهم", "المسمار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_283",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي ليس له بداية ولا نهاية؟",
+    "options": ["الدائرة", "الخط", "المربع", "المثلث"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_284",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي يطير بدون أجنحة ويبكي بدون عيون؟",
+    "options": ["السحابة", "الطائرة الورقية", "البالون", "الطيارة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_285",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nأنا لست حيًا لكنني أنمو، ليس لي رئتان لكنني أحتاج هواءً، ليس لي فم لكنني أخشى الماء. ما أنا؟",
+    "options": ["النار", "النبات", "الفطر", "الشمعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_286",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي كلما مشى فيه الإنسان ابتعد عنه؟",
+    "options": ["نقطة البداية", "البيت", "الباب", "الجبل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_287",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nتأكله في المطعم ولا تدفع ثمنه. ما هو؟",
+    "options": ["الخبز المجاني", "الماء", "الهواء", "الملح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_288",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي إذا ابتسمتَ له ابتسم لك؟",
+    "options": ["المرآة", "القمر", "الكاميرا", "الصورة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_289",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي يمشي واقفًا وينام جالسًا؟",
+    "options": ["العصا", "القلم", "المظلة", "الشمعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_290",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الشيء الذي يحمل طعامك لكنه لا يأكل أبدًا؟",
+    "options": ["الصحن", "الشوكة", "الملعقة", "المنديل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_291",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nله أربع أصابع وإبهام لكنه ليس يدًا. ما هو؟",
+    "options": ["القفاز", "الجورب", "الحذاء", "الخوذة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_292",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي يصعد إلى السماء ولا يعود أبدًا؟",
+    "options": ["الدخان", "المطر", "الطائر", "البالون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_293",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي يدق بلا يد ويمشي بلا أقدام؟",
+    "options": ["الساعة", "القلب", "الجرس", "الطبل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_294",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الشيء الذي له فروع ولا أوراق ولا ثمار ولا جذع؟",
+    "options": ["البنك", "الشجرة", "النهر", "الطريق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_295",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **لغز قصير**\nما الذي يملك 13 قلبًا ولا يملك أعضاء أخرى؟",
+    "options": ["أوراق اللعب", "الساعة", "الكتاب", "الأخطبوط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_296",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 16 × 15؟",
+    "options": ["240", "230", "250", "220"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_297",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nما قيمة 40% من 75؟",
+    "options": ["30", "25", "35", "20"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_298",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 360 ÷ 9؟",
+    "options": ["40", "36", "45", "30"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_299",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 8 × 8 × 2؟",
+    "options": ["128", "124", "132", "136"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_300",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nما قيمة 5/8 من 56؟",
+    "options": ["35", "28", "32", "40"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_301",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 1000 - 347؟",
+    "options": ["653", "643", "663", "657"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_302",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 13 × 7؟",
+    "options": ["91", "84", "87", "93"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_303",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nما قيمة 2/3 من 99؟",
+    "options": ["66", "63", "33", "72"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_304",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج (25 × 4) + 13؟",
+    "options": ["113", "103", "123", "93"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_305",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 8² + 6²؟",
+    "options": ["100", "90", "110", "96"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_306",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 175 + 225؟",
+    "options": ["400", "390", "410", "380"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_307",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 72 ÷ 8 + 11؟",
+    "options": ["20", "18", "22", "16"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_308",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nما قيمة 10% من 370؟",
+    "options": ["37", "30", "47", "35"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_309",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 6.5 × 4؟",
+    "options": ["26", "24", "28", "25"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_310",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 200 - 18 - 82؟",
+    "options": ["100", "110", "90", "120"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_311",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 100، 81، 64، 49، ؟",
+    "options": ["36", "25", "30", "42"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_312",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان الخميس قبل يومين، فبعد غدٍ سيكون؟",
+    "options": ["الأحد", "السبت", "الاثنين", "الجمعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_313",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nخمسة أشخاص يقفون في صف. أحمد ليس الأول ولا الأخير. من الشخص الذي لا يمكن أن يكون أحمد؟",
+    "options": ["الأول والأخير", "الثاني فقط", "الثالث فقط", "الرابع فقط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_314",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان الأب أكبر من ابنه بـ 28 سنة، وعمر الابن 12 سنة، فكم عمر الأب؟",
+    "options": ["40", "38", "42", "36"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_315",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nأي عنصر لا ينتمي: أسد، نمر، غزال، فهد؟",
+    "options": ["الغزال", "الأسد", "النمر", "الفهد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_316",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كنت تنظر إلى الغرب ثم أدرت ظهرك، فأنت تنظر إلى؟",
+    "options": ["الشرق", "الشمال", "الجنوب", "الغرب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_317",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان هناك 6 تفاحات في سلة وأخذت منها 4، فكم تفاحة معك؟",
+    "options": ["4", "2", "6", "0"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_318",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nما الرقم الناقص: 3، 9، 27، ؟",
+    "options": ["81", "72", "54", "36"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_319",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nقميص يأخذ ساعتين ليجف تحت الشمس. كم ساعة يأخذ 5 قمصان لتجف في الوقت نفسه؟",
+    "options": ["ساعتان", "5 ساعات", "10 ساعات", "ساعة واحدة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_320",
+    "category": "competitive",
+    "difficulty": "easy",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان الأربعاء هو اليوم الخامس من الشهر، فما هو اليوم الذي يوافق اليوم التاسع؟",
+    "options": ["الأحد", "السبت", "الاثنين", "الثلاثاء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_321",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما الدولة التي تمتلك أكبر غابة مطيرة في العالم؟",
+    "options": ["البرازيل", "الكونغو", "إندونيسيا", "كولومبيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_322",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما العنصر الكيميائي الأخف في الجدول الدوري؟",
+    "options": ["الهيدروجين", "الهيليوم", "الليثيوم", "البيريليوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_323",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما القناة المائية التي تربط البحر الأبيض المتوسط بالبحر الأحمر؟",
+    "options": ["قناة السويس", "قناة بنما", "قناة كيل", "قناة كورنث"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_324",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما العنصر الذي يشكل حوالي 78% من الغلاف الجوي للأرض؟",
+    "options": ["النيتروجين", "الأكسجين", "الأرجون", "ثاني أكسيد الكربون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_325",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nمن مؤلف رواية One Hundred Years of Solitude؟",
+    "options": ["Gabriel García Márquez", "Jorge Luis Borges", "Pablo Neruda", "Mario Vargas Llosa"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_326",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة ميانمار؟",
+    "options": ["نايبيداو", "يانغون", "ماندالاي", "بانكوك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_327",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nأي عالم مسلم يُعرف بكتاب \"المناظر\" في البصريات؟",
+    "options": ["ابن الهيثم", "ابن سينا", "الخوارزمي", "البيروني"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_328",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما أكبر بحيرة عذبة في العالم من حيث المساحة؟",
+    "options": ["بحيرة سوبيريور", "بحيرة فيكتوريا", "بحيرة بايكال", "بحيرة هورون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_329",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nمن هو مؤسس شركة Tesla؟",
+    "options": ["إيلون ماسك", "جيف بيزوس", "بيل غيتس", "ستيف جوبز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_330",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة رومانيا؟",
+    "options": ["بوخارست", "بودابست", "صوفيا", "بلغراد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_331",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما المحيط الذي يقع فيه مثلث برمودا؟",
+    "options": ["الأطلسي", "الهادئ", "الهندي", "المتجمد الشمالي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_332",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما العنصر الكيميائي الذي رمزه W؟",
+    "options": ["التنغستن", "الواناديوم", "الولفراميوم", "الزيركونيوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_333",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما الطبقة التي تحمي الأرض من الأشعة فوق البنفسجية؟",
+    "options": ["طبقة الأوزون", "الغلاف الأيوني", "الميزوسفير", "الثيرموسفير"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_334",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة نيجيريا؟",
+    "options": ["أبوجا", "لاغوس", "كانو", "أكرا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_335",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **معلومة سريعة**\nمن مؤلف The Republic؟",
+    "options": ["أفلاطون", "أرسطو", "سقراط", "ديمقريطس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_336",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nوالد أحمد لديه 4 أبناء: شمال، جنوب، شرق. ما اسم الرابع؟",
+    "options": ["أحمد", "غرب", "سالم", "فهد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_337",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nفي بيت أحمد 4 بنات، ولكل بنت أخ واحد. كم عدد أبناء أحمد؟",
+    "options": ["5", "4", "8", "9"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_338",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nرجل يصعد بالمصعد إلى الطابق العاشر كل صباح، لكنه عند العودة يصعد فقط إلى السابع ثم يكمل مشيًا. لماذا؟",
+    "options": ["لأنه قصير القامة", "لأن المصعد معطل", "لأنه يتمرن", "لأنه نسي طابقه"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_339",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nقبل اكتشاف قمة إيفرست، ما كان أعلى جبل في العالم؟",
+    "options": ["إيفرست نفسه", "K2", "مونت بلانك", "كيليمانجارو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_340",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nطبيب يعطيك 3 حبات دواء وتأخذ حبة كل نصف ساعة. بعد كم دقيقة تنتهي من الدواء؟",
+    "options": ["60 دقيقة", "90 دقيقة", "45 دقيقة", "30 دقيقة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_341",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nلديك كبريتة واحدة ودخلت غرفة فيها فرن وسخان ومدفأة وشمعة. ما أول شيء تشعله؟",
+    "options": ["الكبريتة", "الشمعة", "الفرن", "المدفأة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_342",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nما الموجود بين السماء والأرض؟",
+    "options": ["حرف الواو", "الهواء", "الفضاء", "السحاب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_343",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nسائق حافلة عمره 52 سنة يسوق في الطريق السريع. كم عمر السائق؟",
+    "options": ["52", "لا يمكن التحديد", "38", "45"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_344",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nإذا دقت ساعة 6 دقات في 5 ثوانٍ، فكم ثانية تحتاج لتدق 12 دقة؟",
+    "options": ["11", "10", "12", "6"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_345",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nمزارع لديه 17 خروفًا، مات كلها إلا 9. كم بقي حيًا؟",
+    "options": ["9", "8", "17", "0"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_346",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nيُقسّم بدون أن يُقطع. ما هو؟",
+    "options": ["الرقم", "الحبل", "الخشب", "الخبز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_347",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nكلما مشيت على شيء ثبّت إحساسك بالمكان دون أن تنتبه. ما هو؟",
+    "options": ["الأرض", "الوقت", "الخريطة", "الطريق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_348",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nأنا أقصر في الصيف وأطول في الشتاء. ما أنا؟",
+    "options": ["الظل", "النهار", "الحبل", "الشجرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_349",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nعائلة فيها أب وأم وثلاثة أبناء ذكور، ولكل ابن أخت واحدة مشتركة. كم عدد أفراد العائلة؟",
+    "options": ["6", "5", "7", "8"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_350",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **لغز قصير**\nإذا كانت أختك أكبر منك وأصغر من أخيك، وأخوك يصغر أمك، فمن الأكبر سنًا في هذه المجموعة؟",
+    "options": ["الأم", "الأخ", "الأخت", "أنت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_351",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 19 × 21؟",
+    "options": ["399", "401", "389", "411"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_352",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nما قيمة 37.5% من 80؟",
+    "options": ["30", "25", "35", "40"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_353",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 625 ÷ 25؟",
+    "options": ["25", "20", "30", "35"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_354",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج (7 × 9) + (8 × 6)؟",
+    "options": ["111", "109", "113", "107"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_355",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nما قيمة 5/6 من 72؟",
+    "options": ["60", "54", "66", "72"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_356",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 16² + 9²؟",
+    "options": ["337", "325", "347", "317"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_357",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 0.8 × 0.5 × 100؟",
+    "options": ["40", "50", "45", "35"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_358",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 999 + 999 + 2؟",
+    "options": ["2000", "1998", "2002", "1999"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_359",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nما قيمة 225 ÷ 15؟",
+    "options": ["15", "14", "16", "13"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_360",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 3.5 × 12؟",
+    "options": ["42", "36", "39", "45"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_361",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nما قيمة 7/4 من 28؟",
+    "options": ["49", "42", "56", "35"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_362",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 44 × 25؟",
+    "options": ["1100", "1000", "1150", "1050"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_363",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nما قيمة (100 - 37) × 2؟",
+    "options": ["126", "130", "116", "124"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_364",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 1.25 × 8؟",
+    "options": ["10", "8", "12", "9"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_365",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **حساب ذهني**\nما متوسط الأعداد: 13، 17، 21، 25، 29؟",
+    "options": ["21", "20", "22", "23"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_366",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 1، 3، 7، 15، 31، ؟",
+    "options": ["63", "47", "55", "60"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_367",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nخمس علب: A أثقل من B، وC أخف من D، وD أثقل من A، وB أثقل من E. ما الأثقل؟",
+    "options": ["D", "A", "B", "C"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_368",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان أول أمس الجمعة، فبعد 4 أيام من الآن سيكون؟",
+    "options": ["الأربعاء", "الثلاثاء", "الخميس", "الاثنين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_369",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nفي طابور من 50 شخصًا، إذا كنت الثالث عشر من الأمام، فما ترتيبك من الخلف؟",
+    "options": ["الثامن والثلاثون", "السابع والثلاثون", "التاسع والثلاثون", "الأربعون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_370",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nأي عدد لا ينتمي: 4، 9، 16، 21، 25؟",
+    "options": ["21", "4", "9", "25"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_371",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nأربع بطاقات ملونة: الأزرق ليس أولًا ولا أخيرًا، والأخضر بعد الأحمر مباشرة، والأحمر ثانيًا. ما الأول؟",
+    "options": ["الأصفر", "الأزرق", "الأحمر", "الأخضر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_372",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nرحلة انطلقت الساعة 11:40 واستغرقت 3 ساعات و35 دقيقة. متى وصلت؟",
+    "options": ["3:15 م", "3:05 م", "2:55 م", "3:25 م"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_373",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 2، 6، 12، 20، 30، ؟",
+    "options": ["42", "40", "44", "36"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_374",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كانت كل الورود زهورًا، وبعض الزهور حمراء، فأي عبارة مؤكدة؟",
+    "options": ["كل الورود زهور", "كل الورود حمراء", "كل الزهور ورود", "لا توجد ورود"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_375",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nخالد أكبر من سعد بسنتين، وسعد أكبر من بدر بسنة. إذا كان بدر 14 سنة، فكم عمر خالد؟",
+    "options": ["17", "16", "18", "15"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_376",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 1000، 500، 250، 125، ؟",
+    "options": ["62.5", "50", "75", "100"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_377",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nخمسة طلاب جلسوا في صف: سارة بين نور وهدى، وليلى بجانب نور، ومنى في الطرف. إذا كانت نور ثانية من اليسار، فمن الرابعة؟",
+    "options": ["هدى", "سارة", "ليلى", "منى"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_378",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان 3 كتب تكلف 45 ريالًا، فكم يكلف 7 كتب؟",
+    "options": ["105", "90", "120", "135"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_379",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nما الرقم الذي إذا ضربته في 6 ثم أضفت 12 حصلت على 48؟",
+    "options": ["6", "5", "7", "8"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_380",
+    "category": "competitive",
+    "difficulty": "medium",
+    "text": "⚡ **منطق/ترتيب**\nيقف عمر شرق زيد، وزيد شمال خالد. في أي اتجاه خالد بالنسبة لعمر؟",
+    "options": ["جنوب غرب", "شمال شرق", "جنوب شرق", "شمال غرب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_381",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة سورينام؟",
+    "options": ["باراماريبو", "جورج تاون", "كايين", "بوغوتا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_382",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما العنصر الذي عدده الذري 79؟",
+    "options": ["الذهب", "الفضة", "البلاتين", "النحاس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_383",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nمن العالم الذي صاغ نظرية الأوتار الأولية في الفيزياء النظرية؟",
+    "options": ["Leonard Susskind", "Albert Einstein", "Richard Feynman", "Stephen Hawking"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_384",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة مدغشقر؟",
+    "options": ["أنتاناناريفو", "مابوتو", "موروني", "فيكتوريا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_385",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما أكبر هضبة في العالم؟",
+    "options": ["هضبة التبت", "هضبة الأناضول", "هضبة الدكن", "هضبة إثيوبيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_386",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nمن اخترع الآلة البخارية الحديثة؟",
+    "options": ["جيمس واط", "توماس إديسون", "ألكسندر بيل", "نيكولا تسلا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_387",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة ليختنشتاين؟",
+    "options": ["فادوز", "لوكسمبورغ", "موناكو", "أندورا لا فيلا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_388",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما الفرق بين الكتلة والوزن فيزيائيًا؟",
+    "options": ["الوزن يعتمد على الجاذبية", "هما نفس الشيء", "الكتلة تعتمد على الجاذبية", "الوزن ثابت دائمًا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_389",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما البحيرة الأعمق في العالم؟",
+    "options": ["بايكال", "تانجانيقا", "سوبيريور", "فيكتوريا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_390",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nمن مؤلف رواية Brave New World؟",
+    "options": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "H.G. Wells"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_391",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما القمر الذي يُحتمل وجود محيط تحت سطحه الجليدي حول المشتري؟",
+    "options": ["أوروبا", "غانيميد", "كاليستو", "أيو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_392",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة جورجيا؟",
+    "options": ["تبليسي", "باكو", "يريفان", "أنقرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_393",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما اسم أقدم جامعة في العالم لا تزال تعمل؟",
+    "options": ["جامعة القرويين", "جامعة بولونيا", "جامعة أكسفورد", "جامعة الأزهر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_394",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما الجسيم الأساسي الذي أُعلن عن اكتشافه في 2012 في CERN؟",
+    "options": ["بوزون هيغز", "النيوترينو", "الغلوون", "البوزيترون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_395",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما الدولة التي تمتلك أطول خط ساحلي في العالم؟",
+    "options": ["كندا", "أستراليا", "إندونيسيا", "النرويج"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_396",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nأنا دائمًا قادم لكنني لا أصل أبدًا. ما أنا؟",
+    "options": ["الغد", "الأمس", "الوقت", "الحلم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_397",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nما الذي يمكن كسره دون لمسه أو رؤيته؟",
+    "options": ["الوعد", "الزجاج", "القلب", "الحجر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_398",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nلديّ سبعة أبناء وكل ابن له أخت واحدة. كم عدد أطفالي؟",
+    "options": ["8", "7", "14", "9"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_399",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nثلاثة شموع مضاءة أطفأتَ واحدة. كم شمعة بقيت في النهاية؟",
+    "options": ["واحدة فقط", "2", "3", "0"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_400",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nفي يوم ممطر، 7 رجال يمشون معًا. 6 منهم ابتلوا، وواحد لم يبتل. كيف؟",
+    "options": ["كان محمولًا في تابوت", "كان تحت مظلة", "كان يجري بسرعة", "كان يرتدي معطفًا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_401",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nأنا خفيف كالريشة، لكن أقوى رجل في العالم لا يستطيع الاحتفاظ بي أكثر من دقيقتين. ما أنا؟",
+    "options": ["النَّفَس", "الريشة", "الضوء", "الهواء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_402",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nأبٌ وابنه في حادث سيارة. نُقلا إلى مستشفيين مختلفين. الجراح قال: لا أستطيع إجراء العملية، هذا ابني. كيف؟",
+    "options": ["الجراح أمه", "الجراح عمه", "هناك خطأ في التقرير", "الجراح جده"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_403",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nما الذي يكبر كلما اقتطعت منه؟",
+    "options": ["الحفرة", "الجبل", "البحر", "الكعكة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_404",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nإذا كان لديك وعاء سعة 5 لترات وآخر سعة 3 لترات فقط، كيف تقيس 4 لترات بالضبط؟",
+    "options": ["املأ الكبير ثم اسكب في الصغير مرتين", "املأ الصغير فقط", "استعمل الكبير مباشرة", "مستحيل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_405",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nكلمة واحدة في المعجم العربي مكتوبة بشكل خاطئ دائمًا. ما هي؟",
+    "options": ["خاطئ", "صحيح", "كلمة", "معجم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_406",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nأنا أستطيع ملء غرفة كاملة بدون أن أشغل أي مساحة. ما أنا؟",
+    "options": ["الضوء", "الهواء", "الصوت", "الماء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_407",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nما الذي يكسر الصوت؟",
+    "options": ["الصمت", "الريح", "الزجاج", "الجبل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_408",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nما الشيء الذي إذا أضفت إليه حرفًا أصبح أقصر؟",
+    "options": ["قصير → أقصر", "طويل", "كبير", "عالي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_409",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nمن الذي يراك بوضوح تام ولا تستطيع أنت رؤيته؟",
+    "options": ["الشخص الكفيف الذي يلمسك", "الشخص خلفك مباشرة", "المرآة", "عينك نفسها"],
+    "correctAnswer": 1
+  },
+  {
+    "id": "competitive_410",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nما الذي كلما أسرعتَ فيه تأخرت؟",
+    "options": ["اتخاذ قرار متسرع", "الركض", "القراءة", "الطبخ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_411",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 37 × 3 × 9؟",
+    "options": ["999", "1001", "990", "1009"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_412",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما قيمة 17.5% من 400؟",
+    "options": ["70", "75", "65", "80"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_413",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 99 × 101؟",
+    "options": ["9999", "10000", "9998", "10001"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_414",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما قيمة √(196)؟",
+    "options": ["14", "12", "16", "13"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_415",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 2⁸؟",
+    "options": ["256", "128", "512", "248"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_416",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nعدد قيمته 80. زاد 25% ثم نقص 20%. ما قيمته النهائية؟",
+    "options": ["80", "85", "75", "90"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_417",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 7! ÷ 5!؟",
+    "options": ["42", "30", "56", "21"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_418",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 0.125 × 800؟",
+    "options": ["100", "120", "80", "125"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_419",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما قيمة 11³؟",
+    "options": ["1331", "1311", "1231", "1321"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_420",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج (15² - 12²)؟",
+    "options": ["81", "69", "90", "75"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_421",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nسلعة سعرها 250. خصم 20% ثم ضريبة 10% على السعر الجديد. ما السعر النهائي؟",
+    "options": ["220", "225", "215", "200"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_422",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما قيمة 1/3 + 1/4 + 1/6؟",
+    "options": ["3/4", "2/3", "5/6", "1/2"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_423",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 88 × 12.5؟",
+    "options": ["1100", "1000", "1200", "1050"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_424",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما قيمة ∛(729)؟",
+    "options": ["9", "8", "7", "27"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_425",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 1 + 2 + 3 + ... + 20؟",
+    "options": ["210", "200", "190", "220"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_426",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nستة أشخاص يجلسون في دائرة. أحمد مقابل سعد، وفهد يمين أحمد، وخالد يسار سعد. من يجلس مقابل فهد؟",
+    "options": ["خالد", "أحمد", "سعد", "زيد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_427",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 1، 1، 2، 3، 5، 8، 13، 21، ؟",
+    "options": ["34", "29", "32", "36"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_428",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان اليوم الاثنين، فبعد 100 يوم سيكون؟",
+    "options": ["الأربعاء", "الخميس", "الثلاثاء", "الجمعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_429",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان A شمال B، وC شرق B، وD جنوب C، فما موقع D بالنسبة لـ B؟",
+    "options": ["جنوب شرق", "شمال شرق", "جنوب غرب", "شرق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_430",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nفي غرفة مظلمة لديك 10 جوارب حمراء و10 زرقاء و10 سوداء. ما أقل عدد تسحبه لتضمن زوجًا متطابقًا؟",
+    "options": ["4", "3", "5", "11"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_431",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 2、 3، 5، 7، 11، 13، ؟",
+    "options": ["17", "15", "19", "16"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_432",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nخمسة أشخاص: A أطول من B، وC أقصر من D، وD أقصر من B، وE أطول من A. رتبهم من الأطول للأقصر.",
+    "options": ["E، A، B، D، C", "E، A، D، B، C", "A، E، B، D، C", "E، B، A، D، C"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_433",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nيصل قطار كل 7 دقائق وباص كل 11 دقيقة. إذا وصلا معًا الآن، بعد كم دقيقة يلتقيان مجددًا؟",
+    "options": ["77", "18", "63", "33"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_434",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\n3 صناديق: واحد فيه تفاح فقط، وواحد برتقال فقط، وواحد مختلط. جميع البطاقات عليها خاطئة. سحبت فاكهة واحدة من صندوق \"مختلط\"، ما الذي تستطيع تحديده؟",
+    "options": ["محتوى الصناديق الثلاثة", "محتوى صندوق واحد فقط", "لا شيء", "محتوى صندوقين فقط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_435",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 0، 1، 1، 2، 4، 7، 13، ؟",
+    "options": ["24", "20", "26", "22"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_436",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nلديك ميزان ذو كفتين و12 كرة متطابقة الشكل. واحدة فقط تختلف في الوزن (أثقل أو أخف). ما أقل عدد من عمليات الوزن لتحديدها؟",
+    "options": ["3", "4", "2", "5"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_437",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان كل A هو B، وبعض B هو C، وكل C هو D. أي عبارة صحيحة دائمًا؟",
+    "options": ["بعض A هو D", "كل A هو D", "كل D هو A", "لا توجد علاقة بين A وD"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_438",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nطاولة دائرية عليها 8 مقاعد مرقمة من 1 إلى 8 بالترتيب. فاطمة في المقعد 3 ونورة في المقعد 7. كم مقعدًا بينهما بأقصر طريق؟",
+    "options": ["3", "4", "2", "5"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_439",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\n5 عمال يبنون جدارًا في 10 أيام. كم عامل يلزم لبناء نفس الجدار في يومين؟",
+    "options": ["25", "20", "10", "50"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_440",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nكتاب يحتوي 200 صفحة. كم رقمًا مطبوعًا تحتاج لترقيمه من 1 إلى 200؟",
+    "options": ["492", "500", "488", "502"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_441",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nمربع محيطه 48 سم. ما مساحته؟",
+    "options": ["144", "112", "96", "120"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_442",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nحنفية تملأ خزانًا في 6 ساعات، وأخرى في 3 ساعات. كم تستغرقان معًا؟",
+    "options": ["ساعتان", "3 ساعات", "ساعة ونصف", "4 ساعات"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_443",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nما العدد التالي: 1، 4، 10، 20، 35، ؟",
+    "options": ["56", "50", "48", "55"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_444",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nأب عمره ثلاثة أمثال عمر ابنه الآن. بعد 12 سنة يصبح عمره ضعف عمر ابنه. كم عمر الابن الآن؟",
+    "options": ["12", "10", "8", "14"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_445",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان العدد الثنائي 11001 يساوي كم في النظام العشري؟",
+    "options": ["25", "24", "27", "26"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_446",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 47 × 53؟ (تلميح: (50-3)(50+3))",
+    "options": ["2491", "2501", "2481", "2511"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_447",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما قيمة 3⁴ + 4³؟",
+    "options": ["145", "135", "155", "125"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_448",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 1/2 + 1/3 + 1/6؟",
+    "options": ["1", "5/6", "2/3", "7/6"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_449",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما قيمة 25² - 24²؟",
+    "options": ["49", "51", "48", "50"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_450",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة تيمور الشرقية؟",
+    "options": ["ديلي", "جاكرتا", "مانيلا", "بانكوك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_451",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما ناتج 0.6 × 0.7 × 100؟",
+    "options": ["42", "43", "40", "45"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_452",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 13² - 5²؟",
+    "options": ["144", "134", "154", "140"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_453",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nمن صاحب نظرية التطور بالانتقاء الطبيعي؟",
+    "options": ["Charles Darwin", "Gregor Mendel", "Louis Pasteur", "Alfred Wallace"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_454",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 64 ÷ 0.25؟",
+    "options": ["256", "128", "16", "320"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_455",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nتسلسل: 2، 6، 14، 30، 62، ؟",
+    "options": ["126", "124", "120", "130"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_456",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما سرعة الضوء تقريبًا؟",
+    "options": ["300,000 كم/ث", "150,000 كم/ث", "500,000 كم/ث", "1,000,000 كم/ث"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_457",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nأحد الأعداد من 1 إلى 100 يُقرأ بالعربية بحرفين فقط. ما هو؟",
+    "options": ["عد (=عدد صفر)... لا يوجد", "مئة", "عشر", "كل الأعداد أكثر من حرفين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_458",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19؟",
+    "options": ["100", "90", "110", "95"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_459",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان x² - y² = 40 و x + y = 10، فما قيمة x - y؟",
+    "options": ["4", "8", "5", "6"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_460",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nلديك 8 كرات متطابقة الشكل، واحدة أثقل. ما أقل عدد وزنات بميزان ذي كفتين لتجدها؟",
+    "options": ["2", "3", "4", "1"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_461",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nمن هو العالم العربي الذي يُعد أول من وصف الدورة الدموية الصغرى بدقة؟",
+    "options": ["ابن النفيس", "ابن سينا", "أبو بكر الرازي", "الزهراوي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_462",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما مجموع مقلوبات الأعداد الأولية لـ 12 (أي 1/1 + 1/2 + 1/3 + 1/4 + 1/6 + 1/12)؟",
+    "options": ["2.33 تقريبًا", "2", "2.5", "3"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_463",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nعدد مكون من خانتين، أحاده يساوي ضعف عشراته، ومجموع أرقامه 9. ما هو؟",
+    "options": ["36", "27", "18", "45"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_464",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nصياد رمى شبكته فلم يصطد سمكًا، لكنه أخرج شيئًا مفيدًا جدًا. ما هو؟",
+    "options": ["الشبكة نفسها (أنقذها)", "لؤلؤة", "ذهب", "مفتاح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_465",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 111 × 111؟",
+    "options": ["12321", "12221", "11211", "12121"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_466",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nمربع مساحته 64 سم². ما طول قطره؟ (تلميح: √128)",
+    "options": ["8√2", "8", "16", "10"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_467",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما أبعد كوكب عن الشمس في المجموعة الشمسية؟",
+    "options": ["نبتون", "أورانوس", "بلوتو", "زحل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_468",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nأنا أقل عندما تراني وأكثر عندما لا تراني. ما أنا؟",
+    "options": ["الظلام", "الضوء", "النجوم", "الهواء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_469",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nمتوسط 5 أعداد هو 18. إذا حُذف عدد واحد أصبح المتوسط 16. ما العدد المحذوف؟",
+    "options": ["26", "22", "30", "18"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_470",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nما عدد الأصفار في نهاية 20!؟",
+    "options": ["4", "3", "5", "6"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_471",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nكم مرة يمكنك طرح 5 من 25؟",
+    "options": ["مرة واحدة", "5 مرات", "4 مرات", "لا نهائي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_472",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 2⁰ + 2¹ + 2² + 2³ + 2⁴ + 2⁵؟",
+    "options": ["63", "64", "62", "61"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_473",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nطبيب أعطى مريضًا 5 حبات دواء ليأخذ حبة كل 20 دقيقة. بعد كم دقيقة ينتهي الدواء؟",
+    "options": ["80", "100", "60", "120"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_474",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما اسم أول قمر صناعي أُطلق إلى الفضاء؟",
+    "options": ["Sputnik 1", "Apollo 1", "Voyager 1", "Explorer 1"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_475",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nعندما تحتاجه ترميه، وعندما لا تحتاجه تعيده. ما هو؟",
+    "options": ["المرساة", "الشبكة", "الحبل", "العوامة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_476",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما قيمة (50² - 49²)؟",
+    "options": ["99", "100", "98", "101"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_477",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nساعة تتأخر 5 دقائق كل ساعة. إذا ضُبطت الساعة 12:00 ظهرًا، فما الوقت الحقيقي عندما تشير إلى 11:00 مساءً؟",
+    "options": ["12:00 منتصف الليل", "11:30 مساءً", "11:55 مساءً", "11:00 مساءً"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_478",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما عاصمة بنغلاديش؟",
+    "options": ["دكا", "شيتاغونغ", "كولومبو", "كاتماندو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_479",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nمن الممكن أن يكون خلفك وأمامك في نفس الوقت. ما هو؟",
+    "options": ["ظلك عند الشفق", "صوتك", "عيناك", "أنفك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_480",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما الباقي عند قسمة 2023 على 7؟",
+    "options": ["0", "1", "3", "6"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_481",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nثلاثة مفاتيح وثلاثة أقفال. ما الحد الأقصى للمحاولات لتجربة كل مفتاح مع كل قفل والتأكد؟",
+    "options": ["3", "6", "9", "4"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_482",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما العنصر الأكثر وفرةً في الكون؟",
+    "options": ["الهيدروجين", "الهيليوم", "الأكسجين", "الكربون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_483",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nمتى يكون 3 + 4 = 19؟ (تلميح: ضرب وجمع)",
+    "options": ["3² + 4² = 9 + 16 = 25 ≠ 19، لكن 3 + 4 × 4 = 19", "دائمًا", "أبدًا", "فقط في الرياضيات المعقدة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_484",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم عدد الأعداد الأولية بين 1 و50؟",
+    "options": ["15", "14", "16", "13"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_485",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nمستطيل مساحته 60 سم² وطوله أكبر من عرضه بـ 7 سم. ما أبعاده؟",
+    "options": ["12 × 5", "15 × 4", "10 × 6", "20 × 3"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_486",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nمن صاحب معادلات الكهرومغناطيسية الشهيرة؟",
+    "options": ["James Clerk Maxwell", "Michael Faraday", "Nikola Tesla", "Heinrich Hertz"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_487",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nأمي لها 4 أطفال. الأول اسمه يناير، والثاني فبراير، والثالث مارس. ما اسم الرابع؟",
+    "options": ["أنا", "أبريل", "مايو", "يونيو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_488",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 97 × 103؟ (تلميح: (100-3)(100+3))",
+    "options": ["9991", "10000", "9981", "10009"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_489",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nتسلسل حروف: Z، X، V، T، ؟",
+    "options": ["R", "S", "Q", "U"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_490",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nحيوان إذا قلبت اسمه أصبح فعلًا ماضيًا. ما هو؟",
+    "options": ["بلبل → لبلب", "أسد → دسا", "قرد → درق", "فيل → ليف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_491",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما ناتج 5! - 4!؟",
+    "options": ["96", "100", "120", "24"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_492",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nإذا كان مجموع عمري وعمر أخي 35، وأنا أكبر منه بـ 7، فكم عمري؟",
+    "options": ["21", "18", "24", "28"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_493",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nما أول عنصر مشع اكتُشف؟",
+    "options": ["اليورانيوم", "الراديوم", "البولونيوم", "الثوريوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_494",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nإذا كنت تجري في سباق وتجاوزت الشخص الثاني، ثم الشخص الأول تجاوزك، فأي مركز أنت؟",
+    "options": ["الثاني", "الأول", "الثالث", "لا شيء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_495",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nما ناتج 1.5³؟",
+    "options": ["3.375", "3.5", "2.25", "4.5"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_496",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nعقرب الدقائق يدور 360° في ساعة. كم درجة يدور في 25 دقيقة؟",
+    "options": ["150", "125", "175", "200"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_497",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **معلومة سريعة**\nمن اخترع المحرك الكهربائي؟",
+    "options": ["Michael Faraday", "Nikola Tesla", "Thomas Edison", "James Watt"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_498",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **لغز قصير**\nثلاث دجاجات تبيض 3 بيضات في 3 أيام. كم بيضة تبيض 12 دجاجة في 12 يومًا؟",
+    "options": ["48", "36", "12", "144"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_499",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **حساب ذهني**\nكم ناتج 1/2 × 2/3 × 3/4 × 4/5؟",
+    "options": ["1/5", "1/4", "2/5", "1/10"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "competitive_500",
+    "category": "competitive",
+    "difficulty": "hard",
+    "text": "⚡ **منطق/ترتيب**\nمدينتان: المسافة بينهما 300 كم. انطلقت سيارة من كل مدينة نحو الأخرى. واحدة بسرعة 80 كم/س والأخرى 70 كم/س. بعد كم ساعة يلتقيان؟",
+    "options": ["2", "3", "2.5", "1.5"],
+    "correctAnswer": 0
   }
 ]
