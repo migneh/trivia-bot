@@ -31998,5 +31998,4013 @@
     "text": "ما هو المضيق الاستراتيجي الهام الذي يربط بين البحر الأحمر وخليج عدن (وبحر العرب)؟",
     "options": ["مضيق باب المندب", "مضيق هرمز", "مضيق ملقا", "مضيق البوسفور"],
     "correctAnswer": 0
+  },
+  {
+    "id": "guess_001",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أعيش في البحر\n> لدي 8 أذرع\n> أستطيع تغيير لوني",
+    "options": ["الأخطبوط", "الحبار", "سمكة القرش", "نجم البحر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_002",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا\n> تشتهر بالأنمي\n> عاصمتها طوكيو",
+    "options": ["اليابان", "كوريا الجنوبية", "الصين", "تايوان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_003",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> كلما أخذت مني زاد حجمي",
+    "options": ["الحفرة", "الماء", "النار", "الظل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_004",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🦁👑🌅\n> ديزني\n> بطل القصة شبل",
+    "options": ["The Lion King", "Brave", "Tarzan", "The Jungle Book"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_005",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أطير لكنني لست طائراً\n> أخرج في الليل\n> أكل الحشرات",
+    "options": ["الخفاش", "البومة", "العقاب", "النسر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_006",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا\n> برجها الشهير من حديد\n> عاصمتها باريس",
+    "options": ["فرنسا", "إيطاليا", "إسبانيا", "بلجيكا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_007",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> له أسنان لكنه لا يعض",
+    "options": ["المشط", "المنشار", "الشوكة", "المفتاح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_008",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n> 🕷️🕸️🏙️\n> من Marvel\n> مراهق يحمي مدينته",
+    "options": ["Spider-Man", "Batman", "Iron Man", "Flash"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_009",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أنبت في الصحراء\n> أخزن الماء\n> لدي أشواك",
+    "options": ["الصبار", "النخلة", "الشجرة الباوباب", "العشب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_010",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🧊❄️👸\n> ديزني\n> أختان في مملكة ثلجية",
+    "options": ["Frozen", "Cinderella", "Moana", "Tangled"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_011",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يسير بلا أرجل\n> يبتلع بلا فم\n> هو النهر",
+    "options": ["النهر", "الريح", "السحابة", "الوادي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_012",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أمريكا الجنوبية\n> نهر الأمازون\n> عاصمتها برازيليا",
+    "options": ["البرازيل", "الأرجنتين", "كولومبيا", "بيرو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_013",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> ملك الغابة\n> لدي لبدة\n> زئيري مشهور",
+    "options": ["الأسد", "النمر", "الفهد", "الدب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_014",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n> 🎮⚽🏟️\n> تحكم في نادٍ\n> الأشهر في ألعاب الكرة",
+    "options": ["FIFA", "PES", "Rocket League", "NBA 2K"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_015",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> أمشي دائماً لكنني لا تعبت\n> أتوقف إذا وقفت أنت",
+    "options": ["الظل", "الانعكاس", "الصدى", "الخطوات"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_016",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n> 🔨⚡🌩️\n> من Marvel\n> إله الرعد",
+    "options": ["Thor", "Zeus", "Iron Man", "Captain America"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_017",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أحمل بيتي على ظهري\n> أمشي ببطء\n> أعيش طويلاً",
+    "options": ["السلحفاة", "القنفذ", "الحلزون", "الدب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_018",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أفريقيا\n> الأهرامات\n> نهر النيل",
+    "options": ["مصر", "السودان", "إثيوبيا", "ليبيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_019",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يُملأ بالهواء\n> يطير بدون محرك\n> يُفرح به في الأعياد",
+    "options": ["البالونة", "الطائرة الورقية", "المظلة", "الزورق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_020",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🐟🌊🔍\n> ديزني بيكسار\n> سمكة تبحث عن طريقها",
+    "options": ["Finding Nemo", "Shark Tale", "The Little Mermaid", "Finding Dory"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_021",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أكبر الثدييات\n> لدي خرطوم\n> أعيش في أفريقيا وآسيا",
+    "options": ["الفيل", "الزرافة", "فرس النهر", "الكركدن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_022",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا\n> البيتزا والباستا\n> عاصمتها روما",
+    "options": ["إيطاليا", "اليونان", "إسبانيا", "البرتغال"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_023",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> جسم بلا روح\n> يعكس وجهك\n> تجده في الحمام",
+    "options": ["المرآة", "الصورة", "الزجاج", "الشاشة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_024",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n> 🧱🟥🟦\n> تبني بمكعبات\n> لا هدف محدد",
+    "options": ["Minecraft", "Roblox", "Terraria", "LEGO Worlds"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_025",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أسبح لكنني لست سمكة\n> ثديي\n> أكبر حيوان على الأرض",
+    "options": ["الحوت الأزرق", "القرش الأبيض", "الدلفين", "فرس البحر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_026",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n> 🦇🌃🃏\n> يحمي Gotham\n> لا قوى خارقة",
+    "options": ["Batman", "Spider-Man", "Green Arrow", "Daredevil"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_027",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يضيء في الظلام\n> لا يحترق بالنار\n> يطفو في الفضاء",
+    "options": ["النجم", "القمر", "الشمس", "المذنب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_028",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🧸❤️🚀\n> بيكسار\n> لعبة تتحرك",
+    "options": ["Toy Story", "Cars", "Up", "Brave"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_029",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أمريكا الشمالية\n> أكبر دولة في العالم مساحةً\n> عاصمتها أوتاوا",
+    "options": ["كندا", "الولايات المتحدة", "المكسيك", "روسيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_030",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أصنع العسل\n> لدي حمة\n> أعيش في خلية",
+    "options": ["النحلة", "الدبور", "الزنبور", "الفراشة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_031",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> كلما اقتربت منه ابتعد\n> ترى فيه ألوان قوس قزح\n> يظهر بعد المطر",
+    "options": ["قوس قزح", "السحابة", "الضباب", "الشفق القطبي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_032",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n> 🍄🏰👸\n> سباكٌ يُنقذ أميرة\n> من Nintendo",
+    "options": ["Super Mario", "Zelda", "Donkey Kong", "Kirby"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_033",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n> 🟢💚🎓\n> معلم كيمياء تحوّل\n> Breaking Bad",
+    "options": ["Walter White", "Jesse Pinkman", "Hank Schrader", "Saul Goodman"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_034",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في الشرق الأوسط\n> أكبر دولة خليجية\n> الرياض عاصمتها",
+    "options": ["المملكة العربية السعودية", "الإمارات", "الكويت", "قطر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_035",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يتحرك بلا أرجل\n> يصعد الجدران\n> يلدغ أحياناً",
+    "options": ["الثعبان", "السلحفاة", "العقرب", "القرد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_036",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🧞✨🪔\n> ديزني\n> أماني تتحقق",
+    "options": ["Aladdin", "Sinbad", "The Thief of Baghdad", "Raya"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_037",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> طائر لا يطير\n> أعيش في القطب الجنوبي\n> أرتدي بذلة سوداء وبيضاء",
+    "options": ["البطريق", "البجع", "النعام", "الكيوي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_038",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا\n> الفلامنكو والثيران\n> عاصمتها مدريد",
+    "options": ["إسبانيا", "البرتغال", "إيطاليا", "اليونان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_039",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> عنده وجه لكن لا يرى\n> عنده يدان لكن لا يمشي\n> يُخبرك بالوقت",
+    "options": ["الساعة", "التمثال", "الصورة", "البوصلة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_040",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n> ⚔️🛡️🐉\n> عالم مفتوح\n> The Elder Scrolls V",
+    "options": ["Skyrim", "The Witcher 3", "Dragon Age", "Dark Souls"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_041",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أطير بشراع\n> ليس طائرة\n> يستخدمني الجيش أحياناً",
+    "options": ["المظلة", "الطائرة الورقية", "المنطاد", "الشراع"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_042",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n> 🟡⚡🔴\n> أسرع إنسان\n> من DC",
+    "options": ["Flash", "Quicksilver", "Superman", "Green Lantern"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_043",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> أكبر دولة في العالم مساحةً\n> عاصمتها موسكو\n> تمتد على قارتين",
+    "options": ["روسيا", "كندا", "الصين", "الولايات المتحدة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_044",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> أطعمة تحت الأرض\n> قشرة بنية\n> تؤكل مقلية أو مسلوقة",
+    "options": ["البطاطس", "الجزر", "البصل", "الثوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_045",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🤖❤️🌆\n> بيكسار\n> روبوت وحيد على الأرض",
+    "options": ["WALL-E", "Robots", "Chappie", "Big Hero 6"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_046",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أضوء الليل\n> أتغير شكلي كل شهر\n> أدور حول الأرض",
+    "options": ["القمر", "الشمس", "النجم", "المذنب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_047",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا\n> الشوكولاتة والساعات\n> عاصمتها برن",
+    "options": ["سويسرا", "النمسا", "بلجيكا", "هولندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_048",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يأكل الأشجار\n> يمشي على جسر فمه\n> يبني السدود",
+    "options": ["القندس", "الخنزير البري", "الدب", "القرد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_049",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n> 🟡👻🔵\n> كلاسيك\n> تأكل النقاط وتهرب من الأشباح",
+    "options": ["Pac-Man", "Galaga", "Space Invaders", "Tetris"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_050",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أكبر كوكب في المجموعة الشمسية\n> لدي حلقات\n> لدي نقطة حمراء كبيرة",
+    "options": ["المشتري", "زحل", "أورانوس", "نبتون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_051",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🧟‍♂️🌴🤣\n> رسوم متحركة\n> حيوانات حديقة هربت",
+    "options": ["Madagascar", "The Wild", "Over the Hedge", "Zoo"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_052",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أفريقيا\n> أكبر دولة عربية مساحةً\n> عاصمتها الجزائر",
+    "options": ["الجزائر", "السودان", "ليبيا", "مصر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_053",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> بدون أجنحة أطير\n> بدون عيون أرى\n> بدون ذراعين أسبح",
+    "options": ["الخيال/الفكر", "السمكة", "الغواصة", "الطائرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_054",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n> 🟢💪🔬\n> عالم تحول إلى وحش\n> يزداد قوةً عند الغضب",
+    "options": ["Hulk", "Thing", "Juggernaut", "Abomination"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_055",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أمريكا الشمالية\n> هوليوود\n> عاصمتها واشنطن",
+    "options": ["الولايات المتحدة", "كندا", "المكسيك", "البرازيل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_056",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🕷️🎭🗽\n> Marvel\n> مراهق في نيويورك",
+    "options": ["Spider-Man: Homecoming", "The Amazing Spider-Man", "Daredevil", "Venom"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_057",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أجري بسرعة كبيرة\n> أصفر بقوة\n> أحمي البيوت",
+    "options": ["الكلب", "القطة", "الذئب", "الثعلب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_058",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يطير بدون جناح\n> يدور بلا عجلة\n> يجري بلا ساق",
+    "options": ["الوقت", "الريح", "الماء", "الصوت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_059",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا\n> الكونغ فو\n> عاصمتها بكين",
+    "options": ["الصين", "اليابان", "كوريا الجنوبية", "فيتنام"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_060",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n> 🏝️🔫💣\n> 100 لاعب\n> الأخير يفوز",
+    "options": ["Fortnite", "PUBG", "Warzone", "Apex Legends"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_061",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أتساقط في الشتاء\n> أبيض اللون\n> لا يوجد مني شكلان متطابقان",
+    "options": ["الثلج", "المطر", "الصقيع", "البرد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_062",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n> 🔴🔵⭐\n> درع وطن\n> من Marvel\n> رمز أمريكا",
+    "options": ["Captain America", "Iron Man", "Thor", "Hawkeye"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_063",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🧁👧🏠\n> إخوة غريم\n> بيت من الحلوى",
+    "options": ["Hansel and Gretel", "Snow White", "Cinderella", "Rapunzel"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_064",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا\n> أكثر دولة في العالم سكاناً\n> عاصمتها نيودلهي",
+    "options": ["الهند", "الصين", "إندونيسيا", "بنغلاديش"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_065",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> أبدأ بـ T\n> تشربه ساخناً\n> شهير في بريطانيا",
+    "options": ["Tea", "Coffee", "Cocoa", "Latte"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_066",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أتغير لوني في الخريف\n> أسقط في الشتاء\n> أعود في الربيع",
+    "options": ["الورقة الشجرية", "الزهرة", "العشب", "الثمرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_067",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n> 🧩🔴🟡\n> تضع القطع في عمود\n> تتنافس ضد خصم",
+    "options": ["Connect Four", "Checkers", "Chess", "Tic Tac Toe"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_068",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا\n> الديمقراطية الأولى في العالم\n> عاصمتها أثينا",
+    "options": ["اليونان", "إيطاليا", "إسبانيا", "قبرص"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_069",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> تأكله في الإفطار\n> يأتي من الدجاج\n> بيضاوي الشكل",
+    "options": ["البيضة", "الجبنة", "الخبز", "الزبدة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_070",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n> 🟡🦸‍♂️🌞\n> يطير\n> يكره الكريبتونيت\n> من DC",
+    "options": ["Superman", "Captain Marvel", "Shazam", "Green Lantern"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_071",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🧜‍♀️🐠🎵\n> ديزني\n> أميرة تحت الماء",
+    "options": ["The Little Mermaid", "Moana", "Aquaman", "Finding Nemo"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_072",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أسرع حيوان بري\n> نقاط سوداء على جسدي\n> أصطاد بالسرعة",
+    "options": ["الفهد", "النمر", "الأسد", "الذئب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_073",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في الشرق الأوسط\n> تشتهر بالنفط\n> عاصمتها أبوظبي",
+    "options": ["الإمارات", "الكويت", "البحرين", "قطر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_074",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يخرج من جسمك عند البكاء\n> يحتوي على الملح\n> يرطب عينيك",
+    "options": ["الدمع", "العرق", "اللعاب", "الدم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_075",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n> 🎯🔫🗺️\n> تكتيكي\n> Counter-Strike",
+    "options": ["CS:GO", "Valorant", "Rainbow Six", "Overwatch"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_076",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🕵️‍♂️🔍🎩\n> كلاسيكي\n> محقق بريطاني شهير",
+    "options": ["Sherlock Holmes", "Knives Out", "Clue", "Murder on the Orient Express"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_077",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أحمل الرسائل\n> أطير بسرعة\n> في الحرب كنت مهماً",
+    "options": ["الحمامة", "الصقر", "النسر", "العصفور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_078",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا\n> البيرة والنقانق\n> عاصمتها برلين",
+    "options": ["ألمانيا", "النمسا", "بولندا", "هولندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_079",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يحمي رأسك\n> يلبسه الجنود والبنائون\n> من البلاستيك أو المعدن",
+    "options": ["الخوذة", "القبعة", "الطربوش", "العقال"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_080",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n> 💛🦾🔴\n> ملياردير\n> بدلة معدنية\n> من Marvel",
+    "options": ["Iron Man", "War Machine", "Ultron", "Vision"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_081",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🐻🍯🌲\n> ديزني\n> دب يحب العسل",
+    "options": ["Winnie the Pooh", "Brother Bear", "The Jungle Book", "Brave"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_082",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أنمو من بذرة\n> أعطيك الأكسجين\n> لدي جذور وأغصان",
+    "options": ["الشجرة", "العشب", "الزهرة", "الطحلب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_083",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا\n> تشتهر بالكيبوب\n> عاصمتها سيول",
+    "options": ["كوريا الجنوبية", "اليابان", "تايوان", "الصين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_084",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يصدر صوتاً عند الضغط\n> يُعزف في الحفلات\n> أبيض وأسود",
+    "options": ["البيانو", "الأكورديون", "الأرغن", "الهارمونيكا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_085",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n> 🌌⭐🚀\n> حرب النجوم\n> Star Wars",
+    "options": ["Star Wars: Jedi Fallen Order", "Mass Effect", "No Man's Sky", "Halo"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_086",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n👨‍👩‍👧🏠👻\n> أسرة تعيش مع أشباح\n> رسوم متحركة تيم بيرتون",
+    "options": ["The Addams Family", "Corpse Bride", "Beetlejuice", "Coraline"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_087",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أعيش في الأنهار والبحيرات\n> أفتح فمي بشكل مخيف\n> أكبر زواحف أفريقيا",
+    "options": ["التمساح", "السحلية العملاقة", "الضفدع", "السلحفاة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_088",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أمريكا اللاتينية\n> تانغو\n> عاصمتها بوينس آيرس",
+    "options": ["الأرجنتين", "أوروغواي", "تشيلي", "البرازيل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_089",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يطير وهو ورق\n> يحتاج إلى خيط\n> يعلو في السماء",
+    "options": ["الطائرة الورقية", "البالون", "الطائرة", "المنطاد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_090",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n> 🕶️🧥🔫\n> يعيش في مصفوفة\n> The Matrix",
+    "options": ["Neo", "Morpheus", "Agent Smith", "Trinity"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_091",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🧛‍♂️🌙❤️\n> مصاص دماء يقع في الحب\n> سلسلة مشهورة",
+    "options": ["Twilight", "Interview with the Vampire", "Dracula", "Van Helsing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_092",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أكبر قارة في العالم\n> موطن الصين والهند\n> أكثر قارة سكاناً",
+    "options": ["آسيا", "أفريقيا", "أمريكا الشمالية", "أوروبا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_093",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في الشرق الأوسط\n> أقدم حضارة في العالم\n> ما بين النهرين",
+    "options": ["العراق", "سوريا", "إيران", "تركيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_094",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> تلبسه في قدمك\n> يحميك من البرد\n> من الصوف أحياناً",
+    "options": ["الجورب", "الحذاء", "النعل", "الدفء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_095",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n> 🎸🥁🎤\n> تحاكي الموسيقى\n> Guitar Hero",
+    "options": ["Guitar Hero", "Rock Band", "Beat Saber", "Just Dance"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_096",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n> 🟣🔮✨\n> تعرف كل شيء\n> Avengers\n> من Wakanda",
+    "options": ["Black Panther", "Falcon", "War Machine", "Nick Fury"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_097",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أكبر محيطات الأرض\n> أحيط بآسيا وأمريكا\n> اسمي يعني هادئ",
+    "options": ["المحيط الهادئ", "المحيط الأطلسي", "المحيط الهندي", "المحيط المتجمد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_098",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🧙‍♂️⚡📚\n> ساحر في مدرسة\n> سلسلة شهيرة",
+    "options": ["Harry Potter", "The Chronicles of Narnia", "Fantastic Beasts", "Merlin"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_099",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> في أفريقيا\n> تشتهر بسباقات الماراثون\n> عاصمتها نيروبي",
+    "options": ["كينيا", "إثيوبيا", "تنزانيا", "أوغندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_100",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يضيء الطريق\n> يستهلك الكهرباء\n> اخترعه إديسون",
+    "options": ["المصباح الكهربائي", "الشمعة", "الفانوس", "الشعلة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_101",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أُولد في المياه العذبة\n> أقضي حياتي في البحر\n> أعود للنهر لأتكاثر",
+    "options": ["السلمون", "التونة", "الإنقليس", "سمك القاروس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_102",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا الشمالية\n> النرويج الصغيرة\n> عاصمتها هلسنكي",
+    "options": ["فنلندا", "السويد", "الدنمارك", "إستونيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_102b",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> لها وجهان لكنها ليست مخادعة\n> تُستخدم لفتح الأبواب\n> تحفظ الأسرار",
+    "options": ["المفتاح", "القفل", "المرآة", "الورقة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_103",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n> 🌙🏹🌲\n> صياد ليلي\n> عالم DC\n> يحمي Gotham بدون أسلحة نارية",
+    "options": ["Green Arrow", "Hawkeye", "Artemis", "Robin Hood"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_104",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n> \"To infinity and beyond!\"\n> بيكسار\n> رائد فضاء من البلاستيك",
+    "options": ["Toy Story", "WALL-E", "Up", "Lightyear"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_105",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا\n> الترانسيلفانيا\n> عاصمتها بوخارست",
+    "options": ["رومانيا", "بلغاريا", "المجر", "صربيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_106",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أكبر الطيور طيراناً\n> أحلق لساعات دون رفرفة\n> أجد الطعام من مسافات بعيدة",
+    "options": ["النسر", "الكندور", "الصقر", "الغراب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_107",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُصدر صوتاً عند الاهتزاز\n> يُستخدم في الكنائس والمساجد أحياناً\n> يُصنع من المعدن",
+    "options": ["الجرس", "الطبل", "الصفارة", "الناقوس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_108",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n> 🧬👾🌍\n> تبني حضارة من الصفر\n> Civilization",
+    "options": ["Civilization VI", "Age of Empires", "Total War", "Rise of Nations"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_109",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🏔️💍🧝\n> ملحمة خيالية\n> حلقة للهلاك",
+    "options": ["Lord of the Rings", "The Hobbit", "Eragon", "Willow"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_110",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أفريقيا\n> تشتهر بجبل كيليمانجارو\n> عاصمتها دودوما",
+    "options": ["تنزانيا", "كينيا", "أوغندا", "رواندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_111",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أعيش في الجنادل العميقة\n> لا أحتاج للضوء\n> أضيء وحدي",
+    "options": ["السمكة المضيئة", "قنديل البحر", "الحبار العملاق", "الكريل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_112",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> كلما ارتفعت قلّ\n> تجده في الجبال\n> يصعب التنفس بدونه",
+    "options": ["الأكسجين", "الضغط الجوي", "الهواء", "البخار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_113",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n> 👁️🌀💙\n> يرى المستقبل\n> Doctor Strange\n> من Marvel",
+    "options": ["Doctor Strange", "Vision", "Scarlet Witch", "Loki"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_114",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n> \"May the Force be with you\"\n> فضاء ومعارك\n> سلسلة أسطورية",
+    "options": ["Star Wars", "Star Trek", "Dune", "Interstellar"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_115",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أمريكا الوسطى\n> قناة مشهورة\n> عاصمتها بنما سيتي",
+    "options": ["بنما", "كوستاريكا", "غواتيمالا", "هندوراس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_116",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أُصنع من حليب\n> أتخمر لأصبح لذيذاً\n> أتى من فرنسا",
+    "options": ["الجبن", "الزبدة", "الكريمة", "اللبن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_117",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يجمع الكلمات بلا حبر\n> يُستخدم في المكاتب\n> يُثقب الورق",
+    "options": ["الدباسة", "القلم", "المثقاب", "المشبك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_118",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n> 🏰🧙‍♂️⚔️\n> أوامر حقيقية\n> استراتيجي\n> Blizzard",
+    "options": ["Warcraft III", "StarCraft", "Age of Empires", "Command & Conquer"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_119",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🌀🌊🏄\n> موجات عملاقة\n> رياضي يواجه الطبيعة",
+    "options": ["Interstellar", "Point Break", "The Big Blue", "Soul Surfer"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_120",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا الوسطى\n> تشتهر بالحرير\n> عاصمتها طشقند",
+    "options": ["أوزبكستان", "كازاخستان", "تركمانستان", "أذربيجان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_121",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أصغر كوكب في المجموعة الشمسية\n> الأقرب للشمس\n> لا أملك قمراً",
+    "options": ["عطارد", "الزهرة", "المريخ", "بلوتو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_122",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> صندوق أسود لكنه ليس أسود\n> يُسجّل رحلات الطائرات\n> يُساعد في التحقيقات",
+    "options": ["الصندوق الأسود", "جهاز الرادار", "نظام GPS", "الكاميرا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_123",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n> 🌸⚔️🎭\n> محارب ياباني\n> شرفه فوق حياته\n> من العصور الوسطى",
+    "options": ["الساموراي", "النينجا", "الشوغون", "الرونين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_124",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🏎️💨🏆\n> سباق سيارات\n> صداقة ومنافسة\n> بيكسار",
+    "options": ["Cars", "Rush", "Speed Racer", "Talladega Nights"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_125",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا الشرقية\n> تشتهر بالودكا\n> عاصمتها وارسو",
+    "options": ["بولندا", "أوكرانيا", "التشيك", "المجر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_126",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أُعزف بالأصابع\n> أصلي من إسبانيا\n> خيوطي ستة",
+    "options": ["الغيتار", "العود", "البانجو", "الكمان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_127",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُخزّن الكهرباء\n> تجده في الهاتف\n> يشحن ويفرغ",
+    "options": ["البطارية", "المحول", "المكثف", "الصمام"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_128",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n> 🌺🏝️🦕\n> تعيش مع الديناصورات\n> Ark: Survival",
+    "options": ["ARK: Survival Evolved", "Jurassic World", "Far Cry", "The Forest"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_129",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🤖🌍⚙️\n> آلات تتحارب\n> Michael Bay",
+    "options": ["Transformers", "Pacific Rim", "Real Steel", "Robocop"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_130",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا\n> أصغر دولة في العالم\n> داخل روما",
+    "options": ["الفاتيكان", "موناكو", "سان مارينو", "ليختنشتاين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_131",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أنبت بشكل دائري\n> في الغابات المظلمة\n> بعضي سام وبعضي لذيذ",
+    "options": ["الفطر", "الصبار", "الطحلب", "الليشن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_132",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُلاحق الأعاصير\n> يُسجّل البيانات\n> يخاطر بحياته للعلم",
+    "options": ["عالم الأرصاد", "رجل الإطفاء", "الغواص", "رائد الفضاء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_133",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n> 🟡🧢⭐\n> محقق خارق\n> من Pokémon\n> يُدرّب البوكيمون",
+    "options": ["Ash Ketchum", "Red", "Gary Oak", "Misty"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_134",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n👴🎁🎄\n> رجل بخيل\n> يزوره أشباح\n> Charles Dickens",
+    "options": ["A Christmas Carol", "The Grinch", "Elf", "Home Alone"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_135",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا\n> الأنهار الكثيرة\n> عاصمتها بانكوك",
+    "options": ["تايلاند", "فيتنام", "ميانمار", "لاوس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_136",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أصنع بالزجاج\n> أجمع الضوء\n> أُستخدم في المختبرات والنظارات",
+    "options": ["العدسة", "المنشور", "المرآة", "الكاشف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_137",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> طيف من الألوان السبعة\n> يظهر بعد المطر\n> يُصنع من ضوء الشمس والماء",
+    "options": ["قوس قزح", "الهالة", "الشفق القطبي", "البرق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_138",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n> 🏙️🚗🔫\n> عالم مفتوح\n> Grand Theft Auto",
+    "options": ["GTA V", "Saints Row", "Watch Dogs", "Sleeping Dogs"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_139",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🧊🔵❄️\n> رجل ثلج\n> كوارث طبيعية\n> Roland Emmerich",
+    "options": ["The Day After Tomorrow", "Snowpiercer", "Frozen", "Ice Age"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_140",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أمريكا اللاتينية\n> الكوكايين والقهوة\n> عاصمتها بوغوتا",
+    "options": ["كولومبيا", "بيرو", "الإكوادور", "فنزويلا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_141",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أحمل السم في ذيلي\n> أمشي بعقارب\n> أعيش في الصحراء غالباً",
+    "options": ["العقرب", "الثعبان", "العنكبوت", "السلمندر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_142",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُنتج الكهرباء من الريح\n> له شفرات دوارة\n> يُرى في السهول والبحار",
+    "options": ["توربين الرياح", "محطة الطاقة", "مولد الديزل", "الخلية الشمسية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_143",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n> 🧬🕷️🔴\n> تسلق الجدران\n> قوته من لدغة عنكبوت مشع",
+    "options": ["Spider-Man", "Ant-Man", "Black Widow", "Wasp"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_144",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🌊🚢🧊\n> سفينة تغرق\n> قصة حب\n> 1912",
+    "options": ["Titanic", "The Poseidon Adventure", "Das Boot", "Pirates of the Caribbean"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_145",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أفريقيا الشمالية\n> تشتهر بالمسجد الأعظم\n> عاصمتها الجزائر العاصمة",
+    "options": ["الجزائر", "المغرب", "تونس", "ليبيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_146",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> يُحلّق فوق الغيوم\n> يجمع شحنات كهربائية\n> يُسبّب البرق",
+    "options": ["السحابة الرعدية", "الإعصار", "الضباب", "العاصفة الرملية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_147",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> أشرب دماءك لكنني لست مصاص دماء\n> أطير وتشعر بلدغتي\n> أنثل المرض أحياناً",
+    "options": ["البعوضة", "الذبابة", "القراد", "البرغوث"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_148",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n> 🌐💻🎮\n> تكتيكي 5vs5\n> Riot Games",
+    "options": ["Valorant", "CS:GO", "Overwatch", "Rainbow Six Siege"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_149",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n👨‍👦🏕️🐻\n> أب وابنه في البرية\n> يتعلم الحياة\n> God of War مستوحى",
+    "options": ["The Revenant", "Into the Wild", "Alpha", "Wild"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_150",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في الشرق الأوسط\n> أقدم مدينة مسكونة في العالم\n> عاصمتها دمشق",
+    "options": ["سوريا", "لبنان", "الأردن", "فلسطين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_151",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أُصنع من الرمل\n> شفاف وهش\n> أحيط بك في النوافذ",
+    "options": ["الزجاج", "البلاستيك", "السيليكون", "الكريستال"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_152",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُطلق ضوءاً أخضر\n> يُستخدم في العروض\n> يُقطع الفولاذ أحياناً",
+    "options": ["الليزر", "LED", "الشعلة", "الفلورسنت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_153",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n> 🌹🗡️💀\n> ملكة الظلام\n> من Game of Thrones",
+    "options": ["Cersei Lannister", "Daenerys Targaryen", "Sansa Stark", "Arya Stark"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_154",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🔵🟡🔴\n> ألوان أساسية\n> قناع ثلاثي\n> De Blob يشبهه",
+    "options": ["Inside Out", "Soul", "Coco", "Turning Red"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_155",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا الجنوبية\n> تشتهر بالكاري\n> عاصمتها إسلام آباد",
+    "options": ["باكستان", "بنغلاديش", "الهند", "أفغانستان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_156",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أعيش في القطبين\n> فراءتي بيضاء\n> أسبح وأصطاد الفقمة",
+    "options": ["الدب القطبي", "البطريق", "الفظ", "الثعلب القطبي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_157",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> أصغر من الذرة\n> يُشكّل المادة\n> بروتون ونيوترون وإلكترون",
+    "options": ["الذرة", "الجزيء", "الكوارك", "الفوتون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_158",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n> 🧿🔱⚔️\n> إله الحرب\n> God of War",
+    "options": ["God of War", "Hades", "Assassin's Creed Odyssey", "Troy"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_159",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🎪🐘🎠\n> فيل يطير\n> سيرك\n> ديزني",
+    "options": ["Dumbo", "Fantasia", "Bambi", "Pinocchio"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_160",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أمريكا اللاتينية\n> الماتشو بيتشو\n> عاصمتها ليما",
+    "options": ["بيرو", "بوليفيا", "الإكوادور", "كولومبيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_161",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أُستخدم لقياس الزلازل\n> أُسجّل الموجات الأرضية\n> اخترعه شارلز ريختر",
+    "options": ["السيزموغراف", "البارومتر", "الرادار", "السونار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_162",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> تُحرّكه الريح\n> يضخ الماء أو يطحن الحبوب\n> في هولندا بكثرة",
+    "options": ["طاحونة الهواء", "توربين الرياح", "الساقية", "المضخة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_163",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n> 🧊🥶❄️\n> ملكة ثلج\n> Frozen\n> أخت صغرى",
+    "options": ["Elsa", "Anna", "Moana", "Rapunzel"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_164",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🦍🏙️✈️\n> قرد عملاق\n> يتسلق ناطحات السحاب",
+    "options": ["King Kong", "Rampage", "The Mighty Kong", "Godzilla vs Kong"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_165",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا الجنوبية الشرقية\n> ألف جزيرة\n> عاصمتها جاكرتا",
+    "options": ["إندونيسيا", "الفلبين", "ماليزيا", "سنغافورة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_166",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أُصنع من العنب\n> أتخمر حتى أصبح خلاً\n> أُستخدم في الطبخ",
+    "options": ["الخل", "النبيذ", "العصير", "المخلل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_167",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُصدر ضوءاً ساطعاً\n> يُستخدم في التصوير\n> يُعمي مؤقتاً",
+    "options": ["الفلاش", "الليزر", "الشعلة", "النيون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_168",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n> 🐉🔥⚔️\n> عالم مفتوح آسيوي\n> Capcom",
+    "options": ["Monster Hunter", "Dragon's Dogma", "Elden Ring", "Nioh"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_169",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🌿🐒👦\n> طفل يتربى مع الحيوانات\n> كيبلينغ",
+    "options": ["The Jungle Book", "Tarzan", "George of the Jungle", "Mowgli"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_170",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا\n> تشتهر بالتوليب\n> عاصمتها أمستردام",
+    "options": ["هولندا", "بلجيكا", "الدنمارك", "السويد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_171",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> جزيرة ضخمة\n> أكبر جزيرة في العالم\n> ملاذ الفايكنغ القديم",
+    "options": ["غرينلاند", "آيسلندا", "أستراليا", "ماداغشقر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_172",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُحدّد موقعك\n> يعمل عبر الأقمار الصناعية\n> تستخدمه في السيارة",
+    "options": ["GPS", "Radar", "Sonar", "Compass"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_173",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n> 🧙‍♂️🔥🌋\n> ساحر رمادي تحول لأبيض\n> Lord of the Rings",
+    "options": ["Gandalf", "Saruman", "Radagast", "Dumbledore"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_174",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🔴🟡⬛\n> أسد يحكم المملكة الحيوانية\n> Netflix أنيمي",
+    "options": ["Kimba the White Lion", "The Lion King", "Zootopia", "Madagascar"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_175",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا الشمالية\n> تشتهر بالسلمون والشفق القطبي\n> عاصمتها أوسلو",
+    "options": ["النرويج", "السويد", "فنلندا", "آيسلندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_176",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أُغنّي في الصباح\n> أُوقظ النائمين\n> أنا الديك",
+    "options": ["الديك", "الحمام", "العصفور", "البومة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_177",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُقيس درجة الحرارة\n> يحتوي على زئبق أو رقمي\n> تجده في الصيدلية",
+    "options": ["الترمومتر", "البارومتر", "المقياس الضغطي", "الهيجرومتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_178",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n> 🧟‍♂️🪓🏚️\n> بقاء في عالم الزومبي\n> The Walking Dead",
+    "options": ["The Walking Dead: The Game", "Days Gone", "State of Decay", "Dying Light"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_179",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n💼🏢💰\n> شركة فساد\n> مكتب يعمل بالمعلومات\n> The Office",
+    "options": ["Office Space", "The Big Short", "Wolf of Wall Street", "Margin Call"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_180",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا\n> طعامها تقطير العرق\n> عاصمتها براغ",
+    "options": ["التشيك", "سلوفاكيا", "بولندا", "النمسا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_181",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أرضية زرقاء\n> لا حدود لي\n> أغطي 71% من الأرض",
+    "options": ["المحيط/البحار", "السماء", "الجليد", "الغلاف الجوي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_182",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُنتج الصوت بالاهتزاز\n> يُستخدم في الكمان والغيتار\n> وتر يُعزف",
+    "options": ["الوتر الموسيقي", "الغشاء", "القوس", "الناي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_183",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n> 🐾🦾🧬\n> مخالب معدنية\n> X-Men\n> Logan",
+    "options": ["Wolverine", "Sabretooth", "Deadpool", "Gambit"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_184",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🏰🌹👸\n> وحش يقع في الحب\n> ديزني",
+    "options": ["Beauty and the Beast", "Sleeping Beauty", "Snow White", "Enchanted"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_185",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في أفريقيا\n> أكبر اقتصاد في القارة\n> عاصمتها أبوجا",
+    "options": ["نيجيريا", "جنوب أفريقيا", "إثيوبيا", "كينيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_186",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أُطرد بالضغط\n> أُسمع من بعيد\n> يُستخدم في الاحتفالات",
+    "options": ["المفرقعة/الألعاب النارية", "البالون", "الصافرة", "الطبل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_187",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُصدر ضوءاً بدون حرارة\n> يُقلّد الشمعة\n> يعمل بالبطارية",
+    "options": ["LED", "الشمعة الكهربائية", "الفلورسنت", "الهالوجين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_188",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n> ⛏️💎🌲\n> احفر وابنِ\n> Mojang",
+    "options": ["Minecraft", "Terraria", "Stardew Valley", "Dragon Quest Builders"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_189",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🧊🦣🐿️\n> حيوانات في العصر الجليدي\n> صداقة وتعاون",
+    "options": ["Ice Age", "The Croods", "Early Man", "Dinosaur"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_190",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا الغربية\n> فارسية\n> عاصمتها طهران",
+    "options": ["إيران", "تركيا", "أفغانستان", "باكستان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_191",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أُحوّل الكيمياء إلى قوة\n> مركبة جوفاء\n> تجدني في المستشفيات والسيارات",
+    "options": ["البطارية", "الخلية الكهروكيميائية", "المكثف", "الديناموا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_192",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُطهى بالبخار\n> يُقدّم مع الأرز\n> أصله في آسيا",
+    "options": ["الزلابية المطهوة بالبخار (Dim Sum)", "الرامن", "السوشي", "التوفو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_193",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n> 🌙🏹🔱\n> آلهة الصيد\n> اليونان القديمة",
+    "options": ["Artemis", "Athena", "Aphrodite", "Hera"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_194",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🌺🌊🎵\n> فتاة تمخر البحار\n> ديزني بولينيزيا",
+    "options": ["Moana", "Lilo & Stitch", "The Little Mermaid", "Encanto"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_195",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا الوسطى\n> تشتهر بالشطرنج\n> عاصمتها نور-سلطان (أستانا)",
+    "options": ["كازاخستان", "روسيا", "أوزبكستان", "منغوليا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_196",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أُطرد بالضغط\n> أحتوي على غاز\n> تُستخدم في الطبخ",
+    "options": ["أسطوانة الغاز", "المضخة", "البالون", "الإسفنج"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_197",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> حيوان بلا عمود فقري\n> يعيش في البحر\n> له لسعة مؤلمة",
+    "options": ["قنديل البحر", "الأخطبوط", "النجم البحري", "الحبار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_198",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n> 🌍🗡️🏔️\n> محارب في عالم أسطوري واسع\n> From Software",
+    "options": ["Elden Ring", "Dark Souls", "Sekiro", "Bloodborne"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_199",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n👧🌈🧙\n> فتاة تُسافر إلى عالم خيالي\n> Wizard of Oz",
+    "options": ["The Wizard of Oz", "Alice in Wonderland", "Coraline", "Labyrinth"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_200",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> في الشمال الأفريقي\n> سوق جامع الفنا\n> عاصمتها الرباط",
+    "options": ["المغرب", "تونس", "الجزائر", "موريتانيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_201",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> أُنتج ضوءاً بدون شمعة\n> أعيش في أعماق البحار\n> أُسمى Anglerfish بالإنجليزية",
+    "options": ["سمكة الصياد المضيئة", "السمكة الفانوسية", "سمكة الحبار", "سمكة الفيل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_202",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> جزيرة في المحيط الهندي\n> تشتهر بالفانيليا\n> عاصمتها أنتاناناريفو",
+    "options": ["مدغشقر", "موريشيوس", "جزر القمر", "سيشيل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_203",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> أُكتشف عام 1928\n> ينقذ ملايين البشر\n> Alexander Fleming اكتشفه",
+    "options": ["البنسلين", "الأسبرين", "الكينين", "الأنسولين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_204",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الشخصية**\n> 🌌🕳️⏳\n> يتلاعب بالزمن\n> من Doctor Who\n> يسافر في TARDIS",
+    "options": ["The Doctor", "The Master", "River Song", "Davros"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_205",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n> \"Get busy living, or get busy dying.\"\n> سجن وأمل\n> Stephen King",
+    "options": ["The Shawshank Redemption", "The Green Mile", "Papillon", "Escape from Alcatraz"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_206",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> في أفريقيا الجنوبية\n> تشتهر بالماس\n> عاصمتها Maseru",
+    "options": ["ليسوتو", "سوازيلاند", "بوتسوانا", "ناميبيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_207",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> أُعالج المعلومات\n> أُصنع من السيليكون\n> دماغ الحاسوب",
+    "options": ["المعالج (CPU)", "ذاكرة RAM", "القرص الصلب", "بطاقة الشبكة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_208",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> يُستخدم في الطائرات\n> يكشف الأجسام بالموجات الراديوية\n> اخترع في الحرب العالمية الثانية",
+    "options": ["الرادار", "السونار", "الليدار", "الجيولوجيا الزلزالية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_209",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن اللعبة**\n> 🕹️👾🔴\n> أول لعبة تجارية ناجحة\n> أعمدة تتساقط",
+    "options": ["Pong", "Tetris", "Space Invaders", "Pac-Man"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_210",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🏜️🪱🌌\n> كوكب توابل\n> Paul Atreides\n> Frank Herbert",
+    "options": ["Dune", "Mad Max", "John Carter", "Interstellar"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_211",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا الوسطى\n> جبال البامير\n> عاصمتها دوشنبة",
+    "options": ["طاجيكستان", "قيرغيزستان", "أفغانستان", "تركمانستان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_212",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> أُكتشفت عام 1930 ثم نُزع عني لقبي\n> أبعد عن الشمس من نبتون\n> سُميت باسم إله العالم السفلي",
+    "options": ["بلوتو", "إيريس", "سيريس", "هاوميا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_213",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> يُحوّل الطاقة الشمسية\n> خلايا سيليكونية\n> تجده على أسطح المنازل",
+    "options": ["الألواح الشمسية", "توربين الرياح", "المضخة الحرارية", "المفاعل النووي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_214",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الشخصية**\n> 🌿🧠📚\n> أذكى شخص في Baker Street\n> Conan Doyle",
+    "options": ["Sherlock Holmes", "Hercule Poirot", "Philip Marlowe", "Sam Spade"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_215",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🌀🧠💊\n> الواقع أم الحلم؟\n> Christopher Nolan",
+    "options": ["Inception", "Memento", "Tenet", "Interstellar"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_216",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> في المحيط الهادئ\n> تشتهر بالكيوي\n> عاصمتها ويلينغتون",
+    "options": ["نيوزيلندا", "أستراليا", "فيجي", "بابوا غينيا الجديدة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_217",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> أول إنسان مشى في الفضاء\n> روسي الجنسية\n> 1965",
+    "options": ["Alexei Leonov", "Yuri Gagarin", "Buzz Aldrin", "Neil Armstrong"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_218",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> قانون الجاذبية\n> اكتشفه تفاحة\n> Isaac Newton",
+    "options": ["قانون الجاذبية الكونية", "قانون الحركة", "قانون الطاقة", "قانون الضوء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_219",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن اللعبة**\n> 🔬🧬🌍\n> تُدير المدينة والاقتصاد\n> SimCity",
+    "options": ["SimCity", "Cities: Skylines", "Tropico", "Anno 1800"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_220",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n⚗️🧲🏆\n> عالم نووي\n> Oppenheimer\n> Nolan",
+    "options": ["Oppenheimer", "The Imitation Game", "A Beautiful Mind", "Einstein and Eddington"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_221",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> في آسيا الغربية\n> تشتهر بالقهوة والقات\n> عاصمتها صنعاء",
+    "options": ["اليمن", "عُمان", "إثيوبيا", "جيبوتي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_222",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> نظام نجمي مزدوج\n> على بُعد 4.37 سنة ضوئية\n> أقرب نجم للشمس",
+    "options": ["ألفا قنطور", "سيريوس", "بيتلجوز", "النجم القطبي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_223",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> يُحوّل الصوت لإشارة كهربائية\n> تجده في الهاتف والميكروفون\n> يعمل بالاهتزاز",
+    "options": ["المحول الصوتي (Transducer)", "مكبر الصوت", "الميكروفون", "الكريستال الكهرضغطي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_224",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الشخصية**\n> 🎭🃏💀\n> فوضوي بلا سبب\n> عدو Batman الأشهر\n> Heath Ledger",
+    "options": ["Joker", "Riddler", "Bane", "Scarecrow"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_225",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🌌🤖👁️\n> ذكاء اصطناعي يتمرد\n> HAL 9000\n> Stanley Kubrick",
+    "options": ["2001: A Space Odyssey", "Ex Machina", "Her", "Blade Runner"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_226",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> في القوقاز\n> تشتهر بالنبيذ القديم\n> عاصمتها تبليسي",
+    "options": ["جورجيا", "أرمينيا", "أذربيجان", "أوكرانيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_227",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> عالمة كيمياء وفيزياء\n> أول امرأة تفوز بجائزة نوبل مرتين\n> اكتشفت الراديوم",
+    "options": ["Marie Curie", "Rosalind Franklin", "Lise Meitner", "Ada Lovelace"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_228",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> ظاهرة كهرومغناطيسية\n> تحمي الأرض\n> المجال المغناطيسي",
+    "options": ["المجال المغناطيسي الأرضي", "طبقة الأوزون", "الغلاف الجوي", "الغلاف المائي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_229",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن اللعبة**\n> 🧩🌐💡\n> ألغاز فضائية معقدة\n> Portal",
+    "options": ["Portal", "Quantum Conundrum", "The Talos Principle", "Q.U.B.E."],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_230",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🌍⏳🔁\n> حلقة زمنية\n> يعيش اليوم مراراً\n> Tom Cruise",
+    "options": ["Edge of Tomorrow", "Groundhog Day", "Source Code", "Looper"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_231",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> في البحر الكاريبي\n> ثورة 1959\n> عاصمتها هافانا",
+    "options": ["كوبا", "هايتي", "جامايكا", "جمهورية الدومينيكان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_232",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> أكبر تلسكوب فضائي\n> أطلق عام 2021\n> يرصد الكون منذ نشأته",
+    "options": ["تلسكوب جيمس ويب", "تلسكوب هابل", "تلسكوب كبلر", "تلسكوب تشاندرا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_233",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> يُحفر في الأرض\n> يُستخرج منه النفط\n> يصل لآلاف الأمتار عمقاً",
+    "options": ["بئر النفط", "المنجم", "الحفرة الأثرية", "الخندق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_234",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الشخصية**\n> ⚡🧬🌊\n> ملك أطلانتس\n> من DC\n> يتحكم في البحار",
+    "options": ["Aquaman", "Namor", "Poseidon", "Black Manta"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_235",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🔬🐜🌿\n> يتقلص ليصبح بحجم النملة\n> Marvel",
+    "options": ["Ant-Man", "Honey I Shrunk the Kids", "Innerspace", "Downsizing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_236",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> جزيرة في المحيط الأطلسي\n> تشتهر بالثيران والفادو\n> عاصمتها لشبونة",
+    "options": ["البرتغال", "إسبانيا", "أيرلندا", "جزر الكناري"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_237",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> أربط العظام ببعض\n> أمتد عند التمدد\n> أكثر إصابة عند الرياضيين",
+    "options": ["الرباط", "الوتر", "الغضروف", "العضلة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_238",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> مركب كيميائي H2O2\n> يُستخدم لتعقيم الجروح\n> يُصبغ الشعر أحياناً",
+    "options": ["ماء الأكسجين (H2O2)", "الكلور", "الأمونيا", "الأسيتون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_239",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن اللعبة**\n> 🌸⚔️🏯\n> ساموراي في اليابان\n> Ghost of Tsushima",
+    "options": ["Ghost of Tsushima", "Sekiro", "Nioh 2", "Trek to Yomi"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_240",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🏔️❄️🧭\n> رحلة استكشافية قاسية\n> القطب الجنوبي\n> Shackleton",
+    "options": ["Endurance", "The Terror", "Alive", "Into the White"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_241",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا الوسطى\n> محاطة باليابسة\n> تشتهر بالموسيقى الكلاسيكية\n> عاصمتها فيينا",
+    "options": ["النمسا", "سويسرا", "التشيك", "المجر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_242",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> أقدم لغة مكتوبة\n> من بلاد ما بين النهرين\n> رموز على الطين",
+    "options": ["الكتابة المسمارية", "الهيروغليفية", "الأبجدية الفينيقية", "اللغة السومرية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_243",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> يُقيس الوقت بدقة شديدة\n> يعمل بالذرة\n> يُستخدم في GPS",
+    "options": ["الساعة الذرية", "الكرونومتر", "الساعة الكوارتز", "الرنين المغناطيسي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_244",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الشخصية**\n> 🔴⚡🌀\n> تجمع مجموعة الأبطال\n> Nick Fury\n> من Marvel",
+    "options": ["Nick Fury", "Phil Coulson", "Maria Hill", "Iron Man"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_245",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🌊🦈🔴\n> رعب مائي\n> Spielberg\n> 1975",
+    "options": ["Jaws", "The Shallows", "Deep Blue Sea", "Open Water"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_246",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> في أوروبا الشرقية\n> تشتهر بالعنبر\n> عاصمتها ريغا",
+    "options": ["لاتفيا", "ليتوانيا", "إستونيا", "بيلاروسيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_247",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> مادة موصلة ممتازة\n> أستخدم في الأسلاك الكهربائية\n> لوني بني ذهبي",
+    "options": ["النحاس", "الألومنيوم", "الذهب", "الفضة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_248",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> نظرية أينشتاين الشهيرة 1905\n> الطاقة تساوي الكتلة في مربع السرعة\n> E = mc²",
+    "options": ["نظرية النسبية الخاصة", "نظرية الكم", "قانون نيوتن الثالث", "نظرية الأوتار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_249",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن اللعبة**\n> 🧠💾🕹️\n> محاكاة الحياة\n> Maxis\n> The Sims",
+    "options": ["The Sims 4", "Second Life", "Stardew Valley", "Animal Crossing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_250",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🌙👁️🌌\n> رعب نفسي\n> مخرج Stanley Kubrick\n> فندق معزول",
+    "options": ["The Shining", "Psycho", "The Others", "Get Out"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_251",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أطول الحيوانات البرية\n> لدي رقبة طويلة جداً\n> آكل أوراق الأشجار العالية",
+    "options": ["الزرافة", "الحصان", "الحمار الوحشي", "الجمل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_252",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🎈🏠👴\n> من Pixar\n> بيت يطير بالبالونات",
+    "options": ["Up", "Coco", "Soul", "Inside Out"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_253",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> له صفحات لكنه ليس موقعاً\n> نقرأه للتعلّم أو المتعة\n> يوجد في المكتبة",
+    "options": ["الكتاب", "الجريدة", "الدفتر", "المجلد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_254",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في نصف الكرة الجنوبي\n> تشتهر بالكنغر\n> عاصمتها كانبيرا",
+    "options": ["أستراليا", "نيوزيلندا", "جنوب أفريقيا", "إندونيسيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_255",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن العمل**\n> \"Mirror, mirror on the wall\"",
+    "options": ["Snow White and the Seven Dwarfs", "Cinderella", "Sleeping Beauty", "Beauty and the Beast"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_256",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أعيش في البحر\n> ذكي جداً وأحب القفز\n> أتنفس الهواء",
+    "options": ["الدلفين", "القرش", "الحوت", "الفقمة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_257",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n🚀👨‍🚀🔪\n> لعبة جماعية\n> فيها محتال بين الطاقم",
+    "options": ["Among Us", "Fall Guys", "Phasmophobia", "Human: Fall Flat"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_258",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> فيه بلدان ومدن وجبال\n> لكنه لا يسكنه أحد\n> يساعدك على معرفة الأماكن",
+    "options": ["الخريطة", "الطريق", "البوصلة", "الموسوعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_259",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع بين آسيا وأوروبا\n> تشتهر بإسطنبول\n> عاصمتها أنقرة",
+    "options": ["تركيا", "اليونان", "جورجيا", "بلغاريا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_260",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n⚡🟡🐭\n> من عالم Pokémon\n> أشهر بوكيمون كهربائي",
+    "options": ["Pikachu", "Charmander", "Bulbasaur", "Squirtle"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_261",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> طبقات فوق طبقات\n> يجعل عينيك تدمعان عند تقطيعه\n> نستخدمه كثيراً في الطبخ",
+    "options": ["البصل", "الثوم", "الكرنب", "البطاطس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_262",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🐟🔵🌊\n> من Pixar\n> سمكة زرقاء تبحث وتتذكر بصعوبة",
+    "options": ["Finding Dory", "Finding Nemo", "The Little Mermaid", "Shark Tale"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_263",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أتنفس عبر جلدي أحياناً\n> أقفز كثيراً\n> أعيش قرب الماء",
+    "options": ["الضفدع", "التمساح", "البطريق", "السحلية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_264",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أمريكا الشمالية\n> تشتهر بالتاكو\n> عاصمتها مكسيكو سيتي",
+    "options": ["المكسيك", "البرازيل", "الأرجنتين", "إسبانيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_265",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n🍬🟣🟢\n> لعبة جوال شهيرة جداً\n> تطابق الحلوى بالألوان",
+    "options": ["Candy Crush Saga", "Bejeweled", "Subway Surfers", "Fruit Ninja"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_266",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن العمل**\n> \"Hakuna Matata\"",
+    "options": ["The Lion King", "Madagascar", "Tarzan", "The Jungle Book"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_267",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يدخل الأذن ولا يُرى\n> قد يكون موسيقى أو كلاماً\n> ينتج من الاهتزاز",
+    "options": ["الصوت", "الضوء", "الهواء", "الصدى"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_268",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n🧙‍♂️⚡👓\n> ساحر مشهور\n> لديه ندبة على شكل برق",
+    "options": ["Harry Potter", "Ron Weasley", "Draco Malfoy", "Hagrid"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_269",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أقصى جنوب أفريقيا\n> تشتهر بكيب تاون\n> من عواصمها بريتوريا",
+    "options": ["جنوب أفريقيا", "ناميبيا", "بوتسوانا", "زيمبابوي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_270",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أعيش في أستراليا\n> آكل أوراق الأوكالبتوس\n> أقضي وقتاً طويلاً نائماً",
+    "options": ["الكوالا", "الكنغر", "الباندا", "الكسلان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_271",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n💀🎸🌼\n> من Pixar\n> مستوحى من احتفال يوم الموتى",
+    "options": ["Coco", "Soul", "Encanto", "The Book of Life"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_272",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> بيت صغير أبيض\n> لا أبواب له ولا نوافذ\n> يوجد بداخله أصفر",
+    "options": ["البيضة", "جوز الهند", "اللؤلؤة", "البصلة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_273",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في الشرق الأوسط\n> تشتهر بالبتراء\n> عاصمتها عمّان",
+    "options": ["الأردن", "لبنان", "سوريا", "العراق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_274",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n🧱🎮👥\n> منصة ألعاب وتجارب كثيرة\n> مشهورة بين الصغار والكبار",
+    "options": ["Roblox", "Minecraft", "Terraria", "LEGO Worlds"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_275",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن العمل**\n> \"Winter is coming\"",
+    "options": ["Game of Thrones", "The Witcher", "Vikings", "House of the Dragon"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_276",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أعيش في أستراليا\n> أقفز كثيراً\n> أحمل صغيري في كيس",
+    "options": ["الكنغر", "الكوالا", "الأرنب", "الغزال"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_277",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> له أوراق لكنه ليس شجرة\n> نكتب فيه كثيراً\n> يُستخدم في المدرسة",
+    "options": ["الدفتر", "الكتاب", "المجلة", "الملف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_278",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أوروبا\n> تشتهر بساعة Big Ben\n> عاصمتها لندن",
+    "options": ["المملكة المتحدة", "أيرلندا", "فرنسا", "هولندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_279",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n🍄🔴🧢\n> سباك شهير من Nintendo\n> ينقذ الأميرة دائماً",
+    "options": ["Mario", "Luigi", "Toad", "Yoshi"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_280",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🟡🍌😈\n> شخصيات صفراء مرحة\n> تعمل مع شرير ظريف",
+    "options": ["Despicable Me", "Minions", "Megamind", "Monsters, Inc."],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_281",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أعيش في الصحراء\n> لدي سنام\n> أتحمل العطش",
+    "options": ["الجمل", "الحصان", "الغزال", "النعامة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_282",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> كلما زاد قلّ\n> لا يمكن إيقافه\n> يقاس بالسنوات",
+    "options": ["العمر", "الوقت", "المال", "الطعام"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_283",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في الخليج العربي\n> عاصمتها الدوحة\n> استضافت كأس العالم 2022",
+    "options": ["قطر", "الكويت", "البحرين", "عُمان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_284",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n🧩🟥🟦\n> لعبة كلاسيكية\n> ترتّب القطع الساقطة",
+    "options": ["Tetris", "Puyo Puyo", "Columns", "Dr. Mario"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_285",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن العمل**\n> \"With great power comes great responsibility\"",
+    "options": ["Spider-Man", "Batman", "Superman", "The Flash"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_286",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> طائر ليلي\n> عيناي كبيرتان\n> أرى جيداً في الظلام",
+    "options": ["البومة", "الصقر", "الغراب", "الحمامة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_287",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🐀👨‍🍳🇫🇷\n> من Pixar\n> جرذ يحب الطبخ",
+    "options": ["Ratatouille", "Chef", "Cloudy with a Chance of Meatballs", "The Secret Life of Pets"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_288",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يدق لكنه ليس باباً\n> يعمل داخل صدرك\n> يتوقف تنتهي الحياة",
+    "options": ["القلب", "الجرس", "الطبل", "المنبّه"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_289",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع بين الهند والصين\n> فيها جبل إيفرست\n> عاصمتها كاتماندو",
+    "options": ["نيبال", "بوتان", "باكستان", "أفغانستان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_290",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n🔵💨🦔\n> سريع جداً\n> شخصية ألعاب من SEGA",
+    "options": ["Sonic", "Tails", "Knuckles", "Crash Bandicoot"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_291",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أعيش في الصين\n> أحب الخيزران\n> لوني أبيض وأسود",
+    "options": ["الباندا", "الكوالا", "الدب القطبي", "الليمور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_292",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🏠✨👨‍👩‍👧\n> من Disney\n> عائلة لكل فرد فيها قدرة خاصة",
+    "options": ["Encanto", "Coco", "Frozen", "Moana"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_293",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يشرب الكثير لكنه لا يأكل\n> يمتص الماء بسرعة\n> نستخدمه في التنظيف",
+    "options": ["الإسفنج", "المنشفة", "الورق", "القماش"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_294",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أوروبا\n> تشتهر بلشبونة\n> لغتها الرسمية البرتغالية",
+    "options": ["البرتغال", "إسبانيا", "إيطاليا", "رومانيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_295",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n🏃‍♂️🪙🏛️\n> لعبة جوال ركض لا نهائي\n> تهرب فيها من وحش",
+    "options": ["Temple Run", "Subway Surfers", "Jetpack Joyride", "Minion Rush"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_296",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن العمل**\n> \"I'm gonna make him an offer he can't refuse.\"",
+    "options": ["The Godfather", "Goodfellas", "Scarface", "The Irishman"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_297",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> طائر جميل جداً\n> أنشر ذيلي كالمروحة\n> ألواني زاهية",
+    "options": ["الطاووس", "البجعة", "الببغاء", "النعامة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_298",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> كلما كتبت عليه أكثر صار أكثر سواداً\n> يُمسح بعد الشرح\n> يوجد في الصف",
+    "options": ["السبورة", "الورقة", "الشاشة", "الكتاب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_299",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع على البحر المتوسط\n> تشتهر بأرزها\n> عاصمتها بيروت",
+    "options": ["لبنان", "الأردن", "سوريا", "قبرص"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_300",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n🛡️👑⚔️\n> بطلة من DC\n> من الأمازونيات",
+    "options": ["Wonder Woman", "Supergirl", "Black Widow", "Captain Marvel"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_301",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> آكل الجزر\n> أقفز بسرعة\n> أملك أذنين طويلتين",
+    "options": ["الأرنب", "السنجاب", "الفأر", "القنفذ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_302",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n👹🚪😱\n> من Pixar\n> الوحوش تدخل غرف الأطفال",
+    "options": ["Monsters, Inc.", "Despicable Me", "Hotel Transylvania", "Inside Out"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_303",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يكتب لكنه لا يقرأ\n> فيه حبر أحياناً\n> نستخدمه كل يوم",
+    "options": ["القلم", "الكتاب", "الورق", "الكمبيوتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_304",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في شبه الجزيرة العربية\n> عاصمتها مسقط\n> تشتهر باللبان",
+    "options": ["عُمان", "اليمن", "الإمارات", "البحرين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_305",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n🚗💨🚓\n> سباقات سيارات\n> الشرطة تطاردك أحياناً",
+    "options": ["Need for Speed", "Forza Horizon", "Gran Turismo", "Burnout"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_306",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن العمل**\n> \"Ohana means family\"",
+    "options": ["Lilo & Stitch", "Moana", "Frozen", "Toy Story"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_307",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أعيش في جماعات تسمى قطيعاً\n> أعوي في الليل\n> أشبه الكلب لكنني بري",
+    "options": ["الذئب", "الثعلب", "الضبع", "القيوط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_308",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> له رقبة لكن ليس له رأس\n> نحمله في المطبخ أحياناً\n> يُملأ بالماء أو العصير",
+    "options": ["الزجاجة", "الإبريق", "الملعقة", "الكوب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_309",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في شمال أفريقيا\n> عاصمتها تونس\n> تشتهر بقرطاج",
+    "options": ["تونس", "الجزائر", "المغرب", "ليبيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_310",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n🍥🦊🍜\n> نينجا مشهور\n> يحلم بأن يصبح Hokage",
+    "options": ["Naruto", "Sasuke", "Kakashi", "Boruto"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_311",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أعيش غالباً على الأشجار\n> أجمع المكسرات\n> ذيلي كثيف",
+    "options": ["السنجاب", "الأرنب", "القرد", "الفأر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_312",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🐰🦊🚓\n> مدينة تسكنها الحيوانات فقط\n> من Disney",
+    "options": ["Zootopia", "Sing", "The Secret Life of Pets", "Madagascar"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_313",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يدخل الماء ولا يبتل\n> يساعدك على الرؤية\n> يسافر بسرعة هائلة",
+    "options": ["الضوء", "الهواء", "الصوت", "الظل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_314",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في شمال أوروبا\n> تشتهر بـ IKEA\n> عاصمتها ستوكهولم",
+    "options": ["السويد", "النرويج", "فنلندا", "الدنمارك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_315",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n🚇🏃‍♂️🎨\n> لعبة جوال ركض لا نهائي\n> تهرب فيها على السكة",
+    "options": ["Subway Surfers", "Temple Run", "Vector", "Jetpack Joyride"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_316",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن العمل**\n> \"Why so serious?\"",
+    "options": ["The Dark Knight", "Joker", "Batman Begins", "Suicide Squad"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_317",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أستطيع تغيير لوني\n> أعيش على الأشجار\n> لساني طويل لاصطياد الحشرات",
+    "options": ["الحرباء", "السحلية", "الضفدع", "الثعبان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_318",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يحملك وتحمله في الوقت نفسه\n> لا تمشي من دونه خارج البيت غالباً\n> يأتي زوجاً",
+    "options": ["الحذاء", "الجورب", "القفاز", "الحقيبة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_319",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في الخليج العربي\n> عاصمتها الكويت\n> من أصغر الدول العربية مساحةً",
+    "options": ["الكويت", "قطر", "البحرين", "عُمان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_320",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n👽💙🏝️\n> مخلوق أزرق مشاغب\n> صديق Lilo",
+    "options": ["Stitch", "Baymax", "Pikachu", "Sonic"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_321",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أعيش في الغابات أحياناً\n> لي قرون متفرعة\n> أجري بخفة",
+    "options": ["الأيل", "الحصان", "الماعز", "الثور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_322",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n😄😡😢🧠\n> من Pixar\n> مشاعر داخل عقل فتاة",
+    "options": ["Inside Out", "Soul", "Up", "Coco"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_323",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> له فم لكنه لا يتكلم\n> يُسكب منه الشاي أو الماء\n> يوجد في المطبخ",
+    "options": ["الإبريق", "الكوب", "الصحن", "الملعقة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_324",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> أرخبيل في جنوب شرق آسيا\n> عاصمتها مانيلا\n> تشتهر بكثرة الجزر",
+    "options": ["الفلبين", "إندونيسيا", "ماليزيا", "سنغافورة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_325",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n🏰🛡️💎\n> تبني قرية وتهاجم قرى أخرى\n> لعبة جوال شهيرة",
+    "options": ["Clash of Clans", "Clash Royale", "Boom Beach", "Brawl Stars"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_326",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن العمل**\n> \"Houston, we have a problem.\"",
+    "options": ["Apollo 13", "Interstellar", "Gravity", "The Martian"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_327",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> طائر ملوّن\n> أستطيع تقليد الأصوات أحياناً\n> أعيش في المناطق الاستوائية",
+    "options": ["الببغاء", "الغراب", "الحمامة", "الصقر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_328",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> إذا لمسته أصدر صوتاً\n> نجده على الأبواب أو في المدارس\n> يُصنع من المعدن أحياناً",
+    "options": ["الجرس", "القفل", "المفتاح", "المسمار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_329",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> دولة جزيرية في الخليج العربي\n> عاصمتها المنامة\n> من أصغر الدول العربية",
+    "options": ["البحرين", "قطر", "الكويت", "عُمان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_330",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n🐭🔴🎉\n> أشهر شخصية من Disney\n> يرتدي سروالاً أحمر",
+    "options": ["Mickey Mouse", "Donald Duck", "Goofy", "Jerry"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_331",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أساعد الإنسان في الركوب والعمل\n> أجري بسرعة\n> لي حوافر",
+    "options": ["الحصان", "الحمار", "الجمل", "الغزال"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_332",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🧅👸🐴\n> غول أخضر يعيش في مستنقع",
+    "options": ["Shrek", "How to Train Your Dragon", "Brave", "Tangled"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_333",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> كلما جفّف صار أكثر بللاً\n> نستخدمه بعد الاستحمام",
+    "options": ["المنشفة", "الإسفنج", "الصابون", "الفرشاة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_334",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> دولة طويلة وضيقة في أمريكا الجنوبية\n> عاصمتها سانتياغو\n> تقع على ساحل المحيط الهادئ",
+    "options": ["تشيلي", "بيرو", "الأرجنتين", "الإكوادور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_335",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n🐦💥🐷\n> طيور تغضب وتُطلق بالمقلاع",
+    "options": ["Angry Birds", "Cut the Rope", "Bad Piggies", "Fruit Ninja"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_336",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن العمل**\n> \"I'll be back.\"",
+    "options": ["The Terminator", "RoboCop", "Predator", "Total Recall"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_337",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> ذكي وماكر\n> لوني برتقالي غالباً\n> أعيش في البراري",
+    "options": ["الثعلب", "الذئب", "الكلب", "السنجاب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_338",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> يسمع بلا أذن\n> ويتكلم بلا لسان\n> نحمله في جيوبنا كثيراً",
+    "options": ["الهاتف", "الراديو", "الميكروفون", "السماعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_339",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في جنوب شرق آسيا\n> عاصمتها كوالالمبور\n> تشتهر ببرجيها التوأم",
+    "options": ["ماليزيا", "سنغافورة", "إندونيسيا", "تايلاند"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_340",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n🏴‍☠️⚓🧭\n> قرصان غريب الأطوار\n> يقوده حب البحر والروم",
+    "options": ["Captain Jack Sparrow", "Blackbeard", "Will Turner", "Davy Jones"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_341",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> صغير ومغطى بالأشواك\n> يتكور عند الخوف\n> آكل الحشرات",
+    "options": ["القنفذ", "الأرنب", "السنجاب", "الخلد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_342",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الفيلم**\n🐼🥋🍜\n> بطل سمين يحب الأكل\n> يتعلم الكونغ فو",
+    "options": ["Kung Fu Panda", "Mulan", "Big Hero 6", "Zootopia"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_343",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> له عين واحدة لكنه لا يرى\n> يدخل فيه الخيط\n> يُستخدم في الخياطة",
+    "options": ["الإبرة", "الدبوس", "المسمار", "الزر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_344",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> تقع في القرن الأفريقي\n> عاصمتها أديس أبابا\n> من أقدم الدول الأفريقية",
+    "options": ["إثيوبيا", "إريتريا", "الصومال", "جيبوتي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_345",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن اللعبة**\n🫘🌈🏁\n> شخصيات طريفة تتسابق وتتساقط\n> لعبة جماعية مرحة",
+    "options": ["Fall Guys", "Among Us", "Gang Beasts", "Mario Party"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_346",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن العمل**\n> \"I am Groot.\"",
+    "options": ["Guardians of the Galaxy", "Avengers", "Thor", "Star Wars"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_347",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **من أنا؟**\n> أعيش في البحر البارد\n> أصفق بزعانفي أحياناً\n> أرتاح على الجليد",
+    "options": ["الفقمة", "الدلفين", "الحوت", "القرش"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_348",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **ما هذا؟**\n> له أسنان كثيرة\n> لكنه لا يأكل إلا الخشب\n> أداة للقطع",
+    "options": ["المنشار", "المشط", "السحاب", "المبشرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_349",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الدولة**\n> مدينة-دولة في جنوب شرق آسيا\n> تشتهر بالنظافة الشديدة\n> عاصمتها تحمل الاسم نفسه",
+    "options": ["سنغافورة", "ماليزيا", "بروناي", "الفلبين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_350",
+    "category": "guess",
+    "difficulty": "easy",
+    "text": "🤔 **خمّن الشخصية**\n🤖🐱🔔\n> قط آلي أزرق من المستقبل\n> لديه جيب عجيب",
+    "options": ["Doraemon", "Hello Kitty", "Totoro", "Pikachu"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_351",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> حيوان ثديي يبيض\n> أعيش في أستراليا\n> لي منقار يشبه البط",
+    "options": ["خلد الماء", "القندس", "ثعلب الماء", "الفقمة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_352",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> جزيرة أوروبية شمالية\n> أرض النار والجليد\n> عاصمتها ريكيافيك",
+    "options": ["آيسلندا", "أيرلندا", "فنلندا", "النرويج"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_353",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> أداة علمية\n> تُستخدم لقياس سرعة الرياح\n> تراها في محطات الطقس",
+    "options": ["الأنيمومتر", "البارومتر", "الترمومتر", "الهيجرومتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_354",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n🗡️🐞👑\n> لعبة منصات وأكشن مستقلة\n> بطلها فارس صغير صامت",
+    "options": ["Hollow Knight", "Celeste", "Dead Cells", "Cuphead"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_355",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن العمل**\n> \"Remember me\"",
+    "options": ["Coco", "Soul", "Frozen", "Up"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_356",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أمريكا الجنوبية\n> لا تملك منفذاً بحرياً\n> عاصمتها سوكري",
+    "options": ["بوليفيا", "باراغواي", "بيرو", "الإكوادور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_357",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أعيش في القطب الشمالي\n> يشتهر لي ناب طويل مستقيم\n> أُلقّب بحصان البحر الأحادي",
+    "options": ["الناروال", "الحوت الأبيض", "الأطوم", "الفظ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_358",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يجعلك ترى البعيد أقرب\n> يُستخدم في الرحلات والملاعب\n> تمسكه بكلتا اليدين",
+    "options": ["المنظار", "المجهر", "البوصلة", "العدسة المكبرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_359",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n🏹⛏️🧭\n> مستكشفة وآثارية مشهورة في الألعاب\n> تبحث عن الكنوز والآثار",
+    "options": ["Lara Croft", "Nathan Drake", "Jill Valentine", "Aloy"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_360",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🐉🔥👦\n> صداقة بين فتى وتنين\n> من DreamWorks",
+    "options": ["How to Train Your Dragon", "Shrek", "Raya and the Last Dragon", "The Croods"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_361",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> جزيرة في جنوب آسيا\n> عاصمتها سري جاياواردنابورا كوتي\n> تشتهر بالشاي السيلاني",
+    "options": ["سريلانكا", "الهند", "المالديف", "بنغلاديش"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_362",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> طائر وردي اللون\n> أقف غالباً على ساق واحدة\n> أعيش قرب البحيرات المالحة",
+    "options": ["الفلامنغو", "البجعة", "اللقلق", "الكركي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_363",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> أفتح فمي وأبتلع الرسائل\n> أقف ثابتاً في الشارع\n> لا أتكلم لكنني أوصل الكلام",
+    "options": ["صندوق البريد", "الحقيبة", "الظرف", "المكتب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_364",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n🧙‍♂️🏹🛡️\n> 5 ضد 5\n> لكل بطل قدرات مختلفة\n> من Riot Games",
+    "options": ["League of Legends", "Dota 2", "Smite", "Heroes of the Storm"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_365",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن العمل**\n> \"Roads? Where we're going, we don't need roads.\"",
+    "options": ["Back to the Future", "Interstellar", "Mad Max", "The Matrix"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_366",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع بين روسيا والصين\n> تشتهر بسهوبها الواسعة\n> عاصمتها أولان باتور",
+    "options": ["منغوليا", "كازاخستان", "قيرغيزستان", "طاجيكستان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_367",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أتحرك ببطء شديد\n> أقضي معظم وقتي متدلياً على الأشجار\n> أعيش في أمريكا الجنوبية",
+    "options": ["الكسلان", "الكوالا", "الليمور", "القرد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_368",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> إذا قلبته لا ينسكب ما فيه\n> يُستخدم لقياس الوقت\n> يتكوّن من زجاج ورمل",
+    "options": ["الساعة الرملية", "الساعة الرقمية", "البوصلة", "العدسة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_369",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n🪓❄️👨‍👦\n> بطل لعبة من PlayStation\n> إله حرب سابق",
+    "options": ["Kratos", "Thor", "Geralt", "Dante"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_370",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🤖❤️🏙️\n> روبوت طبي لطيف جداً\n> من Disney",
+    "options": ["Big Hero 6", "WALL-E", "Robots", "Meet the Robinsons"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_371",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في جنوب شرق آسيا\n> تشتهر بخليج ها لونغ\n> عاصمتها هانوي",
+    "options": ["فيتنام", "تايلاند", "كمبوديا", "لاوس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_372",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أعيش في مجموعات وأقف منتصباً كثيراً\n> أراقب الخطر في الصحراء أو السافانا\n> صغير الحجم وسريع",
+    "options": ["الميركات", "القنفذ", "الليمور", "الغزال"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_373",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يُستخدم للتعبير عن قوة الزلزال\n> يرتبط باسم عالم مشهور\n> نسمع عنه في الأخبار بعد الهزات",
+    "options": ["مقياس ريختر", "السيزموغراف", "البارومتر", "الترمومتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_374",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n🗡️🧝‍♂️🛡️\n> سلسلة شهيرة من Nintendo\n> بطلها Link",
+    "options": ["The Legend of Zelda", "Skyrim", "Final Fantasy", "Dragon Quest"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_375",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن العمل**\n> \"Life is like a box of chocolates.\"",
+    "options": ["Forrest Gump", "The Terminal", "Cast Away", "Big"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_376",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في شمال أوروبا\n> عاصمتها كوبنهاغن\n> ترتبط بجسر أوريسند مع السويد",
+    "options": ["الدنمارك", "النرويج", "فنلندا", "هولندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_377",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> صغير الحجم\n> أجري داخل عجلة أحياناً في المنازل\n> أخزن الطعام في خديّ",
+    "options": ["الهامستر", "الأرنب", "الفأر", "خنزير غينيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_378",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🎲🌴🦁\n> لعبة غامضة تنقل من يلعبها إلى مغامرة خطيرة",
+    "options": ["Jumanji", "Zathura", "Journey 2", "Jungle Cruise"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_379",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يحفظ الطعام بارداً\n> له باب يفتح ويغلق\n> يوجد في المطبخ",
+    "options": ["الثلاجة", "الفرن", "الميكروويف", "الخزانة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_380",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n🖤⚔️🌌\n> يرتدي قناعاً أسود\n> من Star Wars\n> صوته مخيف",
+    "options": ["Darth Vader", "Kylo Ren", "Obi-Wan Kenobi", "Luke Skywalker"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_381",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أوروبا الغربية\n> تشتهر بالشوكولاتة والاتحاد الأوروبي\n> عاصمتها بروكسل",
+    "options": ["بلجيكا", "هولندا", "لوكسمبورغ", "سويسرا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_382",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أسبح على ظهري أحياناً\n> أمسك الطعام بين يديّ\n> أعيش في المياه الباردة",
+    "options": ["ثعلب الماء", "الفقمة", "القندس", "الأطوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_383",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> آلة موسيقية نفخية\n> لونها معدني غالباً\n> مرتبطة بموسيقى الجاز",
+    "options": ["الساكسفون", "الناي", "الكلارينيت", "البوق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_384",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n🗡️🦅🏛️\n> سلسلة عن القتلة المتخفين\n> القفزة الإيمانية مشهورة فيها",
+    "options": ["Assassin's Creed", "Prince of Persia", "Ghost of Tsushima", "Hitman"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_385",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن العمل**\n> \"I see dead people.\"",
+    "options": ["The Sixth Sense", "The Others", "Ghost", "Coraline"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_386",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أوروبا الوسطى\n> عاصمتها بودابست\n> يشقها نهر الدانوب",
+    "options": ["المجر", "رومانيا", "التشيك", "سلوفاكيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_387",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> طائر بحري ضخم\n> أستطيع التحليق لمسافات طويلة جداً\n> أعيش قرب المحيطات",
+    "options": ["القطرس", "النورس", "البجع", "الصقر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_388",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> أدور حول نفسي لكن لا أسافر\n> أصنع هواءً بارداً في الصيف\n> أعيش في السقف أو على المكتب",
+    "options": ["المروحة", "العجلة", "المروحة اليدوية", "المروحة البحرية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_389",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n⚔️🐺🧪\n> صياد وحوش\n> شعره أبيض\n> من عالم The Witcher",
+    "options": ["Geralt of Rivia", "Kratos", "Aragorn", "Legolas"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_390",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🦸‍♂️👨‍👩‍👧‍👦⚡\n> عائلة كاملة تملك قوى خارقة\n> من Pixar",
+    "options": ["The Incredibles", "Big Hero 6", "Megamind", "Sky High"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_391",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في شرق أفريقيا\n> تحدها بحيرة فيكتوريا\n> عاصمتها كمبالا",
+    "options": ["أوغندا", "كينيا", "تنزانيا", "رواندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_392",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أعيش في البحر\n> أعود إلى الشاطئ لوضع البيض\n> عمري طويل",
+    "options": ["السلحفاة البحرية", "الدلفين", "القرش", "الفقمة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_393",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يطفو على الماء\n> يُلبس للحماية من الغرق\n> لونه برتقالي غالباً",
+    "options": ["سترة النجاة", "المظلة", "الخوذة", "العوامة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_394",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n🌾🐓🏡\n> تدير مزرعة وقرية صغيرة\n> لعبة هادئة وشهيرة",
+    "options": ["Stardew Valley", "Animal Crossing", "Harvest Moon", "Farm Together"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_395",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن العمل**\n> \"Hasta la vista, baby.\"",
+    "options": ["Terminator 2: Judgment Day", "The Terminator", "RoboCop", "Predator"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_396",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أوروبا الوسطى\n> عاصمتها براتيسلافا\n> انفصلت سلمياً عن التشيك",
+    "options": ["سلوفاكيا", "سلوفينيا", "المجر", "صربيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_397",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أعيش في المياه الباردة\n> لدي أنياب طويلة وشوارب كثيفة\n> أستريح على الجليد",
+    "options": ["الفظ", "الفقمة", "الأطوم", "الدلفين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_398",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> أداة لرؤية الكواكب والنجوم البعيدة\n> يستخدمها الفلكيون\n> تكبر الأجسام السماوية",
+    "options": ["التلسكوب", "المنظار", "المجهر", "الرادار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_399",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n🏹🔥🎯\n> بطلة سلسلة The Hunger Games\n> معروفة بمهارتها في الرماية",
+    "options": ["Katniss Everdeen", "Hermione Granger", "Rey", "Mulan"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_400",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n⚔️🐉🎎\n> فتاة تتنكر بزي رجل\n> من Disney",
+    "options": ["Mulan", "Brave", "Moana", "Raya and the Last Dragon"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_401",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع على البحر الأدرياتيكي\n> عاصمتها زغرب\n> تشتهر بمدينة دوبروفنيك",
+    "options": ["كرواتيا", "سلوفينيا", "صربيا", "البوسنة والهرسك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_402",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أعيش في البحر\n> الذكر مني يحمل الصغار\n> رأسي يشبه الحصان",
+    "options": ["فرس البحر", "قنديل البحر", "نجم البحر", "الحبار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_403",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يأخذ ما في الحاسوب ويخرجه على الورق\n> يوجد في المكتب كثيراً\n> يستخدم الحبر أو الليزر",
+    "options": ["الطابعة", "الماسح الضوئي", "الشاشة", "اللوحة المفاتيح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_404",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n🍳🔥👨‍🍳\n> لعبة تعاون سريعة في المطبخ\n> تحتاج تنسيقاً بين اللاعبين",
+    "options": ["Overcooked", "Cooking Mama", "PlateUp!", "Diner Dash"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_405",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن العمل**\n> \"I solemnly swear that I am up to no good.\"",
+    "options": ["Harry Potter and the Prisoner of Azkaban", "Harry Potter and the Goblet of Fire", "Fantastic Beasts", "The Chronicles of Narnia"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_406",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في جنوب شرق آسيا\n> لا تملك منفذاً بحرياً\n> عاصمتها فيينتيان",
+    "options": ["لاوس", "كمبوديا", "فيتنام", "تايلاند"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_407",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> لدي درع طبيعي من الصفائح\n> أعيش في الأمريكتين\n> أتكور عند الخوف أحياناً",
+    "options": ["المدرع", "القنفذ", "السلحفاة", "التمساح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_408",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> جهاز طبي\n> يقيس النشاط الكهربائي للقلب\n> يظهر النبضات على شاشة أو ورق",
+    "options": ["جهاز تخطيط القلب", "جهاز قياس الضغط", "الترمومتر", "الأشعة السينية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_409",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n🤠🧢🏺\n> عالم آثار ومغامر\n> يحمل سوطاً وقبعة",
+    "options": ["Indiana Jones", "Lara Croft", "Nathan Drake", "Han Solo"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_410",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🎮🍬🧱\n> شرير لعبة أركيد يريد أن يصبح بطلاً",
+    "options": ["Wreck-It Ralph", "Pixels", "Ready Player One", "Free Guy"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_411",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع على خط الاستواء في أمريكا الجنوبية\n> سميت نسبةً إلى الخط الاستوائي\n> عاصمتها كيتو",
+    "options": ["الإكوادور", "كولومبيا", "بيرو", "فنزويلا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_412",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> من الرئيسيات\n> أملك عينين كبيرتين جداً مقارنة بجسمي\n> أعيش في مدغشقر",
+    "options": ["الليمور", "القرد", "الكوالا", "الكسلان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_413",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> أداة لقياس الرطوبة في الجو\n> تُستخدم في محطات الطقس\n> اسمها يبدأ بحرف الهاء",
+    "options": ["الهيجرومتر", "الترمومتر", "الأنيمومتر", "البارومتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_414",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n🧟‍♂️🏚️🔫\n> سلسلة رعب وبقاء شهيرة\n> تدور حول الفيروسات والزومبي",
+    "options": ["Resident Evil", "The Last of Us", "Left 4 Dead", "Dead Space"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_415",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن العمل**\n> \"Wax on, wax off.\"",
+    "options": ["The Karate Kid", "Rocky", "Creed", "Mulan"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_416",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في البلقان\n> عاصمتها سراييفو\n> اسمها مكوّن من شقين",
+    "options": ["البوسنة والهرسك", "الجبل الأسود", "صربيا", "سلوفينيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_417",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> رشيق وسريع\n> أعيش في الصحراء والسهول\n> لدي قرون رفيعة",
+    "options": ["الغزال", "الأيل", "الماعز", "الحصان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_418",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> إذا وضعته في الماء اختفى\n> نضعه على الطعام\n> أبيض اللون غالباً",
+    "options": ["الملح", "السكر", "الدقيق", "الأرز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_419",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n📚🪄🧠\n> من Harry Potter\n> معروفة بذكائها الشديد",
+    "options": ["Hermione Granger", "Ginny Weasley", "Luna Lovegood", "Cho Chang"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_420",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🐶🏙️🏠\n> ماذا تفعل الحيوانات الأليفة عند غياب أصحابها؟",
+    "options": ["The Secret Life of Pets", "Bolt", "Zootopia", "Sing"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_421",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع على بحر البلطيق\n> عاصمتها تالين\n> من دول البلطيق الثلاث",
+    "options": ["إستونيا", "لاتفيا", "ليتوانيا", "فنلندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_422",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> من القردة العليا\n> ذراعاي طويلتان جداً\n> أعيش في الغابات الاستوائية",
+    "options": ["إنسان الغاب", "الغوريلا", "الشمبانزي", "الليمور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_423",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> سائل أسود يُستخرج من باطن الأرض\n> يستخدم وقوداً وصناعةً\n> يسمى الذهب الأسود أحياناً",
+    "options": ["النفط", "الديزل", "القطران", "الغاز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_424",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n🏝️🐱🎣\n> تعيش في جزيرة هادئة\n> تجمع الأثاث وتصطاد السمك",
+    "options": ["Animal Crossing", "Stardew Valley", "The Sims 4", "Harvest Moon"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_425",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن العمل**\n> \"Keep the change, ya filthy animal!\"",
+    "options": ["Home Alone", "Elf", "The Santa Clause", "Jingle All the Way"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_426",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في البلقان\n> عاصمتها تيرانا\n> تطل على البحر الأدرياتيكي",
+    "options": ["ألبانيا", "اليونان", "صربيا", "كرواتيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_427",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> طائر بحري صغير\n> منقاري ملوّن وجميل\n> أعيش قرب السواحل الباردة",
+    "options": ["البفن", "البطريق", "النورس", "البجع"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_428",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يدل على الشمال والجنوب والشرق والغرب\n> يستخدمه المسافرون والبحارة\n> يعتمد على المغناطيس",
+    "options": ["البوصلة", "الخريطة", "المنظار", "الساعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_429",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n🟢🍄👨‍🔧\n> شقيق Mario\n> أطول منه قليلاً",
+    "options": ["Luigi", "Mario", "Yoshi", "Toad"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_430",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🐻🍊🚂\n> دب لطيف يحب المربى البرتقالي\n> يعيش في لندن",
+    "options": ["Paddington", "Winnie the Pooh", "Brother Bear", "Ted"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_431",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أمريكا الجنوبية\n> عاصمتها مونتيفيديو\n> بين الأرجنتين والبرازيل",
+    "options": ["أوروغواي", "باراغواي", "تشيلي", "بوليفيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_432",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أعيش في جبال الأنديز\n> يشبهني الناس باللاما لكنني أصغر وألطف\n> صوفي ناعم",
+    "options": ["الألبكة", "اللاما", "الماعز الجبلي", "الخروف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_433",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> أداة لقياس الضغط الجوي\n> تُستخدم في الطقس\n> تساعد على توقع العواصف",
+    "options": ["البارومتر", "الترمومتر", "الأنيمومتر", "الهيجرومتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_434",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n👊🥋🎮\n> سلسلة قتالية شهيرة\n> تضم شخصيات مثل Jin وKazuya",
+    "options": ["Tekken", "Street Fighter", "Mortal Kombat", "Soulcalibur"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_435",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن العمل**\n> \"Nobody puts Baby in a corner.\"",
+    "options": ["Dirty Dancing", "La La Land", "Grease", "Footloose"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_436",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في وسط أفريقيا\n> عاصمتها ياوندي\n> تشتهر بتنوعها الطبيعي الكبير",
+    "options": ["الكاميرون", "الغابون", "تشاد", "الكونغو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_437",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> مخلوق مائي صغير\n> أستطيع تجديد أطرافي\n> ألقب أحياناً بسمكة تمشي بابتسامة",
+    "options": ["الأكسولوتل", "السلمندر", "الضفدع", "قنديل البحر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_438",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> جهاز يستخدم الموجات الصوتية تحت الماء\n> يساعد السفن والغواصات\n> يكشف الأجسام والمسافات",
+    "options": ["السونار", "الرادار", "GPS", "الليدار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_439",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n🏹🧝‍♂️🌲\n> رامٍ ماهر من The Lord of the Rings",
+    "options": ["Legolas", "Aragorn", "Gimli", "Frodo"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_440",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🚂👧👻🌫️\n> فيلم أنمي من Studio Ghibli\n> فتاة تدخل عالماً روحانياً غريباً",
+    "options": ["Spirited Away", "My Neighbor Totoro", "Ponyo", "Howl's Moving Castle"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_441",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أوروبا الوسطى\n> عاصمتها ليوبليانا\n> كانت جزءاً من يوغوسلافيا",
+    "options": ["سلوفينيا", "سلوفاكيا", "كرواتيا", "صربيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_442",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> ثديي صغير من آسيا\n> لوني مائل للأحمر\n> مشهور بوجهه اللطيف وذيلي المخطط",
+    "options": ["الباندا الحمراء", "الثعلب الأحمر", "الراكون", "الليمور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_443",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> يأخذ الورقة ويدخلها ثم يحولها إلى ملف في الكمبيوتر\n> يوجد في المكاتب\n> يستخدم للأرشفة الرقمية",
+    "options": ["الماسح الضوئي", "الطابعة", "الشاشة", "لوحة المفاتيح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_444",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن اللعبة**\n⚔️🔥🏛️\n> أكشن سريعة في عالم يوناني سفلي\n> لعبة مستقلة نالت جوائز كثيرة",
+    "options": ["Hades", "God of War", "Diablo IV", "Bastion"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_445",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن العمل**\n> \"I volunteer as tribute!\"",
+    "options": ["The Hunger Games", "Divergent", "Maze Runner", "Mulan"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_446",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الدولة**\n> تقع في شرق أفريقيا\n> عاصمتها كيغالي\n> معروفة بتلالها الخضراء",
+    "options": ["رواندا", "بوروندي", "أوغندا", "تنزانيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_447",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **من أنا؟**\n> أعيش في البحر\n> جسمي مفلطح وذيلي طويل\n> يشتهر بعضي بلسعة مؤلمة",
+    "options": ["شفنين البحر", "سمكة القرش", "سمكة السيف", "قنديل البحر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_448",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **ما هذا؟**\n> أداة شفافة نصف دائرية غالباً\n> نستخدمها في الرياضيات لقياس الزوايا\n> توجد في المقلمة",
+    "options": ["المنقلة", "المسطرة", "الفرجار", "المثلث الهندسي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_449",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الشخصية**\n💨💧🔥🪨\n> فتى يتحكم بالعناصر الأربعة\n> آخر مسيطر للهواء",
+    "options": ["Aang", "Zuko", "Korra", "Sokka"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_450",
+    "category": "guess",
+    "difficulty": "medium",
+    "text": "🤔 **خمّن الفيلم**\n🎅📨❄️\n> فيلم أنيميشن عن بداية أسطورة سانتا كلوز\n> من Netflix",
+    "options": ["Klaus", "Rise of the Guardians", "Arthur Christmas", "The Polar Express"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_451",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> صغير جداً من الرئيسيات\n> عيناي ضخمتان مقارنة بجسمي\n> أعيش في جنوب شرق آسيا",
+    "options": ["الترسير", "الليمور", "اللوريس", "السنجاب الطائر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_452",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> تقع في آسيا الوسطى\n> تشتهر ببحيرة إيسيك كول\n> عاصمتها بشكيك",
+    "options": ["قيرغيزستان", "طاجيكستان", "كازاخستان", "أوزبكستان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_453",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> مستشعر يوجد في الهواتف والسيارات\n> يقيس التسارع والحركة\n> يساعد على تدوير شاشة الهاتف تلقائياً",
+    "options": ["مقياس التسارع", "الجيروسكوب", "البارومتر", "المغناطيسية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_454",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن اللعبة**\n🚀🌍🕰️\n> لعبة استكشاف فضائي وألغاز زمنية\n> تدور حول حلقة تتكرر باستمرار",
+    "options": ["Outer Wilds", "No Man's Sky", "Starfield", "Journey to the Savage Planet"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_455",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن العمل**\n> \"Would you kindly?\"",
+    "options": ["BioShock", "Half-Life 2", "Portal", "Dishonored"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_456",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> دولة آسيوية صغيرة في جبال الهيمالايا\n> تشتهر بمفهوم السعادة الوطنية\n> عاصمتها تيمفو",
+    "options": ["بوتان", "نيبال", "قيرغيزستان", "منغوليا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_457",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> سمكة قديمة جداً ظن العلماء أنها انقرضت\n> أُعيد اكتشافها في القرن العشرين\n> تسمى بالإنجليزية Coelacanth",
+    "options": ["السيلاكانث", "القرش الحوتي", "السمكة الرئوية", "الشفنين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_458",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> معدن سائل في درجة حرارة الغرفة\n> كان يُستخدم في بعض موازين الحرارة القديمة\n> رمزه Hg",
+    "options": ["الزئبق", "الفضة", "الرصاص", "القصدير"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_459",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الشخصية**\n⚖️📚🏛️\n> محامٍ نبيل في رواية أمريكية مشهورة\n> من To Kill a Mockingbird",
+    "options": ["Atticus Finch", "Sherlock Holmes", "Hercule Poirot", "Jay Gatsby"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_460",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🌌⏳🛰️\n> رحلة عبر الفضاء للبحث عن مستقبل للبشر\n> من إخراج Christopher Nolan",
+    "options": ["Interstellar", "Gravity", "The Martian", "Ad Astra"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_461",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أمريكا الجنوبية\n> لغتها الرسمية الهولندية\n> عاصمتها باراماريبو",
+    "options": ["سورينام", "غيانا", "فنزويلا", "غويانا الفرنسية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_462",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> من الرئيسيات الليلية\n> أعيش في مدغشقر\n> أصابعي الطويلة جداً مميزة للغاية",
+    "options": ["الآي-آي", "الليمور", "اللوريس", "الترسير"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_463",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> أحزمة من الجسيمات المشحونة تحيط بالأرض\n> تحبسها المجالات المغناطيسية\n> سميت باسم مكتشفها",
+    "options": ["أحزمة فان آلن", "طبقة الأوزون", "الغلاف الأيوني", "المجال المغناطيسي الشمسي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_464",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن اللعبة**\n⏳⚔️🐉\n> لعبة RPG يابانية كلاسيكية\n> السفر عبر الزمن عنصر أساسي فيها",
+    "options": ["Chrono Trigger", "Final Fantasy VI", "Dragon Quest V", "Secret of Mana"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_465",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن العمل**\n> \"The cake is a lie.\"",
+    "options": ["Portal", "Half-Life", "The Talos Principle", "BioShock"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_466",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> تقع في جنوب شرق آسيا\n> نصفها تقريباً على جزيرة تيمور\n> عاصمتها ديلي",
+    "options": ["تيمور الشرقية", "إندونيسيا", "بروناي", "الفلبين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_467",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> مخلوق بحري صغير لكن ضربته من الأسرع في الطبيعة\n> ألواني زاهية جداً\n> يسمى بالإنجليزية Mantis Shrimp",
+    "options": ["روبيان السرعوف", "الكريل", "الروبيان النمري", "جراد البحر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_468",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> نظير للهيدروجين\n> يحتوي على بروتون ونيوترون\n> يُستخدم في بعض التطبيقات النووية والعلمية",
+    "options": ["الديوتيريوم", "الهيليوم", "التريتيوم", "النيون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_469",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الشخصية**\n🎩🍊👨‍👩‍👦\n> زعيم عائلة شهير في السينما\n> من The Godfather",
+    "options": ["Vito Corleone", "Michael Corleone", "Tony Montana", "Tom Hagen"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_470",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🌲🐺🗡️\n> أنمي من Studio Ghibli\n> صراع بين الطبيعة والصناعة",
+    "options": ["Princess Mononoke", "Spirited Away", "Nausicaä of the Valley of the Wind", "Ponyo"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_471",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> تقع بين رومانيا وأوكرانيا\n> عاصمتها كيشيناو\n> من دول أوروبا الشرقية الصغيرة",
+    "options": ["مولدوفا", "بيلاروسيا", "لاتفيا", "سلوفاكيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_472",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> طائر كبير لا يطير\n> أعيش في أستراليا وغينيا الجديدة\n> لدي خوذة عظمية على رأسي",
+    "options": ["الكاسواري", "النعامة", "الإيمو", "البطريق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_473",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> أداة فلكية قديمة\n> استخدمها العلماء والبحارة لتحديد المواقع والنجوم\n> سبقت التلسكوب بقرون",
+    "options": ["الأسطرلاب", "البوصلة", "الربع المجيب", "المزولة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_474",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن اللعبة**\n🐉🎲📖\n> RPG ضخمة مبنية على عالم Dungeons & Dragons\n> نالت شهرة كبيرة جداً",
+    "options": ["Baldur's Gate 3", "Divinity: Original Sin 2", "Dragon Age: Origins", "Pillars of Eternity"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_475",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن العمل**\n> \"In space, no one can hear you scream.\"",
+    "options": ["Alien", "Gravity", "Interstellar", "The Martian"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_476",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> تقع في جنوب أفريقيا\n> تشتهر بدلتا أوكافانغو\n> عاصمتها غابورون",
+    "options": ["بوتسوانا", "ناميبيا", "زامبيا", "زيمبابوي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_477",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> مخلوق بحري ذو قوقعة حلزونية جميلة\n> قريب بعيد للحبار والأخطبوط\n> يسمى بالإنجليزية Nautilus",
+    "options": ["النوتيلوس", "المحار", "الحلزون البحري", "قنفذ البحر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_478",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> غاز يجعل الصوت حاداً عند استنشاقه مؤقتاً\n> أخف من الهواء\n> يستخدم في البالونات",
+    "options": ["الهيليوم", "الأكسجين", "الهيدروجين", "النيتروجين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_479",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الشخصية**\n✨👑🧝‍♀️\n> سيدة إلفية حكيمة في The Lord of the Rings",
+    "options": ["Galadriel", "Arwen", "Éowyn", "Tauriel"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_480",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🤖🌙🚀\n> صداقة بين صبي وروبوت عملاق\n> فيلم أنيميشن مؤثر",
+    "options": ["The Iron Giant", "Big Hero 6", "Robots", "WALL-E"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_481",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> دولة أوروبية صغيرة جداً بين فرنسا وإسبانيا\n> تقع في جبال البرانس\n> عاصمتها أندورا لا فيلا",
+    "options": ["أندورا", "موناكو", "سان مارينو", "ليختنشتاين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_482",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> حيوان صغير من أستراليا\n> يشتهر بابتسامته اللطيفة جداً\n> يعيش في الجزر والسواحل",
+    "options": ["الكوكا", "الكوالا", "الومبت", "الألبكة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_483",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> المركب العضوي الأساسي في الخل\n> طعمه لاذع\n> يسمى أيضاً Ethanoic Acid",
+    "options": ["حمض الأسيتيك", "حمض الستريك", "حمض اللاكتيك", "حمض الكربونيك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_484",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن اللعبة**\n🏜️🧣⛰️\n> لعبة فنية هادئة بلا حوار تقريباً\n> تسافر فيها نحو جبل بعيد",
+    "options": ["Journey", "Abzû", "Sky: Children of the Light", "Flower"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_485",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن العمل**\n> \"I'm not bad. I'm just drawn that way.\"",
+    "options": ["Who Framed Roger Rabbit", "Space Jam", "Looney Tunes: Back in Action", "Cool World"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_486",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> تقع في أمريكا الجنوبية\n> لغتها الرسمية الإنجليزية\n> عاصمتها جورج تاون",
+    "options": ["غيانا", "سورينام", "فنزويلا", "بليز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_487",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> ثديي مغطى بحراشف\n> آكل النمل والنمل الأبيض\n> يتكور عند الخطر",
+    "options": ["آكل النمل الحرشفي", "المدرع", "القنفذ", "الكسلان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_488",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> أقسى مادة طبيعية معروفة\n> يُستخدم في الحلي وقطع الأدوات الصناعية\n> يتكوّن من الكربون",
+    "options": ["الألماس", "الكوارتز", "الياقوت", "الفولاذ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_489",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الشخصية**\n🍳🌿🧙‍♂️\n> رفيق وفيّ من The Lord of the Rings\n> حمل الأمل والطعام مع Frodo",
+    "options": ["Samwise Gamgee", "Merry", "Pippin", "Boromir"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_490",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🎩🪄👬\n> ساحران يتنافسان بذكاء وخداع\n> من إخراج Christopher Nolan",
+    "options": ["The Prestige", "Now You See Me", "The Illusionist", "Inception"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_491",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> تقع في البلقان\n> اسمها يعني الجبل الأسود\n> عاصمتها بودغوريتسا",
+    "options": ["الجبل الأسود", "ألبانيا", "صربيا", "مقدونيا الشمالية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_492",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> ثديي بحري مسالم\n> قريب من خراف البحر\n> أعيش في المياه الدافئة الساحلية",
+    "options": ["الأطوم", "الدلفين", "الفقمة", "الحوت الأبيض"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_493",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> جهاز يكشف الإشعاع المؤيّن\n> يرتبط باسم عالمين\n> يستخدم في المختبرات والسلامة النووية",
+    "options": ["عداد غايغر", "الرادار", "المجهر الإلكتروني", "البارومتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_494",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن اللعبة**\n🚢🕵️‍♂️📜\n> لعبة تحقيق ومنطق بأسلوب بصري مميز جداً\n> تكشف مصير طاقم سفينة غامضة",
+    "options": ["Return of the Obra Dinn", "Papers, Please", "The Case of the Golden Idol", "Disco Elysium"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_495",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن العمل**\n> \"There's no crying in baseball!\"",
+    "options": ["A League of Their Own", "Moneyball", "Field of Dreams", "The Sandlot"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_496",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الدولة**\n> دولة أوروبية صغيرة بين سويسرا والنمسا\n> عاصمتها فادوز\n> من أصغر دول العالم",
+    "options": ["ليختنشتاين", "لوكسمبورغ", "موناكو", "أندورا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_497",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **من أنا؟**\n> ثديي يبيض\n> جسمي مغطى بالأشواك\n> آكل النمل وأعيش في أستراليا",
+    "options": ["آكل النمل الشوكي", "القنفذ", "المدرع", "خلد الماء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_498",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **ما هذا؟**\n> عضية داخل الخلية\n> تُسمى محطة الطاقة\n> تنتج ATP",
+    "options": ["الميتوكوندريا", "النواة", "الريبوسوم", "الجهاز الغولجي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_499",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الشخصية**\n🌳😺🏡\n> مخلوق ضخم ولطيف من Studio Ghibli\n> يعيش في الغابة مع الأطفال",
+    "options": ["Totoro", "No-Face", "Ponyo", "Calcifer"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "guess_500",
+    "category": "guess",
+    "difficulty": "hard",
+    "text": "🤔 **خمّن الفيلم**\n🎬👦🇮🇹\n> فيلم إيطالي كلاسيكي\n> عن حب السينما والذكريات",
+    "options": ["Cinema Paradiso", "Life Is Beautiful", "The Artist", "Nuovo Mondo"],
+    "correctAnswer": 0
   }
 ]
