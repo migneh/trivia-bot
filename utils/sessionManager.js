@@ -14,7 +14,7 @@
  *       │
  *  postQuestion()    → updateSession({ questionMessage, currentVotes: {} })
  *  collectVotes()    → ensurePlayer(), direct mutation of currentVotes
- *  revealAndAdvance()→ updateStreak(), addPoints(), updateSession()
+ *  revealAndAdvance()→ updateStreak(), addPoints(), updateSession({ history })
  *       │
  *  endSession()      → updateSession({ isEnding: true }) → deleteSession()
  *
@@ -23,7 +23,8 @@
  *  ensurePlayer() is called on every button press.
  *  If userId is new: joinIndex is set to currentIndex,
  *  scores/streaks initialised to 0.
- *  Reconnecting players are treated as fresh joins — joinIndex reset.
+ *  Reconnecting players retain their previous state (scores, streaks, joinIndex) 
+ *  to preserve their completion bonus and progress.
  *
  * ─── Completion bonus tracking ───────────────────────────────────────────────
  *
@@ -54,6 +55,7 @@ const sessions = new Map();
  * @property {Map<string,number>}  joinIndex    - userId → question index on join
  * @property {Map<string,Set<number>>} answeredSinceJoin - userId → Set of answered qIndexes
  * @property {Set<number>}  skippedIndexes     - question indexes that were skipped
+ * @property {Array<object>} history           - Array of past question results { questionId, correctAnswer, votes, speedWinners }
  * @property {Object.<string,{answerIndex:number,timestampMs:number}>} currentVotes
  * @property {number}   consecutiveZeroVotes
  * @property {boolean}  stopRequested
@@ -61,7 +63,6 @@ const sessions = new Map();
  * @property {object|null} questionMessage     - Discord Message for current question
  * @property {object|null} dashboardMessage    - Discord Message for dashboard
  * @property {boolean}  isEnding              - guard against double-end race
- * @property {number}   speedFirstCountSession - # of times any player ranked 1st this session (per player tracked in postProcess)
  */
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -121,6 +122,7 @@ function createSession(guildId, data) {
     joinIndex:             new Map(),
     answeredSinceJoin:     new Map(),
     skippedIndexes:        new Set(),
+    history:               [],
     currentVotes:          {},
     consecutiveZeroVotes:  0,
     stopRequested:         false,
@@ -175,12 +177,8 @@ function getAllActiveSessions() {
  * Initialise or re-initialise a player's state for the current session.
  *
  * Called on every button press before recording the vote.
- * If the player is new:   sets joinIndex to currentIndex, zeroes scores/streaks.
- * If the player rejoins:  resets joinIndex to currentIndex (fresh join semantics).
- *
- * Per spec: "If a player disconnects and reconnects during an active session,
- * treat them as a fresh join — they vote again on the current question if
- * time remains."
+ * If the player is new: sets joinIndex to currentIndex, zeroes scores/streaks.
+ * If the player is already in the session: does nothing (preserves state).
  *
  * @param {string} guildId
  * @param {string} userId
@@ -192,15 +190,15 @@ function ensurePlayer(guildId, userId) {
   const isNew = !s.scores.has(userId);
 
   if (isNew) {
-    // First-time join or after full disconnect
+    // First-time join
     s.scores.set(userId, 0);
     s.streaks.set(userId, 0);
     s.joinIndex.set(userId, s.currentIndex);
     s.answeredSinceJoin.set(userId, new Set());
   }
-  // Note: we intentionally do NOT reset joinIndex on re-vote within the
-  // same question — ensurePlayer is idempotent for the same question.
+  // Note: we intentionally do NOT reset joinIndex on re-vote or reconnect.
   // joinIndex is only set once: on the player's very first vote in the session.
+  // This ensures players don't lose their completion bonus if they disconnect briefly.
 }
 
 /**
@@ -266,10 +264,6 @@ function markAnswered(guildId, userId, questionIndex) {
  *
  * A player qualifies if they answered every non-skipped question
  * from their joinIndex up to and including currentIndex.
- *
- * Per spec: "Players joining mid-session start with streak counter of zero;
- * completion bonus is awarded if they answered every non-skipped question
- * from their join point onwards."
  *
  * @param {string} guildId
  * @param {string} userId
