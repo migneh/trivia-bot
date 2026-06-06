@@ -27998,5 +27998,4005 @@
     "text": "ما هو اللقب الذي كان يطلق على زيد بن حارثة قبل أن يُبطل الإسلام التبني؟",
     "options": ["زيد بن محمد", "زيد الحب", "أبو أسامة", "زيد الخير"],
     "correctAnswer": 0
+  },
+  {
+    "id": "general_001",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم عدد أيام الأسبوع؟",
+    "options": ["7", "5", "6", "8"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_002",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم عدد أشهر السنة الميلادية؟",
+    "options": ["12", "10", "11", "13"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_003",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم دقيقة في الساعة الواحدة؟",
+    "options": ["60", "30", "100", "120"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_004",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم ساعة في اليوم الواحد؟",
+    "options": ["24", "12", "48", "36"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_005",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم عدد الثواني في الدقيقة؟",
+    "options": ["60", "100", "30", "120"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_006",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو ناتج جمع 10 + 10؟",
+    "options": ["20", "100", "0", "30"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_007",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو ناتج ضرب 5 × 5؟",
+    "options": ["25", "10", "55", "50"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_008",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو ناتج طرح 100 - 50؟",
+    "options": ["50", "40", "60", "150"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_009",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو ناتج قسمة 20 ÷ 2؟",
+    "options": ["10", "5", "4", "2"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_010",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو نصف الرقم 100؟",
+    "options": ["50", "25", "10", "200"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_011",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اللون الذي ينتج عن خلط الأحمر والأصفر؟",
+    "options": ["البرتقالي", "الأخضر", "البنفسجي", "البني"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_012",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اللون الذي ينتج عن خلط الأزرق والأصفر؟",
+    "options": ["الأخضر", "البنفسجي", "البرتقالي", "الأسود"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_013",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اللون الذي ينتج عن خلط الأحمر والأزرق؟",
+    "options": ["البنفسجي", "الأخضر", "البرتقالي", "الأبيض"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_014",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو لون السماء الصافية في النهار؟",
+    "options": ["أزرق", "أخضر", "أحمر", "أصفر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_015",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم عدد ألوان قوس قزح؟",
+    "options": ["7", "6", "5", "8"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_016",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشكل الهندسي الذي يحتوي على 3 أضلاع؟",
+    "options": ["المثلث", "المربع", "الدائرة", "المستطيل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_017",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشكل الهندسي الذي يشبه شكل الكرة؟",
+    "options": ["الدائرة", "المربع", "المثلث", "المستطيل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_018",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشكل الهندسي الذي يحتوي على 4 أضلاع متساوية؟",
+    "options": ["المربع", "المستطيل", "المثلث", "المعين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_019",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشكل الذي يحتوي على 5 أضلاع؟",
+    "options": ["الخماسي", "السداسي", "المثلث", "المربع"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_020",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشكل الذي يحتوي على 6 أضلاع؟",
+    "options": ["السداسي", "الثماني", "الخماسي", "المربع"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_021",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الحيوان الذي يلقب بـ 'ملك الغابة'؟",
+    "options": ["الأسد", "النمر", "الفيل", "الدب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_022",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الحيوان الذي يلقب بـ 'سفينة الصحراء'؟",
+    "options": ["الجمل", "الحصان", "الضبع", "النعامة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_023",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو أطول حيوان على وجه الأرض؟",
+    "options": ["الزرافة", "الفيل", "وحيد القرن", "الدب القطبي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_024",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الطائر الذي يرمز للسلام؟",
+    "options": ["الحمامة البيضاء", "النسر", "الغراب", "الصقر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_025",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الحيوان الذي يمتلك خرطوماً طويلاً؟",
+    "options": ["الفيل", "الزرافة", "الجمل", "التمساح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_026",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الطائر الذي لا يستطيع الطيران ويعيش في القطب الجنوبي؟",
+    "options": ["البطريق", "النعامة", "النورس", "البجعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_027",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الحيوان الذي يموء؟",
+    "options": ["القط", "الكلب", "الحصان", "البقرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_028",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الحيوان الذي ينبح؟",
+    "options": ["الكلب", "القط", "الذئب", "الثعلب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_029",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الحيوان الذي يغطي جسمه الصوف ويؤخذ منه؟",
+    "options": ["الخروف", "البقرة", "الحصان", "الجمل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_030",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اللون الذي يرمز للخطر أو التوقف في إشارات المرور؟",
+    "options": ["الأحمر", "الأخضر", "الأصفر", "الأزرق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_031",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو المشروب الذي نحصل عليه من البقرة؟",
+    "options": ["الحليب", "العصير", "الشاي", "القهوة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_032",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الفاكهة التي تكون حمراء من الداخل وخضراء من الخارج وفيها بذور سوداء؟",
+    "options": ["البطيخ (الجبس)", "التفاح", "الموز", "العنب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_033",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الخضار التي تشتهر بأن الأرانب تحب أكلها؟",
+    "options": ["الجزر", "البطاطس", "الخيار", "الطماطم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_034",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الطعام الذي يصنعه النحل؟",
+    "options": ["العسل", "السكر", "المربى", "الحليب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_035",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الفاكهة التي يُقال إنها تبقي الطبيب بعيداً إذا أكلتها يومياً؟",
+    "options": ["التفاح", "الموز", "البرتقال", "المانجو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_036",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو المشروب الساخن الذي يُصنع من حبوب محمصة بنية أو سوداء؟",
+    "options": ["القهوة", "الشاي", "الحليب", "العصير"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_037",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو المكون الأساسي في صنع الخبز؟",
+    "options": ["الدقيق (الطحين)", "السكر", "الزيت", "البيض"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_038",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اللون المعتاد لفاكهة الموز عندما تنضج؟",
+    "options": ["أصفر", "أحمر", "أزرق", "أسود"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_039",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الحيوان البحري الذي يُنتج اللؤلؤ؟",
+    "options": ["المحار", "السمك", "الأخطبوط", "الدلفين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_040",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "من أي حيوان نحصل على اللحم المسمى باللحم البقري؟",
+    "options": ["البقرة", "الخروف", "الدجاجة", "السمك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_041",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الأداة التي تستخدم لمعرفة الوقت؟",
+    "options": ["الساعة", "الميزان", "المسطرة", "البوصلة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_042",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الأداة التي تستخدم لمعرفة الاتجاهات؟",
+    "options": ["البوصلة", "الساعة", "الميزان", "الترمومتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_043",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الأداة التي تُستخدم لقياس الوزن؟",
+    "options": ["الميزان", "المسطرة", "الساعة", "البوصلة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_044",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الأداة التي تُستخدم لقص الورق؟",
+    "options": ["المقص", "المطرقة", "المنشار", "المفك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_045",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "بماذا يُسمى المكان الذي تُحفظ فيه الكتب للقراءة والاستعارة؟",
+    "options": ["المكتبة", "المستشفى", "المخبز", "المصنع"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_046",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "بماذا يُسمى المكان الذي يذهب إليه الناس لتلقي العلاج؟",
+    "options": ["المستشفى", "المدرسة", "السوق", "الحديقة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_047",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي وسيلة النقل التي تطير في الجو؟",
+    "options": ["الطائرة", "القطار", "السيارة", "السفينة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_048",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي وسيلة النقل التي تسير على قضبان حديدية؟",
+    "options": ["القطار", "السيارة", "الطائرة", "القارب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_049",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي وسيلة النقل التي تطفو على سطح الماء؟",
+    "options": ["السفينة", "السيارة", "الطائرة", "الدراجة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_050",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشيء الذي ترتديه في قدمك قبل الحذاء؟",
+    "options": ["الجورب", "القفاز", "القميص", "القبعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_051",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الشركة التي شعارها تفاحة مقضومة؟",
+    "options": ["Apple", "Samsung", "Microsoft", "Nokia"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_052",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الشركة التي تصنع سيارات 'كامري' و'كورولا'؟",
+    "options": ["تويوتا", "نيسان", "هوندا", "فورد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_053",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الشركة التي تصنع مشروباً غازياً لونه أسود يحمل اسمها الشهير عالمياً؟",
+    "options": ["كوكاكولا", "لبتون", "نستله", "ستاربكس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_054",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي شركة الوجبات السريعة التي شعارها حرف M أصفر كبير؟",
+    "options": ["ماكدونالدز", "برجر كينج", "كنتاكي", "بيتزا هت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_055",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي العلامة التجارية للملابس الرياضية التي شعارها ثلاث خطوط مائلة أو ورقة برسيم؟",
+    "options": ["أديداس", "نايكي", "بوما", "ريبوك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_056",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي العلامة التجارية الرياضية التي شعارها علامة 'صح' (Swoosh)؟",
+    "options": ["نايكي", "أديداس", "أندر آرمر", "بوما"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_057",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الموقع الشهير الذي تستخدمه للبحث عن المعلومات في الإنترنت؟",
+    "options": ["جوجل", "فيسبوك", "تويتر", "إنستغرام"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_058",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم التطبيق الشهير لالتقاط الصور ومشاركتها والمملوك لشركة ميتا؟",
+    "options": ["إنستغرام", "سناب شات", "واتساب", "تويتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_059",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم التطبيق الذي تستخدمه لمشاهدة مقاطع الفيديو على الإنترنت؟",
+    "options": ["يوتيوب", "أمازون", "جوجل درايف", "خرائط جوجل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_060",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الشركة التي تصنع طائرات الركاب الضخمة مثل 747؟",
+    "options": ["بوينغ", "إيرباص", "تويوتا", "فورد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_061",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "في أي فصل من فصول السنة تتساقط الثلوج في بعض الدول؟",
+    "options": ["الشتاء", "الصيف", "الربيع", "الخريف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_062",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "في أي فصل تتفتح الأزهار وتخضر الأشجار؟",
+    "options": ["الربيع", "الخريف", "الشتاء", "الصيف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_063",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "في أي فصل تتساقط أوراق الأشجار ويصبح الجو معتدلاً مائلاً للبرودة؟",
+    "options": ["الخريف", "الصيف", "الربيع", "الشتاء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_064",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "في أي فصل ترتفع درجات الحرارة ونذهب عادة إلى البحر؟",
+    "options": ["الصيف", "الشتاء", "الخريف", "الربيع"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_065",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الجهاز الذي نستخدمه للاتصال بالأشخاص بعيداً؟",
+    "options": ["الهاتف", "المكواة", "المروحة", "التلفاز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_066",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الجهاز الذي يحفظ الطعام بارداً في المنزل؟",
+    "options": ["الثلاجة", "الغسالة", "الفرن", "المكنسة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_067",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الجهاز الذي نستخدمه لتسخين أو طهي الطعام سريعاً؟",
+    "options": ["الميكروويف", "الخلاط", "الغسالة", "التلفاز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_068",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الأداة التي تُستخدم لتمشيط الشعر؟",
+    "options": ["المشط", "الملعقة", "المقص", "القلم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_069",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "بماذا نكتب على الورق عادة؟",
+    "options": ["القلم", "الممحاة", "المشط", "المسطرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_070",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا نستخدم لإزالة الكتابة بقلم الرصاص؟",
+    "options": ["الممحاة", "المبراة", "المسطرة", "المقص"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_071",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم عدد أصابع اليد الواحدة في جسم الإنسان الطبيعي؟",
+    "options": ["5", "10", "4", "6"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_072",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو العضو الذي نستخدمه للرؤية؟",
+    "options": ["العين", "الأذن", "الأنف", "اللسان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_073",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو العضو الذي نستخدمه للشم؟",
+    "options": ["الأنف", "الفم", "العين", "الأذن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_074",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو العضو الذي نستخدمه للتذوق؟",
+    "options": ["اللسان", "الأنف", "الجلد", "الأذن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_075",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو السائل الأحمر الذي يسري في عروقنا؟",
+    "options": ["الدم", "الماء", "اللعاب", "العرق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_076",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى الشعر الذي ينمو فوق العينين؟",
+    "options": ["الحاجبين", "الرموش", "اللحية", "الشارب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_077",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى الشعر الذي ينمو على حافة جفون العين؟",
+    "options": ["الرموش", "الحواجب", "اللحية", "الشارب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_078",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كيف نحافظ على نظافة أسناننا؟",
+    "options": ["باستخدام الفرشاة والمعجون", "بتناول الحلوى", "بالنوم طويلاً", "بعدم شرب الماء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_079",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو المرض البسيط الذي يجعلك تعطس وتسعل في الشتاء غالباً؟",
+    "options": ["الزكام (البرد)", "السكري", "الضغط", "كسر العظم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_080",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو السائل الذي يجب أن نشربه يومياً بكثرة للبقاء بصحة جيدة؟",
+    "options": ["الماء", "العصير المحلى", "المشروبات الغازية", "القهوة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_081",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الشخصية الخيالية التي تصبح بطلاً بعد أن تلدغه عنكبوت؟",
+    "options": ["سبايدرمان (الرجل العنكبوت)", "باتمان (الرجل الوطواط)", "سوبرمان", "آيرون مان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_082",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الشخصية الخيالية التي ترتدي زياً يشبه الوطواط وتعيش في جوثام؟",
+    "options": ["باتمان (الرجل الوطواط)", "سوبرمان", "سبايدرمان", "هالك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_083",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الشخصية الخيالية التي تعتبر رجلاً آلياً ومعه درع حديدي يطير به؟",
+    "options": ["آيرون مان (الرجل الحديدي)", "هالك", "كابتن أمريكا", "ثور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_084",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الفتى الخشبي الذي يطول أنفه عندما يكذب في القصص الخيالية؟",
+    "options": ["بينوكيو", "بيتر بان", "سندريلا", "علاء الدين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_085",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الفتاة التي تركت حذاءها الزجاجي في الحفلة؟",
+    "options": ["سندريلا", "سنو وايت", "رابونزل", "أرييل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_086",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الفتاة التي تمتلك شعراً ذهبياً طويلاً جداً في قصص الأطفال؟",
+    "options": ["رابونزل", "سندريلا", "بياض الثلج", "ياسمين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_087",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الفتى الذي يطير ولا يكبر ويعيش في نيفرلاند؟",
+    "options": ["بيتر بان", "بينوكيو", "علاء الدين", "طرزان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_088",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الشاب الذي وجد مصباحاً سحرياً يخرج منه جني؟",
+    "options": ["علاء الدين", "علي بابا", "سندباد", "بيتر بان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_089",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الفتى الذي تربى مع الذئاب في الغابة وتدعى قصته 'كتاب الأدغال'؟",
+    "options": ["ماوكلي", "طرزان", "سيمبا", "بامبي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_090",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم الفتى الذي ربته الغوريلات في الغابة؟",
+    "options": ["طرزان", "ماوكلي", "سيمبا", "هرقل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_091",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "أين يعيش النحل لكي يصنع العسل؟",
+    "options": ["في الخلية", "في العش", "في الجحر", "في الكهف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_092",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم البيت الذي يبنيه الطائر لوضع بيضه؟",
+    "options": ["العش", "الجحر", "الخلية", "الإسطبل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_093",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اسم البيت الذي ينام فيه الحصان؟",
+    "options": ["الإسطبل", "الجحر", "العش", "القفص"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_094",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي اللغة الرسمية في المملكة العربية السعودية ومصر ومعظم الدول العربية؟",
+    "options": ["اللغة العربية", "اللغة الإنجليزية", "اللغة الفرنسية", "اللغة الإسبانية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_095",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي اللغة الأصلية في بريطانيا والولايات المتحدة؟",
+    "options": ["الإنجليزية", "الفرنسية", "الإسبانية", "الألمانية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_096",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "بأي أداة نأكل الحساء (الشوربة) عادة؟",
+    "options": ["الملعقة", "الشوكة", "السكين", "المقص"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_097",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "بأي أداة نقطع اللحم أو الفاكهة في المطبخ؟",
+    "options": ["السكين", "الملعقة", "الشوكة", "المشط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_098",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشيء الذي نستخدمه لفتح الباب المغلق؟",
+    "options": ["المفتاح", "القلم", "المسطرة", "العملة المعدنية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_099",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشيء الذي نرتديه على أعيننا لحمايتها من أشعة الشمس؟",
+    "options": ["النظارات الشمسية", "الساعة", "القبعة", "الجورب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_100",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشيء الذي نحمله ليحمينا من المطر عندما نمشي في الخارج؟",
+    "options": ["المظلة (الشمسية)", "الكتاب", "الحقيبة", "المنديل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_101",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو مؤلف مسرحية 'روميو وجولييت' الشهيرة؟",
+    "options": ["ويليام شكسبير", "تشارلز ديكنز", "فيكتور هوغو", "ليو تولستوي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_102",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو مؤلف مسرحية 'هاملت'؟",
+    "options": ["ويليام شكسبير", "أوسكار وايلد", "دانتي أليغييري", "غوته"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_103",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو مؤلف رواية 'البؤساء' (Les Misérables)؟",
+    "options": ["فيكتور هوغو", "ألكسندر دوما", "تشارلز ديكنز", "فيودور دوستويفسكي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_104",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هي المؤلفة البريطانية التي اشتهرت بروايات الجريمة وابتكرت شخصية هيركيول بوارو؟",
+    "options": ["أجاثا كريستي", "ج. ك. رولينغ", "جين أوستن", "ماري شيلي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_105",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هي مؤلفة سلسلة كتب 'هاري بوتر'؟",
+    "options": ["ج. ك. رولينغ (J.K. Rowling)", "أجاثا كريستي", "ستيفاني ماير", "سوزان كولنز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_106",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الكاتب الروسي مؤلف رواية 'الجريمة والعقاب'؟",
+    "options": ["فيودور دوستويفسكي", "ليو تولستوي", "أنطون تشيخوف", "مكسيم غوركي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_107",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الكاتب الروسي مؤلف رواية 'الحرب والسلام'؟",
+    "options": ["ليو تولستوي", "فيودور دوستويفسكي", "ألكسندر بوشكين", "أنطون تشيخوف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_108",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الكاتب الكولومبي الحائز على جائزة نوبل ومؤلف 'مائة عام من العزلة'؟",
+    "options": ["غابرييل غارثيا ماركيز", "خورخي لويس بورخيس", "ماريو فارغاس يوسا", "بابلو نيرودا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_109",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو المؤلف الإنجليزي صاحب رواية 'قصة مدينتين' و'أوليفر تويست'؟",
+    "options": ["تشارلز ديكنز", "مارك توين", "آرثر كونان دويل", "إرنست همنغواي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_110",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو اسم المحقق الخيالي الشهير الذي يعيش في شارع بيكر ستريت وابتكره آرثر كونان دويل؟",
+    "options": ["شيرلوك هولمز", "هيركيول بوارو", "مس ماربل", "جيمس بوند"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_111",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الأديب العربي المصري الذي نال جائزة نوبل في الأدب عام 1988؟",
+    "options": ["نجيب محفوظ", "طه حسين", "توفيق الحكيم", "يوسف إدريس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_112",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو عنوان الثلاثية الشهيرة لنجيب محفوظ؟",
+    "options": ["بين القصرين، قصر الشوق، السكرية", "بداية ونهاية، اللص والكلاب، السمان والخريف", "أولاد حارتنا، الحرافيش، الشحاذ", "القاهرة الجديدة، خان الخليلي، زقاق المدق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_113",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الشاعر العباسي الذي يُعتبر من أعظم شعراء العرب وصاحب القصيدة التي مطلعها: 'الخيل والليل والبيداء تعرفني...'؟",
+    "options": ["المتنبي", "أبو نواس", "البحتري", "أبو العلاء المعري"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_114",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الشاعر الذي لُقب بـ 'أمير الشعراء' في العصر الحديث؟",
+    "options": ["أحمد شوقي", "حافظ إبراهيم", "خليل مطران", "محمود سامي البارودي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_115",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الأديب اللبناني-الأمريكي صاحب كتاب 'النبي'؟",
+    "options": ["جبران خليل جبران", "إيليا أبو ماضي", "ميخائيل نعيمة", "مي زيادة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_116",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو عميد الأدب العربي وصاحب كتاب 'الأيام'؟",
+    "options": ["طه حسين", "عباس محمود العقاد", "المنفلوطي", "نجيب محفوظ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_117",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الكتاب الشهير الذي يضم حكايات شعبية وتدور أحداثه حول الملك شهريار وشهرزاد؟",
+    "options": ["ألف ليلة وليلة", "كليلة ودمنة", "البخلاء", "طوق الحمامة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_118",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو كتاب الحكايات الرمزية على ألسنة الحيوانات الذي ترجمه ابن المقفع؟",
+    "options": ["كليلة ودمنة", "ألف ليلة وليلة", "مقامات الحريري", "رسالة الغفران"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_119",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو اسم الفيلسوف الأندلسي الذي كتب قصة 'حي بن يقظان'؟",
+    "options": ["ابن طفيل", "ابن رشد", "ابن باجة", "ابن خلدون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_120",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي ملحمة الرومان الوطنية التي كتبها الشاعر فيرجيل؟",
+    "options": ["الإنياذة", "الإلياذة", "الأوديسة", "الكوميديا الإلهية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_121",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الرسام الإيطالي الشهير الذي رسم لوحة 'الموناليزا'؟",
+    "options": ["ليوناردو دا فينشي", "مايكل أنجلو", "رافائيل", "ساندرو بوتيتشيلي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_122",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "أين تُعرض لوحة 'الموناليزا' حالياً؟",
+    "options": ["متحف اللوفر في باريس", "متحف البرادو في مدريد", "المتحف البريطاني في لندن", "متحف أوفيزي في فلورنسا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_123",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الرسام الهولندي صاحب لوحة 'ليلة النجوم' (The Starry Night)؟",
+    "options": ["فينسنت فان جوخ", "يوهانس فيرمير", "رامبرانت", "بيت موندريان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_124",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الرسام الإسباني الشهير الذي يُعتبر من مؤسسي المدرسة التكعيبية وصاحب لوحة 'غرنيكا'؟",
+    "options": ["بابلو بيكاسو", "سلفادور دالي", "دييغو فيلاثكيث", "فرانسيسكو غويا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_125",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الرسام الإسباني الذي اشتهر بالسريالية وصاحب لوحة الساعات الذائبة 'إصرار الذاكرة'؟",
+    "options": ["سلفادور دالي", "بابلو بيكاسو", "جوان ميرو", "فريدا كاهلو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_126",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو النحات والرسام الإيطالي الذي زين سقف كنيسة سيستين وصنع تمثال 'داود'؟",
+    "options": ["مايكل أنجلو", "دوناتيلو", "ليوناردو دا فينشي", "برنيني"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_127",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو اسم اللوحة الجدارية الشهيرة لليوناردو دا فينشي التي تصور يسوع وتلاميذه؟",
+    "options": ["العشاء الأخير", "خلق آدم", "مدرسة أثينا", "ولادة فينوس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_128",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الرسام النرويجي صاحب لوحة 'الصرخة'؟",
+    "options": ["إدوارد مونك", "فان جوخ", "كلود مونيه", "غوستاف كليمت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_129",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الرسام الفرنسي الذي يُعتبر من مؤسسي المدرسة الانطباعية؟",
+    "options": ["كلود مونيه", "أوغست رينوار", "إدغار ديغا", "بول سيزان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_130",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هي الرسامة المكسيكية الشهيرة التي اشتهرت برسم اللوحات الذاتية (بورتريه)؟",
+    "options": ["فريدا كاهلو", "دييغو ريفيرا", "ليونورا كارينغتون", "ريمديوس فارو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_131",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الأساطير اليونانية، من هو كبير الآلهة وإله البرق والرعد؟",
+    "options": ["زيوس", "بوسيدون", "هاديس", "أبولو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_132",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الأساطير اليونانية، من هو إله البحر والزلازل؟",
+    "options": ["بوسيدون", "زيوس", "هيرميس", "آريس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_133",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الأساطير اليونانية، من هو إله العالم السفلي (الموتى)؟",
+    "options": ["هاديس", "أبولو", "زيوس", "بوسيدون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_134",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الأساطير اليونانية، من هو إله الحرب؟",
+    "options": ["آريس", "هيفيستوس", "هيرميس", "أبولو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_135",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الأساطير الرومانية، ما هو الاسم المقابل للإله اليوناني 'زيوس'؟",
+    "options": ["جوبيتر", "نبتون", "بلوتو", "مارس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_136",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الأساطير الرومانية، ما هو الاسم المقابل للإله اليوناني 'بوسيدون'؟",
+    "options": ["نبتون", "جوبيتر", "مارس", "فينوس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_137",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الأساطير المصرية القديمة، من هو إله الشمس؟",
+    "options": ["رع", "أوزيريس", "حورس", "أنوبيس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_138",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الأساطير المصرية القديمة، من هو إله الموت والتحنيط برأس ابن آوى؟",
+    "options": ["أنوبيس", "ست", "تحوت", "سوبيك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_139",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الأساطير الإسكندنافية (النوردية)، من هو كبير الآلهة ذو العين الواحدة؟",
+    "options": ["أودين", "ثور", "لوكي", "بالدر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_140",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الأساطير الإسكندنافية، من هو إله الرعد الذي يحمل المطرقة؟",
+    "options": ["ثور", "أودين", "لوكي", "فراير"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_141",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الحيوان الأسطوري الذي يشبه الحصان وله قرن واحد في جبهته؟",
+    "options": ["وحيد القرن (يونيكورن)", "البيغاسوس", "القنطور", "الجريفين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_142",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الحيوان الأسطوري في الميثولوجيا اليونانية وهو حصان مجنح؟",
+    "options": ["البيغاسوس", "القنطور", "المينوتور", "السيربيروس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_143",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الحيوان الأسطوري الذي يملك نصف جسد إنسان ونصف جسد حصان؟",
+    "options": ["القنطور (السينتور)", "المينوتور", "السايتير", "السفنكس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_144",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الميثولوجيا اليونانية، ما هو المخلوق الذي لديه رأس ثور وجسد إنسان وكان محتجزاً في المتاهة؟",
+    "options": ["المينوتور", "السيربيروس", "الهيدرا", "الجورجون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_145",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الميثولوجيا اليونانية، من هي المرأة التي يحول نظرها الناس إلى حجارة وكان شعرها من الثعابين؟",
+    "options": ["ميدوسا", "أثينا", "هيرا", "أفروديت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_146",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي اللغة الرسمية في البرازيل؟",
+    "options": ["البرتغالية", "الإسبانية", "اللاتينية", "الإنجليزية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_147",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي اللغة الرسمية في الأرجنتين ومظم دول أمريكا اللاتينية (عدا البرازيل)؟",
+    "options": ["الإسبانية", "البرتغالية", "الإنجليزية", "الفرنسية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_148",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي اللغة الأجنبية الأولى التي يتحدث بها سكان مقاطعة كيبيك الكندية بشكل أساسي؟",
+    "options": ["الفرنسية", "البرتغالية", "الإسبانية", "الألمانية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_149",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي اللغة الرسمية في النمسا؟",
+    "options": ["الألمانية", "النمساوية", "الإنجليزية", "الفرنسية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_150",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "أي من هذه اللغات تُكتب من اليمين إلى اليسار (عدا العربية)؟",
+    "options": ["الفارسية", "الروسية", "الصينية", "اللاتينية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_151",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الحرف الأول في الأبجدية اليونانية؟",
+    "options": ["ألفا", "أوميغا", "بيتا", "سيغما"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_152",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الحرف الأخير في الأبجدية اليونانية؟",
+    "options": ["أوميغا", "زيتا", "غاما", "ألفا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_153",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي اللغة الحية التي تمتلك أكبر عدد من المتحدثين الأصليين (الكلغة أولى) في العالم؟",
+    "options": ["لغة الماندرين (الصينية)", "الإسبانية", "الإنجليزية", "الهندية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_154",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "كم عدد الحروف في الأبجدية الإنجليزية؟",
+    "options": ["26", "24", "28", "25"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_155",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "كم عدد الحروف في الأبجدية العربية؟",
+    "options": ["28", "26", "30", "29"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_156",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في اليابان؟",
+    "options": ["الين", "اليوان", "الوون", "الدولار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_157",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في الصين؟",
+    "options": ["اليوان (الرنمينبي)", "الين", "الوون", "البات"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_158",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في كوريا الجنوبية؟",
+    "options": ["الوون", "الين", "اليوان", "الروبية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_159",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في الهند؟",
+    "options": ["الروبية", "الروبل", "الريال", "البات"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_160",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في روسيا؟",
+    "options": ["الروبل", "الليرة", "الكرونة", "الفرنك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_161",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في سويسرا؟",
+    "options": ["الفرنك السويسري", "اليورو", "الدولار", "الكرونة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_162",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في جنوب أفريقيا؟",
+    "options": ["الراند", "الشلن", "الروبية", "البيسو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_163",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في المكسيك والأرجنتين وعدة دول لاتينية أخرى؟",
+    "options": ["البيسو", "الريال", "البوليفار", "الكولون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_164",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في السويد؟",
+    "options": ["الكرونة", "اليورو", "الفرنك", "الروبل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_165",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في الإمارات العربية المتحدة؟",
+    "options": ["الدرهم", "الريال", "الدينار", "الجنيه"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_166",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "أي دولة يمثلها علم يحتوي على دائرة حمراء كبيرة في وسطه على خلفية بيضاء؟",
+    "options": ["اليابان", "الصين", "كوريا الجنوبية", "فيتنام"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_167",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "أي دولة يمثلها علم يحتوي على ورقة قيقب حمراء في وسطه؟",
+    "options": ["كندا", "الولايات المتحدة", "المكسيك", "سويسرا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_168",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "أي دولة يمثلها علم أبيض يحتوي على صليب أحمر كبير يمتد للأطراف (علم إنجلترا الأصلي)؟",
+    "options": ["إنجلترا", "سويسرا", "الدنمارك", "فنلندا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_169",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "أي دولة يمثلها علم مربع الشكل، أحمر اللون بوسطه صليب أبيض؟",
+    "options": ["سويسرا", "الدنمارك", "النمسا", "إنجلترا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_170",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "أي دولة يمثلها علم أصفر، أحمر، وأسود بشكل عمودي؟",
+    "options": ["ألمانيا", "بلجيكا", "إسبانيا", "إيطاليا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_171",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الاسم الشائع لعلم المملكة المتحدة؟",
+    "options": ["يونيون جاك (Union Jack)", "ستارز آند سترايبس", "تريكولور", "الراية المشرقة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_172",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي ماركة السيارات الفاخرة التي يتكون شعارها من 4 حلقات متداخلة؟",
+    "options": ["أودي (Audi)", "بي إم دبليو (BMW)", "مرسيدس (Mercedes)", "أوبل (Opel)"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_173",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي ماركة السيارات الفاخرة التي يتكون شعارها من نجمة ثلاثية داخل دائرة؟",
+    "options": ["مرسيدس بنز (Mercedes-Benz)", "تويوتا", "بي إم دبليو", "ليكزس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_174",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي شركة الساعات السويسرية الفاخرة التي شعارها تاج ذو خمسة رؤوس؟",
+    "options": ["رولكس (Rolex)", "أوميغا", "باتيك فيليب", "كاسيو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_175",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي شركة المشروبات الغازية التي شعارها دائرة حمراء وبيضاء وزرقاء؟",
+    "options": ["بيبسي (Pepsi)", "كوكاكولا", "سبرايت", "فانتا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_176",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي الشركة التي تستخدم حرف 'F' الأزرق على خلفية بيضاء (أو العكس) كشعار رئيسي لها؟",
+    "options": ["فيسبوك", "فورد", "فيراري", "فلاي دبي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_177",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي الشركة التي أسسها 'فيل نايت' و'بيل باورمان' وتستخدم شعار 'Swoosh'؟",
+    "options": ["نايكي (Nike)", "أديداس", "ريبوك", "فانس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_178",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "أي شركة تكنولوجيا شعارها يتكون من أربعة مربعات صغيرة تشكل نافذة ملونة؟",
+    "options": ["مايكروسوفت (Microsoft)", "جوجل", "سيسكو", "إنتل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_179",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي الشركة الكورية الجنوبية العملاقة التي يعني اسمها 'النجوم الثلاثة'؟",
+    "options": ["سامسونج (Samsung)", "هيونداي", "كيا", "إل جي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_180",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي أكبر شبكة مطاعم بيتزا في العالم من حيث عدد الفروع؟",
+    "options": ["دومينوز بيتزا", "بيتزا هت", "بابا جونز", "ليتل سيزرز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_181",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي أكبر شبكة مقاهي في العالم؟",
+    "options": ["ستاربكس", "كوستا كوفي", "تيم هورتونز", "دانكن دونتس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_182",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الاسم الحقيقي للكاتب الأمريكي مارك توين (مؤلف توم سوير)؟",
+    "options": ["صموئيل كليمنس", "آرثر ميلر", "تشارلز ديكنز", "هيرمان ملفيل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_183",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الفن القتالي الياباني الذي يعني اسمه 'اليد الفارغة'؟",
+    "options": ["الكاراتيه", "الجودو", "التايكوندو", "الآيكيدو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_184",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الفن القتالي الكوري الذي يعتمد بشكل أساسي على الركلات السريعة والعالية؟",
+    "options": ["التايكوندو", "الكاراتيه", "الجوجيتسو", "الكندو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_185",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو أسرع طائر في العالم عند الانقضاض؟",
+    "options": ["الشاهين (صقر الشاهين)", "النسر الذهبي", "الباز", "النعامة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_186",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو أكبر حيوان مفترس على اليابسة؟",
+    "options": ["الدب القطبي", "الأسد الإفريقي", "النمر السيبيري", "التمساح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_187",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو أطول ثعبان في العالم؟",
+    "options": ["الأناكوندا الخضراء (أو البايثون الشبكي)", "الكوبرا الملك", "المامبا السوداء", "الأفعى المجلجلة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_188",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الحيوان الذي يمتلك أقوى عضة في العالم بين الحيوانات البرية؟",
+    "options": ["التمساح (تمساح المياه المالحة)", "فرس النهر", "الأسد", "القرش الأبيض المائل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_189",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو العضو الذي يساعد الأسماك على الطفو في الماء ولا تملكه القروش؟",
+    "options": ["مثانة العوم (مثانة السباحة)", "الخياشيم", "الزعانف الصدرية", "قشور الجلد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_190",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الغاز الشائع استخدامه في إضاءة اللوحات الإعلانية الملونة في الشوارع؟",
+    "options": ["النيون", "الأرغون", "النيتروجين", "الكريبتون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_191",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي المادة التي تصنع منها طبقة التيفلون غير اللاصقة في الأواني؟",
+    "options": ["بولي تترا فلورو إيثيلين (PTFE)", "بولي فينيل كلوريد (PVC)", "البولي إيثيلين", "البوليسترين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_192",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي أكبر شركة تصنيع سيارات في العالم من حيث المبيعات في معظم السنوات الأخيرة؟",
+    "options": ["تويوتا", "فولكس فاجن", "جنرال موتورز", "فورد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_193",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو اسم الوكالة الفضائية الأوروبية اختصاراً؟",
+    "options": ["ESA", "NASA", "JAXA", "Roscosmos"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_194",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو اسم الوكالة الفضائية اليابانية اختصاراً؟",
+    "options": ["JAXA", "ESA", "CNSA", "ISRO"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_195",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو اسم جهاز المخابرات الخارجية الإسرائيلي؟",
+    "options": ["الموساد", "الشاباك", "CIA", "MI6"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_196",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو جهاز المخابرات الخارجية البريطاني؟",
+    "options": ["MI6", "MI5", "GCHQ", "CIA"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_197",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو جهاز المخابرات الخارجية الروسي الحالي الأساسي؟",
+    "options": ["SVR (أو FSB للداخلية)", "KGB", "GRU", "FSB"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_198",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في لعبة البوكر، ما هي الورقة التي تعتبر الأقوى أو الأضعف حسب اللعب؟",
+    "options": ["الآس (القص)", "الجوكر", "الملك", "الولد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_199",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الاسم الذي يُطلق على فن طي الورق الياباني؟",
+    "options": ["الأوريغامي", "الكاليغرافي", "الإيكيبانا", "السودوكو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_200",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الاسم الذي يُطلق على فن تنسيق الزهور الياباني؟",
+    "options": ["إيكيبانا", "بونساي", "أوريغامي", "هايكو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_201",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ماذا يعني مصطلح 'كلاوستروفوبيا' (Claustrophobia)؟",
+    "options": ["الخوف من الأماكن المغلقة والضيقة", "الخوف من المرتفعات", "الخوف من العناكب", "الخوف من الظلام"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_202",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ماذا يعني مصطلح 'أكروفوبيا' (Acrophobia)؟",
+    "options": ["الخوف من المرتفعات", "الخوف من العناكب", "الخوف من المياه العميقة", "الخوف من الأماكن المفتوحة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_203",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ماذا يعني مصطلح 'أراكينوفوبيا' (Arachnophobia)؟",
+    "options": ["الخوف من العناكب", "الخوف من الثعابين", "الخوف من الأماكن المفتوحة", "الخوف من التحدث أمام الجمهور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_204",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ماذا يعني مصطلح 'أغورافوبيا' (Agoraphobia)؟",
+    "options": ["الخوف من الأماكن المفتوحة والمزدحمة", "الخوف من الطيران", "الخوف من المرتفعات", "الخوف من المياه العميقة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_205",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو المؤلف الروسي الذي كتب 'الأخوة كارامازوف'؟",
+    "options": ["فيودور دوستويفسكي", "ليو تولستوي", "أنطون تشيخوف", "فلاديمير نابوكوف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_206",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الكاتب الإنجليزي مؤلف رواية '1984' و 'مزرعة الحيوان'؟",
+    "options": ["جورج أورويل", "ألدوس هكسلي", "راي برادبري", "آرثر سي كلارك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_207",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الاسم الحقيقي لجورج أورويل؟",
+    "options": ["إريك آرثر بلير", "صموئيل كليمنس", "ماري آن إيفانز", "تشارلز دودجسون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_208",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الاسم الحقيقي للكاتب الذي استخدم الاسم المستعار 'لويس كارول' (مؤلف أليس في بلاد العجائب)؟",
+    "options": ["تشارلز لوتويدج دودجسون", "سي إس لويس", "إريك آرثر بلير", "جاي آر آر تولكين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_209",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الشاعر الإنجليزي صاحب الملحمة الشعرية 'الفردوس المفقود' (Paradise Lost)؟",
+    "options": ["جون ميلتون", "ويليام شكسبير", "جون كيتس", "ويليام بليك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_210",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الكاتب الإيطالي صاحب 'الكوميديا الإلهية'؟",
+    "options": ["دانتي أليغييري", "جيوفاني بوكاتشيو", "بترارك", "نيكولو مكيافيلي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_211",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "في أي قرن عاش الشاعر العربي أبو الطيب المتنبي؟",
+    "options": ["القرن الرابع الهجري (العاشر الميلادي)", "القرن الثاني الهجري", "القرن السادس الهجري", "القرن الأول الهجري"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_212",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الشاعر الذي قتله شعره؟ (قيل إنه أراد الهرب فذكّره غلامه ببيت من شعره فعاد وقاتل حتى قُتل)؟",
+    "options": ["المتنبي", "طرفة بن العبد", "الفرزدق", "جرير"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_213",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الشاعر الجاهلي صاحب المعلقة التي مطلعها: 'قفا نبكِ من ذِكرى حبيب ومنزلِ'؟",
+    "options": ["امرؤ القيس", "زهير بن أبي سلمى", "عنترة بن شداد", "النابغة الذبياني"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_214",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الشاعر الجاهلي صاحب المعلقة التي مطلعها: 'هل غادر الشعراء من متردمِ'؟",
+    "options": ["عنترة بن شداد", "امرؤ القيس", "لبيد بن ربيعة", "الحارث بن حلزة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_215",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الأديب العباسي الشهير الذي أُصيب بالعمى صغيراً ولُقب بـ 'رهين المحبسين'؟",
+    "options": ["أبو العلاء المعري", "بشار بن برد", "أبو تمام", "الجاحظ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_216",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الأديب العباسي صاحب كتاب 'البخلاء' و'البيان والتبيين'؟",
+    "options": ["الجاحظ", "ابن المقفع", "الأصمعي", "أبو حيان التوحيدي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_217",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي الأداة الموسيقية التي يُعزف عليها بالنفخ في كيس من الجلد ولها أنابيب، وتشتهر بها اسكتلندا؟",
+    "options": ["مزمار القربة (Bagpipes)", "الأكورديون", "الأوبوا", "الهورن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_218",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو المؤلف الموسيقي الألماني الأصم الذي ألف السيمفونية التاسعة؟",
+    "options": ["لودفيج فان بيتهوفن", "يوهان سيباستيان باخ", "فولفغانغ أماديوس موزارت", "ريتشارد فاغنر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_219",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الموسيقي النمساوي العبقري الذي بدأ التأليف وهو طفل صغير وتوفي شاباً في الـ 35 من عمره؟",
+    "options": ["فولفغانغ أماديوس موزارت", "فريدريك شوبان", "فرانز شوبرت", "بيتهوفن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_220",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الاسم الذي يُطلق على اللوحة الجدارية في كنيسة سيستين التي رسمها مايكل أنجلو وتُظهر أصبعي الله وآدم يكادان يتلامسان؟",
+    "options": ["خلق آدم", "الحساب الأخير", "طرد آدم وحواء", "الفيضان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_221",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الرسام الإسباني الذي رسم لوحة 'إعدام الثالث من مايو 1808' ورسومات 'لوحات سوداء'؟",
+    "options": ["فرانسيسكو غويا", "دييغو فيلاثكيث", "سلفادور دالي", "إل غريكو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_222",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو النحات الفرنسي صاحب تمثال 'المفكر' (The Thinker)؟",
+    "options": ["أوغست رودان", "كلود مونيه", "مارسيل دوشامب", "مايكل أنجلو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_223",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي اللغة الأوروبية الوحيدة (من اللغات الكبرى) التي لا تنتمي إلى عائلة اللغات الهندو-أوروبية (مثل الفنلندية والمجرية) وهي معزولة تماماً وتُتحدث في شمال إسبانيا؟",
+    "options": ["لغة الباسك (Euskara)", "اللغة الكاتالونية", "اللغة الغيلية", "اللغة البريتونية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_224",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما اسم الخط الذي ابتكره المكفوف الفرنسي لمساعدة فاقدي البصر على القراءة؟",
+    "options": ["لويس برايل", "لويس باستور", "توماس إديسون", "ألكسندر بيل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_225",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو نظام الكتابة الذي اخترعه السومريون ويُعتبر من أقدم النظم الكتابية في العالم؟",
+    "options": ["الكتابة المسمارية", "الهيروغليفية", "الأبجدية الفينيقية", "النظام الخطي ب (Linear B)"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_226",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "أي حضارة طورت نظام الكتابة الهيروغليفية؟",
+    "options": ["المصريون القدماء", "المايا", "الآزتيك", "السومريون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_227",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الاسم المختصر لعملة الاتحاد الروسي؟",
+    "options": ["RUB (روبل)", "RMB", "RON", "RON (ليو)"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_228",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الكود الدولي للعملة المكسيكية؟",
+    "options": ["MXN", "MEX", "Mpeso", "MXP"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_229",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الطائر الذي يمكنه النوم وهو يطير؟",
+    "options": ["طائر السمامة (الفرقاط/السمامة الشائعة)", "النسر الذهبي", "البجعة", "النورس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_230",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي الشجرة التي تُعتبر الأقدم والأكثر تعميراً على وجه الأرض (بعضها يعيش أكثر من 4000 سنة)؟",
+    "options": ["صنوبر بريستليكون العظيم (Methuselah)", "شجرة الباوباب", "شجرة السكويا العملاقة", "شجرة الزيتون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_231",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الفيلسوف الإغريقي الذي كان معلماً للإسكندر الأكبر؟",
+    "options": ["أرسطو", "سقراط", "أفلاطون", "فيثاغورس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_232",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الفيلسوف الإغريقي الذي أسس الأكاديمية في أثينا؟",
+    "options": ["أفلاطون", "أرسطو", "سقراط", "إبيقور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_233",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي المادة التي يُصنع منها 'الفودو' (أو الطقوس المشابهة)؟ (السؤال غير دقيق علمياً لكن كمعلومة عامة، ما هو العنصر الرئيسي الذي يُصنع منه الديناميت؟)",
+    "options": ["النيتروغليسرين", "نترات البوتاسيوم", "البارود الأسود", "الفوسفور الأبيض"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_234",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الاسم العلمي للماء الثقيل الذي يُستخدم في المفاعلات النووية؟",
+    "options": ["أكسيد الديوتيريوم", "أكسيد التريتيوم", "بيروكسيد الهيدروجين", "أكسيد النيتروز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_235",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو أندر فصيلة دم بين البشر؟",
+    "options": ["AB سالب (AB-)", "O سلبي (O-)", "B سالب (B-)", "AB إيجابي (AB+)"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_236",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "في الشطرنج، ما هو عدد المربعات في الرقعة؟",
+    "options": ["64", "60", "72", "81"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_237",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "في الأساطير السومرية والأكادية، من هي إلهة الحب والجمال والحرب؟",
+    "options": ["عشتار (إنانا)", "إيزيس", "هيرا", "فينوس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_238",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو اسم المعاهدة الدولية التي تنظم حقوق أسرى الحرب (تم توقيعها في مدينة سويسرية)؟",
+    "options": ["اتفاقيات جنيف", "اتفاقية لاهاي", "اتفاقية باريس", "اتفاقية فيينا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_239",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو أقدم جامعة ما زالت تعمل في العالم (حسب اليونسكو والعديد من المؤرخين) وتقع في المغرب؟",
+    "options": ["جامعة القرويين", "جامعة الأزهر", "جامعة بولونيا", "جامعة أكسفورد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_240",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من أسست جامعة القرويين في فاس عام 859م؟",
+    "options": ["فاطمة الفهرية", "شجرة الدر", "زبيدة زوجة الرشيد", "خديجة بنت خويلد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_241",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو اسم أقدم جامعة في أوروبا والتي تأسست عام 1088؟",
+    "options": ["جامعة بولونيا", "جامعة باريس (السوربون)", "جامعة أكسفورد", "جامعة كامبريدج"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_242",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الاسم الأول لشركة محرك البحث جوجل قبل أن يُسمى Google؟",
+    "options": ["BackRub", "WebSearch", "NetFind", "Spider"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_243",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي المادة التي كان يُعتقد في القرون الوسطى أنها قادرة على تحويل المعادن الرخيصة إلى ذهب؟",
+    "options": ["حجر الفلاسفة", "الإكسير المائي", "الأوريكالكوم", "الفلوجستون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_244",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الحيوان الذي يُعتبر رمزاً للصندوق العالمي للطبيعة (WWF)؟",
+    "options": ["الباندا العملاق", "النمر", "الأسد", "الدب القطبي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_245",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "في علم النبات، ما هي الشجرة التي لا تفقد أوراقها طوال العام وتُسمى دائمة الخضرة؟",
+    "options": ["الصنوبر", "البلوط", "القيقب", "البتولا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_246",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو المكون الأساسي للغلاف الجوي لكوكب المريخ؟",
+    "options": ["ثاني أكسيد الكربون", "النيتروجين", "الأكسجين", "الأمونيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_247",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الاختراع الذي غيّر تاريخ النسيج واخترعه جيمس هارجريفز في القرن الـ 18؟",
+    "options": ["مغزل جيني (Spinning Jenny)", "المحرك البخاري", "المطبعة", "محلج القطن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_248",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو النهر الذي يُعتبر الموطن الأصلي لأسماك البيرانا المتوحشة؟",
+    "options": ["نهر الأمازون", "نهر النيل", "نهر المسيسيبي", "نهر ميكونغ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_249",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو أول إنسان يكمل الهبوط المنفرد لأعمق نقطة في المحيط (خندق ماريانا) عام 2012؟",
+    "options": ["جيمس كاميرون", "جاك إيف كوستو", "ريتشارد برانسون", "روبرت بالارد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_250",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو اللقب الذي يُطلق على جائزة الأكاديمية لعلوم وفنون الصور المتحركة؟",
+    "options": ["جائزة الأوسكار", "جائزة إيمي", "جائزة جرامي", "جائزة توني"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_251",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صغير الكلب؟",
+    "options": ["جرو", "شبل", "مهر", "عجل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_252",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صغير القط؟",
+    "options": ["هر / قطيط", "جرو", "حمل", "جدي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_253",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صغير الأسد؟",
+    "options": ["شبل", "جرو", "مهر", "ديسم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_254",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صغير البقرة؟",
+    "options": ["عجل", "حمل", "جدي", "مهر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_255",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صغير الحصان؟",
+    "options": ["مهر", "شبل", "حوار", "جرو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_256",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صغير الماعز؟",
+    "options": ["جدي", "حمل", "عجل", "مهر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_257",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صغير الضأن (الخروف)؟",
+    "options": ["حمل", "جدي", "عجل", "شبل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_258",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صوت الأسد؟",
+    "options": ["زئير", "عواء", "صهيل", "مواء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_259",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صوت الحصان؟",
+    "options": ["صهيل", "نباح", "خوار", "هديل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_260",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صوت الكلب؟",
+    "options": ["نباح", "مواء", "زئير", "عواء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_261",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صوت القط؟",
+    "options": ["مواء", "نباح", "صهيل", "زئير"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_262",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صوت الحمامة؟",
+    "options": ["هديل", "زقزقة", "تغريد", "نقيق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_263",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صوت الذئب؟",
+    "options": ["عواء", "زئير", "صهيل", "مواء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_264",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صوت الضفدع؟",
+    "options": ["نقيق", "فحيح", "أزيز", "طنين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_265",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى صوت الثعبان؟",
+    "options": ["فحيح", "نقيق", "خرير", "هديل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_266",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي عاصمة إنجلترا؟",
+    "options": ["لندن", "مانشستر", "ليفربول", "برمنغهام"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_267",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي عاصمة إسبانيا؟",
+    "options": ["مدريد", "برشلونة", "إشبيلية", "فالنسيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_268",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي العملة المستخدمة في معظم دول أوروبا؟",
+    "options": ["اليورو", "الدولار", "الين", "الجنيه الإسترليني"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_269",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الأثاث الذي ننام عليه عادة في غرفة النوم؟",
+    "options": ["السرير", "الأريكة", "الكرسي", "الطاولة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_270",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشيء الذي نجلس عليه للراحة؟",
+    "options": ["الكرسي", "الطاولة", "النافذة", "السقف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_271",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "بأي حاسة نرى الأشياء من حولنا؟",
+    "options": ["البصر", "السمع", "الشم", "اللمس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_272",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "بأي حاسة نسمع الأصوات؟",
+    "options": ["السمع", "البصر", "التذوق", "الشم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_273",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "أي من هذه الألوان هو لون مياه البحر الصافية؟",
+    "options": ["الأزرق", "الأحمر", "الأخضر", "الأصفر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_274",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "أي من هذه الألوان هو لون العشب الطبيعي؟",
+    "options": ["الأخضر", "الأسود", "البنفسجي", "الأبيض"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_275",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم عدد الأرجل لدى العنكبوت؟",
+    "options": ["8", "6", "4", "10"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_276",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم عدد الأرجل لدى الحشرات مثل النملة؟",
+    "options": ["6", "8", "4", "2"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_277",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم عدد الأرجل لدى الكلب؟",
+    "options": ["4", "2", "6", "8"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_278",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الطائر الذي يطير ليلاً ويُعرف بصيد الفئران؟",
+    "options": ["البومة", "الحمامة", "النعامة", "الدجاجة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_279",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الحيوان الذي يحب الجزر ومشهور بأذنيه الطويلتين؟",
+    "options": ["الأرنب", "القط", "الكلب", "السلحفاة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_280",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الحيوان الذي نأخذ منه الحليب بشكل أساسي؟",
+    "options": ["البقرة", "الدجاجة", "القطة", "الكلب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_281",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا تعطينا الدجاجة؟",
+    "options": ["البيض", "الحليب", "العسل", "الصوف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_282",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الحشرة التي تصنع العسل؟",
+    "options": ["النحلة", "الذبابة", "البعوضة", "النملة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_283",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "من أي جهة تشرق الشمس؟",
+    "options": ["الشرق", "الغرب", "الشمال", "الجنوب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_284",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "أين تغرب الشمس؟",
+    "options": ["الغرب", "الشرق", "الشمال", "الجنوب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_285",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الفصل الذي يتساقط فيه الثلج وتشتد فيه البرودة؟",
+    "options": ["الشتاء", "الصيف", "الربيع", "الخريف"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_286",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الفصل الذي يكون فيه الجو شديد الحرارة؟",
+    "options": ["الصيف", "الشتاء", "الخريف", "الربيع"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_287",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا نرتدي في فصل الشتاء لنشعر بالدفء؟",
+    "options": ["ملابس ثقيلة", "ملابس السباحة", "ملابس خفيفة", "نظارات شمسية فقط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_288",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا نرتدي عادة في فصل الصيف الحار؟",
+    "options": ["ملابس خفيفة", "معطف صوف", "قفازات شتوية", "وشاح صوفي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_289",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اللون الذي يعني التوقف التام في إشارة المرور؟",
+    "options": ["الأحمر", "الأخضر", "الأصفر", "الأزرق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_290",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اللون الذي يسمح للسيارات بالمرور في إشارة المرور؟",
+    "options": ["الأخضر", "الأحمر", "الأصفر", "الأسود"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_291",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الطعام المفضل للقرود في القصص والرسوم المتحركة؟",
+    "options": ["الموز", "الجزر", "الجبن", "اللحم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_292",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الجرم السماوي الذي يضيء ليلنا ونراه بأطوار مختلفة؟",
+    "options": ["القمر", "الشمس", "الأرض", "المريخ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_293",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو النجم الذي يمدنا بالحرارة والضوء نهاراً؟",
+    "options": ["الشمس", "القمر", "المشتري", "الزهرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_294",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم إصبعاً في اليدين معاً للإنسان الطبيعي؟",
+    "options": ["10", "5", "8", "12"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_295",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم إصبعاً في القدمين معاً للإنسان الطبيعي؟",
+    "options": ["10", "5", "12", "14"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_296",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "بأي جزء من جسمنا نمضغ الطعام؟",
+    "options": ["الأسنان", "الأنف", "الأذن", "الجلد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_297",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو السائل الأساسي للحياة الذي نشربه ونستحم به؟",
+    "options": ["الماء", "الزيت", "العصير", "الحليب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_298",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اللون الناتج عن خلط اللونين الأسود والأبيض معاً؟",
+    "options": ["الرمادي", "الأزرق", "البني", "الوردي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_299",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الأداة التي نستخدمها لتقطيع الورق والقماش؟",
+    "options": ["المقص", "المطرقة", "المسمار", "المسطرة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_300",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الأداة التي نستخدمها للكتابة أو الرسم وتتكون من خشب ورصاص؟",
+    "options": ["قلم الرصاص", "الممحاة", "المسطرة", "الكتاب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_301",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الأداة التي نستخدمها لمحو ما كتبناه بقلم الرصاص؟",
+    "options": ["الممحاة", "المبراة", "المسطرة", "الفرشاة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_302",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى المكان الذي يذهب إليه الأطفال للتعلم والدراسة؟",
+    "options": ["المدرسة", "المستشفى", "الملعب", "المخبز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_303",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى المكان الذي يذهب إليه المرضى لتلقي العلاج؟",
+    "options": ["المستشفى", "المدرسة", "البنك", "المصنع"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_304",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى المكان الذي نشتري منه الأدوية؟",
+    "options": ["الصيدلية", "المكتبة", "المقهى", "المطعم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_305",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى المكان الذي يُخبز فيه الخبز والكعك؟",
+    "options": ["المخبز", "المصنع", "المدرسة", "العيادة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_306",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى المكان الذي نذهب إليه لأداء الصلوات الخمس في جماعة؟",
+    "options": ["المسجد", "الحديقة", "المنزل", "السوق"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_307",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي وسيلة النقل التي تطير في السماء وتحمل المسافرين حول العالم؟",
+    "options": ["الطائرة", "السيارة", "القطار", "الدراجة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_308",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي وسيلة النقل التي تبحر في المحيطات وتكون كبيرة جداً؟",
+    "options": ["السفينة", "السيارة", "الطائرة", "الحافلة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_309",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي المركبة التي صُممت للغوص والسير تحت سطح الماء؟",
+    "options": ["الغواصة", "الباخرة", "الطائرة", "المنطاد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_310",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي المركبة التي تنطلق نحو الفضاء لاستكشاف الكواكب؟",
+    "options": ["المركبة الفضائية (الصاروخ)", "الغواصة", "القطار المغناطيسي", "المنطاد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_311",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الأداة المحمولة التي نحتمي بها من مياه المطر؟",
+    "options": ["المظلة", "القبعة", "المحفظة", "الساعة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_312",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يُسمى صغير الدجاج؟",
+    "options": ["كتكوت (صوص)", "شبل", "جرو", "حمل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_313",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو أسرع حيوان بري على وجه الأرض؟",
+    "options": ["الفهد", "الأسد", "الغزال", "الحصان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_314",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو أكبر حيوان يعيش في البحار والمحيطات؟",
+    "options": ["الحوت الأزرق", "القرش", "الدلفين", "الأخطبوط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_315",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو أطول حيوان بري من حيث الارتفاع؟",
+    "options": ["الزرافة", "الفيل", "النعامة", "وحيد القرن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_316",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الحيوان الضخم الذي يملك خرطوماً طويلاً وأنياباً من العاج؟",
+    "options": ["الفيل", "فرس النهر", "وحيد القرن", "الدب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_317",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الطائر الملون الذي يشتهر بقدرته على تقليد أصوات البشر؟",
+    "options": ["الببغاء", "النسر", "العصفور", "البومة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_318",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يُسمى الثلج أو الجليد عندما يذوب بسبب الحرارة؟",
+    "options": ["ماء", "بخار", "هواء", "غبار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_319",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى الماء عندما يتعرض لبرودة شديدة ويتصلب؟",
+    "options": ["جليد (أو ثلج)", "بخار", "عصير", "ندى"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_320",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى الماء عندما يغلي ويتصاعد في الهواء؟",
+    "options": ["بخار ماء", "جليد", "مطر", "ثلج"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_321",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الفاكهة التي تحمل اسم اللون الذي تظهر به؟",
+    "options": ["البرتقال", "التفاح", "الموز", "العنب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_322",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "من هو الحيوان الذي يعيش في الصحراء ويمتلك سناماً ويتحمل العطش؟",
+    "options": ["الجمل", "الأسد", "الثعلب", "الحصان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_323",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اللون المميز لفاكهة الفراولة الناضجة؟",
+    "options": ["أحمر", "أصفر", "أزرق", "بنفسجي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_324",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشكل الهندسي الذي يتكون من ثلاثة أضلاع فقط؟",
+    "options": ["مثلث", "مربع", "دائرة", "خماسي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_325",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشكل الهندسي الذي يتكون من أربعة أضلاع متساوية في الطول وزواياه قائمة؟",
+    "options": ["مربع", "مستطيل", "دائرة", "مثلث"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_326",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشكل الهندسي الدائري الذي يشبه العجلة أو الشمس في رسوم الأطفال؟",
+    "options": ["دائرة", "مربع", "مثلث", "معين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_327",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي القرابة التي تربطك بشقيق والدك؟",
+    "options": ["العم", "الخال", "الجد", "الأخ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_328",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي القرابة التي تربطك بشقيقة والدك؟",
+    "options": ["العمة", "الخالة", "الجدة", "الأخت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_329",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي القرابة التي تربطك بشقيق والدتك؟",
+    "options": ["الخال", "العم", "الجد", "الأخ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_330",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي القرابة التي تربطك بشقيقة والدتك؟",
+    "options": ["الخالة", "العمة", "الجدة", "الأخت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_331",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الرقم الذي يأتي مباشرة بعد الرقم 9؟",
+    "options": ["10", "8", "11", "7"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_332",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الرقم الذي يسبق الرقم 5 مباشرة؟",
+    "options": ["4", "6", "3", "7"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_333",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يسمى أول يوم في الأسبوع العملي والدراسي عند معظم الدول العربية؟",
+    "options": ["الأحد", "الاثنين", "الجمعة", "السبت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_334",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اليوم الذي يأتي مباشرة بعد يوم الإثنين؟",
+    "options": ["الثلاثاء", "الأحد", "الأربعاء", "الخميس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_335",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو اليوم الذي يسبق يوم الجمعة مباشرة؟",
+    "options": ["الخميس", "الأربعاء", "السبت", "الثلاثاء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_336",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشهر الأول في السنة الميلادية؟",
+    "options": ["يناير", "فبراير", "ديسمبر", "أغسطس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_337",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الشهر الأخير (رقم 12) في السنة الميلادية؟",
+    "options": ["ديسمبر", "نوفمبر", "يناير", "أكتوبر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_338",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي العملة الرسمية في الولايات المتحدة الأمريكية؟",
+    "options": ["الدولار", "اليورو", "الجنيه", "الين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_339",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا نسمي البناء الكبير والفخم الذي يعيش فيه الملك أو الملكة؟",
+    "options": ["القصر", "الكوخ", "الخيمة", "العمارة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_340",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الأداة التي نستخدمها لتناول الحساء (الشوربة)؟",
+    "options": ["الملعقة", "الشوكة", "السكين", "العود الخشبي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_341",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو المشروب الشعبي الذي نستخرجه بغلي أوراق نبتة معينة ويكون لونه أحمر أو أخضر؟",
+    "options": ["الشاي", "القهوة", "العصير", "الحليب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_342",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو المشروب الساخن الذي يُصنع من تحميص وطحن حبوب البن؟",
+    "options": ["القهوة", "الشاي", "الكاكاو", "النعناع"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_343",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هي الخضار التي تجعل عينيك تدمعان عند تقطيعها؟",
+    "options": ["البصل", "البطاطس", "الجزر", "الطماطم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_344",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ماذا يُسمى المكان المليء بالكتب المتاحة للقراءة والاستعارة؟",
+    "options": ["المكتبة", "المتجر", "المتحف", "المسرح"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_345",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الغاز الذي نستنشقه باستمرار لنبقى على قيد الحياة؟",
+    "options": ["الأكسجين", "ثاني أكسيد الكربون", "النيتروجين", "الهيليوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_346",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "أي حاسة من الحواس الخمس نستخدمها لتذوق نكهات الطعام؟",
+    "options": ["التذوق", "الشم", "اللمس", "السمع"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_347",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "أي حاسة نستخدمها لتمييز رائحة العطور أو الطعام؟",
+    "options": ["الشم", "التذوق", "البصر", "اللمس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_348",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم عيناً يمتلكها الإنسان الطبيعي؟",
+    "options": ["2", "1", "3", "4"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_349",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "كم أذناً يمتلكها الإنسان الطبيعي؟",
+    "options": ["2", "1", "3", "4"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_350",
+    "category": "general",
+    "difficulty": "easy",
+    "text": "ما هو الحيوان الأليف الذي ينبح ويُعتبر صديق الإنسان الوفي؟",
+    "options": ["الكلب", "القط", "الأرنب", "الحصان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_351",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو المؤلف الفرنسي الذي كتب رواية 'البؤساء' ورواية 'أحدب نوتردام'؟",
+    "options": ["فيكتور هوغو", "ألكسندر دوما", "ألبير كامو", "موليير"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_352",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو المخترع الأمريكي الذي ينسب إليه اختراع المصباح الكهربائي المتوهج وتطوير الفونوغراف؟",
+    "options": ["توماس إديسون", "نيكولا تيسلا", "ألكسندر غراهام بيل", "جيمس واط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_353",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الفنان الإيطالي العبقري الذي رسم لوحة الموناليزا والعشاء الأخير؟",
+    "options": ["ليوناردو دافنشي", "مايكل أنجلو", "رافائيل", "دوناتيلو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_354",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الرسام الهولندي الشهير الذي قطع جزءاً من أذنه ورسم 'ليلة النجوم'؟",
+    "options": ["فينسنت فان جوخ", "يوهانس فيرمير", "رامبرانت", "بيكاسو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_355",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في أي مدينة يقع برج إيفل الشهير؟",
+    "options": ["باريس", "روما", "مدريد", "لندن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_356",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في أي مدينة يقع المدرج الأثري المعروف باسم الكولوسيوم؟",
+    "options": ["روما", "أثينا", "نابولي", "برشلونة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_357",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في اليابان؟",
+    "options": ["الين", "اليوان", "الوون", "الروبية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_358",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في المملكة المتحدة؟",
+    "options": ["الجنيه الإسترليني", "اليورو", "الفرنك", "الكرونة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_359",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "أي دولة تُعرف تاريخياً ببلاد الرافدين؟",
+    "options": ["العراق", "مصر", "سوريا", "اليمن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_360",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "أي دولة تُعرف بكونها هبة النيل أو بلاد النيل؟",
+    "options": ["مصر", "السودان", "إثيوبيا", "الصومال"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_361",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي عاصمة أستراليا؟",
+    "options": ["كانبيرا", "سيدني", "ملبورن", "بيرث"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_362",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي عاصمة كندا؟",
+    "options": ["أوتاوا", "تورنتو", "مونتريال", "فانكوفر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_363",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو النهر الأطول في العالم (حسب التصنيف التقليدي الأكثر شيوعاً)؟",
+    "options": ["نهر النيل", "نهر الأمازون", "نهر المسيسيبي", "نهر اليانغتسي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_364",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو المحيط الأكبر مساحة في العالم؟",
+    "options": ["المحيط الهادئ", "المحيط الأطلسي", "المحيط الهندي", "المحيط المتجمد الشمالي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_365",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي الصحراء التي تعتبر أكبر صحراء حارة في العالم وتغطي شمال أفريقيا؟",
+    "options": ["الصحراء الكبرى", "صحراء كالاهاري", "صحراء جوبي", "صحراء فيكتوريا الكبرى"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_366",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو العالم الإنجليزي الذي صاغ قوانين الحركة الثلاثة وقانون الجذب العام؟",
+    "options": ["إسحاق نيوتن", "ألبرت أينشتاين", "غاليليو غاليلي", "تشارلز داروين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_367",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الطبيب والعالم الأسكتلندي الذي اكتشف البنسلين عام 1928؟",
+    "options": ["ألكسندر فليمنغ", "لويس باستور", "روبرت كوخ", "إدوارد جينر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_368",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الغاز الذي يشكل النسبة الكبرى من الغلاف الجوي للأرض (حوالي 78%)؟",
+    "options": ["النيتروجين", "الأكسجين", "ثاني أكسيد الكربون", "الأرغون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_369",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو المعدن الوحيد الذي يكون في حالة سائلة في درجة حرارة الغرفة؟",
+    "options": ["الزئبق", "الحديد", "الذهب", "النحاس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_370",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الكوكب الأقرب إلى الشمس في نظامنا الشمسي؟",
+    "options": ["عطارد", "الزهرة", "الأرض", "المريخ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_371",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الكوكب الذي يُعرف بـ 'الكوكب الأحمر' لوجود أكسيد الحديد بكثرة على سطحه؟",
+    "options": ["المريخ", "المشتري", "الزهرة", "عطارد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_372",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "كم عدد الأسنان الدائمة التي يمتلكها الإنسان البالغ عادةً؟",
+    "options": ["32", "30", "28", "34"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_373",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي أكبر قارات العالم مساحة وتعداداً للسكان؟",
+    "options": ["آسيا", "أفريقيا", "أوروبا", "أمريكا الشمالية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_374",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي أصغر قارة في العالم مساحة؟",
+    "options": ["أستراليا (أوقيانوسيا)", "أوروبا", "أنتاركتيكا", "أمريكا الجنوبية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_375",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "أي إمبراطور مغولي هندي أمر ببناء ضريح تاج محل لزوجته ممتاز محل؟",
+    "options": ["شاه جهان", "أكبر العظيم", "بابر", "أورنكزيب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_376",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في أي دولة يقع ضريح تاج محل الشهير؟",
+    "options": ["الهند", "باكستان", "بنغلاديش", "إيران"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_377",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي اللغة التي تمتلك أكبر عدد من المتحدثين بها كلغة أولى (لغة أم) في العالم؟",
+    "options": ["لغة الماندرين الصينية", "اللغة الإسبانية", "اللغة الإنجليزية", "اللغة العربية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_378",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الرمز الكيميائي للماء والذي يتكون من ذرتي هيدروجين وذرة أكسجين؟",
+    "options": ["H2O", "CO2", "O2", "NaCl"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_379",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الرمز الكيميائي لجزيء غاز الأكسجين الذي نتنفسه؟",
+    "options": ["O2", "CO2", "H2O", "N2"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_380",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو العالم الفيزيائي الذي وضع النظرية النسبية الشهيرة (E=mc²)؟",
+    "options": ["ألبرت أينشتاين", "إسحاق نيوتن", "نيكولا تيسلا", "نيلز بور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_381",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو أعلى جبل (قمة) في العالم ويقع في سلسلة الهيمالايا؟",
+    "options": ["جبل إيفرست", "جبل كليمنجارو", "جبل K2", "جبل إلبروس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_382",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في أي قارة تقع سلسلة جبال الأنديز الطويلة؟",
+    "options": ["أمريكا الجنوبية", "آسيا", "أوروبا", "أمريكا الشمالية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_383",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو المحيط الذي يفصل بين قارتي أمريكا (شمالاً وجنوباً) وقارتي أوروبا وأفريقيا؟",
+    "options": ["المحيط الأطلسي", "المحيط الهادئ", "المحيط الهندي", "المحيط المتجمد الشمالي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_384",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو البحر المهم الذي يفصل قارة أوروبا عن قارة أفريقيا؟",
+    "options": ["البحر الأبيض المتوسط", "البحر الأحمر", "بحر العرب", "البحر الأسود"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_385",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية المتداولة في الهند؟",
+    "options": ["الروبية", "الروبل", "الريال", "الين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_386",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي عاصمة دولة البرازيل؟",
+    "options": ["برازيليا", "ريو دي جانيرو", "ساو باولو", "بوينس آيرس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_387",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي عاصمة روسيا الاتحادية؟",
+    "options": ["موسكو", "سانت بطرسبرغ", "كييف", "نوفوسيبيرسك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_388",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي الدولة التي تعتبر الأكبر مساحة على وجه الأرض؟",
+    "options": ["روسيا", "كندا", "الصين", "الولايات المتحدة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_389",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي أصغر دولة مستقلة في العالم من حيث المساحة وتقع داخل مدينة روما؟",
+    "options": ["الفاتيكان", "موناكو", "سان مارينو", "ليختنشتاين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_390",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الطائر الجارح الذي يعتبر من أسرع الحيوانات في العالم عند انقضاضه؟",
+    "options": ["الصقر الشاهين", "النسر الذهبي", "العقاب", "البومة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_391",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو أكبر حيوان بري يعيش على اليابسة حالياً؟",
+    "options": ["الفيل الأفريقي", "وحيد القرن الأبيض", "الزرافة", "فرس النهر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_392",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الكاتب الإنجليزي الشهير الذي ألف مسرحية 'روميو وجولييت'؟",
+    "options": ["ويليام شكسبير", "تشارلز ديكنز", "آرثر كونان دويل", "جورج أورويل"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_393",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الروائي البرازيلي صاحب رواية 'الخيميائي' التي حققت مبيعات عالمية ضخمة؟",
+    "options": ["باولو كويلو", "غابرييل غارثيا ماركيز", "خورخي لويس بورخيس", "كارلوس زافون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_394",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو المبرمج ورائد الأعمال الذي شارك في تأسيس موقع فيسبوك؟",
+    "options": ["مارك زوكربيرغ", "إيلون ماسك", "بيل غيتس", "ستيف جوبز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_395",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو المبتكر ورجل الأعمال الذي شارك في تأسيس شركة آبل (Apple)؟",
+    "options": ["ستيف جوبز", "بيل غيتس", "مارك زوكربيرغ", "جيف بيزوس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_396",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في أي عام اندلعت الحرب العالمية الأولى؟",
+    "options": ["1914", "1918", "1939", "1910"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_397",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في أي عام انتهت الحرب العالمية الثانية باستسلام اليابان؟",
+    "options": ["1945", "1944", "1946", "1939"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_398",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الفيلسوف الإغريقي العظيم الذي كان تلميذاً لأفلاطون ومعلماً للإسكندر الأكبر؟",
+    "options": ["أرسطو", "سقراط", "فيثاغورس", "إبيقور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_399",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو العضو الذي يغطي كامل الجسد الخارجي للإنسان ويعتبر أكبر عضو فيه؟",
+    "options": ["الجلد", "الكبد", "القلب", "الأمعاء"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_400",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي المادة التي تعتبر أصلب مادة في جسم الإنسان وتغطي الجزء الخارجي من الأسنان؟",
+    "options": ["مينا الأسنان", "عظام الجمجمة", "عظمة الفخذ", "الكيراتين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_401",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "كم عدد الكروموسومات في الخلية الجسدية البشرية العادية؟",
+    "options": ["46 (23 زوجاً)", "48", "44", "23"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_402",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العاصمة الحالية لدولة تركيا؟",
+    "options": ["أنقرة", "إسطنبول", "إزمير", "بورصة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_403",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي عاصمة إيطاليا التي يقع فيها الفاتيكان؟",
+    "options": ["روما", "ميلانو", "فلورنسا", "البندقية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_404",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي الدولة الآسيوية الكبرى التي عاصمتها بكين؟",
+    "options": ["الصين", "اليابان", "كوريا الجنوبية", "فيتنام"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_405",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الفيتامين الذي يصنعه جسم الإنسان عند تعرض الجلد لأشعة الشمس؟",
+    "options": ["فيتامين د (Vitamin D)", "فيتامين سي (Vitamin C)", "فيتامين أ (Vitamin A)", "فيتامين ب12"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_406",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الفيتامين الذي يتوفر بكثرة في الحمضيات مثل البرتقال والليمون ويساعد في المناعة؟",
+    "options": ["فيتامين سي (Vitamin C)", "فيتامين د", "فيتامين ك", "فيتامين هـ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_407",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي القارة التي تُعرف بلقب 'القارة السمراء'؟",
+    "options": ["أفريقيا", "آسيا", "أوروبا", "أمريكا الجنوبية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_408",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي القارة التي يطلق عليها أحياناً لقب 'القارة العجوز'؟",
+    "options": ["أوروبا", "أفريقيا", "آسيا", "أمريكا الشمالية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_409",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو أطول نهر في القارة الأوروبية ويقع معظمه في روسيا؟",
+    "options": ["نهر الفولغا", "نهر الدانوب", "نهر الراين", "نهر التايمز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_410",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو المحيط الذي كان يُطلق عليه العرب قديماً 'بحر الظلمات'؟",
+    "options": ["المحيط الأطلسي", "المحيط الهادئ", "المحيط الهندي", "البحر الأبيض المتوسط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_411",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو البحر المغلق الذي يعتبر أخفض نقطة على اليابسة ولا تعيش فيه الأسماك لشدة ملوحته؟",
+    "options": ["البحر الميت", "بحر قزوين", "البحر الأحمر", "البحر الأسود"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_412",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في أي مدينة أمريكية يقع تمثال الحرية الشهير؟",
+    "options": ["نيويورك", "واشنطن", "لوس أنجلوس", "بوسطن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_413",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في أي دولة يقع برج بيزا المائل المشهور؟",
+    "options": ["إيطاليا", "فرنسا", "إسبانيا", "اليونان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_414",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي المادة الطبيعية الأساسية التي تُستخدم في صناعة الزجاج؟",
+    "options": ["الرمل (السيليكا)", "الطين", "البلاستيك", "النفط"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_415",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي المادة الأولية التي تُصنع منها الأوراق تقليدياً؟",
+    "options": ["ألياف الخشب", "ألياف القطن", "الرمل", "البلاستيك المعاد تدويره"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_416",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الغاز الذي يُستخدم في بعض طفايات الحريق لأنه لا يساعد على الاشتعال وثقيل؟",
+    "options": ["ثاني أكسيد الكربون", "الأكسجين", "الهيدروجين", "الأمونيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_417",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الجدول الدوري، ما هو العنصر الذي يُرمز له بالحرفين Fe؟",
+    "options": ["الحديد", "الفلور", "الفضة", "النحاس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_418",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في الجدول الدوري، ما هو العنصر الثمين الذي يُرمز له بالحرفين Au؟",
+    "options": ["الذهب", "الفضة", "الألومنيوم", "الرصاص"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_419",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الكوكب الذي تم اكتشافه لأول مرة في العصر الحديث باستخدام التلسكوب عام 1781؟",
+    "options": ["أورانوس", "نبتون", "بلوتو", "المشتري"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_420",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الكوكب الذي يمتلك أقماراً كثيرة أشهرها آيو وأوروبا وغانيميد؟",
+    "options": ["المشتري", "زحل", "أورانوس", "المريخ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_421",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الشاعر المصري الذي لُقب بـ 'أمير الشعراء'؟",
+    "options": ["أحمد شوقي", "حافظ إبراهيم", "عباس محمود العقاد", "خليل مطران"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_422",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الروائي والأديب المصري الذي حصل على جائزة نوبل في الأدب عام 1988؟",
+    "options": ["نجيب محفوظ", "طه حسين", "يوسف إدريس", "توفيق الحكيم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_423",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو عدد القارات المعترف به عادة في العالم الجغرافي القياسي؟",
+    "options": ["7", "5", "6", "8"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_424",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي أكبر غابة استوائية ممطرة في العالم، وتُعرف برئة الأرض؟",
+    "options": ["غابة الأمازون", "غابة الكونغو", "غابة التايغا", "غابات دنتري"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_425",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في أي دولة عربية تقع مدينة دبي التي تضم برج خليفة؟",
+    "options": ["الإمارات العربية المتحدة", "السعودية", "قطر", "البحرين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_426",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الرائد الفضائي الأمريكي الذي يُعتبر أول إنسان مشى على سطح القمر؟",
+    "options": ["نيل أرمسترونغ", "باز ألدرين", "يوري غاغارين", "مايكل كولينز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_427",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الحيوان الزاحف الذي يمتلك أقوى عضة مسجلة بين الحيوانات الحية مقارنة بحجمه؟",
+    "options": ["التمساح", "القرش", "الأسد", "الضبع"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_428",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الحيوان الذي يستطيع النوم وهو واقف على قدميه بفضل نظام أربطة خاص؟",
+    "options": ["الحصان", "الكلب", "القط", "الدب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_429",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "كم عدد القلوب التي يمتلكها الأخطبوط لضخ الدم في جسمه؟",
+    "options": ["3", "1", "2", "4"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_430",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الحيوان البري الطويل الذي يفتقر إلى الحبال الصوتية المعتادة ولا يُصدر أصواتاً كباقي الحيوانات؟",
+    "options": ["الزرافة", "الفيل", "الجمل", "الغزال"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_431",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو العضو العضلي الذي يقع في الصدر ويقوم بضخ الدم إلى كافة أنحاء الجسم؟",
+    "options": ["القلب", "الرئتان", "الكبد", "المعدة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_432",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الغاز الذي تطلقه النباتات في الهواء كناتج لعملية البناء الضوئي؟",
+    "options": ["الأكسجين", "ثاني أكسيد الكربون", "النيتروجين", "الهيدروجين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_433",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الجهاز الذي يُستخدم لقياس الضغط الجوي للتنبؤ بالطقس؟",
+    "options": ["البارومتر", "الترمومتر", "الهيجرومتر", "الأنيمومتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_434",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هو الجهاز الذي يُستخدم لقياس درجة حرارة الجسم أو الجو؟",
+    "options": ["الترمومتر", "البارومتر", "الميكرومتر", "المانومتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_435",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العملة الرسمية في سويسرا؟",
+    "options": ["الفرنك السويسري", "اليورو", "الجنيه", "الدولار"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_436",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العاصمة السياسية لألمانيا الموحدة؟",
+    "options": ["برلين", "ميونخ", "بون", "هامبورغ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_437",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي عاصمة دولة السويد الإسكندنافية؟",
+    "options": ["ستوكهولم", "أوسلو", "كوبنهاغن", "هلسنكي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_438",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي الدولة الواقعة في أمريكا الجنوبية وعاصمتها بوينس آيرس؟",
+    "options": ["الأرجنتين", "البرازيل", "تشيلي", "كولومبيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_439",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي الدولة اللاتينية الممتدة بشكل طولي وعاصمتها سانتياغو؟",
+    "options": ["تشيلي", "بيرو", "الأرجنتين", "الإكوادور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_440",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو العالم الإسكتلندي المولد الذي يُنسب إليه اختراع الهاتف ونال براءة اختراعه عام 1876؟",
+    "options": ["ألكسندر غراهام بيل", "أنطونيو ميوتشي", "توماس إديسون", "نيكولا تيسلا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_441",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هما الأخوان اللذان قاما بأول رحلة طيران ناجحة في التاريخ؟",
+    "options": ["الأخوان رايت", "الأخوان مونتغولفييه", "الأخوان لوميير", "الأخوان غريم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_442",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الطبيب العربي المسلم الذي اكتشف الدورة الدموية الصغرى؟",
+    "options": ["ابن النفيس", "ابن سينا", "الرازي", "الزهراوي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_443",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو العالم الإنجليزي صاحب قصة التفاحة واكتشاف الجاذبية؟",
+    "options": ["إسحاق نيوتن", "تشارلز داروين", "مايكل فاراداي", "ستيفن هوكينغ"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_444",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الرسام الهولندي الشهير الذي كان يعاني من اضطرابات نفسية وقام بقطع جزء من أذنه؟",
+    "options": ["فينسنت فان جوخ", "كلود مونيه", "بابلو بيكاسو", "سلفادور دالي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_445",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في أي قارة تقع سلسلة جبال الألب الشهيرة التي تمتد عبر دول منها سويسرا وإيطاليا وفرنسا؟",
+    "options": ["أوروبا", "آسيا", "أمريكا الشمالية", "أمريكا الجنوبية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_446",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "في أي قارة تقع سلسلة جبال الهيمالايا التي تضم أعلى قمم العالم؟",
+    "options": ["آسيا", "أفريقيا", "أوروبا", "أوقيانوسيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_447",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي أكبر مدينة في الولايات المتحدة الأمريكية من حيث التعداد السكاني؟",
+    "options": ["نيويورك", "لوس أنجلوس", "شيكاغو", "هيوستن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_448",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "ما هي العاصمة السياسية للولايات المتحدة حيث يقع البيت الأبيض ومبنى الكابيتول؟",
+    "options": ["واشنطن دي سي", "نيويورك", "فيلادلفيا", "بوسطن"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_449",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو الممثل الذي لعب دور 'جاك دوسن' بطل فيلم تايتانيك الشهير عام 1997؟",
+    "options": ["ليوناردو دي كابريو", "توم كروز", "براد بيت", "مات ديمون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_450",
+    "category": "general",
+    "difficulty": "medium",
+    "text": "من هو المؤلف الموسيقي الألماني الأصم الذي يُعد من أعظم عباقرة الموسيقى الكلاسيكية؟",
+    "options": ["لودفيج فان بيتهوفن", "فولفغانغ أماديوس موزارت", "يوهان سيباستيان باخ", "ريتشارد فاغنر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_451",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي أصغر عظمة في جسم الإنسان وتوجد في الأذن الوسطى؟",
+    "options": ["عظمة الركاب", "عظمة المطرقة", "عظمة السندان", "الترقوة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_452",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الغاز النبيل الأخف من الهواء والذي يُستخدم عادة لملء مناطيد وبالونات الاحتفالات؟",
+    "options": ["الهيليوم", "الهيدروجين", "النيون", "الأرغون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_453",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الاسم العلمي الدقيق للماء الثقيل الذي يستخدم غالباً كمبرد في بعض المفاعلات النووية؟",
+    "options": ["أكسيد الديوتيريوم", "أكسيد التريتيوم", "بيروكسيد الهيدروجين", "هيدروكسيد الصوديوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_454",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الكاتب الروسي العظيم مؤلف رواية 'الأخوة كارامازوف' و'الجريمة والعقاب'؟",
+    "options": ["فيودور دوستويفسكي", "ليو تولستوي", "أنطون تشيخوف", "ألكسندر بوشكين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_455",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي أول دولة في العالم أعطت المرأة حق التصويت في الانتخابات الوطنية عام 1893؟",
+    "options": ["نيوزيلندا", "أستراليا", "فنلندا", "المملكة المتحدة"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_456",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "كم عدد المربعات الإجمالي الموجودة في رقعة الشطرنج القياسية؟",
+    "options": ["64", "60", "72", "81"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_457",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "في أي عام تم هدم (أو بدء هدم) جدار برلين الذي كان يقسم ألمانيا؟",
+    "options": ["1989", "1991", "1985", "1990"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_458",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو العالم والمفكر اليوناني القديم الذي صاغ 'قانون الطفو' واكتشفه أثناء استحمامه وصاح 'أوريكا'؟",
+    "options": ["أرخميدس", "فيثاغورس", "إقليدس", "أرسطو"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_459",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي اللغة الرسمية والوطنية في دولة البرازيل؟",
+    "options": ["البرتغالية", "الإسبانية", "اللاتينية", "الإنجليزية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_460",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي أطول سلسلة جبال قارية في العالم وتقع في أمريكا الجنوبية؟",
+    "options": ["جبال الأنديز", "جبال الهيمالايا", "جبال روكي", "جبال الألب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_461",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي عاصمة كازاخستان، التي غُيّر اسمها لفترة قصيرة إلى 'نور سلطان' قبل إعادته؟",
+    "options": ["أستانا", "ألماتي", "طشقند", "بيشكك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_462",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي الدولة الإسكندنافية التي تمتلك أكبر عدد من الجزر في العالم (أكثر من 200 ألف جزيرة)؟",
+    "options": ["السويد", "إندونيسيا", "النرويج", "الفلبين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_463",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي الدولة الآسيوية التي تُعرف تاريخياً باسم 'أرض الشمس المشرقة' (Nippon)؟",
+    "options": ["اليابان", "الصين", "كوريا", "فيتنام"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_464",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الفيلسوف الإغريقي العظيم تلميذ سقراط والذي ألف كتاب 'الجمهورية'؟",
+    "options": ["أفلاطون", "أرسطو", "إبيقور", "ديوجين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_465",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الفيلسوف الفرنسي صاحب المقولة الفلسفية الشهيرة 'أنا أفكر، إذن أنا موجود' (Cogito, ergo sum)؟",
+    "options": ["رينيه ديكارت", "جان جاك روسو", "فولتير", "جان بول سارتر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_466",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الاسم الحقيقي للكاتب الأمريكي الساخر الذي عُرف بالاسم المستعار 'مارك توين'؟",
+    "options": ["صمويل لانغهورن كليمنس", "تشارلز ديكنز", "آرثر كونان دويل", "إرنست همنغواي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_467",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الكوكب في نظامنا الشمسي الذي يمتلك قمرين صغيرين يُدعيان 'فوبوس' و'ديموس'؟",
+    "options": ["المريخ", "المشتري", "زحل", "نبتون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_468",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو اسم أكبر قمر في المجموعة الشمسية، وهو أحد أقمار كوكب المشتري؟",
+    "options": ["جانيميد", "تيتان", "كاليستو", "أوروبا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_469",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو السياسي النرويجي الذي شغل منصب أول أمين عام للأمم المتحدة؟",
+    "options": ["تريغفه لي (تريجفي لي)", "داغ همرشولد", "كوفي عنان", "يو ثانت"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_470",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الحيوان الجرابي الأسترالي الذي تملك أصابعه بصمات مطابقة تقريباً لبصمات الإنسان؟",
+    "options": ["الكوالا", "الكنغر", "الومبات", "الديناصور"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_471",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي أعمق نقطة معروفة في قاع المحيطات على كوكب الأرض، وتقع في المحيط الهادئ؟",
+    "options": ["خندق ماريانا", "خندق تونغا", "خندق بورتوريكو", "أعماق ميلواكي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_472",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "كم عدد الأسنان التي تمتلكها أنثى البعوض تقريباً (على شكل نتوءات صغيرة قاطعة)؟",
+    "options": ["47 سناً", "32 سناً", "10 أسنان", "لا تملك أسنان"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_473",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو المعدن الطبيعي الذي يُعتبر الأفضل والأعلى كفاءة في التوصيل الكهربائي؟",
+    "options": ["الفضة", "النحاس", "الذهب", "الألومنيوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_474",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "في الأساطير الإغريقية القديمة، من هو إله البحر والزلازل والخيول؟",
+    "options": ["بوسيدون", "زيوس", "أبولو", "هاديس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_475",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "في الأساطير الإغريقية القديمة، من هو إله الحرب المتعطش للدماء؟",
+    "options": ["آريس", "هيفيستوس", "هيرميس", "ديونيسوس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_476",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو العالم المسلم الذي يُعتبر مؤسس علم الجبر والخوارزميات في الرياضيات؟",
+    "options": ["محمد بن موسى الخوارزمي", "عمر الخيام", "البيروني", "ابن الهيثم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_477",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو العنصر الكيميائي الأكثر وفرة ونسبة مئوية في تركيب قشرة كوكب الأرض؟",
+    "options": ["الأكسجين", "السيليكون", "الحديد", "الألومنيوم"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_478",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي عاصمة أيسلندا، والتي تعتبر العاصمة الأبعد نحو الشمال في العالم؟",
+    "options": ["ريكيافيك", "أوسلو", "كوبنهاغن", "هلسنكي"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_479",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي العملة الرسمية في دولة جنوب أفريقيا؟",
+    "options": ["الراند", "الشلن", "البيسو", "الروبية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_480",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الكيميائي والمخترع السويدي الذي اخترع الديناميت وخصص ثروته لجوائز نوبل؟",
+    "options": ["ألفريد نوبل", "غوليلمو ماركوني", "لويس باستور", "كارل بنز"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_481",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الطائر الوحيد القادر على الطيران للخلف بحرية بفضل تركيبة أجنحته؟",
+    "options": ["طائر الطنان", "طائر النورس", "الخفاش (وهو ثديي لا طائر)", "النسر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_482",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الكائن الحي البحري الذي يُعتبر خالداً بيولوجياً لأنه يعيد دورة حياته لطور الشباب؟",
+    "options": ["قنديل البحر الخالد (تيوريتوبسيس دوهرني)", "الحوت المقوس الرأس", "الإسفنج المائي", "سلحفاة الغالاباغوس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_483",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي أقدم جامعة في العالم مستمرة في منح الدرجات الأكاديمية منذ 859م وتقع في فاس؟",
+    "options": ["جامعة القرويين", "جامعة الأزهر", "جامعة بولونيا", "جامعة أكسفورد"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_484",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو المخترع الألماني الذي قدم الطباعة بالحروف المتحركة إلى أوروبا في القرن الخامس عشر؟",
+    "options": ["يوهان غوتنبرغ", "ليوناردو دا فينشي", "جوهانس كيبلر", "نيكولاس كوبرنيكوس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_485",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الفنان الإسباني البارز الذي رسم لوحة 'غرنيكا' ويعتبر مؤسس المدرسة التكعيبية مع جورج براك؟",
+    "options": ["بابلو بيكاسو", "سلفادور دالي", "دييغو فيلاثكيث", "فرانسيسكو غويا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_486",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الملحن النمساوي العظيم الذي اشتهر بتأليف 'السيمفونية الناقصة' (رقم 8)؟",
+    "options": ["فرانز شوبرت", "فولفغانغ أماديوس موزارت", "جوزيف هايدن", "ريتشارد شتراوس"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_487",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو العنصر الكيميائي الوحيد الذي يتكون منه حجر الألماس النقي؟",
+    "options": ["الكربون", "السيليكون", "التيتانيوم", "الكريستال"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_488",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو الطبيب والعالم الأسكتلندي الذي ينسب إليه الفضل في اكتشاف البنسلين كأول مضاد حيوي؟",
+    "options": ["ألكسندر فليمنغ", "لويس باستور", "روبرت كوخ", "إدوارد جينر"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_489",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو اللقب السياسي الذي أطلق على مارغريت تاتشر، أول رئيسة وزراء في تاريخ بريطانيا؟",
+    "options": ["المرأة الحديدية", "ملكة القلوب", "السيدة الأولى", "حارسة الإمبراطورية"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_490",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو الغاز النبيل الخامل الذي يتوهج بلون برتقالي/أحمر زاهٍ ويستخدم في المصابيح الإعلانية المضيئة؟",
+    "options": ["النيون", "الأرغون", "الزينون", "الرادون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_491",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي الإمبراطورية التي حكمت أمريكا الوسطى، وتحديداً وسط المكسيك، قبل الفتح الإسباني بقيادة كورتيس؟",
+    "options": ["الآزتيك", "الإنكا", "المايا", "الأولمك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_492",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي الدولة الأفريقية الوحيدة (إلى جانب ليبيريا) التي لم تخضع للاستعمار الأوروبي الشامل؟",
+    "options": ["إثيوبيا", "مصر", "المغرب", "جنوب أفريقيا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_493",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو المستكشف النرويجي الذي قاد أول بعثة مسجلة نجحت في الوصول إلى القطب الجنوبي الجغرافي عام 1911؟",
+    "options": ["رولد أموندسن", "روبرت فالكون سكوت", "إرنست شاكلتون", "جيمس كوك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_494",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو أكبر كوكب قزم في نظامنا الشمسي والذي أزيل من قائمة الكواكب الرئيسية عام 2006؟",
+    "options": ["بلوتو", "سيريس", "إيريس", "ميكماك"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_495",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "من هو العالم والمفكر الأندلسي العظيم الذي ألف كتاب 'طوق الحمامة في الألفة والأُلّاف'؟",
+    "options": ["ابن حزم الأندلسي", "ابن رشد", "ابن طفيل", "ابن زيدون"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_496",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هي العاصمة القديمة لإمبراطورية الآزتيك التي بنيت على جزيرة في بحيرة تيكسكوكو (مكان مكسيكو سيتي الحالية)؟",
+    "options": ["تينوتشتيتلان", "كوسكو", "ماتشو بيتشو", "تشيتشن إيتزا"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_497",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو أعلى جبل في قارة أفريقيا ويقع في تنزانيا وهو بركان خامد ذو قمة ثلجية؟",
+    "options": ["جبل كيليمنجارو", "جبل كينيا", "جبل ستانلي", "جبل توبقال"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_498",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو العضو الداخلي في جسم الإنسان الذي يمتلك قدرة فريدة على تجديد نفسه إذا قُطع جزء كبير منه؟",
+    "options": ["الكبد", "الكلى", "الرئتان", "القلب"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_499",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو البروتين الغني بالحديد الذي يربط الأكسجين في خلايا الدم الحمراء ويمنح الدم لونه الأحمر؟",
+    "options": ["الهيموجلوبين", "الميوجلوبين", "الفيبرينوجين", "الجلوبيولين"],
+    "correctAnswer": 0
+  },
+  {
+    "id": "general_500",
+    "category": "general",
+    "difficulty": "hard",
+    "text": "ما هو المضيق الاستراتيجي الهام الذي يربط بين البحر الأحمر وخليج عدن (وبحر العرب)؟",
+    "options": ["مضيق باب المندب", "مضيق هرمز", "مضيق ملقا", "مضيق البوسفور"],
+    "correctAnswer": 0
   }
 ]
