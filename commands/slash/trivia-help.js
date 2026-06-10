@@ -136,7 +136,7 @@ const PAGES = [
     emoji: '📅',
     color: 0xFEE75C, // Yellow
     intro: 'اجعل البوت يدير المسابقات نيابة عنك! يتطلب **Administrator**.',
-    tip: '💡 **نصيحة:** البوت يستخدم توقيت UTC العالمي. لتحويل وقتك، استخدم موقع مثل timeanddate.com.',
+    tip: '💡 **نصيحة:** البوت يستخدم توقيت UTC العالمي. لتحويل وقتك، استخدم موقع مثل [timeanddate](http://timeanddate.com).',
     commands: [
       {
         slash: 'trivia-schedule',
