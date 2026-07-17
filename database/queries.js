@@ -460,10 +460,27 @@ function rebuildPlayerStatsForGuild(guildId) {
       s.sessions += 1;
       if (pts === maxScore && pts > 0) s.wins += 1;
 
-      // Count correct answers this player gave
+      // Count correct answers this player gave and rebuild longestStreak
+      let sessionStreak = 0;
+      let maxSessionStreak = 0;
       for (const q of questionsData) {
         if (!q.skipped && q.playerAnswers?.[userId]?.answerIndex === q.correctAnswer) {
           s.answers += 1;
+          sessionStreak++;
+          if (sessionStreak > maxSessionStreak) maxSessionStreak = sessionStreak;
+        } else {
+          sessionStreak = 0;
+        }
+      }
+      if (maxSessionStreak > s.longestStreak) s.longestStreak = maxSessionStreak;
+
+      // Approximate speedFirstCount from stored speedWinners (last question only)
+      // Note: speedWinners is only persisted for the final question of each session,
+      // so this is a partial count. Full speed history is not available from session_history.
+      for (const q of questionsData) {
+        if (q.speedWinners?.includes(userId)) {
+          s.speedFirstCount += 1;
+          break;
         }
       }
     }

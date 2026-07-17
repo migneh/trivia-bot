@@ -286,7 +286,8 @@ async function handleConfirmed({ interaction, msg, guildId, client, settings, se
     }).catch(() => {});
   }
 
-  let pool = qb.selectQuestions(selectedCats, selectedCount);
+  const usedIds = new Set();
+  let pool = qb.selectQuestions(selectedCats, selectedCount, usedIds);
 
   if (pool.length === 0) {
     return interaction.editReply({
@@ -308,6 +309,7 @@ async function handleConfirmed({ interaction, msg, guildId, client, settings, se
     questions:    pool.slice(0, selectedCount),
     timeLimitSec: selectedTime,
     categories:   selectedCats,
+    usedQuestionIds: usedIds,
   });
 }
 
@@ -376,7 +378,7 @@ async function askPoolConfirmation(interaction, msg, available, requested) {
 
 
 // ─── Session launcher ─────────────────────────────────────────────────────────
-async function launchSession({ interaction, guildId, client, settings, questions, timeLimitSec, categories }) {
+async function launchSession({ interaction, guildId, client, settings, questions, timeLimitSec, categories, usedQuestionIds }) {
   const invalidIds     = await validateQuestionImages(questions);
   const validQuestions = applyImageValidation(questions, invalidIds);
 
@@ -394,6 +396,7 @@ async function launchSession({ interaction, guildId, client, settings, questions
     questionCount: validQuestions.length,
     timeLimitSec,
     questions:     validQuestions,
+    usedQuestionIds,
   });
 
   if (!created) {

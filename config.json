@@ -55,27 +55,27 @@
     {
       "id": "first_win",
       "nameAr": "🥇 الانتصار الأول",
-      "descriptionAr": "افز بجلستك الأولى"
+      "descriptionAr": "فز بجلستك الأولى"
     },
     {
       "id": "win_5",
       "nameAr": "🏅 بطل متكرر",
-      "descriptionAr": "افز بـ 5 جلسات"
+      "descriptionAr": "فز بـ 5 جلسات"
     },
     {
       "id": "win_10",
       "nameAr": "🏆 عشرة انتصارات",
-      "descriptionAr": "افز بـ 10 جلسات"
+      "descriptionAr": "فز بـ 10 جلسات"
     },
     {
       "id": "win_25",
       "nameAr": "👑 ملك المسابقات",
-      "descriptionAr": "افز بـ 25 جلسة"
+      "descriptionAr": "فز بـ 25 جلسة"
     },
     {
       "id": "win_50",
       "nameAr": "🌟 أسطورة الفوز",
-      "descriptionAr": "افز بـ 50 جلسة"
+      "descriptionAr": "فز بـ 50 جلسة"
     },
     {
       "id": "streak_3",

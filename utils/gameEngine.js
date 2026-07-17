@@ -561,6 +561,9 @@ async function revealAndAdvance(client, session, qMsg, question) {
     }
   }
 
+  // Persist speed-first winners to session state so they survive to endSession()
+  sm.updateSession(guildId, { speedFirstThisQuestion });
+
   // Reset streaks for non-voters
   for (const userId of [...session.scores.keys()]) {
     if (!votes[userId]) {

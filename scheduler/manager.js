@@ -471,7 +471,8 @@ async function triggerScheduledSession(guildId) {
   }
 
   // ── 5. Question selection ────────────────────────────────────────────────────
-  let questions = qb.selectQuestions(categories, questionCount);
+  const usedIds = new Set();
+  let questions = qb.selectQuestions(categories, questionCount, usedIds);
 
   if (questions.length === 0) {
     await channel.send({
@@ -507,6 +508,7 @@ async function triggerScheduledSession(guildId) {
     questionCount: questions.length,
     timeLimitSec,
     questions,
+    usedQuestionIds: usedIds,
   });
 
   if (!created) {
@@ -564,16 +566,30 @@ function triggerCountdown(guildId, minutes, overrides = {}) {
   const timer = setTimeout(async () => {
     countdownTimers.delete(guildId);
 
-    // Apply any overrides to the schedule for this one-shot trigger
+    // Read the existing schedule before overwriting
     const schedule = readScheduleFile(guildId) ?? {};
-    const merged   = {
+    const originalMode = schedule.mode;
+    const wasRecurring = originalMode === 'daily' || originalMode === 'weekly';
+
+    // Apply any overrides to the schedule for this one-shot trigger
+    const merged = {
       ...schedule,
       mode: 'countdown',
       ...overrides,
     };
     writeScheduleFile(guildId, merged);
 
-    await triggerScheduledSession(guildId);
+    try {
+      await triggerScheduledSession(guildId);
+    } finally {
+      // Restore the original recurring schedule mode after countdown completes
+      if (wasRecurring) {
+        const restored = readScheduleFile(guildId) ?? {};
+        restored.mode = originalMode;
+        writeScheduleFile(guildId, restored);
+        console.log(`[Scheduler][${guildId}] Restored schedule mode to '${originalMode}' after countdown.`);
+      }
+    }
   }, delayMs);
 
   countdownTimers.set(guildId, timer);

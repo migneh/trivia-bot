@@ -61,7 +61,7 @@ function createSession(guildId, data) {
     timeLimitSec:          data.timeLimitSec,
     questions:             data.questions,
     currentIndex:          0,
-    usedQuestionIds:       new Set(data.questions.map(q => q.id)),
+    usedQuestionIds:       data.usedQuestionIds ?? new Set(data.questions.map(q => q.id)),
     scores:                new Map(),
     streaks:               new Map(),
     joinIndex:             new Map(),
