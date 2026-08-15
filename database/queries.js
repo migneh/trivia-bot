@@ -182,6 +182,35 @@ function setPlayerAchievements(guildId, userId, achievementsJson) {
 }
 
 /**
+ * Count a player's cumulative correct answers per category across all sessions.
+ * Scans session_history.questions_data (source of truth) once per user.
+ * Used to evaluate category-mastery achievements.
+ *
+ * @param {string} guildId
+ * @param {string} userId
+ * @returns {Object.<string, number>} categoryId → correct answer count
+ */
+function getCategoryCorrectCounts(guildId, userId) {
+  const rows = getDb().prepare(
+    'SELECT questions_data FROM session_history WHERE guild_id = ?'
+  ).all(guildId);
+
+  const counts = {};
+  for (const row of rows) {
+    let questions;
+    try { questions = JSON.parse(row.questions_data ?? '[]'); } catch { continue; }
+    for (const q of questions) {
+      if (q.skipped) continue;
+      const vote = q.playerAnswers?.[userId];
+      if (vote && vote.answerIndex === q.correctAnswer) {
+        counts[q.category] = (counts[q.category] ?? 0) + 1;
+      }
+    }
+  }
+  return counts;
+}
+
+/**
  * All-time leaderboard from player_stats cache (O(log n) via index).
  * @param {string} guildId
  * @param {number} limit
@@ -311,6 +340,7 @@ function upsertQuestionStats(guildId, questionId, correct, zeroVote, speedMs) {
  * @param {string} guildId
  * @returns {{
  *   sessionCount: number,
+ *   totalQuestions: number,
  *   topCat: string|null,
  *   avgPlayers: string,
  *   activePlayer: { user_id: string, session_count: number }|null,
@@ -324,6 +354,11 @@ function getGuildStats(guildId) {
   // ── Session count ──────────────────────────────────────────────────────
   const sessionCount = db
     .prepare('SELECT COUNT(*) AS cnt FROM session_history WHERE guild_id = ?')
+    .get(guildId)?.cnt ?? 0;
+
+  // ── Total questions asked ──────────────────────────────────────────────
+  const totalQuestions = db
+    .prepare('SELECT COALESCE(SUM(question_count), 0) AS cnt FROM session_history WHERE guild_id = ?')
     .get(guildId)?.cnt ?? 0;
 
   // ── Most played category ───────────────────────────────────────────────
@@ -388,7 +423,7 @@ function getGuildStats(guildId) {
     LIMIT 1
   `).get(guildId) ?? null;
 
-  return { sessionCount, topCat, avgPlayers, activePlayer, hardest, mostMissed };
+  return { sessionCount, totalQuestions, topCat, avgPlayers, activePlayer, hardest, mostMissed };
 }
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -415,9 +450,9 @@ function getGuildsWithOrphanedHistory() {
  * Runs inside a single atomic transaction.
  * Existing player_stats rows for this guild are replaced.
  *
- * Also rebuilds speed_first_count by counting sessions where
- * the player's score entry exists (approximation — exact speed data
- * is not stored in session_history, only final scores).
+ * Rebuilds speed_first_count from the per-question speedWinners stored in
+ * session_history.questions_data. longest_streak cannot be reconstructed
+ * exactly and is left at 0.
  *
  * @param {string} guildId
  */
@@ -460,10 +495,14 @@ function rebuildPlayerStatsForGuild(guildId) {
       s.sessions += 1;
       if (pts === maxScore && pts > 0) s.wins += 1;
 
-      // Count correct answers this player gave
+      // Count correct answers + speed wins this player recorded
       for (const q of questionsData) {
-        if (!q.skipped && q.playerAnswers?.[userId]?.answerIndex === q.correctAnswer) {
+        if (q.skipped) continue;
+        if (q.playerAnswers?.[userId]?.answerIndex === q.correctAnswer) {
           s.answers += 1;
+        }
+        if (q.speedWinners?.includes(userId)) {
+          s.speedFirstCount += 1;
         }
       }
     }
@@ -515,6 +554,7 @@ module.exports = {
   getPlayerStats,
   upsertPlayerStats,
   setPlayerAchievements,
+  getCategoryCorrectCounts,
   getAllTimeLeaderboard,
   getPlayerRank,
   getTotalPlayers,
