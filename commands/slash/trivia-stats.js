@@ -149,6 +149,11 @@ function buildStatsEmbed(stats, guildId) {
       inline: true,
     },
     {
+      name:   '❓ إجمالي الأسئلة المطروحة',
+      value:  formatNumber(stats.totalQuestions ?? 0),
+      inline: true,
+    },
+    {
       name:   '👥 متوسط اللاعبين/جلسة',
       value:  stats.avgPlayers > 0 ? `${stats.avgPlayers} لاعب` : '—',
       inline: true,

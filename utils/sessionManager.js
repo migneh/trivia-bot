@@ -25,7 +25,9 @@ const sessions = new Map();
  * @property {Map<string,number>}  joinIndex
  * @property {Map<string,Set<number>>} answeredSinceJoin
  * @property {Set<number>}  skippedIndexes
- * @property {Array<object>} history
+ * @property {Array<object|null>} questionResults - per-index reveal results ({ votes, speedWinners, startedAt })
+ * @property {number}  currentQuestionStartedAt - epoch ms when the current question was posted
+ * @property {Set<string>} comebackCandidates - players tied for last place at the session midpoint
  * @property {Object.<string,{answerIndex:number,timestampMs:number}>} currentVotes
  * @property {number}   consecutiveZeroVotes
  * @property {boolean}  stopRequested
@@ -67,7 +69,9 @@ function createSession(guildId, data) {
     joinIndex:             new Map(),
     answeredSinceJoin:     new Map(),
     skippedIndexes:        new Set(),
-    history:               [], 
+    questionResults:       new Array(data.questionCount).fill(null),
+    currentQuestionStartedAt: 0,
+    comebackCandidates:    new Set(),
     currentVotes:          {},
     consecutiveZeroVotes:  0,
     stopRequested:         false,
@@ -142,6 +146,21 @@ function markAnswered(guildId, userId, questionIndex) {
   if (set) set.add(questionIndex);
 }
 
+/**
+ * Record the result of a revealed question at the given index.
+ * Stored in-order so endSession() can archive the full per-question
+ * history (votes, speed winners, post time) for every question.
+ *
+ * @param {string} guildId
+ * @param {number} index - 0-based question index
+ * @param {{ votes: object, speedWinners: string[], startedAt: number }} result
+ */
+function recordQuestionResult(guildId, index, result) {
+  const s = sessions.get(guildId);
+  if (!s) return;
+  s.questionResults[index] = result;
+}
+
 function hasCompletionBonus(guildId, userId) {
   const s = sessions.get(guildId);
   if (!s) return false;
@@ -186,6 +205,7 @@ module.exports = {
   addPoints,
   updateStreak,
   markAnswered,
+  recordQuestionResult,
   hasCompletionBonus,
   getPlayerScore,
   getPlayerStreak,

@@ -408,7 +408,7 @@ async function postQuestion(client, session, channel) {
   const guildId = session.guildId;
   const question = session.questions[session.currentIndex];
 
-  sm.updateSession(guildId, { currentVotes: {}, stopPhase: 'voting' });
+  sm.updateSession(guildId, { currentVotes: {}, stopPhase: 'voting', currentQuestionStartedAt: Date.now() });
 
   const embed = buildQuestionEmbed(session, question);
   const row = buildAnswerButtons(question);
@@ -565,6 +565,31 @@ async function revealAndAdvance(client, session, qMsg, question) {
   for (const userId of [...session.scores.keys()]) {
     if (!votes[userId]) {
       sm.updateStreak(guildId, userId, false);
+    }
+  }
+
+  // ── Record per-question result (full history for archive & achievements) ──
+  const liveSession = sm.getSession(guildId);
+  if (isValidSession(liveSession)) {
+    sm.recordQuestionResult(guildId, liveSession.currentIndex, {
+      votes:        { ...votes },
+      speedWinners: [...speedFirstThisQuestion],
+      startedAt:    liveSession.currentQuestionStartedAt ?? 0,
+    });
+
+    // ── Midpoint comeback tracking ──────────────────────────────────────────
+    // After the midpoint question is scored, snapshot the players who are
+    // tied for last place. A winner who was in this set earns comeback_king.
+    const midIndex = Math.floor(liveSession.questionCount / 2);
+    if (liveSession.currentIndex === midIndex) {
+      const scoreEntries = [...liveSession.scores.entries()];
+      if (scoreEntries.length > 0) {
+        const minScore = Math.min(...scoreEntries.map(([, v]) => v));
+        const lastPlace = scoreEntries
+          .filter(([, v]) => v === minScore)
+          .map(([id]) => id);
+        sm.updateSession(guildId, { comebackCandidates: new Set(lastPlace) });
+      }
     }
   }
 
@@ -753,15 +778,24 @@ async function endSession(client, session, reason) {
   const scoresData = Object.fromEntries(current.scores);
   const hasScores = Object.values(scoresData).some(v => v > 0);
 
-  const questionsData = current.questions.map((q, idx) => ({
-    id: q.id,
-    category: q.category,
-    difficulty: q.difficulty,
-    correctAnswer: q.correctAnswer,
-    skipped: current.skippedIndexes.has(idx),
-    playerAnswers: idx === current.currentIndex ? { ...current.currentVotes } : {},
-    speedWinners: idx === current.currentIndex ? [...current.speedFirstThisQuestion ?? []] : [],
-  }));
+  // Full per-question history: revealed questions use their recorded result;
+  // the in-flight question (if we end mid-voting) falls back to currentVotes.
+  const questionsData = current.questions.map((q, idx) => {
+    const result = current.questionResults?.[idx];
+    const votes  = result?.votes
+      ?? (idx === current.currentIndex ? current.currentVotes : {});
+
+    return {
+      id: q.id,
+      category: q.category,
+      difficulty: q.difficulty,
+      correctAnswer: q.correctAnswer,
+      skipped: current.skippedIndexes.has(idx),
+      playerAnswers: votes,
+      speedWinners: result?.speedWinners ?? [],
+      startedAt: result?.startedAt ?? 0,
+    };
+  });
 
   // ── Atomic SQLite archive ────────────────────────────────────────────
   try {
@@ -988,6 +1022,58 @@ async function evaluateAchievements(client, guildId, session, scoresData, questi
         );
         checkAchievement(achievements, 'perfect_session', allCorrect, newUnlocks);
       }
+
+      // ── Per-session tallies (from full question history) ──────────────
+      let sessionSpeedFirst = 0;
+      let hardTotal         = 0;
+      let hardCorrect       = 0;
+
+      for (const q of questionsData) {
+        if (q.skipped) continue;
+        const vote    = q.playerAnswers?.[userId];
+        const correct = vote && vote.answerIndex === q.correctAnswer;
+        if (q.speedWinners?.includes(userId)) sessionSpeedFirst++;
+        if (q.difficulty === 'hard') {
+          hardTotal++;
+          if (correct) hardCorrect++;
+        }
+      }
+
+      // ── Perfect session on hard questions ────────────────────────────
+      checkAchievement(
+        achievements,
+        'perfect_session_hard',
+        hardTotal > 0 && hardCorrect === hardTotal,
+        newUnlocks
+      );
+
+      // ── Speed achievements ───────────────────────────────────────────
+      checkAchievement(achievements, 'speed_demon', sessionSpeedFirst >= 5, newUnlocks);
+      checkAchievement(achievements, 'speed_king', stats.speed_first_count >= 20, newUnlocks);
+
+      // ── Category mastery achievements (cumulative ≥30 correct) ────────
+      const CATEGORY_MASTERS = {
+        geography_master: 'geography',
+        history_master:   'history',
+        science_master:   'science_tech',
+        islam_master:     'islam',
+        gaming_master:    'gaming',
+      };
+      const mastersPending = Object.keys(CATEGORY_MASTERS)
+        .filter(id => !achievements[id]);
+      if (mastersPending.length > 0) {
+        const catCounts = queries.getCategoryCorrectCounts(guildId, userId);
+        for (const achId of mastersPending) {
+          const cat = CATEGORY_MASTERS[achId];
+          checkAchievement(achievements, achId, (catCounts[cat] ?? 0) >= 30, newUnlocks);
+        }
+      }
+
+      // ── Comeback king (win after being last at the midpoint) ──────────
+      const winnerId          = sortedScores[0]?.[1] > 0 ? sortedScores[0][0] : null;
+      const isWinner          = winnerId === userId;
+      const wasLastAtMidpoint = session.comebackCandidates?.has(userId) ?? false;
+      checkAchievement(achievements, 'comeback_king', isWinner && wasLastAtMidpoint, newUnlocks);
 
       // ── First answer (ever) ──────────────────────────────────────────
       checkAchievement(achievements, 'first_answer', answers >= 1, newUnlocks);

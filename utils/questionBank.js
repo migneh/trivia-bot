@@ -359,6 +359,7 @@ function getCountsByCategory() {
 
 module.exports = {
   initQuestionBank,
+  validateQuestion,      // exported for unit testing
   selectQuestions,
   countEligible,
   getEligibleQuestions,
