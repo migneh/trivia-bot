@@ -1,15 +1,13 @@
 'use strict';
 /**
- * index.js — Main entry point
+ * index.js — Main entry point for Arabic Trivia Bot & Platform
  * Startup sequence:
  * 1. Load & validate config.json
  * 2. Load & validate questions.json
- * 3. Init SQLite schema + migrations
- * 4. Corruption detection
- * 5. Load schedule files
- * 6. Register slash commands per guild
- * 7. Start Discord client
- * 8. On ready: resume scheduler, check crashed sessions
+ * 3. Init SQLite schema + migrations (v1 to v5)
+ * 4. Start HTTP Web Dashboard & REST API
+ * 5. Load slash commands & event listeners
+ * 6. Start Discord client & background services
  */
 
 const fs   = require('node:fs');
@@ -21,16 +19,7 @@ let config;
 try {
   config = require('./config.json');
 } catch {
-  console.error('FATAL: config.json not found or invalid. Copy config.json and fill in your values.');
-  process.exit(1);
-}
-
-if (!config.discordToken || config.discordToken === 'YOUR_TOKEN_HERE') {
-  console.error('FATAL: discordToken not set in config.json');
-  process.exit(1);
-}
-if (!config.clientId || config.clientId === 'YOUR_CLIENT_ID_HERE') {
-  console.error('FATAL: clientId not set in config.json');
+  console.error('FATAL: config.json not found or invalid.');
   process.exit(1);
 }
 
@@ -42,13 +31,13 @@ const qbWarnings = initQuestionBank();
 const { initDb } = require('./database/schema');
 try {
   initDb();
-  console.log('[DB] SQLite ready.');
+  console.log('[DB] SQLite database initialized and migrations up to date.');
 } catch (err) {
   console.error('FATAL: DB init failed:', err.message);
   process.exit(1);
 }
 
-// ── 4. Corruption detection (runs after ready) ──────────────────────────────
+// ── 4. Corruption detection ────────────────────────────────────────────────
 const { runCorruptionDetection } = require('./database/cache');
 
 // ── 5. Client setup ─────────────────────────────────────────────────────────
@@ -64,32 +53,43 @@ client.commands = new Collection();
 
 // ── Load slash commands ──────────────────────────────────────────────────────
 const slashDir = path.join(__dirname, 'commands', 'slash');
-for (const file of fs.readdirSync(slashDir).filter(f => f.endsWith('.js'))) {
-  const cmd = require(path.join(slashDir, file));
-  if (cmd?.data && cmd?.execute) {
-    client.commands.set(cmd.data.name, cmd);
-    console.log(`[Commands] Loaded slash: ${cmd.data.name}`);
+if (fs.existsSync(slashDir)) {
+  for (const file of fs.readdirSync(slashDir).filter(f => f.endsWith('.js'))) {
+    const cmd = require(path.join(slashDir, file));
+    if (cmd?.data && cmd?.execute) {
+      client.commands.set(cmd.data.name, cmd);
+      console.log(`[Commands] Loaded slash: ${cmd.data.name}`);
+    }
   }
 }
 
 // ── Load events ──────────────────────────────────────────────────────────────
 const eventsDir = path.join(__dirname, 'events');
-for (const file of fs.readdirSync(eventsDir).filter(f => f.endsWith('.js'))) {
-  const event = require(path.join(eventsDir, file));
-  if (event.once) {
-    client.once(event.name, (...args) => event.execute(...args));
-  } else {
-    client.on(event.name, (...args) => event.execute(...args));
+if (fs.existsSync(eventsDir)) {
+  for (const file of fs.readdirSync(eventsDir).filter(f => f.endsWith('.js'))) {
+    const event = require(path.join(eventsDir, file));
+    if (event.once) {
+      client.once(event.name, (...args) => event.execute(...args));
+    } else {
+      client.on(event.name, (...args) => event.execute(...args));
+    }
+    console.log(`[Events] Loaded event: ${event.name}`);
   }
-  console.log(`[Events] Loaded: ${event.name}`);
 }
+
+// ── 6. Start Web Dashboard & REST API ───────────────────────────────────────
+const { createWebServer } = require('./web/server');
+const webServer = createWebServer(client);
+const webPort = config.webPort || 3000;
+
+webServer.listen(webPort, '0.0.0.0', () => {
+  console.log(`[Web] 🚀 Web Dashboard & REST API listening on http://0.0.0.0:${webPort}`);
+});
 
 // ── Post-ready: corruption detection + question bank warnings ────────────────
 client.once('ready', async () => {
-  // Run corruption detection (async, non-blocking)
   await runCorruptionDetection(client, config);
 
-  // Send question bank warnings to owner log channel
   if (qbWarnings.length) {
     const { logToOwner } = require('./utils/gameEngine');
     const msg =
@@ -105,13 +105,11 @@ client.once('ready', async () => {
 async function emergencyShutdown(source, err) {
   console.error(`[${source}]`, err);
 
-  // Attempt to log to owner channel
   try {
     const { logToOwner } = require('./utils/gameEngine');
     await logToOwner(client, `💥 **خطأ حرج [${source}]:** ${err?.message ?? String(err)}`);
   } catch {}
 
-  // Terminate all active sessions atomically before exit
   const { getAllActiveSessions } = require('./utils/sessionManager');
   const { endSession }           = require('./utils/gameEngine');
 
@@ -125,7 +123,6 @@ async function emergencyShutdown(source, err) {
     }
   }
 
-  // Write crash file so ready.js can notify channels on next boot
   if (activeSessions.length > 0) {
     try {
       const crashData = activeSessions.map(s => ({
@@ -140,6 +137,10 @@ async function emergencyShutdown(source, err) {
       console.error('[EmergencyShutdown] Failed to write crash file:', e.message);
     }
   }
+
+  try {
+    webServer.close();
+  } catch {}
 }
 
 process.on('uncaughtException', async (err) => {
@@ -151,7 +152,6 @@ process.on('uncaughtException', async (err) => {
 process.on('unhandledRejection', async (reason) => {
   console.error('[unhandledRejection]', reason);
   await emergencyShutdown('unhandledRejection', reason);
-  // Do not exit — unhandled rejections are recoverable in some cases
 });
 
 process.on('SIGTERM', async () => {
@@ -166,8 +166,13 @@ process.on('SIGINT', async () => {
   process.exit(0);
 });
 
-// ── Login ────────────────────────────────────────────────────────────────────
-client.login(config.discordToken).catch(err => {
-  console.error('FATAL: Discord login failed:', err.message);
-  process.exit(1);
-});
+// ── Login if token is configured ─────────────────────────────────────────────
+if (config.discordToken && config.discordToken !== 'YOUR_TOKEN_HERE') {
+  client.login(config.discordToken).catch(err => {
+    console.error('FATAL: Discord login failed:', err.message);
+  });
+} else {
+  console.log('ℹ️ Bot token is not configured in config.json. Web Dashboard & API are running independently.');
+}
+
+module.exports = { client, webServer };

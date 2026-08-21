@@ -5,6 +5,7 @@
   "databasePath": "./data/trivia.db",
   "schedulesPath": "./schedules",
   "ownerLogChannelId": "YOUR_LOG_CHANNEL_ID_HERE",
+  "webPort": 3000,
 
   "categories": [
     { "id": "gaming",       "nameAr": "🎮 الألعاب" },
@@ -19,11 +20,23 @@
     { "id": "competitive",  "nameAr": "⚡ التنافسي" }
   ],
 
+  "gameModes": [
+    { "id": "classic",     "nameAr": "🎮 الكلاسيكي",      "descriptionAr": "المسابقة الكلاسيكية بـ 4 خيارات وسرعة وسلاسل" },
+    { "id": "survival",    "nameAr": "❤️ البقاء (Survival)", "descriptionAr": "3 أرواح — الخطأ يكلف روحاً وآخر صامد يفوز" },
+    { "id": "teams",       "nameAr": "⚔️ حرب الفرق",       "descriptionAr": "تحدي الفرق الأحمر ضد الأزرق ضد الأخضر" },
+    { "id": "duel",        "nameAr": "🥊 مبارزة 1 ضد 1",    "descriptionAr": "تحدي مباشر بين لاعبين على رهان نقود" }
+  ],
+
   "colors": {
     "success":       "#00C851",
     "error":         "#FF4444",
     "warning":       "#FFBB33",
     "info":          "#33B5E5",
+    "gold":          "#FFD700",
+    "purple":        "#9B59B6",
+    "teamRed":       "#E74C3C",
+    "teamBlue":      "#3498DB",
+    "teamGreen":     "#2ECC71",
     "correctAnswer": "#00C851",
     "wrongAnswer":   "#FF4444"
   },
@@ -45,6 +58,70 @@
     { "minPoints": 20000, "name": "🔮 العرّاف" },
     { "minPoints": 30000, "name": "☀️ الشمس التي لا تغيب" }
   ],
+
+  "shopItems": [
+    {
+      "id": "fifty_fifty",
+      "nameAr": "💡 حذف إجابتين (50:50)",
+      "descriptionAr": "يحذف خيارين خاطئين في السؤال القادم",
+      "price": 120,
+      "emoji": "💡",
+      "type": "consumable"
+    },
+    {
+      "id": "double_points",
+      "nameAr": "⚡ مضاعف النقاط (2x)",
+      "descriptionAr": "يضاعف نقاطك المكتسبة من الإجابة الصحيحة التالية",
+      "price": 180,
+      "emoji": "⚡",
+      "type": "consumable"
+    },
+    {
+      "id": "streak_shield",
+      "nameAr": "🛡️ درع السلسلة",
+      "descriptionAr": "يحمي سلسلتك من الانكسار عند أول إجابة خاطئة",
+      "price": 220,
+      "emoji": "🛡️",
+      "type": "consumable"
+    },
+    {
+      "id": "time_freeze",
+      "nameAr": "⏳ تجميد الوقت (+5 ثوانٍ)",
+      "descriptionAr": "يمنحك 5 ثوانٍ إضافية للتفكير في السؤال",
+      "price": 100,
+      "emoji": "⏳",
+      "type": "consumable"
+    },
+    {
+      "id": "extra_life",
+      "nameAr": "💖 روح إضافية (Survival)",
+      "descriptionAr": "يمنحك روحاً إضافية في طور البقاء",
+      "price": 250,
+      "emoji": "💖",
+      "type": "consumable"
+    },
+    {
+      "id": "vip_pass",
+      "nameAr": "🌟 تصريح الموسم الذهبي VIP",
+      "descriptionAr": "يفتح المسار الذهبي والمكافآت الحصرية للموسم الحالي",
+      "price": 1500,
+      "emoji": "🌟",
+      "type": "pass"
+    }
+  ],
+
+  "economy": {
+    "startingCoins": 150,
+    "coinsPerCorrect": 15,
+    "coinsPerWin": 120,
+    "coinsPerDuelWin": 50,
+    "dailyBaseCoins": 100,
+    "dailyStreakBonus": 25,
+    "xpPerCorrect": 25,
+    "xpPerWin": 150,
+    "levelBaseXp": 100,
+    "levelExponent": 1.4
+  },
 
   "achievements": [
     {
@@ -231,6 +308,26 @@
       "id": "early_bird",
       "nameAr": "🐦 طير الفجر",
       "descriptionAr": "شارك في جلسة قبل السادسة صباحاً (UTC)"
+    },
+    {
+      "id": "duel_champion",
+      "nameAr": "🥊 بطل المبارزات",
+      "descriptionAr": "افز في 5 مبارزات 1v1"
+    },
+    {
+      "id": "survival_legend",
+      "nameAr": "👑 أسطورة البقاء",
+      "descriptionAr": "افز في طور البقاء ضد 4 لاعبين على الأقل"
+    },
+    {
+      "id": "clan_warrior",
+      "nameAr": "🛡️ درع القبيلة",
+      "descriptionAr": "ساهم بـ 500 نقطة لكلانك"
+    },
+    {
+      "id": "rich_player",
+      "nameAr": "💰 الثري",
+      "descriptionAr": "اجمع أكثر من 2000 دينار ذهبي"
     }
   ],
 
@@ -263,5 +360,5 @@
     "hard":   20
   },
 
-  "schemaVersion": 1
+  "schemaVersion": 5
 }

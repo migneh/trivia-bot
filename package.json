@@ -12,8 +12,8 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "better-sqlite3": "^9.4.3",
-    "discord.js": "^14.14.1",
+    "better-sqlite3": "^13.0.3",
+    "discord.js": "^14.27.0",
     "node-cron": "^3.0.3"
   },
   "devDependencies": {

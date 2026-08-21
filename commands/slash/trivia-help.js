@@ -18,7 +18,6 @@ const {
   ButtonStyle,
   StringSelectMenuBuilder,
   StringSelectMenuOptionBuilder,
-  ComponentType,
 } = require('discord.js');
 
 const config = require('../../config.json');
@@ -33,7 +32,7 @@ const PERM = {
 };
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// HELP PAGES DEFINITION (Enhanced Copywriting)
+// HELP PAGES DEFINITION
 // ═══════════════════════════════════════════════════════════════════════════════
 
 const PAGES = [
@@ -43,187 +42,221 @@ const PAGES = [
     emoji: '🏠',
     color: config.colors.info,
     intro: 
-      'مرحباً بك في دليل مساعدة **Trivia Bot**! 🎉\n' +
-      'بوت المسابقات الثقافية الأذكى والأكثر تفاعلية على Discord.\n\n' +
+      'مرحباً بك في منصة **Trivia Bot** الضخمة! 🎉\n' +
+      'المنصة الثقافية والتنافسية الأولى على ديسكورد بأكثر من 5,000 سؤال موثق.\n\n' +
       'استخدم **القائمة المنسدلة** أدناه للتنقل بين الأقسام، أو استخدم الأزرار للتصفح.\n' +
-      'يمكنك أيضاً البحث عن أمر معين مباشرة عبر كتابة:\n' +
+      'يمكنك أيضاً البحث عن أمر معين مباشرة عبر:\n' +
       '`/trivia-help command:اسم_الأمر`',
-    tip: '💡 **نصيحة:** ابدأ بإعداد البوت في سيرفرك عبر أمر `/trivia-setup` لتفعيل جميع الميزات.',
+    tip: '💡 **نصيحة:** استكشف أطوار اللعب المتنوعة مثل البقاء وحرب الفرق والمبارزات لكسب المزيد من الدنانير!',
     commands: [
       {
         slash: 'trivia-help',
         prefix: 'help',
         args: '[command]',
-        desc: 'يعرض دليل المساعدة هذا. إذا أضفت اسم أمر، سيظهر لك شرح مفصل له مباشرة.',
+        desc: 'يعرض دليل المساعدة الشامل. يمكنك كتابة اسم أي أمر لمعرفة تفاصيله.',
         perm: PERM.all,
-        example: '`/trivia-help command:start`',
+        example: '`/trivia-help command:duel`',
       },
-    ],
-  },
-
-  // ── Page 2: Setup ──────────────────────────────────────────────────────────
-  {
-    title: 'إعداد البوت',
-    emoji: '⚙️',
-    color: 0x5865F2, // Discord Blurple
-    intro: 'خطوتك الأولى لإطلاق العنان للمسابقات! تتطلب صلاحية **Administrator**.',
-    tip: '💡 **نصيحة:** تأكد من منح البوت صلاحيات (إرسال الرسائل، تضمين الروابط، قراءة سجل الرسائل) في قناة الجلسة.',
-    commands: [
       {
-        slash: 'trivia-setup',
-        prefix: 'setup',
-        desc: 
-          'يفتح **معالج إعداد تفاعلي** من 6 خطوات لتهيئة بيئة اللعب:\n' +
-          '> • تحديد قناة المسابقات الرسمية.\n' +
-          '> • تعيين قناة احتياطية (في حال فقدان الصلاحيات).\n' +
-          '> • اختيار أدوار الإدارة المخوّلة بالتحكم في الجلسات.\n' +
-          '> • تفعيل أو تعطيل فئات الأسئلة (تاريخ، رياضة، علوم...).',
-        perm: PERM.admin,
-        example: '`/trivia-setup`',
+        slash: 'trivia-dashboard',
+        prefix: 'dashboard',
+        desc: 'يعرض رابط لوحة التحكم المباشرة على الويب وإحصائيات البنك الشاملة.',
+        perm: PERM.all,
+        example: '`/trivia-dashboard`',
       },
     ],
   },
 
-  // ── Page 3: Session Management ─────────────────────────────────────────────
+  // ── Page 2: Game Modes ─────────────────────────────────────────────────────
   {
-    title: 'إدارة الجلسات',
-    emoji: '🎮',
-    color: config.colors.success,
-    intro: 'تحكم كامل في مجريات اللعب. تتطلب **أدوار الإدارة** المعيّنة مسبقاً.',
-    tip: '💡 **نصيحة:** ابدأ بعدد قليل من الأسئلة (5 أو 10) لاختبار تفاعل الأعضاء قبل إطلاق جلسات طويلة.',
+    title: 'أطوار اللعب والتحديات',
+    emoji: '⚔️',
+    color: config.colors.purple,
+    intro: 'تشكيلة متكاملة من أطوار المسابقات التنافسية للأفراد والمجموعات:',
+    tip: '💡 **نصيحة:** في طور البقاء، احرص على سرعة الإجابة وتجنب التخمين غير المحسوب للحفاظ على قلوبك الثلاثة.',
     commands: [
       {
         slash: 'trivia-start',
         prefix: 'start',
-        desc: 
-          'أطلق العنان للتحدي! يفتح واجهة لاختيار:\n' +
-          '> • **عدد الأسئلة:** من 5 إلى 30 سؤالاً.\n' +
-          '> • **وقت الإجابة:** من 10 إلى 60 ثانية.\n' +
-          '> • **الفئات:** اختر فئة واحدة أو ادمج عدة فئات.\n' +
-          'يتحقق البوت تلقائياً من توفر الأسئلة وصلاحية الصور قبل البدء.',
+        desc: 'إطلاق النمط الكلاسيكي مع واجهة كاملة لاختيار الفئات والوقت وعدد الأسئلة.',
         perm: PERM.manager,
         example: '`/trivia-start`',
       },
       {
+        slash: 'trivia-survival',
+        prefix: 'survival',
+        args: '[questions:15]',
+        desc: 'طور البقاء (Battle Royale) — يبدأ كل لاعب بـ 3 قلوب، والخطأ يكلفك قلباً حتى يتبقى فائز واحد!',
+        perm: PERM.all,
+        example: '`/trivia-survival questions:20`',
+      },
+      {
+        slash: 'trivia-teams',
+        prefix: 'teams',
+        args: '[questions:10]',
+        desc: 'حرب الفرق — مواجهة كبرى بين الصقور 🔴 والنمور 🔵 والأبطال 🟢 مع جوائز للمجموعة وMVP.',
+        perm: PERM.all,
+        example: '`/trivia-teams questions:10`',
+      },
+      {
+        slash: 'trivia-duel',
+        prefix: 'duel',
+        args: '<@opponent> [stake] [category]',
+        desc: 'مبارزة 1 ضد 1 وجهاً لوجه على 5 أسئلة سريعة ورهان دنانير ذهبية!',
+        perm: PERM.all,
+        example: '`/trivia-duel opponent:@أحمد stake:100`',
+      },
+    ],
+  },
+
+  // ── Page 3: Economy & RPG ──────────────────────────────────────────────────
+  {
+    title: 'الاقتصاد والمتجر والمكافآت',
+    emoji: '🛍️',
+    color: config.colors.gold,
+    intro: 'اكسب الدنانير، طوّر مستواك، واشترِ القدرات الخاصة من المتجر:',
+    tip: '💡 **نصيحة:** احرص على تفعيل /trivia-daily يومياً للحفاظ على السلسلة ومضاعفة الأرباح!',
+    commands: [
+      {
+        slash: 'trivia-daily',
+        prefix: 'daily',
+        desc: 'استلام المكافأة اليومية المجانية ومضاعفة السلسلة.',
+        perm: PERM.all,
+        example: '`/trivia-daily`',
+      },
+      {
+        slash: 'trivia-shop',
+        prefix: 'shop',
+        desc: 'تصفح المتجر وشراء القدرات (حذف إجابتين 50:50، مضاعف النقاط 2x، درع السلسلة، تجميد الوقت).',
+        perm: PERM.all,
+        example: '`/trivia-shop`',
+      },
+      {
+        slash: 'trivia-inventory',
+        prefix: 'inventory',
+        desc: 'عرض حقيبة أدواتك وقدراتك المشتراة من المتجر.',
+        perm: PERM.all,
+        example: '`/trivia-inventory`',
+      },
+      {
+        slash: 'trivia-economy',
+        prefix: 'economy',
+        args: '<balance | transfer | top>',
+        desc: 'الاطلاع على الرصيد والمستوى، تحويل الدنانير، وقائمة أثرياء السيرفر.',
+        perm: PERM.all,
+        example: '`/trivia-economy balance`',
+      },
+      {
+        slash: 'trivia-quest',
+        prefix: 'quest',
+        desc: 'عرض المهام اليومية والأسبوعية واستلام مكافآت الإنجاز.',
+        perm: PERM.all,
+        example: '`/trivia-quest`',
+      },
+      {
+        slash: 'trivia-season',
+        prefix: 'season',
+        desc: 'عرض تقدمك في تصريح الموسم (Battle Pass) وجوائز المستويات.',
+        perm: PERM.all,
+        example: '`/trivia-season`',
+      },
+    ],
+  },
+
+  // ── Page 4: Clans & Custom Questions ───────────────────────────────────────
+  {
+    title: 'الكلانات والأسئلة المخصصة',
+    emoji: '🛡️',
+    color: config.colors.teamBlue,
+    intro: 'أنشئ تحالفك الخاص أو أضف أسئلتك المخصصة للسيرفر:',
+    tip: '💡 **نصيحة:** تنافس مع أعضاء كلانك لرفع ترتيب الكلان في صدارة السيرفر!',
+    commands: [
+      {
+        slash: 'trivia-clan',
+        prefix: 'clan',
+        args: '<create | join | info | leave | top>',
+        desc: 'تأسيس كلان، الانضمام عبر التاغ، عرض المعلومات، وصدارة الكلانات.',
+        perm: PERM.all,
+        example: '`/trivia-clan create name:الفرسان tag:FRS`',
+      },
+      {
+        slash: 'trivia-custom',
+        prefix: 'custom',
+        args: '<add | createpack | list>',
+        desc: 'إضافة أسئلة خاصة بالسيرفر وإنشاء حزم مخصصة.',
+        perm: PERM.manager,
+        example: '`/trivia-custom add question:سؤال...`',
+      },
+    ],
+  },
+
+  // ── Page 5: Setup & Administration ─────────────────────────────────────────
+  {
+    title: 'الإعداد والإدارة',
+    emoji: '⚙️',
+    color: 0x5865F2,
+    intro: 'إعدادات متقدمة لإدارة الجلسات والجدولة التلقائية:',
+    tip: '💡 **نصيحة:** عيّن قناة احتياطية لضمان عدم توقف المسابقات في حال حدوث أي خلل في الصلاحيات.',
+    commands: [
+      {
+        slash: 'trivia-setup',
+        prefix: 'setup',
+        desc: 'معالج الإعداد التفاعلي لتحديد القنوات والأدوار والفئات.',
+        perm: PERM.admin,
+        example: '`/trivia-setup`',
+      },
+      {
+        slash: 'trivia-schedule',
+        prefix: 'schedule',
+        desc: 'جدولة جلسات تلقائية متكررة (يومية أو أسبوعية).',
+        perm: PERM.admin,
+        example: '`/trivia-schedule`',
+      },
+      {
         slash: 'trivia-stop',
         prefix: 'stop',
-        desc: 
-          'إيقاف طارئ وآمن للجلسة النشطة:\n' +
-          '> • يطلب تأكيداً لمنع الإيقاف العرضي.\n' +
-          '> • يحفظ النقاط المكتسبة حتى لحظة الإيقاف.\n' +
-          '> • يعرض لوحة النتائج النهائية فوراً (بدون مكافأة الإكمال).',
+        desc: 'إيقاف طارئ وآمن للجلسة النشطة وحفظ النقاط الحالية.',
         perm: PERM.manager,
         example: '`/trivia-stop`',
       },
       {
         slash: 'trivia-skip',
         prefix: 'skip',
-        desc: 
-          'تخطي ذكي للسؤال الحالي:\n' +
-          '> • مفيد إذا كان السؤال غير واضح أو يحتوي على خطأ.\n' +
-          '> • **لا يكشف** الإجابة الصحيحة.\n' +
-          '> • **لا يعاقب** اللاعبين (السلاسل والنقاط تبقى كما هي).\n' +
-          '> • ينتقل للسؤال التالي فوراً بدون تأخير.',
+        desc: 'تخطي السؤال الحالي فوراً دون كشف الإجابة أو معاقبة السلاسل.',
         perm: PERM.manager,
         example: '`/trivia-skip`',
       },
     ],
   },
 
-  // ── Page 4: Scheduling ─────────────────────────────────────────────────────
+  // ── Page 6: Stats & Profiles ───────────────────────────────────────────────
   {
-    title: 'الجدولة التلقائية',
-    emoji: '📅',
-    color: 0xFEE75C, // Yellow
-    intro: 'اجعل البوت يدير المسابقات نيابة عنك! يتطلب **Administrator**.',
-    tip: '💡 **نصيحة:** البوت يستخدم توقيت UTC العالمي. لتحويل وقتك، استخدم موقع مثل [timeanddate](http://timeanddate.com).',
-    commands: [
-      {
-        slash: 'trivia-schedule',
-        prefix: 'schedule',
-        desc: 
-          'برمج جلسات تلقائية تتكرر يومياً أو أسبوعياً:\n' +
-          '> • **يومي:** جلسة كل يوم في نفس التوقيت.\n' +
-          '> • **أسبوعي:** اختر أياماً محددة (مثلاً: الجمعة والسبت).\n\n' +
-          '⏱️ **دليل تحويل التوقيت (UTC):**\n' +
-          '• 🇸🇦 السعودية/العراق (UTC+3): اطرح 3 ساعات (مساءً 8 = 17:00)\n' +
-          '• 🇪🇬 مصر (UTC+2): اطرح 2 ساعة (مساءً 8 = 18:00)\n' +
-          '• 🇲🇦 المغرب (UTC+1): اطرح 1 ساعة (مساءً 8 = 19:00)',
-        perm: PERM.admin,
-        example: '`/trivia-schedule`',
-      },
-    ],
-  },
-
-  // ── Page 5: Leaderboard ────────────────────────────────────────────────────
-  {
-    title: 'لوحة المتصدرين',
+    title: 'الإحصائيات والملفات الشخصية',
     emoji: '🏆',
-    color: 0xFFD700, // Gold
-    intro: 'تتبع أبطال السيرفر وتنافس على القمة! متاح لـ **جميع الأعضاء**.',
-    tip: '💡 **نصيحة:** استخدم لوحة الأسبوع (`week`) لمعرفة من هو اللاعب الأكثر نشاطاً حالياً.',
+    color: 0x57F287,
+    intro: 'تتبع تقدمك وتنافس على لوحات الصدارة:',
+    tip: '💡 **نصيحة:** كلما زادت نقاطك، يرتقي لقبك من 🌱 المبتدئ وصولاً إلى ☀️ الشمس التي لا تغيب.',
     commands: [
       {
         slash: 'trivia-leaderboard',
         prefix: 'leaderboard',
-        args: '[day | week | month]',
-        desc: 
-          'استعرض ترتيب اللاعبين بناءً على النقاط المكتسبة:\n' +
-          '> • **day** 🌅: أبطال اليوم (يتجدد عند منتصف الليل UTC).\n' +
-          '> • **week** 🗓️: أبطال الأسبوع (يتجدد يوم الأحد UTC).\n' +
-          '> • **month** 📆: أبطال الشهر.\n' +
-          '> • **all** 🌟: الترتيب العام منذ بدء استخدام البوت.\n\n' +
-          'النظام يعالج التعادل بذكاء، ويظهر مركزك الحالي حتى لو لم تكن في Top 10.',
+        args: '[day | week | month | all]',
+        desc: 'عرض لوحة صدارة النقاط حسب الفترات الزمنية أو الترتيب العام.',
         perm: PERM.all,
-        example: '`/trivia-leaderboard week`',
+        example: '`/trivia-leaderboard all`',
       },
-    ],
-  },
-
-  // ── Page 6: Profile & Achievements ─────────────────────────────────────────
-  {
-    title: 'الملف الشخصي',
-    emoji: '👤',
-    color: 0xEB459E, // Pink
-    intro: 'اكتشف إحصائياتك واجمع شارات الإنجازات الحصرية! متاح لـ **جميع الأعضاء**.',
-    tip: '💡 **نصيحة:** بعض الإنجازات سرية! حاول اللعب في أوقات مختلفة أو تحقيق سلاسل إجابات طويلة لفتحها.',
-    commands: [
       {
         slash: 'trivia-profile',
         prefix: 'profile',
         args: '[@user]',
-        desc: 
-          'بطاقة تعريفية شاملة للاعب تحتوي على:\n' +
-          '> • 🎖️ **اللقب:** يتطور تلقائياً بزيادة نقاطك.\n' +
-          '> • 📊 **الأداء:** عدد الجلسات، الانتصارات، ونسبة الفوز.\n' +
-          '> • 🔥 **السلاسل:** أطول سلسلة إجابات صحيحة متتالية.\n' +
-          '> • 🏅 **الإنجازات:** الشارات التي فتحتها (مع عرض نسبتها).\n\n' +
-          'يمكنك عرض ملفك، أو استعراض ملف أي لاعب آخر في السيرفر.',
+        desc: 'بطاقة اللاعب الشاملة (المستوى، اللقب، الإنجازات، ونسبة الفوز).',
         perm: PERM.all,
-        example: '`/trivia-profile @أحمد`',
+        example: '`/trivia-profile`',
       },
-    ],
-  },
-
-  // ── Page 7: Statistics ─────────────────────────────────────────────────────
-  {
-    title: 'إحصائيات السيرفر',
-    emoji: '📊',
-    color: 0x57F287, // Green
-    intro: 'نظرة تحليلية عميقة على نشاط مجتمعك في المسابقات.',
-    tip: '💡 **نصيحة:** استخدم هذه الإحصائيات لمعرفة الفئات المفضلة لدى أعضائك وزيادة أسئلتها.',
-    commands: [
       {
         slash: 'trivia-stats',
         prefix: 'stats',
-        desc: 
-          'تقرير شامل يوضح نبض السيرفر:\n' +
-          '> • 🎮 إجمالي عدد الجلسات والأسئلة المطروحة.\n' +
-          '> • 👥 متوسط عدد اللاعبين في الجلسة.\n' +
-          '> • 📂 أكثر فئات الأسئلة شعبية.\n' +
-          '> • 🧠 أصعب سؤال (أقل نسبة إجابات صحيحة).\n' +
-          '> • 🫥 أكثر سؤال تجاهلاً (بدون تصويت).\n' +
-          '> • 👑 أكثر لاعب نشاطاً من حيث عدد المشاركات.',
+        desc: 'إحصائيات شاملة عن نشاط السيرفر والأسئلة الأكثر صعوبة وتكراراً.',
         perm: PERM.all,
         example: '`/trivia-stats`',
       },
@@ -238,10 +271,10 @@ const PAGES = [
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('trivia-help')
-    .setDescription('عرض قائمة الأوامر والمساعدة')
+    .setDescription('عرض دليل المساعدة وقائمة الأوامر الشاملة')
     .addStringOption(option =>
       option.setName('command')
-        .setDescription('اسم الأمر لعرض تفاصيله مباشرة (مثال: start)')
+        .setDescription('اسم الأمر لعرض تفاصيله مباشرة (مثال: duel, start, shop)')
         .setRequired(false)
     )
     .setDMPermission(false),
@@ -257,10 +290,6 @@ module.exports = {
     }
   },
 };
-
-// ═══════════════════════════════════════════════════════════════════════════════
-// SPECIFIC COMMAND SEARCH
-// ═══════════════════════════════════════════════════════════════════════════════
 
 async function sendSpecificCommandHelp(interaction, query) {
   let foundCmd = null;
@@ -282,13 +311,7 @@ async function sendSpecificCommandHelp(interaction, query) {
       embeds: [
         new EmbedBuilder()
           .setTitle('🔍 لم يتم العثور على الأمر')
-          .setDescription(
-            `عذراً، لا يوجد أمر يطابق البحث عن \`${query}\`.\n\n` +
-            `**كيف تبحث بشكل صحيح؟**\n` +
-            `اكتب اسم الأمر بدون الشرطة المائلة، مثال:\n` +
-            `\`/trivia-help command:start\`\n\n` +
-            `أو استخدم \`/trivia-help\` لتصفح جميع الأوامر.`
-          )
+          .setDescription(`عذراً، لا يوجد أمر يطابق البحث عن \`${query}\`.\nاستخدم \`/trivia-help\` لتصفح جميع الأقسام.`)
           .setColor(config.colors.error)
       ]
     });
@@ -296,7 +319,7 @@ async function sendSpecificCommandHelp(interaction, query) {
 
   const argsStr = foundCmd.args ? ` ${foundCmd.args}` : '';
   const embed = new EmbedBuilder()
-    .setAuthor({ name: `دليل الأوامر | ${foundCmd.slash}`, iconURL: interaction.client.user.displayAvatarURL() })
+    .setAuthor({ name: `دليل الأوامر | ${foundCmd.slash}`, iconURL: interaction.client.user?.displayAvatarURL() })
     .setColor(foundPage.color)
     .setDescription(`> ${foundCmd.desc}`)
     .addFields(
@@ -310,13 +333,9 @@ async function sendSpecificCommandHelp(interaction, query) {
   await interaction.editReply({ embeds: [embed] });
 }
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// PAGINATED HELP SYSTEM
-// ═══════════════════════════════════════════════════════════════════════════════
-
 async function sendHelp(interaction, startPage = 0) {
   let currentPage = Math.max(0, Math.min(startPage, PAGES.length - 1));
-  const botAvatar = interaction.client.user.displayAvatarURL();
+  const botAvatar = interaction.client.user?.displayAvatarURL();
 
   const msg = await interaction.editReply({
     embeds: [buildPageEmbed(currentPage, botAvatar)],
@@ -354,7 +373,7 @@ async function sendHelp(interaction, startPage = 0) {
       
       await interaction.editReply({
         embeds: [timeoutEmbed],
-        components: buildComponents(currentPage, true), // Disable all
+        components: buildComponents(currentPage, true),
       });
     } catch (err) {
       if (err.code !== 10008) console.error('[Help Timeout Error]', err.message);
@@ -362,19 +381,18 @@ async function sendHelp(interaction, startPage = 0) {
   });
 }
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// UI BUILDERS
-// ═══════════════════════════════════════════════════════════════════════════════
-
 function buildPageEmbed(pageIndex, botAvatar) {
   const page = PAGES[pageIndex];
   const embed = new EmbedBuilder()
-    .setAuthor({ name: 'دليل مساعدة Trivia Bot', iconURL: botAvatar })
     .setTitle(`${page.emoji} ${page.title}`)
     .setColor(page.color)
     .setDescription(page.intro)
     .setFooter({ text: `الصفحة ${pageIndex + 1} من ${PAGES.length}` })
     .setTimestamp();
+
+  if (botAvatar) {
+    embed.setAuthor({ name: 'منصة مسابقات Trivia Bot الضخمة', iconURL: botAvatar });
+  }
 
   if (page.tip) {
     embed.addFields({ name: '\u200B', value: page.tip, inline: false });
