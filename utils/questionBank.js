@@ -352,6 +352,12 @@ function getCountsByCategory() {
   );
 }
 
+function getBankStats() {
+  return {
+    totalQuestions: allQuestions.length,
+    categoryCounts: getCountsByCategory(),
+  };
+}
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // EXPORTS
@@ -365,5 +371,6 @@ module.exports = {
   getEligibleQuestions,
   getAllQuestions,
   getCountsByCategory,
+  getBankStats,
   shuffle,               // exported for use in other modules if needed
 };

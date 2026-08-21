@@ -30,6 +30,7 @@ const config  = require('../config.json');
 const sm      = require('./sessionManager');
 const { calculateScore, assignSpeedRanks } = require('./scoring');
 const { enqueueDashboardEdit, clearQueue } = require('./dashboardQueue');
+const economyManager = require('./economyManager');
 const queries = require('../database/queries');
 const { runTransaction } = require('../database/schema');
 
@@ -920,6 +921,9 @@ async function asyncPostProcess(client, guildId, session, scoresData, questionsD
         streak: longestStreak,
         speedFirstCount,
       });
+
+      // Economy rewards & quests progression
+      economyManager.awardSessionEndReward(guildId, userId, isWin, points);
     } catch (err) {
       console.error(`[GameEngine] upsertPlayerStats failed for ${userId}:`, err.message);
     }
@@ -1077,6 +1081,13 @@ async function evaluateAchievements(client, guildId, session, scoresData, questi
 
       // ── First answer (ever) ──────────────────────────────────────────
       checkAchievement(achievements, 'first_answer', answers >= 1, newUnlocks);
+
+      // ── Economy & Clan achievements ──────────────────────────────────
+      const econ = queries.getUserEconomy(guildId, userId);
+      checkAchievement(achievements, 'rich_player', (econ?.coins ?? 0) >= 2000, newUnlocks);
+
+      const userClan = queries.getUserClan(guildId, userId);
+      checkAchievement(achievements, 'clan_warrior', (userClan?.points_contrib ?? 0) >= 500, newUnlocks);
 
       // ── Time-based: night owl / early bird ───────────────────────────
       const sessionHour = new Date(session.startedAt).getUTCHours();

@@ -27,6 +27,7 @@ const GAME_BUTTON_PREFIX   = 'trivia_answer:';
 const WIZARD_BUTTON_PREFIXES = [
   'setup_', 'sched_', 'start_', 'stop_', 'pool_',
   'help_prev', 'help_next',
+  'duel_', 'survival_', 'team_', 'quest_', 'shop_',
 ];
 
 
